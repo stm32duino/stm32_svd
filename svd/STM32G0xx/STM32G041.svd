@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G041</name>
-  <version>1.5</version>
+  <version>1.6</version>
   <description>STM32G041</description>
   <cpu>
     <name>CM0</name>
@@ -608,7 +608,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <name>ADDR_ECC</name>
               <description>ECC fail address</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
+              <bitWidth>14</bitWidth>
               <access>read-only</access>
             </field>
             <field>

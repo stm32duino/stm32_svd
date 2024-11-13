@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G051</name>
-  <version>1.4</version>
+  <version>1.5</version>
   <description>STM32G051</description>
   <cpu>
     <name>CM0</name>
@@ -4074,7 +4074,7 @@ This bit is set by software and cleared by a system reset. It locks the whole co
           </register>
 		  <register>
             <name>COMP3_CSR</name>
-            <displayName>COMP2_CSR</displayName>
+            <displayName>COMP3_CSR</displayName>
             <description>Comparator 2 control and status register </description>
             <addressOffset>0x8</addressOffset>
             <size>0x20</size>
@@ -12706,7 +12706,7 @@ Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RG
               <name>ADDR_ECC</name>
               <description>ECC fail address</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
+              <bitWidth>14</bitWidth>
               <access>read-only</access>
             </field>
             <field>

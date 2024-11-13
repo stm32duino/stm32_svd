@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-Copyright (c) 2023 STMicroelectronics.
+Copyright (c) 2024 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -18,14 +18,14 @@ Copyright (c) 2023 STMicroelectronics.
 -->
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32WL5x_CM4</name>
-  <version>2.0</version>
+  <version>2.2</version>
   <description>STM32WL5x_CM4</description>
   <cpu>
     <name>CM4</name>
     <revision>r0p1</revision>
     <endian>little</endian>
     <mpuPresent>true</mpuPresent>
-    <fpuPresent>true</fpuPresent>
+    <fpuPresent>false</fpuPresent>
     <nvicPrioBits>4</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
   </cpu>

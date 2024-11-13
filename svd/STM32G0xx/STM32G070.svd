@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G070</name>
-  <version>1.9</version>
+  <version>2.0</version>
   <description>STM32G070</description>
   <cpu>
     <name>CM0</name>
@@ -4049,6 +4049,53 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
             </field>
           </fields>
         </register>
+		<register>
+          <name>ECCR2</name>
+          <displayName>ECCR2</displayName>
+          <description>Flash ECC register 2</description>
+          <addressOffset>0x01C</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>ADDR_ECC</name>
+              <description>ECC fail address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>14</bitWidth>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>SYSF_ECC</name>
+              <description>ECC fail for Corrected ECC Error or
+              Double ECC Error in info block</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>ECCIE</name>
+              <description>ECC correction interrupt
+              enable</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ECCC</name>
+              <description>ECC correction</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ECCD</name>
+              <description>ECC detection</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>	
         <register>
           <name>OPTR</name>
           <displayName>OPTR</displayName>

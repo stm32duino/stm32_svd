@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    <name>STM32G473</name>
-   <version>2.3</version>
+   <version>2.5</version>
    <description>STM32G473</description>
     <cpu>
     <name>CM4</name>
@@ -1620,7 +1620,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <name>SEC_SIZE1</name>
                      <description>SEC_SIZE1</description>
                      <bitOffset>0</bitOffset>
-                     <bitWidth>8</bitWidth>
+                     <bitWidth>7</bitWidth>
                   </field>
                </fields>
             </register>
@@ -25333,6 +25333,12 @@ This bit is only valid for the main regulator in range 1 and has no effect on ra
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
+                     <name>PIF17</name>
+                     <description>Pending bit 17</description>
+                     <bitOffset>17</bitOffset>
+                     <bitWidth>1</bitWidth>
+                  </field>
+                  <field>
                      <name>PIF18</name>
                      <description>Pending bit 18</description>
                      <bitOffset>18</bitOffset>
@@ -25360,6 +25366,24 @@ This bit is only valid for the main regulator in range 1 and has no effect on ra
                      <name>PIF22</name>
                      <description>Pending bit 22</description>
                      <bitOffset>22</bitOffset>
+                     <bitWidth>1</bitWidth>
+                  </field>
+                  <field>
+                     <name>PIF29</name>
+                     <description>Pending bit 29</description>
+                     <bitOffset>29</bitOffset>
+                     <bitWidth>1</bitWidth>
+                  </field>
+                  <field>
+                     <name>PIF30</name>
+                     <description>Pending bit 30</description>
+                     <bitOffset>30</bitOffset>
+                     <bitWidth>1</bitWidth>
+                  </field>
+                  <field>
+                     <name>PIF31</name>
+                     <description>Pending bit 31</description>
+                     <bitOffset>31</bitOffset>
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>

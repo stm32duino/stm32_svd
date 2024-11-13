@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G061</name>
-  <version>1.4</version>
+  <version>1.5</version>
   <description>STM32G061</description>
   <cpu>
     <name>CM0</name>
@@ -12772,7 +12772,7 @@ Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RG
               <name>ADDR_ECC</name>
               <description>ECC fail address</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>15</bitWidth>
+              <bitWidth>14</bitWidth>
               <access>read-only</access>
             </field>
             <field>
