@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32H73x</name>
-  <version>1.7</version>
+  <version>1.8</version>
   <description>STM32H73x</description>
   <cpu>
     <name>CM7</name>
@@ -704,22 +704,22 @@ When dual mode is enabled (bits DAMDF of ADCx_CCR register are not equal to zero
                 <enumeratedValues>
                   <enumeratedValue>
                     <name>B_0x0</name>
-                    <description>used when ADC clock ≤ 6.25 MHz</description>
+                    <description>used when ADC clock less than or equal 6.25 MHz</description>
                     <value>0x0</value>
                   </enumeratedValue>
                   <enumeratedValue>
                     <name>B_0x1</name>
-                    <description>used when 6.25 MHz &lt; ADC clock frequency≤ 12.5 MHz</description>
+                    <description>used when 6.25 MHz &lt; ADC clock frequencyless than or equal 12.5 MHz</description>
                     <value>0x1</value>
                   </enumeratedValue>
                   <enumeratedValue>
                     <name>B_0x2</name>
-                    <description>used when 12.5 MHz &lt; ADC clock ≤25.0 MHz</description>
+                    <description>used when 12.5 MHz &lt; ADC clock less than or equal25.0 MHz</description>
                     <value>0x2</value>
                   </enumeratedValue>
                   <enumeratedValue>
                     <name>B_0x3</name>
-                    <description>used when 25.0 MHz &lt; ADC clock ≤ 50.0 MHz</description>
+                    <description>used when 25.0 MHz &lt; ADC clock less than or equal 50.0 MHz</description>
                     <value>0x3</value>
                   </enumeratedValue>
                 </enumeratedValues>
@@ -5248,289 +5248,61 @@ Note: The software is allowed to write these bits only when ADSTART = 0 and JADS
                 </enumeratedValues>
               </field>
               <field>
-                <name>EXTSEL0</name>
+                <name>EXTSEL</name>
                 <description>External trigger selection for regular group
 These bits select the external event used to trigger the start of conversion of a regular group:
 ...
 Note: The software is allowed to write these bits only when ADSTART = 0 (which ensures that no regular conversion is ongoing).</description>
                 <bitOffset>5</bitOffset>
-                <bitWidth>1</bitWidth>
+                <bitWidth>5</bitWidth>
                 <access>read-write</access>
-                <enumeratedValues>
-                  <enumeratedValue>
-                    <name>B_0x0</name>
-                    <description>adc_ext_trg0</description>
-                    <value>0x0</value>
+				<enumeratedValues>
+				  <enumeratedValue>
+					<name>B_0x0</name>
+					<description>adc_ext_trg0</description>
+					<value>0x0</value>
                   </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1</name>
-                    <description>adc_ext_trg1</description>
-                    <value>0x1</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x2</name>
-                    <description>adc_ext_trg2</description>
-                    <value>0x2</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x3</name>
-                    <description>adc_ext_trg3</description>
-                    <value>0x3</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x4</name>
-                    <description>adc_ext_trg4</description>
-                    <value>0x4</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x5</name>
-                    <description>adc_ext_trg5</description>
-                    <value>0x5</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x6</name>
-                    <description>adc_ext_trg6</description>
-                    <value>0x6</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x7</name>
-                    <description>adc_ext_trg7</description>
-                    <value>0x7</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1F</name>
-                    <description>adc_ext_trg31</description>
-                    <value>0x1F</value>
-                  </enumeratedValue>
-                </enumeratedValues>
-              </field>
-              <field>
-                <name>EXTSEL1</name>
-                <description>External trigger selection for regular group
-These bits select the external event used to trigger the start of conversion of a regular group:
-...
-Note: The software is allowed to write these bits only when ADSTART = 0 (which ensures that no regular conversion is ongoing).</description>
-                <bitOffset>6</bitOffset>
-                <bitWidth>1</bitWidth>
-                <access>read-write</access>
-                <enumeratedValues>
-                  <enumeratedValue>
-                    <name>B_0x0</name>
-                    <description>adc_ext_trg0</description>
-                    <value>0x0</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1</name>
-                    <description>adc_ext_trg1</description>
-                    <value>0x1</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x2</name>
-                    <description>adc_ext_trg2</description>
-                    <value>0x2</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x3</name>
-                    <description>adc_ext_trg3</description>
-                    <value>0x3</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x4</name>
-                    <description>adc_ext_trg4</description>
-                    <value>0x4</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x5</name>
-                    <description>adc_ext_trg5</description>
-                    <value>0x5</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x6</name>
-                    <description>adc_ext_trg6</description>
-                    <value>0x6</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x7</name>
-                    <description>adc_ext_trg7</description>
-                    <value>0x7</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1F</name>
-                    <description>adc_ext_trg31</description>
-                    <value>0x1F</value>
-                  </enumeratedValue>
-                </enumeratedValues>
-              </field>
-              <field>
-                <name>EXTSEL2</name>
-                <description>External trigger selection for regular group
-These bits select the external event used to trigger the start of conversion of a regular group:
-...
-Note: The software is allowed to write these bits only when ADSTART = 0 (which ensures that no regular conversion is ongoing).</description>
-                <bitOffset>7</bitOffset>
-                <bitWidth>1</bitWidth>
-                <access>read-write</access>
-                <enumeratedValues>
-                  <enumeratedValue>
-                    <name>B_0x0</name>
-                    <description>adc_ext_trg0</description>
-                    <value>0x0</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1</name>
-                    <description>adc_ext_trg1</description>
-                    <value>0x1</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x2</name>
-                    <description>adc_ext_trg2</description>
-                    <value>0x2</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x3</name>
-                    <description>adc_ext_trg3</description>
-                    <value>0x3</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x4</name>
-                    <description>adc_ext_trg4</description>
-                    <value>0x4</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x5</name>
-                    <description>adc_ext_trg5</description>
-                    <value>0x5</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x6</name>
-                    <description>adc_ext_trg6</description>
-                    <value>0x6</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x7</name>
-                    <description>adc_ext_trg7</description>
-                    <value>0x7</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1F</name>
-                    <description>adc_ext_trg31</description>
-                    <value>0x1F</value>
-                  </enumeratedValue>
-                </enumeratedValues>
-              </field>
-              <field>
-                <name>EXTSEL3</name>
-                <description>External trigger selection for regular group
-These bits select the external event used to trigger the start of conversion of a regular group:
-...
-Note: The software is allowed to write these bits only when ADSTART = 0 (which ensures that no regular conversion is ongoing).</description>
-                <bitOffset>8</bitOffset>
-                <bitWidth>1</bitWidth>
-                <access>read-write</access>
-                <enumeratedValues>
-                  <enumeratedValue>
-                    <name>B_0x0</name>
-                    <description>adc_ext_trg0</description>
-                    <value>0x0</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1</name>
-                    <description>adc_ext_trg1</description>
-                    <value>0x1</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x2</name>
-                    <description>adc_ext_trg2</description>
-                    <value>0x2</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x3</name>
-                    <description>adc_ext_trg3</description>
-                    <value>0x3</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x4</name>
-                    <description>adc_ext_trg4</description>
-                    <value>0x4</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x5</name>
-                    <description>adc_ext_trg5</description>
-                    <value>0x5</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x6</name>
-                    <description>adc_ext_trg6</description>
-                    <value>0x6</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x7</name>
-                    <description>adc_ext_trg7</description>
-                    <value>0x7</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1F</name>
-                    <description>adc_ext_trg31</description>
-                    <value>0x1F</value>
-                  </enumeratedValue>
-                </enumeratedValues>
-              </field>
-              <field>
-                <name>EXTSEL4</name>
-                <description>External trigger selection for regular group
-These bits select the external event used to trigger the start of conversion of a regular group:
-...
-Note: The software is allowed to write these bits only when ADSTART = 0 (which ensures that no regular conversion is ongoing).</description>
-                <bitOffset>9</bitOffset>
-                <bitWidth>1</bitWidth>
-                <access>read-write</access>
-                <enumeratedValues>
-                  <enumeratedValue>
-                    <name>B_0x0</name>
-                    <description>adc_ext_trg0</description>
-                    <value>0x0</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1</name>
-                    <description>adc_ext_trg1</description>
-                    <value>0x1</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x2</name>
-                    <description>adc_ext_trg2</description>
-                    <value>0x2</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x3</name>
-                    <description>adc_ext_trg3</description>
-                    <value>0x3</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x4</name>
-                    <description>adc_ext_trg4</description>
-                    <value>0x4</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x5</name>
-                    <description>adc_ext_trg5</description>
-                    <value>0x5</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x6</name>
-                    <description>adc_ext_trg6</description>
-                    <value>0x6</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x7</name>
-                    <description>adc_ext_trg7</description>
-                    <value>0x7</value>
-                  </enumeratedValue>
-                  <enumeratedValue>
-                    <name>B_0x1F</name>
-                    <description>adc_ext_trg31</description>
-                    <value>0x1F</value>
-                  </enumeratedValue>
-                </enumeratedValues>
+				  <enumeratedValue>
+					<name>B_0x1</name>
+					<description>adc_ext_trg1</description>
+					<value>0x1</value>
+				  </enumeratedValue>
+				  <enumeratedValue>
+					<name>B_0x2</name>
+					<description>adc_ext_trg2</description>
+					<value>0x2</value>
+				  </enumeratedValue>
+				  <enumeratedValue>
+					<name>B_0x3</name>
+					<description>adc_ext_trg3</description>
+					<value>0x3</value>
+				  </enumeratedValue>
+				  <enumeratedValue>
+					<name>B_0x4</name>
+					<description>adc_ext_trg4</description>
+					<value>0x4</value>
+				  </enumeratedValue>
+				  <enumeratedValue>
+					<name>B_0x5</name>
+					<description>adc_ext_trg5</description>
+					<value>0x5</value>
+				  </enumeratedValue>
+				  <enumeratedValue>
+					<name>B_0x6</name>
+					<description>adc_ext_trg6</description>
+					<value>0x6</value>
+				  </enumeratedValue>
+				  <enumeratedValue>
+					<name>B_0x7</name>
+					<description>adc_ext_trg7</description>
+					<value>0x7</value>
+				  </enumeratedValue>
+				  <enumeratedValue>
+					<name>B_0x1F</name>
+					<description>adc_ext_trg31</description>
+					<value>0x1F</value>
+				  </enumeratedValue>
+				</enumeratedValues>
               </field>
               <field>
                 <name>EXTEN</name>
@@ -10856,7 +10628,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -11313,7 +11085,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -11770,7 +11542,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -12227,7 +11999,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -12684,7 +12456,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -13141,7 +12913,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -13598,7 +13370,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -14055,7 +13827,7 @@ It is read-only when the channel is enabled (EN = 1).</description>
                 <name>NDT</name>
                 <description>number of data to transfer (0 to 216 - 1)
 This field is updated by hardware when the channel is enabled:
-It is decremented after each single BDMA ‘read followed by write’ transfer, indicating the remaining amount of data items to transfer.
+It is decremented after each single BDMA 'read followed by write' transfer, indicating the remaining amount of data items to transfer.
 It is kept at zero when the programmed amount of data to transfer is reached, if the channel is not in circular mode (CIRC = 0 in the BDMA_CCRx register).
 It is reloaded automatically by the previously programmed value, when the transfer is complete, if the channel is in circular mode (CIRC = 1).
 If this field is zero, no transfer can be served whatever the channel status (enabled or not).
@@ -73563,12 +73335,12 @@ Note: Only accessible in host mode.</description>
                 <enumeratedValues>
                   <enumeratedValue>
                     <name>B_0x0</name>
-                    <description>Long debounce time, used for physical connections (100 ms + 2.5 Âµs)</description>
+                    <description>Long debounce time, used for physical connections (100 ms + 2.5 us)</description>
                     <value>0x0</value>
                   </enumeratedValue>
                   <enumeratedValue>
                     <name>B_0x1</name>
-                    <description>Short debounce time, used for soft connections (2.5 Âµs)</description>
+                    <description>Short debounce time, used for soft connections (2.5 us)</description>
                     <value>0x1</value>
                   </enumeratedValue>
                 </enumeratedValues>
@@ -74145,7 +73917,7 @@ Disables IN endpoints
 Flushes the FIFO
 Determines the token sequence from the IN token sequence learning queue
 Re-enables the endpoints
-Clears the global nonperiodic IN NAK handshake If the global nonperiodic IN NAK is cleared, the core has not yet fetched data for the IN endpoint, and the IN token is received: the core generates an âIN token received when FIFO emptyâ interrupt. The OTG then sends a NAK response to the host. To avoid this scenario, the application can check the FetSusp interrupt in OTG_GINTSTS, which ensures that the FIFO is full before clearing a global NAK handshake. Alternatively, the application can mask the âIN token received when FIFO emptyâ interrupt when clearing a global IN NAK handshake.</description>
+Clears the global nonperiodic IN NAK handshake If the global nonperiodic IN NAK is cleared, the core has not yet fetched data for the IN endpoint, and the IN token is received: the core generates an  IN token received when FIFO empty  interrupt. The OTG then sends a NAK response to the host. To avoid this scenario, the application can check the FetSusp interrupt in OTG_GINTSTS, which ensures that the FIFO is full before clearing a global NAK handshake. Alternatively, the application can mask the  IN token received when FIFO empty  interrupt when clearing a global IN NAK handshake.</description>
                 <bitOffset>22</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -81255,8 +81027,8 @@ Note: When this bit is set region context (version, key, nonce) must be valid or
               <field>
                 <name>CONFIGLOCK</name>
                 <description>region config lock
-This bit-field is set once, i.e. if this bit is set it can only be reset to “0” if OTFDEC is reset.
-Setting this bit forces KEYLOCK bit to “1”.</description>
+This bit-field is set once, i.e. if this bit is set it can only be reset to '0' if OTFDEC is reset.
+Setting this bit forces KEYLOCK bit to '1'.</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -81276,7 +81048,7 @@ Setting this bit forces KEYLOCK bit to “1”.</description>
               <field>
                 <name>KEYLOCK</name>
                 <description>region key lock
-This bitfield is set once, i.e. if this bit is set it can only be reset to “0” if the OTFDEC is reset.</description>
+This bitfield is set once, i.e. if this bit is set it can only be reset to '0' if the OTFDEC is reset.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -81298,7 +81070,7 @@ This bitfield is set once, i.e. if this bit is set it can only be reset to “0�
                 <description>operating mode
 This bitfield selects the OTFDEC operating mode for this region:
 When MODE is not equal to 11 the standard AES encryption mode is activated.
-When either of the MODE bits are changed the region’s key and associated CRC are zeroed.</description>
+When either of the MODE bits are changed the region's key and associated CRC are zeroed.</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>2</bitWidth>
                 <access>read-write</access>
@@ -81540,8 +81312,8 @@ Note: When this bit is set region context (version, key, nonce) must be valid or
               <field>
                 <name>CONFIGLOCK</name>
                 <description>region config lock
-This bit-field is set once, i.e. if this bit is set it can only be reset to “0” if OTFDEC is reset.
-Setting this bit forces KEYLOCK bit to “1”.</description>
+This bit-field is set once, i.e. if this bit is set it can only be reset to '0' if OTFDEC is reset.
+Setting this bit forces KEYLOCK bit to '1'.</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -81561,7 +81333,7 @@ Setting this bit forces KEYLOCK bit to “1”.</description>
               <field>
                 <name>KEYLOCK</name>
                 <description>region key lock
-This bitfield is set once, i.e. if this bit is set it can only be reset to “0” if the OTFDEC is reset.</description>
+This bitfield is set once, i.e. if this bit is set it can only be reset to '0' if the OTFDEC is reset.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -81583,7 +81355,7 @@ This bitfield is set once, i.e. if this bit is set it can only be reset to “0�
                 <description>operating mode
 This bitfield selects the OTFDEC operating mode for this region:
 When MODE is not equal to 11 the standard AES encryption mode is activated.
-When either of the MODE bits are changed the region’s key and associated CRC are zeroed.</description>
+When either of the MODE bits are changed the region's key and associated CRC are zeroed.</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>2</bitWidth>
                 <access>read-write</access>
@@ -81825,8 +81597,8 @@ Note: When this bit is set region context (version, key, nonce) must be valid or
               <field>
                 <name>CONFIGLOCK</name>
                 <description>region config lock
-This bit-field is set once, i.e. if this bit is set it can only be reset to “0” if OTFDEC is reset.
-Setting this bit forces KEYLOCK bit to “1”.</description>
+This bit-field is set once, i.e. if this bit is set it can only be reset to '0' if OTFDEC is reset.
+Setting this bit forces KEYLOCK bit to '1'.</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -81846,7 +81618,7 @@ Setting this bit forces KEYLOCK bit to “1”.</description>
               <field>
                 <name>KEYLOCK</name>
                 <description>region key lock
-This bitfield is set once, i.e. if this bit is set it can only be reset to “0” if the OTFDEC is reset.</description>
+This bitfield is set once, i.e. if this bit is set it can only be reset to '0' if the OTFDEC is reset.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -81868,7 +81640,7 @@ This bitfield is set once, i.e. if this bit is set it can only be reset to “0�
                 <description>operating mode
 This bitfield selects the OTFDEC operating mode for this region:
 When MODE is not equal to 11 the standard AES encryption mode is activated.
-When either of the MODE bits are changed the region’s key and associated CRC are zeroed.</description>
+When either of the MODE bits are changed the region's key and associated CRC are zeroed.</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>2</bitWidth>
                 <access>read-write</access>
@@ -82110,8 +81882,8 @@ Note: When this bit is set region context (version, key, nonce) must be valid or
               <field>
                 <name>CONFIGLOCK</name>
                 <description>region config lock
-This bit-field is set once, i.e. if this bit is set it can only be reset to “0” if OTFDEC is reset.
-Setting this bit forces KEYLOCK bit to “1”.</description>
+This bit-field is set once, i.e. if this bit is set it can only be reset to '0' if OTFDEC is reset.
+Setting this bit forces KEYLOCK bit to '1'.</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -82131,7 +81903,7 @@ Setting this bit forces KEYLOCK bit to “1”.</description>
               <field>
                 <name>KEYLOCK</name>
                 <description>region key lock
-This bitfield is set once, i.e. if this bit is set it can only be reset to “0” if the OTFDEC is reset.</description>
+This bitfield is set once, i.e. if this bit is set it can only be reset to '0' if the OTFDEC is reset.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
@@ -82153,7 +81925,7 @@ This bitfield is set once, i.e. if this bit is set it can only be reset to “0�
                 <description>operating mode
 This bitfield selects the OTFDEC operating mode for this region:
 When MODE is not equal to 11 the standard AES encryption mode is activated.
-When either of the MODE bits are changed the region’s key and associated CRC are zeroed.</description>
+When either of the MODE bits are changed the region's key and associated CRC are zeroed.</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>2</bitWidth>
                 <access>read-write</access>
@@ -82376,7 +82148,7 @@ Refer to the OTFDEC_RxKEYR0 register for description of the KEY[127:0] bitfield.
                 <name>SEIF</name>
                 <description>Security Error Interrupt Flag status
 This bit is set by hardware and read only by application. Bit is set when at least one security error has been detected (illegal access to keys, illegal write on locked configuration).
-Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to “1”.</description>
+Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to '1'.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-only</access>
@@ -82397,7 +82169,7 @@ Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to “1
                 <name>XONEIF</name>
                 <description>Execute-only execute-Never Error Interrupt Flag status
 This bit is set by hardware and read only by application. Bit is set when a read access and not an instruction fetch is detected on any encrypted region with MODE bits set to 00 or 11. It is also set when an instruction fetch and not a read access is detected on any encrypted region with MODE bits set to 01.
-Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to “1”.</description>
+Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to '1'.</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-only</access>
@@ -82409,7 +82181,7 @@ Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to “1
                   </enumeratedValue>
                   <enumeratedValue>
                     <name>B_0x1</name>
-                    <description>Read access detected on one region with MODE bits set to 00 or 11, or execute access detected on one region with MODE bits set to 01. OTFDEC returns a zeroed value for the illegal access, and an optional interrupt is generated if bit XONEIE is set to “1” in OTFDEC_IER register.</description>
+                    <description>Read access detected on one region with MODE bits set to 00 or 11, or execute access detected on one region with MODE bits set to 01. OTFDEC returns a zeroed value for the illegal access, and an optional interrupt is generated if bit XONEIE is set to '1' in OTFDEC_IER register.</description>
                     <value>0x1</value>
                   </enumeratedValue>
                 </enumeratedValues>
@@ -82418,7 +82190,7 @@ Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to “1
                 <name>KEIF</name>
                 <description>Key Error Interrupt Flag status
 This bit is set by hardware and read only by application. Bit is set when a read access occurs on any encrypted region following the reset of the key registers by an abort event (tamper detection, unauthorized debugger connection, untrusted boot, RDP level regression).
-Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to “1”.
+Bit is cleared when application sets in OTFDEC_ICR the corresponding bit to '1'.
 After KEIF is set any subsequent read to any enabled encrypted region returns a zeroed value. This state remains until OTFDEC keys are initialized again.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -82431,7 +82203,7 @@ After KEIF is set any subsequent read to any enabled encrypted region returns a 
                   </enumeratedValue>
                   <enumeratedValue>
                     <name>B_0x1</name>
-                    <description>Read access detected on an enabled encrypted region following an abort event. OTFDEC returns a zeroed value for the read, and an optional interrupt is generated if bit KEIE is set to “1” in OTFDEC_IER register.</description>
+                    <description>Read access detected on an enabled encrypted region following an abort event. OTFDEC returns a zeroed value for the read, and an optional interrupt is generated if bit KEIE is set to '1' in OTFDEC_IER register.</description>
                     <value>0x1</value>
                   </enumeratedValue>
                 </enumeratedValues>
@@ -85815,7 +85587,7 @@ This field represents the sum of engineering option byte calibration value and H
                 <name>HSITRIM</name>
                 <description>HSI clock trimming
 Set by software to adjust calibration.
-HSITRIM field is added to the engineering option bytes loaded during reset phase (FLASH_HSI_opt) in order to form the calibration trimming value. HSICALÂ =Â HSITRIMÂ +Â FLASH_HSI_opt.
+HSITRIM field is added to the engineering option bytes loaded during reset phase (FLASH_HSI_opt) in order to form the calibration trimming value. HSICAL = HSITRIM + FLASH_HSI_opt.
 Note: The reset value of the field is 0x40.</description>
                 <bitOffset>24</bitOffset>
                 <bitWidth>7</bitWidth>
@@ -85867,7 +85639,7 @@ This field represents the sum of engineering option byte calibration value and C
                 <description>CSI clock trimming
 Set by software to adjust calibration.
 CSITRIM field is added to the engineering option bytes loaded during reset phase (FLASH_CSI_opt) in order to form the calibration trimming value.
-CSICALÂ =Â CSITRIMÂ +Â FLASH_CSI_opt.
+CSICAL = CSITRIM + FLASH_CSI_opt.
 Note: The reset value of the field is 0x20.</description>
                 <bitOffset>24</bitOffset>
                 <bitWidth>6</bitWidth>
