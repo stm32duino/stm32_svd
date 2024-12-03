@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32H725</name>
-  <version>1.7</version>
+  <version>1.9</version>
   <description>STM32H725</description>
   <cpu>
     <name>CM7</name>
@@ -42,7 +42,7 @@ Copyright (c) 2024 STMicroelectronics.
         <baseAddress>0x40022000</baseAddress>
         <addressBlock>
           <offset>0x0</offset>
-          <size>0x400</size>
+          <size>0xCC</size>
           <usage>registers</usage>
         </addressBlock>
         <registers>
@@ -4134,7 +4134,7 @@ Note: The software is allowed to write these bits only when ADEN=1, ADSTART=0 an
       <baseAddress>0x40022300</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x100</size>
+        <size>0x14</size>
         <usage>registers</usage>
       </addressBlock>
 	  <interrupt>
@@ -4420,7 +4420,7 @@ Note: The software is allowed to write these bits only when ADEN=1, ADSTART=0 an
         <baseAddress>0x58026000</baseAddress>
 		<addressBlock>
           <offset>0x0</offset>
-          <size>0x400</size>
+          <size>0xB8</size>
           <usage>registers</usage>
         </addressBlock>
 		<interrupt>
@@ -8002,7 +8002,7 @@ Note: The software is allowed to write these bits only when ADEN = 1, ADSTART = 
         <baseAddress>0x58026300</baseAddress>
 		<addressBlock>
           <offset>0x0</offset>
-          <size>0x400</size>
+          <size>0x14</size>
           <usage>registers</usage>
         </addressBlock>
         <registers>
@@ -29950,11 +29950,6 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
         <name>FPU</name>
         <description> CPU FPU interrupt</description>
         <value>81</value>
-      </interrupt>
-	  <interrupt>
-        <name>ECC</name>
-        <description>ECC diagnostic global interrupt</description>
-        <value>145</value>
       </interrupt>
 	  <interrupt>
         <name>TEMP_IT</name>
@@ -70054,7 +70049,7 @@ Instruction to be sent to the external SPI device</description>
       <baseAddress>0x40040000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x3FFFF</size>
+        <size>0x130</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
@@ -77791,7 +77786,7 @@ Minimum value is 16</description>
       <baseAddress>0x40040E00</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x3F200</size>
+        <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
@@ -80540,6 +80535,11 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
         <size>0x1000</size>
         <usage>registers</usage>
       </addressBlock>
+	  <interrupt>
+        <name>ECC_DIAG_IT</name>
+        <description>ECC diagnostic global interrup</description>
+        <value>145</value>
+      </interrupt>
       <registers>
         <register>
           <name>IER</name>
@@ -80630,30 +80630,21 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW) detected flag </description>
               <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -80669,31 +80660,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -80708,31 +80678,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -80747,6 +80696,42 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1FECR</name>
+          <displayName>M1FECR</displayName>
+          <description>RAMECC monitor x failing ECC error code
+          register</description>
+          <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M2CR</name>
+          <displayName>M2CR</displayName>
+          <description>RAMECC monitor x configuration
+          register</description>
+          <addressOffset>0x40</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
               <name>ECCSEIE</name>
               <description>ECC single error interrupt
               enable</description>
@@ -80771,72 +80756,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
               <name>ECCELEN</name>
               <description>ECC error latching enable</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M1FECR</name>
-          <displayName>M1FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M2CR</name>
-          <displayName>M2CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -80885,25 +80804,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -80918,25 +80822,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -80951,8 +80840,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -80969,8 +80858,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -80987,10 +80876,31 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -81005,10 +80915,25 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -81059,8 +80984,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81077,8 +81002,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81095,10 +81020,31 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -81113,10 +81059,25 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -81131,9 +81092,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81150,9 +81110,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81189,9 +81148,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81208,10 +81166,31 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -81226,10 +81205,25 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -81244,8 +81238,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81262,8 +81256,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81280,8 +81274,9 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit
+              memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -81312,7 +81307,7 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
       <description>ECC controller is associated to each RAM
       area</description>
       <groupName>RAMECC</groupName>
-      <baseAddress>0x48023000</baseAddress>
+      <baseAddress>0x48023000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>0x1000</size>
@@ -81476,84 +81471,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4CR</name>
-          <displayName>M4CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0x80</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5CR</name>
-          <displayName>M5CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0xA0</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1SR</name>
           <displayName>M1SR</displayName>
           <description>RAMECC monitor x status
@@ -81653,72 +81570,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4SR</name>
-          <displayName>M4SR</displayName>
-          <description>RAMECC monitor x status
-          register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5SR</name>
-          <displayName>M5SR</displayName>
-          <description>RAMECC monitor x status
-          register</description>
-          <addressOffset>0xA4</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1FAR</name>
           <displayName>M1FAR</displayName>
           <description>RAMECC monitor x failing address
@@ -81773,42 +81624,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4FAR</name>
-          <displayName>M4FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FAR</name>
-          <displayName>M5FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0xA8</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1FDRL</name>
           <displayName>M1FDRL</displayName>
           <description>RAMECC monitor x failing data low
@@ -81850,42 +81665,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <description>RAMECC monitor x failing data low
           register</description>
           <addressOffset>0x6C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M4FDRL</name>
-          <displayName>M4FDRL</displayName>
-          <description>RAMECC monitor x failing data low
-          register</description>
-          <addressOffset>0x8C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FDRL</name>
-          <displayName>M5FDRL</displayName>
-          <description>RAMECC monitor x failing data low
-          register</description>
-          <addressOffset>0xAC</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000000</resetValue>
@@ -81956,43 +81735,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4FDRH</name>
-          <displayName>M4FDRH</displayName>
-          <description>RAMECC monitor x failing data high
-          register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FDRH</name>
-          <displayName>M5FDRH</displayName>
-          <description>RAMECC monitor x failing data high
-          register</description>
-          <addressOffset>0xB0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1FECR</name>
           <displayName>M1FECR</displayName>
           <description>RAMECC monitor x failing ECC error code
@@ -82046,45 +81788,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
             </field>
           </fields>
         </register>
-        <register>
-          <name>M4FECR</name>
-          <displayName>M4FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <alternateRegister>M4FDRH</alternateRegister>
-          <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FECR</name>
-          <displayName>M5FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0xB4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
       </registers>
-    </peripheral>
+    </peripheral> 
     <peripheral>
       <name>RAMECC3</name>
       <description>ECC controller is associated to each RAM
@@ -91895,7 +91600,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
       <baseAddress>0x52007000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x1000</size>
+        <size>0x84</size>
         <usage>registers</usage>
       </addressBlock>
 	  <interrupt>
@@ -96343,7 +96048,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -96362,7 +96067,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>

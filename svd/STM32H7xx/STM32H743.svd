@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32H743</name>
-  <version>1.9</version>
+  <version>2.2</version>
   <description>STM32H743</description>
    <cpu>
     <name>CM7</name>
@@ -42766,6 +42766,31 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
+          <name>HSICFGR</name>
+          <displayName>HSICFGR</displayName>
+          <description>RCC HSI configuration register</description>
+          <alternateRegister>ICSCR</alternateRegister>
+          <addressOffset>0x4</addressOffset>
+          <size>0x20</size>
+          <resetValue>0x40000000</resetValue>
+          <fields>
+            <field>
+              <name>HSICAL</name>
+              <description>HSI clock calibration</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>12</bitWidth>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>HSITRIM</name>
+              <description>HSI clock trimming</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>7</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>CRRCR</name>
           <displayName>CRRCR</displayName>
           <description>RCC Clock Recovery RC Register</description>
@@ -44949,34 +44974,27 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>USB2OTGHSULPIEN</name>
-              <description> Enable USB_PHY2 clocks </description>
-              <bitOffset>18</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
             <field>
-              <name>USB1OTGEN</name>
-              <description>USB1OTG Peripheral Clocks
-              Enable</description>
+              <name>USB1OTGHSEN</name>
+              <description>USB1OTG (OTG_HS1) Peripheral Clocks Enable</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB1ULPIEN</name>
+              <name>USB1OTGHSULPIEN</name>
               <description>USB_PHY1 Clocks Enable</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2OTGEN</name>
+              <name>USB2OTGHSEN</name>
               <description>USB2OTG Peripheral Clocks
               Enable</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2ULPIEN</name>
+              <name>USB2OTGHSULPIEN</name>
               <description>USB_PHY2 Clocks Enable</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
@@ -45033,27 +45051,26 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB1OTGEN</name>
-              <description>USB1OTG Peripheral Clocks
-              Enable</description>
+              <name>USB1OTGHSEN</name>
+              <description>USB1OTG (OTG_HS1) Peripheral Clocks Enable</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB1ULPIEN</name>
+              <name>USB1OTGHSULPIEN</name>
               <description>USB_PHY1 Clocks Enable</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2OTGEN</name>
+              <name>USB2OTGHSEN</name>
               <description>USB2OTG Peripheral Clocks
               Enable</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2ULPIEN</name>
+              <name>USB2OTGHSULPIEN</name>
               <description>USB_PHY2 Clocks Enable</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
@@ -45070,9 +45087,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CAMITFEN</name>
-              <description>CAMITF peripheral clock
-              enable</description>
+              <name>DCMIEN</name>
+              <description>DCMI peripheral clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -45134,9 +45150,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CAMITFEN</name>
-              <description>CAMITF peripheral clock
-              enable</description>
+              <name>DCMIEN</name>
+              <description>DCMI peripheral clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -53195,200 +53210,167 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>M1SR</name>
-          <displayName>M1SR</displayName>
-          <description>RAMECC monitor x status
-          register</description>
-          <addressOffset>0x24</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M1FAR</name>
-          <displayName>M1FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0x28</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M1FDRL</name>
-          <displayName>M1FDRL</displayName>
-          <description>RAMECC monitor x failing data low
-          register</description>
-          <addressOffset>0x2C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M1FDRH</name>
-          <displayName>M1FDRH</displayName>
-          <description>RAMECC monitor x failing data high
-          register</description>
-          <addressOffset>0x30</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M1FECR</name>
-          <displayName>M1FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M2CR</name>
           <displayName>M2CR</displayName>
           <description>RAMECC monitor x configuration
           register</description>
           <addressOffset>0x40</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M3CR</name>
+          <displayName>M3CR</displayName>
+          <description>RAMECC monitor x configuration
+          register</description>
+          <addressOffset>0x60</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M4CR</name>
+          <displayName>M4CR</displayName>
+          <description>RAMECC monitor x configuration
+          register</description>
+          <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M5CR</name>
+          <displayName>M5CR</displayName>
+          <description>RAMECC monitor x configuration
+          register</description>
+          <addressOffset>0xA0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1SR</name>
+          <displayName>M1SR</displayName>
+          <description>RAMECC monitor x status
+          register</description>
+          <addressOffset>0x24</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -53450,131 +53432,128 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>M2FAR</name>
-          <displayName>M2FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0x48</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M2FDRL</name>
-          <displayName>M2FDRL</displayName>
-          <description>RAMECC monitor x failing data low
-          register</description>
-          <addressOffset>0x4C</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M2FDRH</name>
-          <displayName>M2FDRH</displayName>
-          <description>RAMECC monitor x failing data high
-          register</description>
-          <addressOffset>0x50</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M2FECR</name>
-          <displayName>M2FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0x58</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M3CR</name>
-          <displayName>M3CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0x60</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M3SR</name>
           <displayName>M3SR</displayName>
           <description>RAMECC monitor x status
           register</description>
           <addressOffset>0x64</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M4SR</name>
+          <displayName>M4SR</displayName>
+          <description>RAMECC monitor x status
+          register</description>
+          <addressOffset>0x84</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M5SR</name>
+          <displayName>M5SR</displayName>
+          <description>RAMECC monitor x status
+          register</description>
+          <addressOffset>0xA4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1FAR</name>
+          <displayName>M1FAR</displayName>
+          <description>RAMECC monitor x failing address
+          register</description>
+          <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M2FAR</name>
+          <displayName>M2FAR</displayName>
+          <description>RAMECC monitor x failing address
+          register</description>
+          <addressOffset>0x48</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000000</resetValue>
@@ -53594,12 +53573,84 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           register</description>
           <addressOffset>0x68</addressOffset>
           <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M4FAR</name>
+          <displayName>M4FAR</displayName>
+          <description>RAMECC monitor x failing address
+          register</description>
+          <addressOffset>0x88</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M5FAR</name>
+          <displayName>M5FAR</displayName>
+          <description>RAMECC monitor x failing address
+          register</description>
+          <addressOffset>0xA8</addressOffset>
+          <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
               <name>FADD</name>
               <description>ECC error failing address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1FDRL</name>
+          <displayName>M1FDRL</displayName>
+          <description>RAMECC monitor x failing data low
+          register</description>
+          <addressOffset>0x2C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M2FDRL</name>
+          <displayName>M2FDRL</displayName>
+          <description>RAMECC monitor x failing data low
+          register</description>
+          <addressOffset>0x4C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -53624,83 +53675,47 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>M3FDRH</name>
-          <displayName>M3FDRH</displayName>
+          <name>M4FDRL</name>
+          <displayName>M4FDRL</displayName>
+          <description>RAMECC monitor x failing data low
+          register</description>
+          <addressOffset>0x8C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M5FDRL</name>
+          <displayName>M5FDRL</displayName>
+          <description>RAMECC monitor x failing data low
+          register</description>
+          <addressOffset>0xAC</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1FDRH</name>
+          <displayName>M1FDRH</displayName>
           <description>RAMECC monitor x failing data high
           register</description>
-          <addressOffset>0x70</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M3FECR</name>
-          <displayName>M3FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0x7C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M4CR</name>
-          <displayName>M4CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0x80</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M4SR</name>
-          <displayName>M4SR</displayName>
-          <description>RAMECC monitor x status
-          register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M4FAR</name>
-          <displayName>M4FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0x88</addressOffset>
+          <addressOffset>0x30</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000000</resetValue>
@@ -53715,13 +53730,32 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>M4FDRL</name>
-          <displayName>M4FDRL</displayName>
-          <description>RAMECC monitor x failing data low
+          <name>M2FDRH</name>
+          <displayName>M2FDRH</displayName>
+          <description>RAMECC monitor x failing data high
           register</description>
-          <addressOffset>0x8C</addressOffset>
+          <addressOffset>0x50</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit
+              memory)</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M3FDRH</name>
+          <displayName>M3FDRH</displayName>
+          <description>RAMECC monitor x failing data high
+          register</description>
+          <addressOffset>0x70</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -53753,103 +53787,84 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
+          <name>M5FDRH</name>
+          <displayName>M5FDRH</displayName>
+          <description>RAMECC monitor x failing data high
+          register</description>
+          <addressOffset>0xB0</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FEC</name>
+              <description>Failing error code</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1FECR</name>
+          <displayName>M1FECR</displayName>
+          <description>RAMECC monitor x failing ECC error code
+          register</description>
+          <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FEC</name>
+              <description>Failing error code</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M2FECR</name>
+          <displayName>M2FECR</displayName>
+          <description>RAMECC monitor x failing ECC error code
+          register</description>
+          <addressOffset>0x58</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FEC</name>
+              <description>Failing error code</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M3FECR</name>
+          <displayName>M3FECR</displayName>
+          <description>RAMECC monitor x failing ECC error code
+          register</description>
+          <addressOffset>0x7C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FEC</name>
+              <description>Failing error code</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>M4FECR</name>
           <displayName>M4FECR</displayName>
           <description>RAMECC monitor x failing ECC error code
           register</description>
           <alternateRegister>M4FDRH</alternateRegister>
           <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5CR</name>
-          <displayName>M5CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0xA0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5SR</name>
-          <displayName>M5SR</displayName>
-          <description>RAMECC monitor x status
-          register</description>
-          <addressOffset>0xA4</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FAR</name>
-          <displayName>M5FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0xA8</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FDRL</name>
-          <displayName>M5FDRL</displayName>
-          <description>RAMECC monitor x failing data low
-          register</description>
-          <addressOffset>0xAC</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FDRH</name>
-          <displayName>M5FDRH</displayName>
-          <description>RAMECC monitor x failing data high
-          register</description>
-          <addressOffset>0xB0</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000000</resetValue>
@@ -55010,7 +55025,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
       <baseAddress>0x52008000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x1000</size>
+        <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
@@ -99921,7 +99936,7 @@ Minimum value is 16</description>
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -99940,7 +99955,7 @@ Minimum value is 16</description>
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>

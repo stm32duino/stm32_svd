@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32L4x6</name>
-  <version>2.3</version>
+  <version>2.4</version>
   <description>STM32L4x6</description>
   <cpu>
     <name>CM4</name>
@@ -35818,6 +35818,11 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
         <name>EXTI15_10</name>
         <description>EXTI Lines 10 to 15 interrupts</description>
         <value>40</value>
+      </interrupt>
+      <interrupt>
+            <name>FPU</name>
+            <description>Floating point interrupt</description>
+            <value>81</value>
       </interrupt>
       <registers>
         <register>

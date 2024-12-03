@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    <name>STM32L496</name>
-   <version>1.6</version>
+   <version>1.7</version>
    <description>STM32L496</description>
   <cpu>
     <name>CM4</name>
@@ -15691,11 +15691,6 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
             <size>0x400</size>
             <usage>registers</usage>
          </addressBlock>
-         <interrupt>
-            <name>AES</name>
-            <description>AES global interrupt</description>
-            <value>79</value>
-         </interrupt>
          <registers>
             <register>
                <name>CR</name>
@@ -33032,6 +33027,11 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
             <name>EXTI15_10</name>
             <description>EXTI Lines 10 to 15 interrupts</description>
             <value>40</value>
+         </interrupt>
+         <interrupt>
+            <name>FPU</name>
+            <description>Floating point interrupt</description>
+            <value>81</value>
          </interrupt>
          <registers>
             <register>
