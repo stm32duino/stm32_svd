@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32H730</name>
-  <version>1.4</version>
+  <version>1.7</version>
   <description>STM32H730</description>
   <cpu>
     <name>CM7</name>
@@ -42,7 +42,7 @@ Copyright (c) 2024 STMicroelectronics.
         <baseAddress>0x40022000</baseAddress>
         <addressBlock>
           <offset>0x0</offset>
-          <size>0x400</size>
+          <size>0xCC</size>
           <usage>registers</usage>
         </addressBlock>
         <registers>
@@ -4134,7 +4134,7 @@ Note: The software is allowed to write these bits only when ADEN=1, ADSTART=0 an
       <baseAddress>0x40022300</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x100</size>
+        <size>0x14</size>
         <usage>registers</usage>
       </addressBlock>
 	  <interrupt>
@@ -4420,7 +4420,7 @@ Note: The software is allowed to write these bits only when ADEN=1, ADSTART=0 an
         <baseAddress>0x58026000</baseAddress>
 		<addressBlock>
           <offset>0x0</offset>
-          <size>0x400</size>
+          <size>0xB8</size>
           <usage>registers</usage>
         </addressBlock>
 		<interrupt>
@@ -8002,7 +8002,7 @@ Note: The software is allowed to write these bits only when ADEN = 1, ADSTART = 
         <baseAddress>0x58026300</baseAddress>
 		<addressBlock>
           <offset>0x0</offset>
-          <size>0x400</size>
+          <size>0x14</size>
           <usage>registers</usage>
         </addressBlock>
         <registers>
@@ -51753,6 +51753,1795 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
       </registers>
     </peripheral>
     <peripheral>
+      <name>HASH</name>
+      <description>HASH address block description</description>
+      <groupName>HASH</groupName>
+      <baseAddress>0x48021400</baseAddress>
+      <addressBlock>
+        <offset>0x0</offset>
+        <size>0x330</size>
+        <usage>registers</usage>
+      </addressBlock>
+	  <interrupt>
+        <name>HASH_RNG</name>
+        <description>HASH OR RNG interrupt </description>
+         <value>80</value>
+      </interrupt>
+      <registers>
+        <register>
+          <name>HASH_CR</name>
+          <displayName>HASH_CR</displayName>
+          <description>HASH control register</description>
+          <addressOffset>0x00</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>INIT</name>
+              <description>Initialize message digest calculation
+</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>DMAE</name>
+              <description>DMA enable
+</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>DMA transfers disabled</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>DMA transfers enabled.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>DATATYPE</name>
+              <description>Data type selection
+</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>2</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>32-bit data.</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>16-bit data, or half-word.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x2</name>
+                  <description>8-bit data, or bytes.</description>
+                  <value>0x2</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x3</name>
+                  <description>bit data, or bit-string.</description>
+                  <value>0x3</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>MODE</name>
+              <description>Mode selection
+</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>Hash mode selected</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>HMAC mode selected.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>ALGO0</name>
+              <description>Algorithm selection
+</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>SHA-1</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>MD5</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>NBW</name>
+              <description>Number of words already pushed
+</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>if DINNE=0, no word has been pushed into the DIN buffer (both HASH_DIN register and IN FIFO are empty), otherwise one word has been pushed into the DIN buffer (HASH_DIN register contains one word and IN FIFO is empty)</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>two words have been pushed into the DIN buffer (that is HASH_DIN register and the IN FIFO contain one word each)</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0xF</name>
+                  <description>16 words have been pushed into the DIN buffer.</description>
+                  <value>0xF</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>DINNE</name>
+              <description>DIN not empty
+</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>No data are present in the data input buffer</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>The input buffer contains at least one word of data</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>MDMAT</name>
+              <description>Multiple DMA transfers
+</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>DCAL is automatically set at the end of a DMA transfer.</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>DCAL is not automatically set at the end of a DMA transfer.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>LKEY</name>
+              <description>Long key selection
+</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>the HMAC key is shorter or equal to 64 bytes.</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>the HMAC key is longer than 64 bytes.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>ALGO1</name>
+              <description>Algorithm selection
+</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>SHA-1</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>MD5</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_DIN</name>
+          <displayName>HASH_DIN</displayName>
+          <description>HASH data input register</description>
+          <addressOffset>0x04</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>DATAIN</name>
+              <description>Data input
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_STR</name>
+          <displayName>HASH_STR</displayName>
+          <description>HASH start register</description>
+          <addressOffset>0x08</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>NBLW</name>
+              <description>Number of valid bits in the last word
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>5</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x00</name>
+                  <description>All 32 bits of the last data written are valid message bits that is M[31:0]</description>
+                  <value>0x00</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x01</name>
+                  <description>Only one bit of the last data written (after swapping) is valid that is M[0]</description>
+                  <value>0x01</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x02</name>
+                  <description>Only two bits of the last data written (after swapping) are valid that is M[1:0]</description>
+                  <value>0x02</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x03</name>
+                  <description>Only three bits of the last data written (after swapping) are valid that is M[2:0]</description>
+                  <value>0x03</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1F</name>
+                  <description>Only 31 bits of the last data written (after swapping) are valid that is M[30:0]</description>
+                  <value>0x1F</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>DCAL</name>
+              <description>Digest calculation
+</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HRA0</name>
+          <displayName>HASH_HRA0</displayName>
+          <description>HASH aliased digest register 0</description>
+          <addressOffset>0xC</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H0</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HRA1</name>
+          <displayName>HASH_HRA1</displayName>
+          <description>HASH aliased digest register 1</description>
+          <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H1</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HRA2</name>
+          <displayName>HASH_HRA2</displayName>
+          <description>HASH aliased digest register 2</description>
+          <addressOffset>0x14</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H2</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HRA3</name>
+          <displayName>HASH_HRA3</displayName>
+          <description>HASH aliased digest register 3</description>
+          <addressOffset>0x18</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H3</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HRA4</name>
+          <displayName>HASH_HRA4</displayName>
+          <description>HASH aliased digest register 4</description>
+          <addressOffset>0x1C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H4</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_IMR</name>
+          <displayName>HASH_IMR</displayName>
+          <description>HASH interrupt enable register</description>
+          <addressOffset>0x20</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>DINIE</name>
+              <description>Data input interrupt enable</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>Data input interrupt disabled</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>Data input interrupt enabled</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>DCIE</name>
+              <description>Digest calculation completion interrupt enable</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>Digest calculation completion interrupt disabled</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>Digest calculation completion interrupt enabled.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_SR</name>
+          <displayName>HASH_SR</displayName>
+          <description>HASH status register</description>
+          <addressOffset>0x24</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000001</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>DINIS</name>
+              <description>Data input interrupt status
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>Less than 16 locations are free in the input buffer</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>A new block can be entered into the input buffer.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>DCIS</name>
+              <description>Digest calculation completion interrupt status
+</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-write</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>No digest available in the HASH_HRx registers (zeros are returned)</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>Digest calculation complete, a digest is available in the HASH_HRx registers.</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>DMAS</name>
+              <description>DMA Status
+</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>DMA interface is disabled (DMAE=0) and no transfer is ongoing</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>DMA interface is enabled (DMAE=1) or a transfer is ongoing</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>BUSY</name>
+              <description>Busy bit</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+              <access>read-only</access>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>B_0x0</name>
+                  <description>No block is currently being processed</description>
+                  <value>0x0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>B_0x1</name>
+                  <description>The hash core is processing a block of data</description>
+                  <value>0x1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR0</name>
+          <displayName>HASH_CSR0</displayName>
+          <description>HASH context swap register 0</description>
+          <addressOffset>0xF8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS0</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR1</name>
+          <displayName>HASH_CSR1</displayName>
+          <description>HASH context swap register 1</description>
+          <addressOffset>0xFC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS1</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR2</name>
+          <displayName>HASH_CSR2</displayName>
+          <description>HASH context swap register 2</description>
+          <addressOffset>0x100</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS2</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR3</name>
+          <displayName>HASH_CSR3</displayName>
+          <description>HASH context swap register 3</description>
+          <addressOffset>0x104</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS3</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR4</name>
+          <displayName>HASH_CSR4</displayName>
+          <description>HASH context swap register 4</description>
+          <addressOffset>0x108</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS4</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR5</name>
+          <displayName>HASH_CSR5</displayName>
+          <description>HASH context swap register 5</description>
+          <addressOffset>0x10C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS5</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR6</name>
+          <displayName>HASH_CSR6</displayName>
+          <description>HASH context swap register 6</description>
+          <addressOffset>0x110</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS6</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR7</name>
+          <displayName>HASH_CSR7</displayName>
+          <description>HASH context swap register 7</description>
+          <addressOffset>0x114</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS7</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR8</name>
+          <displayName>HASH_CSR8</displayName>
+          <description>HASH context swap register 8</description>
+          <addressOffset>0x118</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS8</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR9</name>
+          <displayName>HASH_CSR9</displayName>
+          <description>HASH context swap register 9</description>
+          <addressOffset>0x11C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS9</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR10</name>
+          <displayName>HASH_CSR10</displayName>
+          <description>HASH context swap register 10</description>
+          <addressOffset>0x120</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS10</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR11</name>
+          <displayName>HASH_CSR11</displayName>
+          <description>HASH context swap register 11</description>
+          <addressOffset>0x124</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS11</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR12</name>
+          <displayName>HASH_CSR12</displayName>
+          <description>HASH context swap register 12</description>
+          <addressOffset>0x128</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS12</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR13</name>
+          <displayName>HASH_CSR13</displayName>
+          <description>HASH context swap register 13</description>
+          <addressOffset>0x12C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS13</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR14</name>
+          <displayName>HASH_CSR14</displayName>
+          <description>HASH context swap register 14</description>
+          <addressOffset>0x130</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS14</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR15</name>
+          <displayName>HASH_CSR15</displayName>
+          <description>HASH context swap register 15</description>
+          <addressOffset>0x134</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS15</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR16</name>
+          <displayName>HASH_CSR16</displayName>
+          <description>HASH context swap register 16</description>
+          <addressOffset>0x138</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS16</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR17</name>
+          <displayName>HASH_CSR17</displayName>
+          <description>HASH context swap register 17</description>
+          <addressOffset>0x13C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS17</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR18</name>
+          <displayName>HASH_CSR18</displayName>
+          <description>HASH context swap register 18</description>
+          <addressOffset>0x140</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS18</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR19</name>
+          <displayName>HASH_CSR19</displayName>
+          <description>HASH context swap register 19</description>
+          <addressOffset>0x144</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS19</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR20</name>
+          <displayName>HASH_CSR20</displayName>
+          <description>HASH context swap register 20</description>
+          <addressOffset>0x148</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS20</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR21</name>
+          <displayName>HASH_CSR21</displayName>
+          <description>HASH context swap register 21</description>
+          <addressOffset>0x14C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS21</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR22</name>
+          <displayName>HASH_CSR22</displayName>
+          <description>HASH context swap register 22</description>
+          <addressOffset>0x150</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS22</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR23</name>
+          <displayName>HASH_CSR23</displayName>
+          <description>HASH context swap register 23</description>
+          <addressOffset>0x154</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS23</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR24</name>
+          <displayName>HASH_CSR24</displayName>
+          <description>HASH context swap register 24</description>
+          <addressOffset>0x158</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS24</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR25</name>
+          <displayName>HASH_CSR25</displayName>
+          <description>HASH context swap register 25</description>
+          <addressOffset>0x15C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS25</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR26</name>
+          <displayName>HASH_CSR26</displayName>
+          <description>HASH context swap register 26</description>
+          <addressOffset>0x160</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS26</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR27</name>
+          <displayName>HASH_CSR27</displayName>
+          <description>HASH context swap register 27</description>
+          <addressOffset>0x164</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS27</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR28</name>
+          <displayName>HASH_CSR28</displayName>
+          <description>HASH context swap register 28</description>
+          <addressOffset>0x168</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS28</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR29</name>
+          <displayName>HASH_CSR29</displayName>
+          <description>HASH context swap register 29</description>
+          <addressOffset>0x16C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS29</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR30</name>
+          <displayName>HASH_CSR30</displayName>
+          <description>HASH context swap register 30</description>
+          <addressOffset>0x170</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS30</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR31</name>
+          <displayName>HASH_CSR31</displayName>
+          <description>HASH context swap register 31</description>
+          <addressOffset>0x174</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS31</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR32</name>
+          <displayName>HASH_CSR32</displayName>
+          <description>HASH context swap register 32</description>
+          <addressOffset>0x178</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS32</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR33</name>
+          <displayName>HASH_CSR33</displayName>
+          <description>HASH context swap register 33</description>
+          <addressOffset>0x17C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS33</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR34</name>
+          <displayName>HASH_CSR34</displayName>
+          <description>HASH context swap register 34</description>
+          <addressOffset>0x180</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS34</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR35</name>
+          <displayName>HASH_CSR35</displayName>
+          <description>HASH context swap register 35</description>
+          <addressOffset>0x184</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS35</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR36</name>
+          <displayName>HASH_CSR36</displayName>
+          <description>HASH context swap register 36</description>
+          <addressOffset>0x188</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS36</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR37</name>
+          <displayName>HASH_CSR37</displayName>
+          <description>HASH context swap register 37</description>
+          <addressOffset>0x18C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS37</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR38</name>
+          <displayName>HASH_CSR38</displayName>
+          <description>HASH context swap register 38</description>
+          <addressOffset>0x190</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS38</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR39</name>
+          <displayName>HASH_CSR39</displayName>
+          <description>HASH context swap register 39</description>
+          <addressOffset>0x194</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS39</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR40</name>
+          <displayName>HASH_CSR40</displayName>
+          <description>HASH context swap register 40</description>
+          <addressOffset>0x198</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS40</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR41</name>
+          <displayName>HASH_CSR41</displayName>
+          <description>HASH context swap register 41</description>
+          <addressOffset>0x19C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS41</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR42</name>
+          <displayName>HASH_CSR42</displayName>
+          <description>HASH context swap register 42</description>
+          <addressOffset>0x1A0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS42</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR43</name>
+          <displayName>HASH_CSR43</displayName>
+          <description>HASH context swap register 43</description>
+          <addressOffset>0x1A4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS43</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR44</name>
+          <displayName>HASH_CSR44</displayName>
+          <description>HASH context swap register 44</description>
+          <addressOffset>0x1A8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS44</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR45</name>
+          <displayName>HASH_CSR45</displayName>
+          <description>HASH context swap register 45</description>
+          <addressOffset>0x1AC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS45</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR46</name>
+          <displayName>HASH_CSR46</displayName>
+          <description>HASH context swap register 46</description>
+          <addressOffset>0x1B0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS46</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR47</name>
+          <displayName>HASH_CSR47</displayName>
+          <description>HASH context swap register 47</description>
+          <addressOffset>0x1B4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS47</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR48</name>
+          <displayName>HASH_CSR48</displayName>
+          <description>HASH context swap register 48</description>
+          <addressOffset>0x1B8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS48</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR49</name>
+          <displayName>HASH_CSR49</displayName>
+          <description>HASH context swap register 49</description>
+          <addressOffset>0x1BC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS49</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR50</name>
+          <displayName>HASH_CSR50</displayName>
+          <description>HASH context swap register 50</description>
+          <addressOffset>0x1C0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS50</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR51</name>
+          <displayName>HASH_CSR51</displayName>
+          <description>HASH context swap register 51</description>
+          <addressOffset>0x1C4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS51</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR52</name>
+          <displayName>HASH_CSR52</displayName>
+          <description>HASH context swap register 52</description>
+          <addressOffset>0x1C8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS52</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_CSR53</name>
+          <displayName>HASH_CSR53</displayName>
+          <description>HASH context swap register 53</description>
+          <addressOffset>0x1CC</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>CS53</name>
+              <description>Context swap x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR0</name>
+          <displayName>HASH_HR0</displayName>
+          <description>HASH digest register 0</description>
+          <addressOffset>0x310</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H0</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR1</name>
+          <displayName>HASH_HR1</displayName>
+          <description>HASH digest register 1</description>
+          <addressOffset>0x314</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H1</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR2</name>
+          <displayName>HASH_HR2</displayName>
+          <description>HASH digest register 2</description>
+          <addressOffset>0x318</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H2</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR3</name>
+          <displayName>HASH_HR3</displayName>
+          <description>HASH digest register 3</description>
+          <addressOffset>0x31C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H3</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR4</name>
+          <displayName>HASH_HR4</displayName>
+          <description>HASH digest register 4</description>
+          <addressOffset>0x320</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H4</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR5</name>
+          <displayName>HASH_HR5</displayName>
+          <description>HASH supplementary digest register 5</description>
+          <addressOffset>0x324</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H5</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR6</name>
+          <displayName>HASH_HR6</displayName>
+          <description>HASH supplementary digest register 6</description>
+          <addressOffset>0x328</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H6</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>HASH_HR7</name>
+          <displayName>HASH_HR7</displayName>
+          <description>HASH supplementary digest register 7</description>
+          <addressOffset>0x32C</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFFFFFF</resetMask>
+          <fields>
+            <field>
+              <name>H7</name>
+              <description>Hash data x
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
       <name>I2C1</name>
       <description>I2C</description>
       <groupName>I2C</groupName>
@@ -73023,7 +74812,7 @@ Instruction to be sent to the external SPI device</description>
       <baseAddress>0x40040000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x3FFFF</size>
+        <size>0x130</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
@@ -80760,7 +82549,7 @@ Minimum value is 16</description>
       <baseAddress>0x40040E00</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x3F200</size>
+        <size>0x4</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
@@ -83604,30 +85393,21 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW) detected flag</description>
               <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -83643,31 +85423,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -83682,31 +85441,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -83721,6 +85459,42 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1FECR</name>
+          <displayName>M1FECR</displayName>
+          <description>RAMECC monitor x failing ECC error code
+          register</description>
+          <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M2CR</name>
+          <displayName>M2CR</displayName>
+          <description>RAMECC monitor x configuration
+          register</description>
+          <addressOffset>0x40</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
               <name>ECCSEIE</name>
               <description>ECC single error interrupt
               enable</description>
@@ -83745,72 +85519,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
               <name>ECCELEN</name>
               <description>ECC error latching enable</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M1FECR</name>
-          <displayName>M1FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M2CR</name>
-          <displayName>M2CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -83859,25 +85567,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -83892,25 +85585,10 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -83925,8 +85603,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -83943,8 +85621,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -83961,10 +85639,31 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -83979,10 +85678,25 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -84033,8 +85747,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84051,8 +85765,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84069,10 +85783,31 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -84087,10 +85822,25 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -84105,9 +85855,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84124,9 +85873,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84163,9 +85911,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84182,10 +85929,31 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -84200,10 +85968,25 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -84218,8 +86001,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84236,8 +86019,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84254,8 +86037,9 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit
+              memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -84286,7 +86070,7 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
       <description>ECC controller is associated to each RAM
       area</description>
       <groupName>RAMECC</groupName>
-      <baseAddress>0x48023000</baseAddress>
+      <baseAddress>0x48023000</baseAddress> 
       <addressBlock>
         <offset>0x0</offset>
         <size>0x1000</size>
@@ -84450,84 +86234,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4CR</name>
-          <displayName>M4CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0x80</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5CR</name>
-          <displayName>M5CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0xA0</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1SR</name>
           <displayName>M1SR</displayName>
           <description>RAMECC monitor x status
@@ -84627,72 +86333,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4SR</name>
-          <displayName>M4SR</displayName>
-          <description>RAMECC monitor x status
-          register</description>
-          <addressOffset>0x84</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5SR</name>
-          <displayName>M5SR</displayName>
-          <description>RAMECC monitor x status
-          register</description>
-          <addressOffset>0xA4</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1FAR</name>
           <displayName>M1FAR</displayName>
           <description>RAMECC monitor x failing address
@@ -84747,42 +86387,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4FAR</name>
-          <displayName>M4FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0x88</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FAR</name>
-          <displayName>M5FAR</displayName>
-          <description>RAMECC monitor x failing address
-          register</description>
-          <addressOffset>0xA8</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1FDRL</name>
           <displayName>M1FDRL</displayName>
           <description>RAMECC monitor x failing data low
@@ -84824,42 +86428,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           <description>RAMECC monitor x failing data low
           register</description>
           <addressOffset>0x6C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M4FDRL</name>
-          <displayName>M4FDRL</displayName>
-          <description>RAMECC monitor x failing data low
-          register</description>
-          <addressOffset>0x8C</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FDRL</name>
-          <displayName>M5FDRL</displayName>
-          <description>RAMECC monitor x failing data low
-          register</description>
-          <addressOffset>0xAC</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000000</resetValue>
@@ -84930,43 +86498,6 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
         <register>
-          <name>M4FDRH</name>
-          <displayName>M4FDRH</displayName>
-          <description>RAMECC monitor x failing data high
-          register</description>
-          <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FDRH</name>
-          <displayName>M5FDRH</displayName>
-          <description>RAMECC monitor x failing data high
-          register</description>
-          <addressOffset>0xB0</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
           <name>M1FECR</name>
           <displayName>M1FECR</displayName>
           <description>RAMECC monitor x failing ECC error code
@@ -85020,45 +86551,8 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
             </field>
           </fields>
         </register>
-        <register>
-          <name>M4FECR</name>
-          <displayName>M4FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <alternateRegister>M4FDRH</alternateRegister>
-          <addressOffset>0x90</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M5FECR</name>
-          <displayName>M5FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0xB4</addressOffset>
-          <size>0x20</size>
-          <access>read-only</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
-            </field>
-          </fields>
-        </register>
       </registers>
-    </peripheral>
+    </peripheral> 
     <peripheral>
       <name>RAMECC3</name>
       <description>ECC controller is associated to each RAM
@@ -94869,7 +96363,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
       <baseAddress>0x52007000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x1000</size>
+        <size>0x84</size>
         <usage>registers</usage>
       </addressBlock>
 	  <interrupt>
@@ -99317,7 +100811,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -99336,7 +100830,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>

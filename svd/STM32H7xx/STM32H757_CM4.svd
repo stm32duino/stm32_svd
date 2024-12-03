@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32H757_CM4</name>
-  <version>1.9</version>
+  <version>2.2</version>
   <description>STM32H757_CM4</description>
   <cpu>
     <name>CM4</name>
@@ -44004,6 +44004,30 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
+            <field>
+              <name>DTCM1EN</name>
+              <description>D1 DTCM1 block enable</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DTCM2EN</name>
+              <description>D1 DTCM2 block enable</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ITCM1EN</name>
+              <description>D1 DTCM2 block enable</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AXISRAMEN</name>
+              <description>AXISRAM block enable</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
           </fields>
         </register>
         <register>
@@ -44037,6 +44061,12 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitWidth>1</bitWidth>
             </field>
             <field>
+              <name>FLITFEN</name>
+              <description>D1 FLASH Interface Enable</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
               <name>FMCEN</name>
               <description>FMC Peripheral Clocks
               Enable</description>
@@ -44055,6 +44085,30 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <description>SDMMC1 and SDMMC1 Delay Clock
               Enable</description>
               <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DTCM1EN</name>
+              <description>D1 DTCM1 block enable</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DTCM2EN</name>
+              <description>D1 DTCM2 block enable</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ITCM1EN</name>
+              <description>D1 DTCM2 block enable</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AXISRAMEN</name>
+              <description>AXISRAM block enable</description>
+              <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -44088,6 +44142,12 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitWidth>1</bitWidth>
             </field>
             <field>
+              <name>ARTEN</name>
+              <description>ART Clock enable</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
               <name>ETH1MACEN</name>
               <description>Ethernet MAC bus interface Clock
               Enable</description>
@@ -44109,27 +44169,26 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB1OTGEN</name>
-              <description>USB1OTG Peripheral Clocks
-              Enable</description>
+              <name>USB1OTGHSEN</name>
+              <description>Enable of USB1OTG (OTG_HS1) peripheral clocks</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB1ULPIEN</name>
+              <name>USB1OTGHSULPIEN</name>
               <description>USB_PHY1 Clocks Enable</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2OTGEN</name>
+              <name>USB2OTGHSEN</name>
               <description>USB2OTG Peripheral Clocks
               Enable</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2ULPIEN</name>
+              <name>USB2OTGHSULPIEN</name>
               <description>USB_PHY2 Clocks Enable</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
@@ -44165,6 +44224,12 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitWidth>1</bitWidth>
             </field>
             <field>
+              <name>ARTEN</name>
+              <description>ART Clock enable</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
               <name>ETH1MACEN</name>
               <description>Ethernet MAC bus interface Clock
               Enable</description>
@@ -44186,27 +44251,26 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB1OTGEN</name>
-              <description>USB1OTG Peripheral Clocks
-              Enable</description>
+              <name>USB1OTGHSEN</name>
+              <description>Enable of USB1OTG (OTG_HS1) peripheral clocks</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB1ULPIEN</name>
+              <name>USB1OTGHSULPIEN</name>
               <description>USB_PHY1 Clocks Enable</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2OTGEN</name>
+              <name>USB2OTGHSEN</name>
               <description>USB2OTG Peripheral Clocks
               Enable</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>USB2ULPIEN</name>
+              <name>USB2OTGHSULPIEN</name>
               <description>USB_PHY2 Clocks Enable</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
@@ -44223,9 +44287,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CAMITFEN</name>
-              <description>CAMITF peripheral clock
-              enable</description>
+              <name>DCMIEN</name>
+              <description>DCMI peripheral clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -44287,9 +44350,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>CAMITFEN</name>
-              <description>CAMITF peripheral clock
-              enable</description>
+              <name>DCMIEN</name>
+              <description>DCMI peripheral clock enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
@@ -101339,7 +101401,7 @@ Minimum value is 16</description>
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -101358,7 +101420,7 @@ Minimum value is 16</description>
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -109746,30 +109808,21 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected flag</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW) detected flag</description>
               <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -109785,31 +109838,10 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -109824,31 +109856,10 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>ECCSEIE</name>
-              <description>ECC single error interrupt
-              enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEIE</name>
-              <description>ECC double error interrupt
-              enable</description>
-              <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCDEBWIE</name>
-              <description>ECC double error on byte write (BW)
-              interrupt enable</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>ECCELEN</name>
-              <description>ECC error latching enable</description>
-              <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -109863,6 +109874,42 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M1FECR</name>
+          <displayName>M1FECR</displayName>
+          <description>RAMECC monitor x failing ECC error code
+          register</description>
+          <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>32</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>M2CR</name>
+          <displayName>M2CR</displayName>
+          <description>RAMECC monitor x configuration
+          register</description>
+          <addressOffset>0x40</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
               <name>ECCSEIE</name>
               <description>ECC single error interrupt
               enable</description>
@@ -109887,72 +109934,6 @@ Minimum value is 16</description>
               <name>ECCELEN</name>
               <description>ECC error latching enable</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M1FECR</name>
-          <displayName>M1FECR</displayName>
-          <description>RAMECC monitor x failing ECC error code
-          register</description>
-          <addressOffset>0x34</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>M2CR</name>
-          <displayName>M2CR</displayName>
-          <description>RAMECC monitor x configuration
-          register</description>
-          <addressOffset>0x40</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
@@ -110001,25 +109982,10 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -110034,25 +110000,10 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>SEDCF</name>
-              <description>ECC single error detected and corrected
-              flag</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEDF</name>
-              <description>ECC double error detected
-              flag</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DEBWDF</name>
-              <description>ECC double error on byte write (BW)
-              detected flag</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
+              <bitWidth>32</bitWidth>
             </field>
           </fields>
         </register>
@@ -110067,8 +110018,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110085,8 +110036,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110103,10 +110054,31 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -110121,10 +110093,25 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FADD</name>
-              <description>ECC error failing address</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -110175,8 +110162,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110193,8 +110180,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110211,10 +110198,31 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -110229,10 +110237,25 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAL</name>
-              <description>Failing data low</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -110247,9 +110270,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110266,9 +110288,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110305,9 +110326,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FDATAH</name>
-              <description>Failing data high (64-bit
-              memory)</description>
+              <name>FEC</name>
+              <description>Failing error code Failing error code</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110324,10 +110344,31 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <name>ECCSEIE</name>
+              <description>ECC single error interrupt
+              enable</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEIE</name>
+              <description>ECC double error interrupt
+              enable</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCDEBWIE</name>
+              <description>ECC double error on byte write (BW)
+              interrupt enable</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ECCELEN</name>
+              <description>ECC error latching enable</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -110342,10 +110383,25 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>SEDCF</name>
+              <description>ECC single error detected and corrected
+              flag</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>32</bitWidth>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEDF</name>
+              <description>ECC double error detected
+              flag</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>DEBWDF</name>
+              <description>ECC double error on byte write (BW)
+              detected flag</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
           </fields>
         </register>
@@ -110360,8 +110416,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FADD</name>
+              <description>ECC error failing address</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110378,8 +110434,8 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FDATAL</name>
+              <description>Failing data low</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>
@@ -110396,8 +110452,9 @@ Minimum value is 16</description>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
-              <name>FEC</name>
-              <description>Failing error code</description>
+              <name>FDATAH</name>
+              <description>Failing data high (64-bit
+              memory)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
             </field>

@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F767</name>
-  <version>1.7</version>
+  <version>1.8</version>
   <description>STM32F767</description>
   <cpu>
     <name>CM7</name>
@@ -38560,36 +38560,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         interrupts</description>
         <value>41</value>
       </interrupt>
-      <interrupt>
-        <name>OTG_FS_WKUP</name>
-        <description>USB On-The-Go FS Wakeup through EXTI line
-        interrupt</description>
-        <value>42</value>
-      </interrupt>
-      <interrupt>
-        <name>OTG_HS_EP1_OUT</name>
-        <description>USB On The Go HS End Point 1 Out global
-        interrupt</description>
-        <value>74</value>
-      </interrupt>
-      <interrupt>
-        <name>OTG_HS_EP1_IN</name>
-        <description>USB On The Go HS End Point 1 In global
-        interrupt</description>
-        <value>75</value>
-      </interrupt>
-      <interrupt>
-        <name>OTG_HS_WKUP</name>
-        <description>USB On The Go HS Wakeup through EXTI
-        interrupt</description>
-        <value>76</value>
-      </interrupt>
-      <interrupt>
-        <name>OTG_HS</name>
-        <description>USB On The Go HS global
-        interrupt</description>
-        <value>77</value>
-      </interrupt>
       <registers>
         <register>
           <name>IMR</name>
@@ -42648,6 +42618,11 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>HDMI_CEC</name>
+        <description>HDMI-CEC global interrupt</description>
+        <value>94</value>
+      </interrupt>
       <registers>
         <register>
           <name>CR</name>
@@ -47807,6 +47782,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         interrupt</description>
         <value>67</value>
       </interrupt>
+      <interrupt>
+        <name>OTG_FS_WKUP</name>
+        <description>USB On-The-Go FS Wakeup through EXTI line
+        interrupt</description>
+        <value>42</value>
+      </interrupt>
       <registers>
         <register>
           <name>OTG_FS_GOTGCTL</name>
@@ -49412,6 +49393,30 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>OTG_HS_EP1_OUT</name>
+        <description>USB On The Go HS End Point 1 Out global
+        interrupt</description>
+        <value>74</value>
+      </interrupt>
+      <interrupt>
+        <name>OTG_HS_EP1_IN</name>
+        <description>USB On The Go HS End Point 1 In global
+        interrupt</description>
+        <value>75</value>
+      </interrupt>
+      <interrupt>
+        <name>OTG_HS_WKUP</name>
+        <description>USB On The Go HS Wakeup through EXTI
+        interrupt</description>
+        <value>76</value>
+      </interrupt>
+      <interrupt>
+        <name>OTG_HS</name>
+        <description>USB On The Go HS global
+        interrupt</description>
+        <value>77</value>
+      </interrupt>
       <registers>
         <register>
           <name>OTG_HS_GOTGCTL</name>

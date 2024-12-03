@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32L4x5</name>
-  <version>2.1</version>
+  <version>2.2</version>
   <description>STM32L4x5</description>
   <cpu>
     <name>CM4</name>
@@ -25162,6 +25162,11 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>EXTI15_10</name>
         <description>EXTI Lines 10 to 15 interrupts</description>
         <value>40</value>
+      </interrupt>
+      <interrupt>
+            <name>FPU</name>
+            <description>Floating point interrupt</description>
+            <value>81</value>
       </interrupt>
       <registers>
         <register>

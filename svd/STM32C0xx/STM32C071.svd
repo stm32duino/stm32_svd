@@ -3645,7 +3645,7 @@ Note: Software can write these bits only when ADEN=1 (ADC is enabled and no cali
           <addressOffset>0x308</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -4449,7 +4449,7 @@ Refer to Section 7.4.4 for more details about FECAP usage.</description>
           <addressOffset>0x0C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -4719,7 +4719,7 @@ This bit enables/disables the clock to the counter of IWDG when the core is halt
           <addressOffset>0x0C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -7178,7 +7178,7 @@ Note: This bitfield is set and cleared by software. It must not be written when 
           <addressOffset>0x64</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -8386,7 +8386,7 @@ The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGC
           <addressOffset>0x144</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -11835,7 +11835,7 @@ Setting/clearing the bit unmasks/masks the CPU wakeup with interrupt request fro
           <addressOffset>0x094</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -39002,7 +39002,7 @@ Data byte received from the I&lt;sup&gt;2&lt;/sup&gt;C bus</description>
           <addressOffset>0x28</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -40965,7 +40965,7 @@ This bitfield retains information when the device is in Standby.</description>
           <addressOffset>0x7C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -44403,7 +44403,7 @@ Set and cleared by software to select the low-speed output clock:</description>
           <addressOffset>0x60</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0x00FFFFFF</resetMask>
           <fields>
             <field>
@@ -45895,7 +45895,7 @@ It is recommended to check and then clear TSOVF only after clearing the TSF bit.
           <addressOffset>0x5C</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -48388,7 +48388,7 @@ Note: Only applicable on STM32C071xx, reserved on the other products.</descripti
           <addressOffset>0xF0</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -52024,7 +52024,7 @@ Note: This bit can not be modified as long as LOCK level 1 has been programmed (
           <addressOffset>0x68</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -56649,7 +56649,7 @@ Others: Reserved</description>
           <addressOffset>0x68</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -59182,7 +59182,7 @@ Note: This bit can not be modified as long as LOCK level 1 has been programmed (
           <addressOffset>0x68</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -60833,7 +60833,7 @@ Note: This bit can not be modified as long as LOCK level 1 has been programmed (
           <addressOffset>0x68</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -64239,7 +64239,7 @@ Note: This register must be written only when TXE/TXFNF = 1.</description>
           <addressOffset>0x2C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -67088,7 +67088,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <addressOffset>0x58</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>
@@ -67338,7 +67338,7 @@ The timebase of the prescaler can be modified as follows:</description>
           <addressOffset>0x008</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		      <resetValue>0x00000000</resetValue>
+		  <resetValue>0x00000000</resetValue>
           <resetMask>0xFFFFFFFF</resetMask>
           <fields>
             <field>

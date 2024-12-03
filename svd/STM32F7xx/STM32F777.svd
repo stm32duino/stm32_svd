@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F777</name>
-  <version>1.7</version>
+  <version>1.8</version>
   <description>STM32F777</description>
   <cpu>
     <name>CM7</name>
@@ -42648,6 +42648,11 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>HDMI_CEC</name>
+        <description>HDMI-CEC global interrupt</description>
+        <value>94</value>
+      </interrupt>
       <registers>
         <register>
           <name>CR</name>
