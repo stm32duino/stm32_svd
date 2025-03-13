@@ -20,8 +20,8 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32C071</name>
-  <version>1.1</version>    
-  <description>STM32C071</description>  
+  <version>1.2</version>
+  <description>STM32C071</description>
   <cpu>
     <name>CM0+</name>
     <revision>r0p0</revision>
@@ -385,7 +385,7 @@ Note: The software is allowed to write this bit only when ADSTART bit is cleared
             <field>
               <name>AWD1IE</name>
               <description>Analog watchdog 1 interrupt enable
-This bit is set and cleared by software to enable/disable the analog watchdog interrupt. 
+This bit is set and cleared by software to enable/disable the analog watchdog interrupt.
 Note: The Software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -406,7 +406,7 @@ Note: The Software is allowed to write this bit only when ADSTART bit is cleared
             <field>
               <name>AWD2IE</name>
               <description>Analog watchdog 2 interrupt enable
-This bit is set and cleared by software to enable/disable the analog watchdog interrupt. 
+This bit is set and cleared by software to enable/disable the analog watchdog interrupt.
 Note: The Software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -427,7 +427,7 @@ Note: The Software is allowed to write this bit only when ADSTART bit is cleared
             <field>
               <name>AWD3IE</name>
               <description>Analog watchdog 3 interrupt enable
-This bit is set and cleared by software to enable/disable the analog watchdog interrupt. 
+This bit is set and cleared by software to enable/disable the analog watchdog interrupt.
 Note: The Software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -448,7 +448,7 @@ Note: The Software is allowed to write this bit only when ADSTART bit is cleared
             <field>
               <name>EOCALIE</name>
               <description>End of calibration interrupt enable
-This bit is set and cleared by software to enable/disable the end of calibration interrupt. 
+This bit is set and cleared by software to enable/disable the end of calibration interrupt.
 Note: The software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -686,7 +686,7 @@ For more details, refer to Section 16.6.5: Managing converted data using the DMA
             <field>
               <name>SCANDIR</name>
               <description>Scan sequence direction
-This bit is set and cleared by software to select the direction in which the channels is scanned in the sequence. It is effective only if CHSELMOD bit is cleared. 
+This bit is set and cleared by software to select the direction in which the channels is scanned in the sequence. It is effective only if CHSELMOD bit is cleared.
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -2456,7 +2456,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <description>1st conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no conversion is ongoing).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
@@ -2467,7 +2467,7 @@ Note: The software is allowed to write this bit only when ADSTART = 0 (which ens
               <description>2nd conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no conversion is ongoing).</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
@@ -2478,7 +2478,7 @@ Note: The software is allowed to write this bit only when ADSTART = 0 (which ens
               <description>3rd conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no conversion is ongoing).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>4</bitWidth>
@@ -2489,7 +2489,7 @@ Note: The software is allowed to write this bit only when ADSTART = 0 (which ens
               <description>4th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no conversion is ongoing).</description>
               <bitOffset>12</bitOffset>
               <bitWidth>4</bitWidth>
@@ -2500,7 +2500,7 @@ Note: The software is allowed to write this bit only when ADSTART = 0 (which ens
               <description>5th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no conversion is ongoing).</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
@@ -2511,7 +2511,7 @@ Note: The software is allowed to write this bit only when ADSTART = 0 (which ens
               <description>6th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no conversion is ongoing).</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>
@@ -2522,7 +2522,7 @@ Note: The software is allowed to write this bit only when ADSTART = 0 (which ens
               <description>7th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no conversion is ongoing).</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
@@ -3651,7 +3651,7 @@ Note: Software can write these bits only when ADEN=1 (ADC is enabled and no cali
             <field>
               <name>PRESC</name>
               <description>ADC prescaler
-Set and cleared by software to select the frequency of the clock to the ADC. 
+Set and cleared by software to select the frequency of the clock to the ADC.
 Other: Reserved
 Note: Software is allowed to write these bits only when the ADC is disabled (ADCAL = 0, ADSTART = 0, ADSTP = 0, ADDIS = 0 and ADEN = 0).</description>
               <bitOffset>18</bitOffset>
@@ -5535,7 +5535,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
               <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -5900,7 +5900,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
               <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -6265,7 +6265,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
               <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -6630,7 +6630,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
               <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -6995,7 +6995,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
               <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8818,7 +8818,7 @@ Note: The configurable lines are edge triggered; no glitch must be generated on 
               <name>FT0</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8840,7 +8840,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT1</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8862,7 +8862,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT2</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8884,7 +8884,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT3</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8906,7 +8906,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT4</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8928,7 +8928,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT5</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8950,7 +8950,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT6</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8972,7 +8972,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT7</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -8994,7 +8994,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT8</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -9016,7 +9016,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT9</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -9038,7 +9038,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT10</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -9060,7 +9060,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT11</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -9082,7 +9082,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT12</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
@@ -9104,7 +9104,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT13</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
@@ -9126,7 +9126,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT14</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -9148,7 +9148,7 @@ Note: If a falling edge on the configurable line occurs during writing of the re
               <name>FT15</name>
               <description>Falling trigger event configuration bit of configurable line x (x = 15 to 0).
 Each bit enables/disables the falling edge trigger for the event and interrupt on the corresponding line.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -10178,7 +10178,7 @@ Each bit is set upon a falling edge event generated by hardware or by software (
               <name>RT34</name>
               <description>Rising trigger event configuration bit of configurable line 34
 Each bit enables/disables the rising edge trigger for the event and interrupt on the line 34.
-This configurable line is edge triggered; no glitch must be generated on this inputs. 
+This configurable line is edge triggered; no glitch must be generated on this inputs.
 Note: If a rising edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Rising edge trigger can be set for a line with falling edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -10212,7 +10212,7 @@ Note: If a rising edge on the configurable line occurs during writing of the reg
               <name>FT34</name>
               <description>Falling trigger event configuration bit of configurable line 34.
 Each bit enables/disables the falling edge trigger for the event and interrupt on the line 34.
-The configurable lines are edge triggered; no glitch must be generated on these inputs. 
+The configurable lines are edge triggered; no glitch must be generated on these inputs.
 Note: If a falling edge on the configurable line occurs during writing of the register, the associated pending bit is not set. Falling edge trigger can be set for a line with rising edge trigger enabled. In this case, both edges generate a trigger.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -11883,7 +11883,7 @@ Setting/clearing this bit unmasks/masks the CPU wakeup with event generation on 
     </peripheral>
     <peripheral>
       <name>FLASH</name>
-      <description>Spider_FLASH register block</description>
+      <description>FLASH register block</description>
       <groupName>FLASH</groupName>
       <baseAddress>0x40022000</baseAddress>
       <addressBlock>
@@ -12087,7 +12087,7 @@ KEY2: 0x4C5D 6E7F</description>
             <field>
               <name>EOP</name>
               <description>End of operation
-Set by hardware when one or more flash memory operation (programming / erase) has been completed successfully. 
+Set by hardware when one or more flash memory operation (programming / erase) has been completed successfully.
 This bit is set only if the end of operation interrupts are enabled (EOPIE=1).
 Cleared by writing 1.</description>
               <bitOffset>0</bitOffset>
@@ -37555,7 +37555,7 @@ These bits are write-only. A read operation always returns 0x0000.</description>
             <field>
               <name>KEY</name>
               <description>Key value (write only, read 0x0000)
-These bits must be written by software at regular intervals with the key value 0xAAAA, otherwise the watchdog generates a reset when the counter reaches 0. 
+These bits must be written by software at regular intervals with the key value 0xAAAA, otherwise the watchdog generates a reset when the counter reaches 0.
 Writing the key value 0x5555 to enable access to the IWDG_PR, IWDG_RLR and IWDG_WINR registers (see Section 22.3.4: Register access protection)
 Writing the key value 0xCCCC starts the watchdog (except if the hardware watchdog option is selected)</description>
               <bitOffset>0</bitOffset>
@@ -38697,7 +38697,7 @@ Note: These bits can be written only when TEXTEN = 0.</description>
             <field>
               <name>TXE</name>
               <description>Transmit data register empty (transmitters)
-This bit is set by hardware when the I2C_TXDR register is empty. It is cleared when the next data to be sent is written in the I2C_TXDR register. 
+This bit is set by hardware when the I2C_TXDR register is empty. It is cleared when the next data to be sent is written in the I2C_TXDR register.
 This bit can be written to 1 by software in order to flush the transmit data register I2C_TXDR.
 Note: This bit is set by hardware when PE = 0.</description>
               <bitOffset>0</bitOffset>
@@ -39916,7 +39916,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PU0</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39926,7 +39926,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU1</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39936,7 +39936,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU2</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39946,7 +39946,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU3</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39956,7 +39956,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU4</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39966,7 +39966,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU5</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39976,7 +39976,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU6</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39986,7 +39986,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU7</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -39996,7 +39996,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU8</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40006,7 +40006,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU9</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40016,7 +40016,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU10</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40026,7 +40026,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU11</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40036,7 +40036,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU12</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40046,7 +40046,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU13</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40056,7 +40056,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU14</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40066,7 +40066,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU15</name>
               <description>Port B pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PB[i] I/O.
-On STM32C011xx, only PU7 and PU6 are available. 
+On STM32C011xx, only PU7 and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40088,7 +40088,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PD0</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40098,7 +40098,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD1</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40108,7 +40108,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD2</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40118,7 +40118,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD3</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40128,7 +40128,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD4</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40138,7 +40138,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD5</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40148,7 +40148,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD6</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40158,7 +40158,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD7</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40168,7 +40168,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD8</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40178,7 +40178,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD9</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40188,7 +40188,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD10</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40198,7 +40198,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD11</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40208,7 +40208,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD12</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40218,7 +40218,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD13</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40228,7 +40228,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD14</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40238,7 +40238,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD15</name>
               <description>Port B pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PB[i] I/O.
-On STM32C011xx, only PD7 and PD6 are available. 
+On STM32C011xx, only PD7 and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40260,7 +40260,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PU0</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40270,7 +40270,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU1</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40280,7 +40280,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU2</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40290,7 +40290,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU3</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40300,7 +40300,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU4</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40310,7 +40310,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU5</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40320,7 +40320,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU6</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40330,7 +40330,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU7</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40340,7 +40340,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU8</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40350,7 +40350,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU9</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40360,7 +40360,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU10</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40370,7 +40370,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU11</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40380,7 +40380,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU12</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40390,7 +40390,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU13</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40400,7 +40400,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU14</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40410,7 +40410,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU15</name>
               <description>Port C pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PC[i] I/O.
-On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available. 
+On STM32C011xx, only PU15 and PU14 are available. On STM32C031xx, only PU15 to PU13, PU7, and PU6 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40432,7 +40432,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PD0</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40442,7 +40442,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD1</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40452,7 +40452,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD2</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40462,7 +40462,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD3</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40472,7 +40472,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD4</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40482,7 +40482,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD5</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40492,7 +40492,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD6</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40502,7 +40502,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD7</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40512,7 +40512,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD8</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40522,7 +40522,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD9</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40532,7 +40532,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD10</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40542,7 +40542,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD11</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40552,7 +40552,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD12</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40562,7 +40562,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD13</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40572,7 +40572,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD14</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40582,7 +40582,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD15</name>
               <description>Port C pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PC[i] I/O.
-On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available. 
+On STM32C011xx, only PD15 and PD14 are available. On STM32C031xx, only PD15 to PD13, PD7, and PD6 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40604,7 +40604,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PU0</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40614,7 +40614,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU1</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40624,7 +40624,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU2</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40634,7 +40634,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU3</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40644,7 +40644,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU4</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40654,7 +40654,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU5</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40664,7 +40664,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU6</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PU3 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40674,7 +40674,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU8</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Only available on STM32C071xx. 
+Only available on STM32C071xx.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40684,7 +40684,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU9</name>
               <description>Port D pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PD[i] I/O.
-Only available on STM32C071xx. 
+Only available on STM32C071xx.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40706,7 +40706,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PD0</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40716,7 +40716,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD1</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40726,7 +40726,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD2</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40736,7 +40736,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD3</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40746,7 +40746,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD4</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40756,7 +40756,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD5</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40766,7 +40766,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD6</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available. 
+Not available on STM32C011xx. On STM32C031xx, only PD3 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40776,7 +40776,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD8</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Only available on STM32C071xx. 
+Only available on STM32C071xx.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40786,7 +40786,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD9</name>
               <description>Port D pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PD[i] I/O.
-Only available on STM32C071xx. 
+Only available on STM32C071xx.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40808,7 +40808,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PU0</name>
               <description>Port F pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PF[i] I/O.
-On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available. 
+On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40818,7 +40818,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU1</name>
               <description>Port F pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PF[i] I/O.
-On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available. 
+On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40828,7 +40828,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU2</name>
               <description>Port F pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PF[i] I/O.
-On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available. 
+On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40838,7 +40838,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PU3</name>
               <description>Port F pull-up bit i
 Setting PUi bit while the corresponding PDi bit is zero and the APC bit of the PWR_CR3 register is set activates a pull-up device on the PF[i] I/O.
-On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available. 
+On STM32C011xx, only PU2 is available. On STM32C031xx, only PU2 to PU0 are available.
 Note: For the same pin, this pull-up device must not be activated when a pull-down device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40860,7 +40860,7 @@ Note: For the same pin, this pull-up device must not be activated when a pull-do
               <name>PD0</name>
               <description>Port F pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PF[i] I/O.
-On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available. 
+On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40870,7 +40870,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD1</name>
               <description>Port F pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PF[i] I/O.
-On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available. 
+On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40880,7 +40880,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD2</name>
               <description>Port F pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PF[i] I/O.
-On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available. 
+On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
@@ -40890,7 +40890,7 @@ Note: For the same pin, this pull-down device must not be activated when a pull-
               <name>PD3</name>
               <description>Port F pull-down bit i
 Setting PDi bit while the APC bit of the PWR_CR3 register is set activates a pull-down device on the PF[i] I/O.
-On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available. 
+On STM32C011xx, only PD2 is available. On STM32C031xx, only PD2 to PD0 are available.
 Note: For the same pin, this pull-down device must not be activated when a pull-up device is set through the GPIOx_PUPDR register.</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -41133,7 +41133,7 @@ Kept high by hardware as long as the system is clocked with a clock derived from
               <name>HSIKERON</name>
               <description>HSI48 always-enable for peripheral kernels.
 Set and cleared by software.
-Setting the bit activates the HSI48 oscillator in Run and Stop modes, regardless of the HSION bit state. The HSI48 clock can only feed USART1, USART2, and I2C1 peripherals configured with HSI48 as kernel clock. 
+Setting the bit activates the HSI48 oscillator in Run and Stop modes, regardless of the HSION bit state. The HSI48 clock can only feed USART1, USART2, and I2C1 peripherals configured with HSI48 as kernel clock.
 Note: Keeping the HSI48 active in Stop mode allows speeding up the serial interface communication as the HSI48 clock is ready immediately upon exiting Stop mode.</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -41154,7 +41154,7 @@ Note: Keeping the HSI48 active in Stop mode allows speeding up the serial interf
             <field>
               <name>HSIRDY</name>
               <description>HSI48 clock ready flag
-Set by hardware when the HSI48 oscillator is enabled through HSION and ready to use (stable). 
+Set by hardware when the HSI48 oscillator is enabled through HSION and ready to use (stable).
 Note: Upon clearing HSION, HSIRDY goes low after six HSI48 clock cycles.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -41246,7 +41246,7 @@ Cleared by hardware to stop the HSE oscillator when entering Stop, or Standby, o
             <field>
               <name>HSERDY</name>
               <description>HSE clock ready flag
-Set by hardware to indicate that the HSE oscillator is stable and ready for use. 
+Set by hardware to indicate that the HSE oscillator is stable and ready for use.
 Note: Upon clearing HSEON, HSERDY goes low after six HSE clock cycles.</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
@@ -41742,7 +41742,7 @@ Note: Values above 0111 are only significant for STM32C071xx. On STM32C011xx and
             <field>
               <name>HSIUSB48CAL</name>
               <description>HSIUSB48 clock calibration
-These bits are initialized at startup with the factory-programmed HSIUSB48 calibration trim 
+These bits are initialized at startup with the factory-programmed HSIUSB48 calibration trim
 value.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>9</bitWidth>
@@ -42327,7 +42327,7 @@ Set and cleared by software.</description>
             <field>
               <name>FLASHRST</name>
               <description>Flash memory interface reset
-Set and cleared by software. 
+Set and cleared by software.
 This bit can only be set when the Flash memory is in power down mode.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -42902,7 +42902,7 @@ DMAMUX is enabled as long as at least one DMA peripheral is enabled.</descriptio
             <field>
               <name>FLASHEN</name>
               <description>Flash memory interface clock enable
-Set and cleared by software. 
+Set and cleared by software.
 This bit can only be cleared when the Flash memory is in power down mode.</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
@@ -44429,7 +44429,7 @@ Set and cleared by software to enable/disable the LSI oscillator:</description>
             <field>
               <name>LSIRDY</name>
               <description>LSI oscillator ready
-Set and cleared by hardware to indicate when the LSI oscillator is ready (stable): 
+Set and cleared by hardware to indicate when the LSI oscillator is ready (stable):
 After the LSION bit is cleared, LSIRDY goes low after 3 LSI oscillator clock cycles. This bit can be set even if LSION = 0 if the LSI is requested by the Clock Security System on LSE, by the Independent Watchdog or by the RTC.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -46070,7 +46070,7 @@ Note: These bits are not used in I&lt;sup&gt;2&lt;/sup&gt;S mode.</description>
             <field>
               <name>SPE</name>
               <description>SPI enable
-Note: When disabling the SPI, follow the procedure described in Procedure for disabling the SPI on page 789. 
+Note: When disabling the SPI, follow the procedure described in Procedure for disabling the SPI on page 789.
 Note: This bit is not used in I&lt;sup&gt;2&lt;/sup&gt;S mode.</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -46342,7 +46342,7 @@ Note: This bit is not used in I&lt;sup&gt;2&lt;/sup&gt;S mode and SPI TI mode.</
             <field>
               <name>NSSP</name>
               <description>NSS pulse management
-This bit is used in master mode only. it allows the SPI to generate an NSS pulse between two consecutive data when doing continuous transfers. In the case of a single data transfer, it forces the NSS pin high level after the transfer. 
+This bit is used in master mode only. it allows the SPI to generate an NSS pulse between two consecutive data when doing continuous transfers. In the case of a single data transfer, it forces the NSS pin high level after the transfer.
 It has no meaning if CPHA =  1 , or FRF =  1 .
 Note: 1. This bit must be written only when the SPI is disabled (SPE=0).
 Note: 2. This bit is not used in I&lt;sup&gt;2&lt;/sup&gt;S mode and SPI TI mode.</description>
@@ -46441,7 +46441,7 @@ This bit controls the generation of an interrupt when an error condition occurs 
               <name>DS</name>
               <description>Data size
 These bits configure the data length for SPI transfers.
-If software attempts to write one of the  Not used  values, they are forced to the value  0111 
+If software attempts to write one of the  Not used  values, they are forced to the value  0111
 (8-bit)
 Note: These bits are not used in I&lt;sup&gt;2&lt;/sup&gt;S mode.</description>
               <bitOffset>8</bitOffset>
@@ -46533,7 +46533,7 @@ Note: These bits are not used in I&lt;sup&gt;2&lt;/sup&gt;S mode.</description>
             <field>
               <name>FRXTH</name>
               <description>FIFO reception threshold
-This bit is used to set the threshold of the RXFIFO that triggers an RXNE event 
+This bit is used to set the threshold of the RXFIFO that triggers an RXNE event
 Note: This bit is not used in I&lt;sup&gt;2&lt;/sup&gt;S mode.</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
@@ -46824,7 +46824,7 @@ Note: These bits are not used in I S mode and in SPI receive-only mode while CRC
             <field>
               <name>FTLVL</name>
               <description>FIFO transmission level
-These bits are set and cleared by hardware. 
+These bits are set and cleared by hardware.
 Note: This bit is not used in I&lt;sup&gt;2&lt;/sup&gt;S mode.</description>
               <bitOffset>11</bitOffset>
               <bitWidth>2</bitWidth>
@@ -46910,7 +46910,7 @@ The CRC polynomial (0x0007) is the reset value of this register. Another polynom
             <field>
               <name>RXCRC</name>
               <description>Rx CRC register
-When CRC calculation is enabled, the RXCRC[15:0] bits contain the computed CRC value of the subsequently received bytes. This register is reset when the CRCEN bit in SPI1_CR1 register is written to 1. The CRC is calculated serially using the polynomial programmed in the SPI1_CRCPR register. 
+When CRC calculation is enabled, the RXCRC[15:0] bits contain the computed CRC value of the subsequently received bytes. This register is reset when the CRCEN bit in SPI1_CR1 register is written to 1. The CRC is calculated serially using the polynomial programmed in the SPI1_CRCPR register.
 Only the 8 LSB bits are considered when the CRC frame format is set to be 8-bit length (CRCL bit in the SPI1_CR1 is cleared). CRC calculation is done based on any CRC8 standard.
 The entire 16-bits of this register are considered when a 16-bit CRC frame format is selected (CRCL bit in the SPI1_CR1 register is set). CRC calculation is done based on any CRC16 standard.
 Note: A read to this register when the BSY Flag is set could return an incorrect value.
@@ -48712,7 +48712,7 @@ Note: This bit acts only on channels that have a complementary output.</descript
             <field>
               <name>MMS</name>
               <description>Master mode selection
-These bits allow selected information to be sent in master mode to slave timers for synchronization (TRGO). The combination is as follows: 
+These bits allow selected information to be sent in master mode to slave timers for synchronization (TRGO). The combination is as follows:
 Note: The clock of the slave timer or ADC must be enabled prior to receive events from the master timer, and must not be changed on-the-fly while triggers are received from the master timer.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
@@ -49054,7 +49054,7 @@ This bit is used to select the OCREF clear source.</description>
             <field>
               <name>TS</name>
               <description>TS[2:0]: Trigger selection
-This bit-field selects the trigger input to be used to synchronize the counter. 
+This bit-field selects the trigger input to be used to synchronize the counter.
 Others: Reserved
 See Table 73: TIM1 internal trigger connection on page 395 for more details on ITRx meaning for each Timer.
 Note: These bits must be changed only when they are not used (e.g. when SMS=000) to avoid wrong edge detections at the transition.</description>
@@ -49246,7 +49246,7 @@ External trigger signal ETRP frequency must be at most 1/4 of f&lt;sub&gt;CK_INT
             <field>
               <name>ECE</name>
               <description>External clock enable
-This bit enables External clock mode 2. 
+This bit enables External clock mode 2.
 Note: Setting the ECE bit has the same effect as selecting external clock mode 1 with TRGI connected to ETRF (SMS=111 and TS=00111).
 It is possible to simultaneously use external clock mode 2 with the following slave modes: reset mode, gated mode and trigger mode. Nevertheless, TRGI must not be connected to ETRF in this case (TS bits must not be 00111).
 Note: If external clock mode 1 and external clock mode 2 are enabled at the same time, the external clock input is ETRF.</description>
@@ -49612,7 +49612,7 @@ This bit selects whether ETR or ETR is used for trigger operations</description>
             <field>
               <name>UIF</name>
               <description>Update interrupt flag
-This bit is set by hardware on an update event. It is cleared by software. 
+This bit is set by hardware on an update event. It is cleared by software.
 At overflow or underflow regarding the repetition counter value (update if repetition counter = 0) and if the UDIS=0 in the TIMx_CR1 register.
 When CNT is reinitialized by software using the UG bit in TIMx_EGR register, if URS=0 and UDIS=0 in the TIMx_CR1 register.
 When CNT is reinitialized by a trigger event (refer to Section 17.4.3: TIM1 slave mode control register (TIM1_SMCR)), if URS=0 and UDIS=0 in the TIMx_CR1 register.</description>
@@ -49874,7 +49874,7 @@ This bit can be set by software, it is automatically cleared by hardware.</descr
             <field>
               <name>CC1G</name>
               <description>Capture/Compare 1 generation
-This bit is set by software in order to generate an event, it is automatically cleared by hardware. 
+This bit is set by software in order to generate an event, it is automatically cleared by hardware.
 If channel CC1 is configured as output:
 CC1IF flag is set, Corresponding interrupt or DMA request is sent if enabled.
 If channel CC1 is configured as input:
@@ -50015,7 +50015,7 @@ This bit is set by software in order to generate an event, it is automatically c
             <field>
               <name>CC1S</name>
               <description>Capture/Compare 1 Selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC1S bits are writable only when the channel is OFF (CC1E =  0  in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -50166,7 +50166,7 @@ This bit-field defines the frequency used to sample TI1 input and the length of 
             <field>
               <name>CC2S</name>
               <description>Capture/Compare 2 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC2S bits are writable only when the channel is OFF (CC2E =  0  in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -50226,7 +50226,7 @@ Refer to IC1F[3:0] description.</description>
             <field>
               <name>CC1S</name>
               <description>Capture/Compare 1 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC1S bits are writable only when the channel is OFF (CC1E =  0  in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -50295,7 +50295,7 @@ Note: These bits can not be modified as long as LOCK level 3 has been programmed
               </enumeratedValues>
             </field>
             <field>
-             
+
 			 <name>OC1M</name>
               <description>OC1M[2:0]: Output Compare 1 mode
 These bits define the behavior of the output reference signal OC1REF from which OC1 and OC1N are derived. OC1REF is active high whereas OC1 and OC1N active level depends on CC1P and CC1NP bits.
@@ -50346,7 +50346,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
                   <name>B_0x7</name>
                   <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. In downcounting, channel 1 is active as long as TIMx_CNT&gt;TIMx_CCR1 else inactive.</description>
                   <value>0x7</value>
-                </enumeratedValue>                
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -50371,7 +50371,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
             <field>
               <name>CC2S</name>
               <description>Capture/Compare 2 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC2S bits are writable only when the channel is OFF (CC2E =  0  in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -50460,7 +50460,7 @@ Refer to OC1CE description.</description>
             <field>
               <name>CC3S</name>
               <description>Capture/compare 3 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC3S bits are writable only when the channel is OFF (CC3E =  0  in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -50507,7 +50507,7 @@ Refer to IC1F[3:0] description.</description>
             <field>
               <name>CC4S</name>
               <description>Capture/Compare 4 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC4S bits are writable only when the channel is OFF (CC4E =  0  in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -50567,7 +50567,7 @@ Refer to IC1F[3:0] description.</description>
             <field>
               <name>CC3S</name>
               <description>Capture/Compare 3 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC3S bits are writable only when the channel is OFF (CC3E =  0  in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -50630,7 +50630,7 @@ Refer to OC1CE description.</description>
             <field>
               <name>CC4S</name>
               <description>Capture/Compare 4 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC4S bits are writable only when the channel is OFF (CC4E =  0  in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -51273,7 +51273,7 @@ Note: This bit can not be modified as long as LOCK level 1 has been programmed (
             <field>
               <name>MOE</name>
               <description>Main output enable
-This bit is cleared asynchronously by hardware as soon as one of the break inputs is active (BRK or BRK2). It is set by software or automatically depending on the AOE bit. It is acting only on the channels which are configured in output. 
+This bit is cleared asynchronously by hardware as soon as one of the break inputs is active (BRK or BRK2). It is set by software or automatically depending on the AOE bit. It is acting only on the channels which are configured in output.
 In response to a break event or if MOE is written to 0: OC and OCN outputs are disabled or forced to idle state depending on the OSSI bit.
 See OC/OCN enable description for more details (Section 17.4.11: TIM1 capture/compare enable register (TIM1_CCER)).</description>
               <bitOffset>15</bitOffset>
@@ -51669,7 +51669,7 @@ If the DMA Data Size is configured in bytes, the data is also transferred to 7 r
             <field>
               <name>DMAB</name>
               <description>DMA register for burst accesses
-A read or write operation to the DMAR register accesses the register located at the address (TIMx_CR1 address) + (DBA + DMA index) x 4 
+A read or write operation to the DMAR register accesses the register located at the address (TIMx_CR1 address) + (DBA + DMA index) x 4
 where TIMx_CR1 address is the address of the control register 1, DBA is the DMA base address configured in TIMx_DCR register, DMA index is automatically controlled by the DMA transfer, and ranges from 0 to DBL (DBL configured in TIMx_DCR).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
@@ -54390,7 +54390,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
             <field>
               <name>CEN</name>
               <description>Counter enable
-Note: External clock, gated mode and encoder mode can work only if the CEN bit has been previously set by software. However trigger mode can set the CEN bit automatically by hardware. 
+Note: External clock, gated mode and encoder mode can work only if the CEN bit has been previously set by software. However trigger mode can set the CEN bit automatically by hardware.
 CEN is cleared automatically in one-pulse mode, when an update event occurs.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -54824,7 +54824,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
                   <name>B_0x7</name>
                   <description>External Trigger input (ETRF)</description>
                   <value>0x7</value>
-                </enumeratedValue>               
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -55523,7 +55523,7 @@ This bit is set by software in order to generate an event, it is automatically c
             <field>
               <name>CC1S</name>
               <description>Capture/Compare 1 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -55674,7 +55674,7 @@ This bit-field defines the frequency used to sample TI1 input and the length of 
             <field>
               <name>CC2S</name>
               <description>Capture/compare 2 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC2S bits are writable only when the channel is OFF (CC2E = 0 in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -55732,7 +55732,7 @@ Note: CC2S bits are writable only when the channel is OFF (CC2E = 0 in TIMx_CCER
             <field>
               <name>CC1S</name>
               <description>Capture/Compare 1 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -55873,7 +55873,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
             <field>
               <name>CC2S</name>
               <description>Capture/Compare 2 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC2S bits are writable only when the channel is OFF (CC2E = 0 in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -55959,7 +55959,7 @@ refer to OC1M description on bits 6:4</description>
             <field>
               <name>CC3S</name>
               <description>Capture/Compare 3 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC3S bits are writable only when the channel is OFF (CC3E = 0 in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -56004,7 +56004,7 @@ Note: CC3S bits are writable only when the channel is OFF (CC3E = 0 in TIMx_CCER
             <field>
               <name>CC4S</name>
               <description>Capture/Compare 4 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC4S bits are writable only when the channel is OFF (CC4E = 0 in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -56062,7 +56062,7 @@ Note: CC4S bits are writable only when the channel is OFF (CC4E = 0 in TIMx_CCER
             <field>
               <name>CC3S</name>
               <description>Capture/Compare 3 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC3S bits are writable only when the channel is OFF (CC3E = 0 in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -56122,7 +56122,7 @@ Refer to OC1M description (bits 6:4 in TIMx_CCMR1 register)</description>
             <field>
               <name>CC4S</name>
               <description>Capture/Compare 4 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC4S bits are writable only when the channel is OFF (CC4E = 0 in TIMx_CCER).</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
@@ -56606,7 +56606,7 @@ This 5-bit vector defines the number of DMA transfers (the timer recognizes a bu
               <name>DMAB</name>
               <description>DMA register for burst accesses
 A read or write operation to the DMAR register accesses the register located at the address
-(TIMx_CR1 address) + (DBA + DMA index) x 4 
+(TIMx_CR1 address) + (DBA + DMA index) x 4
 where TIMx_CR1 address is the address of the control register 1, DBA is the DMA base address configured in TIMx_DCR register, DMA index is automatically controlled by the DMA transfer, and ranges from 0 to DBL (DBL configured in TIMx_DCR).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
@@ -57075,7 +57075,7 @@ The current value of the counter is captured in TIMx_CCR1 register. The CC1IF fl
             <field>
               <name>CC1S</name>
               <description>Capture/Compare 1 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
@@ -58368,7 +58368,7 @@ This bit-field defines the frequency used to sample TI1 input and the length of 
             <field>
               <name>CC1S</name>
               <description>Capture/Compare 1 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Others: Reserved
 Note: CC1S bits are writable only when the channel is OFF (CC1E =  0  in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
@@ -59113,7 +59113,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
               <name>DMAB</name>
               <description>DMA register for burst accesses
 A read or write operation to the DMAR register accesses the register located at the address
-(TIMx_CR1 address) + (DBA + DMA index) x 4 
+(TIMx_CR1 address) + (DBA + DMA index) x 4
 where TIMx_CR1 address is the address of the control register 1, DBA is the DMA base address configured in TIMx_DCR register, DMA index is automatically controlled by the DMA transfer, and ranges from 0 to DBL (DBL configured in TIMx_DCR).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
@@ -60019,7 +60019,7 @@ This bit-field defines the frequency used to sample TI1 input and the length of 
             <field>
               <name>CC1S</name>
               <description>Capture/Compare 1 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Others: Reserved
 Note: CC1S bits are writable only when the channel is OFF (CC1E =  0  in TIMx_CCER).</description>
               <bitOffset>0</bitOffset>
@@ -60764,7 +60764,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
               <name>DMAB</name>
               <description>DMA register for burst accesses
 A read or write operation to the DMAR register accesses the register located at the address
-(TIMx_CR1 address) + (DBA + DMA index) x 4 
+(TIMx_CR1 address) + (DBA + DMA index) x 4
 where TIMx_CR1 address is the address of the control register 1, DBA is the DMA base address configured in TIMx_DCR register, DMA index is automatically controlled by the DMA transfer, and ranges from 0 to DBL (DBL configured in TIMx_DCR).</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
@@ -60900,7 +60900,7 @@ Others: Reserved</description>
               <name>UE</name>
               <description>USART enable
 When this bit is cleared, the USART prescalers and outputs are stopped immediately, and all current operations are discarded. The USART configuration is kept, but all the USART_ISR status flags are reset. This bit is set and cleared by software.
-Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit. 
+Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit.
 Note: The DMA requests are also reset when UE = 0 so the DMA channel must be disabled before resetting the UE bit.
 Note: In Smartcard mode, (SCEN = 1), the CK is always available when CLKEN = 1, regardless of the UE bit value.</description>
               <bitOffset>0</bitOffset>
@@ -60925,7 +60925,7 @@ Note: In Smartcard mode, (SCEN = 1), the CK is always available when CLKEN = 1, 
 When this bit is cleared, the USART cannot wake up the MCU from low-power mode.
 When this bit is set, the USART can wake up the MCU from low-power mode.
 This bit is set and cleared by software.
-Note: It is recommended to set the UESM bit just before entering low-power mode and clear it when exit from low-power mode. 
+Note: It is recommended to set the UESM bit just before entering low-power mode and clear it when exit from low-power mode.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -61232,7 +61232,7 @@ Note: If the Driver Enable feature is not supported, this bit is reserved and mu
             <field>
               <name>DEAT</name>
               <description>Driver enable assertion time
-This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate). 
+This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate).
 This bitfield can only be written when the USART is disabled (UE = 0).
 Note: If the Driver Enable feature is not supported, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>21</bitOffset>
@@ -61373,7 +61373,7 @@ This bit is set and cleared by software.</description>
               <name>UE</name>
               <description>USART enable
 When this bit is cleared, the USART prescalers and outputs are stopped immediately, and all current operations are discarded. The USART configuration is kept, but all the USART_ISR status flags are reset. This bit is set and cleared by software.
-Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit. 
+Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit.
 Note: The DMA requests are also reset when UE = 0 so the DMA channel must be disabled before resetting the UE bit.
 Note: In Smartcard mode, (SCEN = 1), the CK pin is always available when CLKEN = 1, regardless of the UE bit value.</description>
               <bitOffset>0</bitOffset>
@@ -61398,7 +61398,7 @@ Note: In Smartcard mode, (SCEN = 1), the CK pin is always available when CLKEN =
 When this bit is cleared, the USART cannot wake up the MCU from low-power mode.
 When this bit is set, the USART can wake up the MCU from low-power mode.
 This bit is set and cleared by software.
-Note: It is recommended to set the UESM bit just before entering low-power mode and clear it when exit from low-power mode. 
+Note: It is recommended to set the UESM bit just before entering low-power mode and clear it when exit from low-power mode.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
@@ -61705,7 +61705,7 @@ Note: If the Driver Enable feature is not supported, this bit is reserved and mu
             <field>
               <name>DEAT</name>
               <description>Driver enable assertion time
-This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate). 
+This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate).
 This bitfield can only be written when the USART is disabled (UE = 0).
 Note: If the Driver Enable feature is not supported, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>21</bitOffset>
@@ -61846,7 +61846,7 @@ Note: When SPI slave mode is not supported, this bit is reserved and must be kep
             <field>
               <name>ADDM7</name>
               <description>7-bit address detection/4-bit address detection
-This bit is for selection between 4-bit address detection or 7-bit address detection. 
+This bit is for selection between 4-bit address detection or 7-bit address detection.
 This bit can only be written when the USART is disabled (UE = 0)
 Note: In 7-bit and 9-bit data modes, the address detection is done on 6-bit and 8-bit address (ADD[5:0] and ADD[7:0]) respectively.</description>
               <bitOffset>4</bitOffset>
@@ -61911,7 +61911,7 @@ Note: If LIN mode is not supported, this bit is reserved and must be kept at res
             <field>
               <name>LBCL</name>
               <description>Last bit clock pulse
-This bit is used to select whether the clock pulse associated with the last data bit transmitted (MSB) has to be output on the CK pin in synchronous mode. 
+This bit is used to select whether the clock pulse associated with the last data bit transmitted (MSB) has to be output on the CK pin in synchronous mode.
 The last bit is the 7th or 8th or 9th data bit transmitted depending on the 7 or 8 or 9 bit format selected by the M bit in the USART_CR1 register.
 This bit can only be written when the USART is disabled (UE = 0).
 Note: If synchronous mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
@@ -61956,7 +61956,7 @@ Note: If synchronous mode is not supported, this bit is reserved and must be kep
             <field>
               <name>CPOL</name>
               <description>Clock polarity
-This bit enables the user to select the polarity of the clock output on the CK pin in synchronous mode. It works in conjunction with the CPHA bit to produce the desired clock/data relationship 
+This bit enables the user to select the polarity of the clock output on the CK pin in synchronous mode. It works in conjunction with the CPHA bit to produce the desired clock/data relationship
 This bit can only be written when the USART is disabled (UE = 0).
 Note: If synchronous mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>10</bitOffset>
@@ -62082,7 +62082,7 @@ This bitfield can only be written when the USART is disabled (UE = 0).</descript
               <name>RXINV</name>
               <description>RX pin active level inversion
 This bit is set and cleared by software.
-This enables the use of an external inverter on the RX line. 
+This enables the use of an external inverter on the RX line.
 This bitfield can only be written when the USART is disabled (UE = 0).</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
@@ -62104,7 +62104,7 @@ This bitfield can only be written when the USART is disabled (UE = 0).</descript
               <name>TXINV</name>
               <description>TX pin active level inversion
 This bit is set and cleared by software.
-This enables the use of an external inverter on the TX line. 
+This enables the use of an external inverter on the TX line.
 This bitfield can only be written when the USART is disabled (UE = 0).</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
@@ -62332,7 +62332,7 @@ Note: If IrDA mode is not supported, this bit is reserved and must be kept at re
             <field>
               <name>HDSEL</name>
               <description>Half-duplex selection
-Selection of Single-wire Half-duplex mode 
+Selection of Single-wire Half-duplex mode
 This bit can only be written when the USART is disabled (UE = 0).</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -62519,7 +62519,7 @@ This bit can only be written when the USART is disabled (UE = 0).</description>
             <field>
               <name>OVRDIS</name>
               <description>Overrun disable
-This bit is used to disable the receive overrun detection. 
+This bit is used to disable the receive overrun detection.
 the ORE flag is not set and the new received data overwrites the previous content of the USART_RDR register. When FIFO mode is enabled, the RXFIFO is bypassed and data is written directly in USART_RDR register. Even when FIFO management is enabled, the RXNE flag is to be used.
 This bit can only be written when the USART is disabled (UE = 0).
 Note: This control bit enables checking the communication flow w/o reading the data</description>
@@ -62563,7 +62563,7 @@ Note: The reception errors are: parity error, framing error or noise error.</des
             <field>
               <name>DEM</name>
               <description>Driver enable mode
-This bit enables the user to activate the external transceiver control, through the DE signal. 
+This bit enables the user to activate the external transceiver control, through the DE signal.
 This bit can only be written when the USART is disabled (UE = 0).
 Note: If the Driver Enable feature is not supported, this bit is reserved and must be kept at reset value. Section 26.4: USART implementation on page 691.</description>
               <bitOffset>14</bitOffset>
@@ -62610,7 +62610,7 @@ This bitfield specifies the number of retries for transmission and reception in 
 In transmission mode, it specifies the number of automatic retransmission retries, before generating a transmission error (FE bit set).
 In reception mode, it specifies the number or erroneous reception trials, before generating a reception error (RXNE/RXFNE and PE bits set).
 This bitfield must be programmed only when the USART is disabled (UE = 0).
-When the USART is enabled (UE = 1), this bitfield may only be written to 0x0, in order to stop retransmission. 
+When the USART is enabled (UE = 1), this bitfield may only be written to 0x0, in order to stop retransmission.
 0x1 to 0x7: number of automatic retransmission attempts (before signaling error)
 Note: If Smartcard mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>17</bitOffset>
@@ -62627,7 +62627,7 @@ Note: If Smartcard mode is not supported, this bit is reserved and must be kept 
             <field>
               <name>WUS</name>
               <description>Wake-up from low-power mode interrupt flag selection
-This bitfield specifies the event which activates the WUF (wake-up from low-power mode flag). 
+This bitfield specifies the event which activates the WUF (wake-up from low-power mode flag).
 This bitfield can only be written when the USART is disabled (UE = 0).
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>20</bitOffset>
@@ -62904,7 +62904,7 @@ BRR[3] must be kept cleared.</description>
             <field>
               <name>GT</name>
               <description>Guard time value
-This bitfield is used to program the Guard time value in terms of number of baud clock periods. 
+This bitfield is used to program the Guard time value in terms of number of baud clock periods.
 This is used in Smartcard mode. The Transmission Complete flag is set after this guard time value.
 This bitfield can only be written when the USART is disabled (UE = 0).
 Note: If Smartcard mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
@@ -62939,12 +62939,12 @@ Note: This value must only be programmed once per received character.</descripti
               <name>BLEN</name>
               <description>Block length
 This bitfield gives the Block length in Smartcard T = 1 Reception. Its value equals the number of information characters + the length of the Epilogue Field (1-LEC/2-CRC) - 1.
-Examples: 
+Examples:
 BLEN = 0: 0 information characters + LEC
 BLEN = 1: 0 information characters + CRC
 BLEN = 255: 254 information characters + CRC (total 256 characters))
 In Smartcard mode, the Block length counter is reset when TXE = 0 (TXFE = 0 in case FIFO mode is enabled).
-This bitfield can be used also in other modes. In this case, the Block length counter is reset when RE = 0 (receiver disabled) and/or when the EOBCF bit is written to 1. 
+This bitfield can be used also in other modes. In this case, the Block length counter is reset when RE = 0 (receiver disabled) and/or when the EOBCF bit is written to 1.
 Note: This value can be programmed after the start of the block reception (using the data from the LEN character in the Prologue Field). It must be programmed only once per received block.</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
@@ -62965,7 +62965,7 @@ Note: This value can be programmed after the start of the block reception (using
             <field>
               <name>ABRRQ</name>
               <description>Auto baud rate request
-Writing 1 to this bit resets the ABRF and ABRE flags in the USART_ISR and requests an automatic baud rate measurement on the next received data frame. 
+Writing 1 to this bit resets the ABRF and ABRE flags in the USART_ISR and requests an automatic baud rate measurement on the next received data frame.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and must be kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63001,7 +63001,7 @@ This enables to discard the received data without reading them, and avoid an ove
               <name>TXFRQ</name>
               <description>Transmit data flush request
 When FIFO mode is disabled, writing  1  to this bit sets the TXE flag. This enables to discard the transmit data. This bit must be used only in Smartcard mode, when data have not been sent due to errors (NACK) and the FE flag is active in the USART_ISR register. If the USART does not support Smartcard mode, this bit is reserved and must be kept at reset value.
-When FIFO is enabled, TXFRQ bit is set to flush the whole FIFO. This sets the TXFE flag (Transmit FIFO empty, bit 23 in the USART_ISR register). Flushing the Transmit FIFO is supported in both UART and Smartcard modes. 
+When FIFO is enabled, TXFRQ bit is set to flush the whole FIFO. This sets the TXFE flag (Transmit FIFO empty, bit 23 in the USART_ISR register). Flushing the Transmit FIFO is supported in both UART and Smartcard modes.
 Note: In FIFO mode, the TXFNF flag is reset during the flush request until TxFIFO is empty in order to ensure that no data are written in the data register.</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63022,7 +63022,7 @@ Note: In FIFO mode, the TXFNF flag is reset during the flush request until TxFIF
             <field>
               <name>PE</name>
               <description>Parity error
-This bit is set by hardware when a parity error occurs in receiver mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register. 
+This bit is set by hardware when a parity error occurs in receiver mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register.
 An interrupt is generated if PEIE = 1 in the USART_CR1 register.
 Note: This error is associated with the character in the USART_RDR.</description>
               <bitOffset>0</bitOffset>
@@ -63114,7 +63114,7 @@ Note: This bit is permanently forced to 0 (no overrun detection) when the bit OV
             <field>
               <name>IDLE</name>
               <description>Idle line detected
-This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE = 1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register. 
+This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE = 1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register.
 Note: The IDLE bit is not set again until the RXFNE bit has been set (i.e. a new idle line occurs).
 Note: If Mute mode is enabled (MME = 1), IDLE is set if the USART is not mute (RWU = 0), whatever the Mute mode selected by the WAKE bit. If RWU = 1, IDLE is not set.</description>
               <bitOffset>4</bitOffset>
@@ -63136,8 +63136,8 @@ Note: If Mute mode is enabled (MME = 1), IDLE is set if the USART is not mute (R
             <field>
               <name>RXFNE</name>
               <description>RXFIFO not empty
-RXFNE bit is set by hardware when the RXFIFO is not empty, meaning that data can be read from the USART_RDR register. Every read operation from the USART_RDR frees a location in the RXFIFO. 
-RXFNE is cleared when the RXFIFO is empty. The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the USART_RQR register. 
+RXFNE bit is set by hardware when the RXFIFO is not empty, meaning that data can be read from the USART_RDR register. Every read operation from the USART_RDR frees a location in the RXFIFO.
+RXFNE is cleared when the RXFIFO is empty. The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the USART_RQR register.
 An interrupt is generated if RXFNEIE = 1 in the USART_CR1 register.</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63159,8 +63159,8 @@ An interrupt is generated if RXFNEIE = 1 in the USART_CR1 register.</description
               <name>TC</name>
               <description>Transmission complete
 This bit indicates that the last data written in the USART_TDR has been transmitted out of the shift register.
-It is set by hardware when the transmission of a frame containing data is complete and when TXFE is set. 
-An interrupt is generated if TCIE = 1 in the USART_CR1 register. 
+It is set by hardware when the transmission of a frame containing data is complete and when TXFE is set.
+An interrupt is generated if TCIE = 1 in the USART_CR1 register.
 TC bit is is cleared by software, by writing 1 to the TCCF in the USART_ICR register or by a write to the USART_TDR register.
 Note: If TE bit is reset and no transmission is on going, the TC bit is immediately set.</description>
               <bitOffset>6</bitOffset>
@@ -63182,8 +63182,8 @@ Note: If TE bit is reset and no transmission is on going, the TC bit is immediat
             <field>
               <name>TXFNF</name>
               <description>TXFIFO not full
-TXFNF is set by hardware when TXFIFO is not full meaning that data can be written in the USART_TDR. Every write operation to the USART_TDR places the data in the TXFIFO. This flag remains set until the TXFIFO is full. When the TXFIFO is full, this flag is cleared indicating that data can not be written into the USART_TDR. 
-An interrupt is generated if the TXFNFIE bit =1 in the USART_CR1 register. 
+TXFNF is set by hardware when TXFIFO is not full meaning that data can be written in the USART_TDR. Every write operation to the USART_TDR places the data in the TXFIFO. This flag remains set until the TXFIFO is full. When the TXFIFO is full, this flag is cleared indicating that data can not be written into the USART_TDR.
+An interrupt is generated if the TXFNFIE bit =1 in the USART_CR1 register.
 Note: The TXFNF is kept reset during the flush request until TXFIFO is empty. After sending the flush request (by setting TXFRQ bit), the flag TXFNF should be checked prior to writing in TXFIFO (TXFNF and TXFE are set at the same time).
 Note: This bit is used during single buffer transmission.</description>
               <bitOffset>7</bitOffset>
@@ -63205,7 +63205,7 @@ Note: This bit is used during single buffer transmission.</description>
             <field>
               <name>LBDF</name>
               <description>LIN break detection flag
-This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR. 
+This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR.
 An interrupt is generated if LBDIE = 1 in the USART_CR2 register.
 Note: If the USART does not support LIN mode, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>8</bitOffset>
@@ -63227,7 +63227,7 @@ Note: If the USART does not support LIN mode, this bit is reserved and kept at r
             <field>
               <name>CTSIF</name>
               <description>CTS interrupt flag
-This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register. 
+This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register.
 An interrupt is generated if CTSIE = 1 in the USART_CR3 register.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
               <bitOffset>9</bitOffset>
@@ -63249,7 +63249,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
             <field>
               <name>CTS</name>
               <description>CTS flag
-This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin. 
+This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63270,7 +63270,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
             <field>
               <name>RTOF</name>
               <description>Receiver timeout
-This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register. 
+This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register.
 An interrupt is generated if RTOIE = 1 in the USART_CR2 register.
 In Smartcard mode, the timeout corresponds to the CWT or BWT timings.
 Note: If a time equal to the value programmed in RTOR register separates 2 characters, RTOF is not set. If this time exceeds this value + 2 sample times (2/16 or 2/8, depending on the oversampling method), RTOF flag is set.
@@ -63340,7 +63340,7 @@ Note: If the USART does not support the SPI slave mode, this bit is reserved and
               <name>ABRE</name>
               <description>Auto baud rate error
 This bit is set by hardware if the baud rate measurement failed (baud rate out of range or character comparison failed)
-It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register. 
+It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63350,7 +63350,7 @@ Note: If the USART does not support the auto baud rate feature, this bit is rese
               <name>ABRF</name>
               <description>Auto baud rate flag
 This bit is set by hardware when the automatic baud rate has been set (RXFNE is also set, generating an interrupt if RXFNEIE = 1) or when the auto baud rate operation was completed without success (ABRE = 1) (ABRE, RXFNE and FE are also set in this case)
-It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register. 
+It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63379,7 +63379,7 @@ This bit is set and reset by hardware. It is active when a communication is ongo
             <field>
               <name>CMF</name>
               <description>Character match flag
-This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register. 
+This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register.
 An interrupt is generated if CMIE = 1in the USART_CR1 register.</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63421,7 +63421,7 @@ This bit indicates that a send break character was requested. It is set by softw
               <name>RWU</name>
               <description>Receiver wake-up from Mute mode
 This bit indicates if the USART is in Mute mode. It is cleared/set by hardware when a wake-up/mute sequence is recognized. The Mute mode control sequence (address or IDLE) is selected by the WAKE bit in the USART_CR1 register.
-When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register. 
+When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63443,7 +63443,7 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               <name>WUF</name>
               <description>Wake-up from low-power mode flag
 This bit is set by hardware, when a wake-up event is detected. The event is defined by the WUS bitfield. It is cleared by software, writing a 1 to the WUCF in the USART_ICR register.
-An interrupt is generated if WUFIE = 1 in the USART_CR3 register. 
+An interrupt is generated if WUFIE = 1 in the USART_CR3 register.
 Note: When UESM is cleared, WUF flag is also cleared.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>20</bitOffset>
@@ -63453,7 +63453,7 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
             <field>
               <name>TEACK</name>
               <description>Transmit enable acknowledge flag
-This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART. 
+This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART.
 It can be used when an idle frame request is generated by writing TE = 0, followed by TE = 1 in the USART_CR1 register, in order to respect the TE = 0 minimum period.</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63462,7 +63462,7 @@ It can be used when an idle frame request is generated by writing TE = 0, follow
             <field>
               <name>REACK</name>
               <description>Receive enable acknowledge flag
-This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART. 
+This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART.
 It can be used to verify that the USART is ready for reception before entering low-power mode.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>22</bitOffset>
@@ -63493,7 +63493,7 @@ An interrupt is generated if the TXFEIE bit  = 1 (bit 30) in the USART_CR1 regis
             <field>
               <name>RXFF</name>
               <description>RXFIFO full
-This bit is set by hardware when the number of received data corresponds to RXFIFO size + 1 (RXFIFO full + 1 data in the USART_RDR register. 
+This bit is set by hardware when the number of received data corresponds to RXFIFO size + 1 (RXFIFO full + 1 data in the USART_RDR register.
 An interrupt is generated if the RXFFIE bit  = 1 in the USART_CR1 register.</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63533,7 +63533,7 @@ An interrupt is generated if the RXFFIE bit  = 1 in the USART_CR1 register.</des
             <field>
               <name>RXFT</name>
               <description>RXFIFO threshold flag
-This bit is set by hardware when the threshold programmed in RXFTCFG in USART_CR3 register is reached. This means that there are (RXFTCFG - 1) data in the Receive FIFO and one data in the USART_RDR register. An interrupt is generated if the RXFTIE bit  = 1 (bit 27) in the USART_CR3 register. 
+This bit is set by hardware when the threshold programmed in RXFTCFG in USART_CR3 register is reached. This means that there are (RXFTCFG - 1) data in the Receive FIFO and one data in the USART_RDR register. An interrupt is generated if the RXFTIE bit  = 1 (bit 27) in the USART_CR3 register.
 Note: When the RXFTCFG threshold is configured to  101 , RXFT flag is set if 16 data are available i.e. 15 data in the RXFIFO and 1 data in the USART_RDR. Consequently, the 17th received data does not cause an overrun error. The overrun error occurs after receiving the 18th data.</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63587,7 +63587,7 @@ This bit is set by hardware when the TXFIFO reaches the threshold programmed in 
             <field>
               <name>PE</name>
               <description>Parity error
-This bit is set by hardware when a parity error occurs in receiver mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register. 
+This bit is set by hardware when a parity error occurs in receiver mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register.
 An interrupt is generated if PEIE = 1 in the USART_CR1 register.</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63676,7 +63676,7 @@ Note: This bit is permanently forced to 0 (no overrun detection) when the bit OV
             <field>
               <name>IDLE</name>
               <description>Idle line detected
-This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE = 1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register. 
+This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE = 1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register.
 Note: The IDLE bit is not set again until the RXNE bit has been set (i.e. a new idle line occurs).
 Note: If Mute mode is enabled (MME = 1), IDLE is set if the USART is not mute (RWU = 0), whatever the Mute mode selected by the WAKE bit. If RWU = 1, IDLE is not set.</description>
               <bitOffset>4</bitOffset>
@@ -63720,8 +63720,8 @@ An interrupt is generated if RXNEIE = 1 in the USART_CR1 register.</description>
               <name>TC</name>
               <description>Transmission complete
 This bit indicates that the last data written in the USART_TDR has been transmitted out of the shift register.
-It is set by hardware when the transmission of a frame containing data is complete and when TXE is set. 
-An interrupt is generated if TCIE = 1 in the USART_CR1 register. 
+It is set by hardware when the transmission of a frame containing data is complete and when TXE is set.
+An interrupt is generated if TCIE = 1 in the USART_CR1 register.
 TC bit is is cleared by software, by writing 1 to the TCCF in the USART_ICR register or by a write to the USART_TDR register.
 Note: If TE bit is reset and no transmission is on going, the TC bit is set immediately.</description>
               <bitOffset>6</bitOffset>
@@ -63764,7 +63764,7 @@ An interrupt is generated if the TXEIE bit  = 1 in the USART_CR1 register.</desc
             <field>
               <name>LBDF</name>
               <description>LIN break detection flag
-This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR. 
+This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR.
 An interrupt is generated if LBDIE = 1 in the USART_CR2 register.
 Note: If the USART does not support LIN mode, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>8</bitOffset>
@@ -63786,7 +63786,7 @@ Note: If the USART does not support LIN mode, this bit is reserved and kept at r
             <field>
               <name>CTSIF</name>
               <description>CTS interrupt flag
-This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register. 
+This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register.
 An interrupt is generated if CTSIE = 1 in the USART_CR3 register.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
               <bitOffset>9</bitOffset>
@@ -63808,7 +63808,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
             <field>
               <name>CTS</name>
               <description>CTS flag
-This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin. 
+This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63829,7 +63829,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
             <field>
               <name>RTOF</name>
               <description>Receiver timeout
-This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register. 
+This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register.
 An interrupt is generated if RTOIE = 1 in the USART_CR2 register.
 In Smartcard mode, the timeout corresponds to the CWT or BWT timings.
 Note: If a time equal to the value programmed in RTOR register separates 2 characters, RTOF is not set. If this time exceeds this value + 2 sample times (2/16 or 2/8, depending on the oversampling method), RTOF flag is set.
@@ -63899,7 +63899,7 @@ Note: If the USART does not support the SPI slave mode, this bit is reserved and
               <name>ABRE</name>
               <description>Auto baud rate error
 This bit is set by hardware if the baud rate measurement failed (baud rate out of range or character comparison failed)
-It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register. 
+It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63909,7 +63909,7 @@ Note: If the USART does not support the auto baud rate feature, this bit is rese
               <name>ABRF</name>
               <description>Auto baud rate flag
 This bit is set by hardware when the automatic baud rate has been set (RXNE is also set, generating an interrupt if RXNEIE = 1) or when the auto baud rate operation was completed without success (ABRE = 1) (ABRE, RXNE and FE are also set in this case)
-It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register. 
+It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63938,7 +63938,7 @@ This bit is set and reset by hardware. It is active when a communication is ongo
             <field>
               <name>CMF</name>
               <description>Character match flag
-This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register. 
+This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register.
 An interrupt is generated if CMIE = 1in the USART_CR1 register.</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
@@ -63980,7 +63980,7 @@ This bit indicates that a send break character was requested. It is set by softw
               <name>RWU</name>
               <description>Receiver wake-up from Mute mode
 This bit indicates if the USART is in Mute mode. It is cleared/set by hardware when a wake-up/mute sequence is recognized. The Mute mode control sequence (address or IDLE) is selected by the WAKE bit in the USART_CR1 register.
-When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register. 
+When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
@@ -64002,7 +64002,7 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               <name>WUF</name>
               <description>Wake-up from low-power mode flag
 This bit is set by hardware, when a wake-up event is detected. The event is defined by the WUS bitfield. It is cleared by software, writing a 1 to the WUCF in the USART_ICR register.
-An interrupt is generated if WUFIE = 1 in the USART_CR3 register. 
+An interrupt is generated if WUFIE = 1 in the USART_CR3 register.
 Note: When UESM is cleared, WUF flag is also cleared.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>20</bitOffset>
@@ -64012,7 +64012,7 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
             <field>
               <name>TEACK</name>
               <description>Transmit enable acknowledge flag
-This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART. 
+This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART.
 It can be used when an idle frame request is generated by writing TE = 0, followed by TE = 1 in the USART_CR1 register, in order to respect the TE = 0 minimum period.</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
@@ -64021,7 +64021,7 @@ It can be used when an idle frame request is generated by writing TE = 0, follow
             <field>
               <name>REACK</name>
               <description>Receive enable acknowledge flag
-This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART. 
+This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART.
 It can be used to verify that the USART is ready for reception before entering low-power mode.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section 26.4: USART implementation on page 691.</description>
               <bitOffset>22</bitOffset>
@@ -64464,11 +64464,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit
@@ -64721,11 +64721,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit
@@ -64978,11 +64978,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit
@@ -65235,11 +65235,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit
@@ -65492,11 +65492,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit
@@ -65749,11 +65749,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit
@@ -66006,11 +66006,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit
@@ -66263,11 +66263,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <name>VTRX</name>
               <description>USB valid transaction received
 	Device mode
-	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below. 
+	This bit is set by the hardware when an OUT/SETUP transaction is successfully completed on this endpoint; the software can only clear this bit. If the CTRM bit in USB_CNTR register is set accordingly, a generic interrupt condition is generated together with the endpoint related interrupt condition, which is always activated. The type of occurred transaction, OUT or SETUP, can be determined from the SETUP bit described below.
 	A transaction ended with a NAK or STALL handshake does not set this bit, since no data is actually transferred, as in the case of protocol errors or data toggle mismatches.
 	This bit is read/write but only 0 can be written, writing 1 has no effect.
 	Host mode
-	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated. 
+	This bit is set by the hardware when an IN transaction is successfully completed on this channel. The software can only clear this bit. If the CTRM bit in USB_CNTR register is set a generic interrupt condition is generated together with the channel related flag, which is always activated.
 	- A transaction ended with a NAK sets this bit and NAK answer is reported to application reading the NAK state from the STATRX field of this register. One NAKed transaction keeps pending and is automatically retried by the host at the next frame, or the host can immediately retry by resetting STATRX state to VALID.
 	- A transaction ended by STALL handshake sets this bit and the STALL answer is reported to application reading the STALL state from the STATRX field of this register. Host application must consequently disable the channel and re-enumerate.
 	- A transaction ended with ACK handshake sets this bit

@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32L412</name>
-  <version>2.0</version>
+  <version>2.1</version>
   <description>STM32L412</description>
   <cpu>
     <name>CM4</name>
@@ -64,7 +64,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             <fields>
               <field>
                 <name>ADRDY</name>
-                <description>ADC ready 
+                <description>ADC ready
 This bit is set by hardware after the ADC has been enabled (bit ADEN = 1) and when the ADC reaches a state where it is ready to accept conversion requests.
 It is cleared by software writing 1 to it.</description>
                 <bitOffset>0</bitOffset>
@@ -444,7 +444,7 @@ Note: The software is allowed to write this bit only when JADSTART = 0 (which en
               <field>
                 <name>AWD1IE</name>
                 <description>Analog watchdog 1 interrupt enable
-This bit is set and cleared by software to enable/disable the analog watchdog 1 interrupt. 
+This bit is set and cleared by software to enable/disable the analog watchdog 1 interrupt.
 Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -822,7 +822,7 @@ Note: In dual-ADC modes, this bit is not relevant and replaced by control bit DM
               </field>
               <field>
                 <name>DFSDMCFG</name>
-                <description>DFSDM mode configuration 
+                <description>DFSDM mode configuration
 This bit is set and cleared by software to enable the DFSDM mode. It is effective only when
 DMAEN = 0.
 Note: To make sure no conversion is ongoing, the software is allowed to write this bit only when ADSTART= 0 and JADSTART= 0.</description>
@@ -913,7 +913,7 @@ Note: The software is allowed to write these bits only when ADSTART = 0 (which e
                     <name>B_0x1</name>
                     <description>Event 1</description>
                     <value>0x1</value>
-                  </enumeratedValue>                  
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -935,7 +935,7 @@ Note: The software is allowed to write these bits only when ADSTART = 0 (which e
                     <name>B_0x1</name>
                     <description>Event 1</description>
                     <value>0x1</value>
-                  </enumeratedValue>                 
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -957,7 +957,7 @@ Note: The software is allowed to write these bits only when ADSTART = 0 (which e
                     <name>B_0x1</name>
                     <description>Event 1</description>
                     <value>0x1</value>
-                  </enumeratedValue>                 
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -979,7 +979,7 @@ Note: The software is allowed to write these bits only when ADSTART = 0 (which e
                     <name>B_0x1</name>
                     <description>Event 1</description>
                     <value>0x1</value>
-                  </enumeratedValue>                              
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -1084,7 +1084,7 @@ Note: When dual mode is enabled (DUAL bits in ADCx_CCR register are not equal to
                 <description>Discontinuous mode for regular channels
 This bit is set and cleared by software to enable/disable Discontinuous mode for regular channels.
 Note: It is not possible to have both discontinuous mode and continuous mode enabled: it is forbidden to set both DISCEN = 1 and CONT = 1.
-Note: It is not possible to use both auto-injected mode and discontinuous mode simultaneously: the bits DISCEN and JDISCEN must be kept cleared by software when JAUTO is set. 
+Note: It is not possible to use both auto-injected mode and discontinuous mode simultaneously: the bits DISCEN and JDISCEN must be kept cleared by software when JAUTO is set.
 Note: The software is allowed to write this bit only when ADSTART = 0 (which ensures that no regular conversion is ongoing).
 Note: When dual mode is enabled (DUAL bits in ADCx_CCR register are not equal to zero), the bit DISCEN of the slave ADC is no more writable and its content is equal to the bit DISCEN of the master ADC.</description>
                 <bitOffset>16</bitOffset>
@@ -2572,7 +2572,7 @@ Note: The software is allowed to write these bits only when ADSTART = 0 and JADS
               <field>
                 <name>HT1</name>
                 <description>Analog watchdog 1 higher threshold
-These bits are written by software to define the higher threshold for the analog watchdog 1. 
+These bits are written by software to define the higher threshold for the analog watchdog 1.
 Refer to Section 16.4.28: Analog window watchdog (AWD1EN, JAWD1EN, AWD1SGL, AWD1CH, AWD2CH, AWD3CH, AWD_HTx, AWD_LTx, AWDx)
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>16</bitOffset>
@@ -2603,7 +2603,7 @@ Note: The software is allowed to write these bits only when ADSTART = 0 and JADS
               <field>
                 <name>HT2</name>
                 <description>Analog watchdog 2 higher threshold
-These bits are written by software to define the higher threshold for the analog watchdog 2. 
+These bits are written by software to define the higher threshold for the analog watchdog 2.
 Refer to Section 16.4.28: Analog window watchdog (AWD1EN, JAWD1EN, AWD1SGL, AWD1CH, AWD2CH, AWD3CH, AWD_HTx, AWD_LTx, AWDx)
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>16</bitOffset>
@@ -2977,7 +2977,7 @@ Note: The software is allowed to write these bits only when JADSTART = 0 (which 
               <field>
                 <name>JEXTEN</name>
                 <description>External Trigger Enable and Polarity Selection for injected channels
-These bits are set and cleared by software to select the external trigger polarity and enable the trigger of an injected group. 
+These bits are set and cleared by software to select the external trigger polarity and enable the trigger of an injected group.
 Note: The software is allowed to write these bits only when JADSTART = 0 (which ensures that no injected conversion is ongoing).
 Note: If JQM = 1 and if the Queue of Context becomes empty, the software and hardware triggers of the injected sequence are both internally disabled (refer to Section 16.4.21: Queue of context for injected conversions)</description>
                 <bitOffset>6</bitOffset>
@@ -3056,9 +3056,9 @@ Note: The software is allowed to write these bits only when JADSTART = 0 (which 
               <field>
                 <name>OFFSET</name>
                 <description>Data offset y for the channel programmed into bits OFFSETy_CH[4:0]
-These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion). 
+These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion).
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
-If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction. 
+If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction.
 Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] which is subtracted when converting channel 4.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>12</bitWidth>
@@ -3067,7 +3067,7 @@ Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] whic
               <field>
                 <name>OFFSET_CH</name>
                 <description>Channel selection for the data offset y
-These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies. 
+These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies.
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
 Note: Some channels are not connected physically and must not be selected for the data offset y.</description>
                 <bitOffset>26</bitOffset>
@@ -3077,7 +3077,7 @@ Note: Some channels are not connected physically and must not be selected for th
               <field>
                 <name>OFFSET_EN</name>
                 <description>Offset y enable
-This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0]. 
+This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0].
 Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>31</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3097,9 +3097,9 @@ Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTA
               <field>
                 <name>OFFSET</name>
                 <description>Data offset y for the channel programmed into bits OFFSETy_CH[4:0]
-These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion). 
+These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion).
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
-If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction. 
+If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction.
 Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] which is subtracted when converting channel 4.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>12</bitWidth>
@@ -3108,7 +3108,7 @@ Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] whic
               <field>
                 <name>OFFSET_CH</name>
                 <description>Channel selection for the data offset y
-These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies. 
+These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies.
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
 Note: Some channels are not connected physically and must not be selected for the data offset y.</description>
                 <bitOffset>26</bitOffset>
@@ -3118,7 +3118,7 @@ Note: Some channels are not connected physically and must not be selected for th
               <field>
                 <name>OFFSET_EN</name>
                 <description>Offset y enable
-This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0]. 
+This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0].
 Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>31</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3138,9 +3138,9 @@ Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTA
               <field>
                 <name>OFFSET</name>
                 <description>Data offset y for the channel programmed into bits OFFSETy_CH[4:0]
-These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion). 
+These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion).
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
-If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction. 
+If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction.
 Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] which is subtracted when converting channel 4.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>12</bitWidth>
@@ -3149,7 +3149,7 @@ Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] whic
               <field>
                 <name>OFFSET_CH</name>
                 <description>Channel selection for the data offset y
-These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies. 
+These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies.
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
 Note: Some channels are not connected physically and must not be selected for the data offset y.</description>
                 <bitOffset>26</bitOffset>
@@ -3159,7 +3159,7 @@ Note: Some channels are not connected physically and must not be selected for th
               <field>
                 <name>OFFSET_EN</name>
                 <description>Offset y enable
-This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0]. 
+This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0].
 Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>31</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3179,9 +3179,9 @@ Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTA
               <field>
                 <name>OFFSET</name>
                 <description>Data offset y for the channel programmed into bits OFFSETy_CH[4:0]
-These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion). 
+These bits are written by software to define the offset y to be subtracted from the raw converted data when converting a channel (can be regular or injected). The channel to which applies the data offset y must be programmed in the bits OFFSETy_CH[4:0]. The conversion result can be read from in the ADC_DR (regular conversion) or from in the ADC_JDRyi registers (injected conversion).
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
-If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction. 
+If several offset (OFFSETy) point to the same channel, only the offset with the lowest x value is considered for the subtraction.
 Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] which is subtracted when converting channel 4.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>12</bitWidth>
@@ -3190,7 +3190,7 @@ Note: Ex: if OFFSET1_CH[4:0]=4 and OFFSET2_CH[4:0]=4, this is OFFSET1[11:0] whic
               <field>
                 <name>OFFSET_CH</name>
                 <description>Channel selection for the data offset y
-These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies. 
+These bits are written by software to define the channel to which the offset programmed into bits OFFSETy[11:0] applies.
 Note: The software is allowed to write these bits only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).
 Note: Some channels are not connected physically and must not be selected for the data offset y.</description>
                 <bitOffset>26</bitOffset>
@@ -3200,7 +3200,7 @@ Note: Some channels are not connected physically and must not be selected for th
               <field>
                 <name>OFFSET_EN</name>
                 <description>Offset y enable
-This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0]. 
+This bit is written by software to enable or disable the offset programmed into bits OFFSETy[11:0].
 Note: The software is allowed to write this bit only when ADSTART = 0 and JADSTART = 0 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>31</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3395,7 +3395,7 @@ Note: The software is allowed to write these bits only when ADEN = 1, ADSTART = 
     <peripheral derivedFrom="ADC1">
       <name>ADC2</name>
       <baseAddress>0x50040100</baseAddress>
-    </peripheral>    
+    </peripheral>
     <peripheral>
       <name>ADC12_Common</name>
       <description>Analog-to-Digital Converter</description>
@@ -3537,7 +3537,7 @@ This bit is a copy of the EOC bit in the corresponding ADC_ISR register.</descri
               </field>
               <field>
                 <name>OVR_SLV</name>
-                <description>Overrun flag of the slave ADC 
+                <description>Overrun flag of the slave ADC
 This bit is a copy of the OVR bit in the corresponding ADC_ISR register.</description>
                 <bitOffset>20</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3545,7 +3545,7 @@ This bit is a copy of the OVR bit in the corresponding ADC_ISR register.</descri
               </field>
               <field>
                 <name>JEOC_SLV</name>
-                <description>End of injected conversion flag of the slave ADC 
+                <description>End of injected conversion flag of the slave ADC
 This bit is a copy of the JEOC bit in the corresponding ADC_ISR register.</description>
                 <bitOffset>21</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3553,7 +3553,7 @@ This bit is a copy of the JEOC bit in the corresponding ADC_ISR register.</descr
               </field>
               <field>
                 <name>JEOS_SLV</name>
-                <description>End of injected sequence flag of the slave ADC 
+                <description>End of injected sequence flag of the slave ADC
 This bit is a copy of the JEOS bit in the corresponding ADC_ISR register.</description>
                 <bitOffset>22</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3561,7 +3561,7 @@ This bit is a copy of the JEOS bit in the corresponding ADC_ISR register.</descr
               </field>
               <field>
                 <name>AWD1_SLV</name>
-                <description>Analog watchdog 1 flag of the slave ADC 
+                <description>Analog watchdog 1 flag of the slave ADC
 This bit is a copy of the AWD1 bit in the corresponding ADC_ISR register.</description>
                 <bitOffset>23</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3569,7 +3569,7 @@ This bit is a copy of the AWD1 bit in the corresponding ADC_ISR register.</descr
               </field>
               <field>
                 <name>AWD2_SLV</name>
-                <description>Analog watchdog 2 flag of the slave ADC 
+                <description>Analog watchdog 2 flag of the slave ADC
 This bit is a copy of the AWD2 bit in the corresponding ADC_ISR register.</description>
                 <bitOffset>24</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3585,7 +3585,7 @@ This bit is a copy of the AWD3 bit in the corresponding ADC_ISR register.</descr
               </field>
               <field>
                 <name>JQOVF_SLV</name>
-                <description>Injected Context Queue Overflow flag of the slave ADC 
+                <description>Injected Context Queue Overflow flag of the slave ADC
 This bit is a copy of the JQOVF bit in the corresponding ADC_ISR register.</description>
                 <bitOffset>26</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3604,7 +3604,7 @@ This bit is a copy of the JQOVF bit in the corresponding ADC_ISR register.</desc
             <fields>
               <field>
                 <name>DUAL</name>
-                <description>Dual ADC mode selection 
+                <description>Dual ADC mode selection
 These bits are written by software to select the operating mode.
 All the ADCs independent:
 00001 to 01001: Dual mode, master and slave ADCs working together
@@ -3658,8 +3658,8 @@ Note: The software is allowed to write these bits only when the ADCs are disable
               </field>
               <field>
                 <name>DELAY</name>
-                <description>Delay between 2 sampling phases 
-These bits are set and cleared by software. These bits are used in dual interleaved modes. Refer to Table 112 for the value of ADC resolution versus DELAY bits values. 
+                <description>Delay between 2 sampling phases
+These bits are set and cleared by software. These bits are used in dual interleaved modes. Refer to Table 112 for the value of ADC resolution versus DELAY bits values.
 Note: The software is allowed to write these bits only when the ADCs are disabled (ADCAL = 0, JADSTART = 0, ADSTART = 0, ADSTP = 0, ADDIS = 0 and ADEN = 0).</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -3689,7 +3689,7 @@ Note: The software is allowed to write these bits only when ADSTART = 0 (which e
               </field>
               <field>
                 <name>MDMA</name>
-                <description>Direct memory access mode for dual ADC mode 
+                <description>Direct memory access mode for dual ADC mode
 This bitfield is set and cleared by software. Refer to the DMA controller section for more details.
 Note: The software is allowed to write these bits only when ADSTART = 0 (which ensures that no regular conversion is ongoing).</description>
                 <bitOffset>14</bitOffset>
@@ -3915,7 +3915,7 @@ The data alignment is applied as described in Section : Data register, data alig
             </fields>
           </register>
       </registers>
-    </peripheral>  				
+    </peripheral>
     <peripheral>
       <name>COMP</name>
       <description>Comparator</description>
@@ -8207,7 +8207,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>nRST_SHDW</description>
               <bitOffset>14</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>IWDG_SW</name>
               <description>Independent watchdog
@@ -8234,7 +8234,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>Window watchdog selection</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                      
+            </field>
             <field>
               <name>nBOOT1</name>
               <description>Boot configuration</description>
@@ -8253,7 +8253,7 @@ The data alignment is applied as described in Section : Data register, data alig
               reset</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>nSWBOOT0</name>
               <description>Software BOOT0</description>
@@ -8265,7 +8265,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>nBOOT0 option bit</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
         </register>
         <register>
@@ -9195,7 +9195,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>UE</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>DOWN</name>
               <description>Counter direction change up to
@@ -9571,7 +9571,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <bitWidth>16</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>OR</name>
           <displayName>OR</displayName>
@@ -10711,7 +10711,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>Enable Wakeup pin WKUP1</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -11065,7 +11065,7 @@ The data alignment is applied as described in Section : Data register, data alig
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>                        
+          <fields>
             <field>
               <name>PD12</name>
               <description>Port A pull-down bit y
@@ -14270,6 +14270,17 @@ The data alignment is applied as described in Section : Data register, data alig
         <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>TIM1_TRG_COM</name>
+        <description>TIM1 trigger and commutation
+        interrupt</description>
+        <value>26</value>
+      </interrupt>
+      <interrupt>
+        <name>TIM1_CC</name>
+        <description>TIM1 Capture Compare interrupt</description>
+        <value>27</value>
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -14877,7 +14888,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -14896,7 +14907,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -15865,7 +15876,7 @@ The data alignment is applied as described in Section : Data register, data alig
               control</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>       
+            </field>
           </fields>
         </register>
 		<register>
@@ -15983,7 +15994,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>Update interrupt enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                       
+            </field>
           </fields>
         </register>
         <register>
@@ -16046,7 +16057,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>Update interrupt flag</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                 
+            </field>
           </fields>
         </register>
         <register>
@@ -16096,7 +16107,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <description>Update generation</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
           </fields>
         </register>
         <register>
@@ -16287,7 +16298,7 @@ The data alignment is applied as described in Section : Data register, data alig
               enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                      
+            </field>
           </fields>
         </register>
         <register>
@@ -16501,7 +16512,7 @@ The data alignment is applied as described in Section : Data register, data alig
               <bitWidth>16</bitWidth>
             </field>
           </fields>
-        </register>                
+        </register>
         <register>
           <name>OR1</name>
           <displayName>OR1</displayName>
@@ -16585,15 +16596,9 @@ The data alignment is applied as described in Section : Data register, data alig
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TIM1_TRG_COM</name>
-        <description>TIM1 trigger and commutation
-        interrupt</description>
-        <value>26</value>
-      </interrupt>
-      <interrupt>
-        <name>TIM1_CC</name>
-        <description>TIM1 Capture Compare interrupt</description>
-        <value>27</value>
+        <name>TIM16</name>
+        <description>Timer 16 global interrupt</description>
+        <value>25</value>
       </interrupt>
       <registers>
         <register>
@@ -17222,9 +17227,9 @@ The data alignment is applied as described in Section : Data register, data alig
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TIM16</name>
-        <description>Timer 16 global interrupt</description>
-        <value>25</value>
+        <name>TIM2</name>
+        <description>TIM2 global interrupt</description>
+        <value>28</value>
       </interrupt>
       <registers>
         <register>
@@ -18267,9 +18272,10 @@ The data alignment is applied as described in Section : Data register, data alig
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TIM2</name>
-        <description>TIM2 global interrupt</description>
-        <value>28</value>
+        <name>TIM6_DACUNDER</name>
+        <description>TIM6 global and DAC1 underrun error
+        interrupts</description>
+        <value>54</value>
       </interrupt>
       <registers>
         <register>
@@ -18463,10 +18469,9 @@ The data alignment is applied as described in Section : Data register, data alig
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TIM6_DACUNDER</name>
-        <description>TIM6 global and DAC1 underrun error
-        interrupts</description>
-        <value>54</value>
+        <name>TSC</name>
+        <description>TSC global interrupt</description>
+        <value>77</value>
       </interrupt>
       <registers>
         <register>
@@ -19604,9 +19609,9 @@ The data alignment is applied as described in Section : Data register, data alig
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TSC</name>
-        <description>TSC global interrupt</description>
-        <value>77</value>
+        <name>USART1</name>
+        <description>USART1 global interrupt</description>
+        <value>37</value>
       </interrupt>
       <registers>
         <register>
@@ -20477,9 +20482,9 @@ The data alignment is applied as described in Section : Data register, data alig
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>USART1</name>
-        <description>USART1 global interrupt</description>
-        <value>37</value>
+        <name>WWDG</name>
+        <description>Window Watchdog interrupt</description>
+        <value>0</value>
       </interrupt>
       <registers>
         <register>
@@ -22302,17 +22307,6 @@ The data alignment is applied as described in Section : Data register, data alig
         <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
-      <interrupt>
-        <name>WWDG</name>
-        <description>Window Watchdog interrupt</description>
-        <value>0</value>
-      </interrupt>
-      <interrupt>
-        <name>USB</name>
-        <description>USB event interrupt through EXTI line
-        17</description>
-        <value>67</value>
-      </interrupt>
       <registers>
         <register>
           <name>MODER</name>
@@ -27860,14 +27854,14 @@ The data alignment is applied as described in Section : Data register, data alig
       </registers>
     </peripheral>
     <peripheral>
-      <name>USB</name>
+      <name>USB_SRAM</name>
       <description>Universal serial bus full-speed device
       interface</description>
       <groupName>USB</groupName>
-      <baseAddress>0x40006800</baseAddress>
+      <baseAddress>0x40006C00</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x800</size>
+        <size>0x400</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
@@ -29523,6 +29517,15 @@ The data alignment is applied as described in Section : Data register, data alig
         </register>
       </registers>
     </peripheral>
+    <peripheral derivedFrom="USB_SRAM">
+      <name>USB_FS</name>
+      <baseAddress>0x40006800</baseAddress>
+      <interrupt>
+        <name>USB_FS</name>
+        <description>USB event interrupt through EXTI</description>
+        <value>67</value>
+      </interrupt>
+    </peripheral>
     <peripheral>
       <name>USART2</name>
       <description>Universal synchronous asynchronous receiver
@@ -30395,11 +30398,6 @@ The data alignment is applied as described in Section : Data register, data alig
     <peripheral derivedFrom="USART2">
       <name>USART3</name>
       <baseAddress>0x40004800</baseAddress>
-      <interrupt>
-        <name>USART1</name>
-        <description>USART1 global interrupt</description>
-        <value>37</value>
-      </interrupt>
     </peripheral>
   </peripherals>
 </device>

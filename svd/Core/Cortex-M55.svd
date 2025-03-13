@@ -437,7 +437,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>S_RETIRE_ST</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>	
+            </field>
             <field>
               <name>S_SDE</name>
               <description>S_SDE</description>
@@ -525,7 +525,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>S_RETIRE_ST</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>	
+            </field>
             <field>
               <name>S_SDE</name>
               <description>S_SDE</description>
@@ -993,7 +993,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>DAUTHSTATUS_S</name>
           <displayName>DAUTHSTATUS_S</displayName>
@@ -1001,7 +1001,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>		  		  		  
+          <fields>
             <field>
               <name>SNID</name>
               <description>SNID</description>
@@ -1035,7 +1035,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x20008</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>		  		  		  
+          <fields>
             <field>
               <name>SNID</name>
               <description>SNID</description>
@@ -1061,7 +1061,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>DDEVARCH_S</name>
           <displayName>DDEVARCH_S</displayName>
@@ -1141,7 +1141,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>12</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>DDEVTYPE_S</name>
           <displayName>DDEVTYPE_S</displayName>
@@ -1185,7 +1185,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>DPIDR4_S</name>
           <displayName>DPIDR4_S</displayName>
@@ -1229,7 +1229,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>DPIDR0_S</name>
           <displayName>DPIDR0_S</displayName>
@@ -1481,7 +1481,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
         <register>
           <name>DCIDR2_S</name>
           <displayName>DCIDR2_S</displayName>
@@ -2017,7 +2017,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>FPHP</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>FP16</name>
               <description>FP16</description>
@@ -2029,7 +2029,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>MVE</description>
               <bitOffset>8</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>FPDNaN</name>
               <description>FPDNaN</description>
@@ -2063,7 +2063,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>FPHP</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>FP16</name>
               <description>FP16</description>
@@ -2075,7 +2075,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>MVE</description>
               <bitOffset>8</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>FPDNaN</name>
               <description>FPDNaN</description>
@@ -2217,7 +2217,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>EVENTBUSEN_S</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  		    
+            </field>
 			<field>
               <name>EVENTBUSEN</name>
               <description>EVENTBUSEN</description>
@@ -2229,7 +2229,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>DISCRITAXIRUR</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>DISDI</name>
               <description>DISDI</description>
@@ -2311,7 +2311,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>SUS4</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  		    
+            </field>
 			<field>
               <name>SU5</name>
               <description>SU5</description>
@@ -2323,7 +2323,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>SUS5</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SU6</name>
               <description>SU6</description>
@@ -2359,7 +2359,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>SUS10</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
 		    <field>
               <name>SU11</name>
               <description>SU11</description>
@@ -2371,7 +2371,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>SUS11</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
       </registers>
@@ -2597,7 +2597,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>MPU_RLAR_NS</name>
           <displayName>MPU_RLAR_NS</displayName>
@@ -2617,7 +2617,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2645,7 +2645,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2673,7 +2673,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2701,7 +2701,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2925,7 +2925,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
 		<register>
           <name>NVIC_ISER8</name>
           <displayName>NVIC_ISER8</displayName>
@@ -3061,7 +3061,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ICER0</name>
           <displayName>NVIC_ICER0</displayName>
@@ -3197,7 +3197,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ICER8</name>
           <displayName>NVIC_ICER8</displayName>
@@ -3469,7 +3469,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ISPR8</name>
           <displayName>NVIC_ISPR8</displayName>
@@ -3605,7 +3605,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ICPR0</name>
           <displayName>NVIC_ICPR0</displayName>
@@ -4013,7 +4013,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_IABR8</name>
           <displayName>NVIC_IABR8</displayName>
@@ -4030,7 +4030,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR9</name>
           <displayName>NVIC_IABR9</displayName>
@@ -4047,7 +4047,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR10</name>
           <displayName>NVIC_IABR10</displayName>
@@ -4064,7 +4064,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR11</name>
           <displayName>NVIC_IABR11</displayName>
@@ -4081,7 +4081,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR12</name>
           <displayName>NVIC_IABR12</displayName>
@@ -4098,7 +4098,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR13</name>
           <displayName>NVIC_IABR13</displayName>
@@ -4115,7 +4115,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR14</name>
           <displayName>NVIC_IABR14</displayName>
@@ -4132,7 +4132,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR15</name>
           <displayName>NVIC_IABR15</displayName>
@@ -4149,7 +4149,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>ITNS0</name>
           <displayName>ITNS0</displayName>
@@ -4158,7 +4158,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4175,7 +4175,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4192,7 +4192,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4209,7 +4209,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4226,7 +4226,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4243,7 +4243,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4260,7 +4260,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4277,7 +4277,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4294,7 +4294,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4311,7 +4311,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4328,7 +4328,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4345,7 +4345,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4362,7 +4362,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4379,7 +4379,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4396,7 +4396,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4413,7 +4413,7 @@ Copyright (c) 2024 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -4421,7 +4421,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>NVIC_IPR0</name>
           <displayName>NVIC_IPR0</displayName>
@@ -4965,7 +4965,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
         <register>
           <name>NVIC_IPR16</name>
           <displayName>NVIC_IPR16</displayName>
@@ -8365,7 +8365,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>NVIC_IPR116</name>
           <displayName>NVIC_IPR116</displayName>
@@ -8501,7 +8501,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>STIR</name>
           <displayName>STIR</displayName>
@@ -8517,7 +8517,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>9</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -8685,7 +8685,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
 		<register>
           <name>SFAR</name>
           <displayName>SFAR</displayName>
@@ -8753,7 +8753,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>CPUID_NS</name>
           <displayName>CPUID_NS</displayName>
@@ -8793,7 +8793,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>ICSR</name>
           <displayName>ICSR</displayName>
@@ -9027,7 +9027,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PRIGROUP</description>
               <bitOffset>8</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>IESB</name>
               <description>IESB</description>
@@ -9097,7 +9097,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PRIGROUP</description>
               <bitOffset>8</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>IESB</name>
               <description>IESB</description>
@@ -9205,7 +9205,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>		  		  
+          <fields>
 			<field>
               <name>TRD</name>
               <description>TRD</description>
@@ -9217,7 +9217,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>LOB</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>BP</name>
               <description>BP</description>
@@ -9275,7 +9275,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x20014</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>		  		  
+          <fields>
 			<field>
               <name>TRD</name>
               <description>TRD</description>
@@ -9287,7 +9287,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>LOB</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>BP</name>
               <description>BP</description>
@@ -10287,7 +10287,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x3C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		  <fields>           
+		  <fields>
             <field>
               <name>IMPLEMENTATION_DEFINED</name>
               <description>IMPLEMENTATION_DEFINED</description>
@@ -10303,7 +10303,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x2003C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		  <fields>           
+		  <fields>
             <field>
               <name>IMPLEMENTATION_DEFINED</name>
               <description>IMPLEMENTATION_DEFINED</description>
@@ -10433,7 +10433,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>ID_DFR0_NS</name>
           <displayName>ID_DFR0_NS</displayName>
@@ -10455,7 +10455,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>ID_AFR0</name>
           <displayName>ID_AFR0</displayName>
@@ -11181,9 +11181,9 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PACBTI</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          
+            </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>ID_ISAR5_NS</name>
           <displayName>ID_ISAR5_NS</displayName>
@@ -11197,9 +11197,9 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PACBTI</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          
+            </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>CLIDR</name>
           <displayName>CLIDR</displayName>
@@ -11207,7 +11207,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x78</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields> 
+          <fields>
             <field>
               <name>Ctype1</name>
               <description>Ctype1</description>
@@ -11275,7 +11275,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>CLIDR_NS</name>
           <displayName>CLIDR_NS</displayName>
@@ -11283,7 +11283,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x20078</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields> 
+          <fields>
             <field>
               <name>Ctype1</name>
               <description>Ctype1</description>
@@ -11351,7 +11351,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>CTR</name>
           <displayName>CTR</displayName>
@@ -11359,7 +11359,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x7C</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields> 
+          <fields>
             <field>
               <name>IminLine</name>
               <description>IminLine</description>
@@ -11391,7 +11391,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>3</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>CTR_NS</name>
           <displayName>CTR_NS</displayName>
@@ -11399,7 +11399,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x2007C</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields> 
+          <fields>
             <field>
               <name>IminLine</name>
               <description>IminLine</description>
@@ -11431,7 +11431,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>3</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>CCSIDR</name>
           <displayName>CCSIDR</displayName>
@@ -11549,7 +11549,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP11</description>
               <bitOffset>22</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP10</name>
               <description>CP10</description>
@@ -11561,7 +11561,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP6</name>
               <description>CP6</description>
@@ -11573,19 +11573,19 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP5</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP4</name>
               <description>CP4</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP3</name>
               <description>CP3</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP2</name>
               <description>CP2</description>
@@ -11619,7 +11619,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP11</description>
               <bitOffset>22</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP10</name>
               <description>CP10</description>
@@ -11631,7 +11631,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP6</name>
               <description>CP6</description>
@@ -11643,19 +11643,19 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP5</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP4</name>
               <description>CP4</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP3</name>
               <description>CP3</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
 			<field>
               <name>CP2</name>
               <description>CP2</description>
@@ -11683,7 +11683,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x88</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>    
+          <fields>
             <field>
               <name>CP0</name>
               <description>CP0</description>
@@ -11731,7 +11731,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>			
+            </field>
 			 <field>
               <name>CP10</name>
               <description>CP10</description>
@@ -11753,7 +11753,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x20088</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>    
+          <fields>
             <field>
               <name>CP0</name>
               <description>CP0</description>
@@ -11801,7 +11801,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>			
+            </field>
 			 <field>
               <name>CP10</name>
               <description>CP10</description>
@@ -11823,7 +11823,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x8C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>           
+          <fields>
             <field>
               <name>CP0</name>
               <description>CP0</description>
@@ -11871,7 +11871,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>CP10</name>
               <description>CP10</description>
@@ -11893,7 +11893,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x2008C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>           
+          <fields>
             <field>
               <name>CP0</name>
               <description>CP0</description>
@@ -11941,7 +11941,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>CP10</name>
               <description>CP10</description>
@@ -12105,7 +12105,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>24</bitWidth>
             </field>
           </fields>
-        </register>  
+        </register>
       </registers>
     </peripheral>
   </peripherals>

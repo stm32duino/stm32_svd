@@ -19,7 +19,7 @@ Copyright (c) 2024 STMicroelectronics.
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    <name>STM32WLE5_CM4</name>
    <version>1.6</version>
-   <description>STM32WLE5_CM4</description>  
+   <description>STM32WLE5_CM4</description>
    <cpu>
     <name>CM4</name>
     <revision>r0p1</revision>
@@ -28,9 +28,9 @@ Copyright (c) 2024 STMicroelectronics.
     <fpuPresent>false</fpuPresent>
     <nvicPrioBits>4</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
-   </cpu>      
-   <addressUnitBits>8</addressUnitBits>  
-   <width>32</width>  
+   </cpu>
+   <addressUnitBits>8</addressUnitBits>
+   <width>32</width>
    <size>0x20</size>
    <resetValue>0x0</resetValue>
    <resetMask>0xFFFFFFFF</resetMask>
@@ -1243,7 +1243,7 @@ Copyright (c) 2024 STMicroelectronics.
                </fields>
             </register>
          </registers>
-      </peripheral> 
+      </peripheral>
       <peripheral>
          <name>COMP</name>
          <description>Comparator</description>
@@ -1674,7 +1674,7 @@ Copyright (c) 2024 STMicroelectronics.
                <addressOffset>0x4</addressOffset>
                <size>0x20</size>
                <resetValue>0x00000000</resetValue>
-               <fields>                
+               <fields>
                   <field>
                      <name>SWTRIG1</name>
                      <description>DAC channel1 software               trigger</description>
@@ -1884,7 +1884,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>10</bitWidth>
                   </field>
                </fields>
-            </register>       
+            </register>
             <register>
                <name>SHHR</name>
                <displayName>SHHR</displayName>
@@ -1918,7 +1918,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>8</bitWidth>
                   </field>
                </fields>
-            </register>                    
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -2065,7 +2065,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>           
+            </register>
             <register>
                <name>APB2FZR</name>
                <displayName>APB2FZR</displayName>
@@ -2094,7 +2094,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>						          
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -3606,7 +3606,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>32</bitWidth>
                   </field>
                </fields>
-            </register>                        
+            </register>
          </registers>
       </peripheral>
       <peripheral derivedFrom="DMA1">
@@ -4829,7 +4829,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>                                 
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -5003,7 +5003,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>Rising trigger event configuration bit               of Configurable Event input</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>                
+                  </field>
                   <field>
                      <name>RT45</name>
                      <description>Rising trigger event configuration bit               of Configurable Event input</description>
@@ -5238,7 +5238,7 @@ Copyright (c) 2024 STMicroelectronics.
 				  <description>Wakeup with event generation Mask               on Event input</description>
 				  <bitOffset>22</bitOffset>
 				  <bitWidth>1</bitWidth>
-				</field>            
+				</field>
                </fields>
             </register>
             <register>
@@ -5269,7 +5269,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>5</bitWidth>
                   </field>
                </fields>
-            </register>    
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -5347,7 +5347,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>      
+            </register>
             <register>
                <name>KEYR</name>
                <displayName>KEYR</displayName>
@@ -5614,7 +5614,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitOffset>24</bitOffset>
                      <bitWidth>1</bitWidth>
                      <access>read-write</access>
-                  </field>                
+                  </field>
                   <field>
                      <name>ECCC</name>
                      <description>ECC correction</description>
@@ -5735,7 +5735,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>CPU1 CM4 Unique Boot entry enable option               bit</description>
                      <bitOffset>30</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>                
+                  </field>
                </fields>
             </register>
             <register>
@@ -5858,7 +5858,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>8</bitWidth>
                   </field>
                </fields>
-            </register>			          
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -10393,7 +10393,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>       
+            </register>
             <register>
                <name>HSEM_ICR</name>
                <displayName>HSEM_ICR</displayName>
@@ -10500,7 +10500,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>			          		   
+            </register>
             <register>
                <name>HSEM_ISR</name>
                <displayName>HSEM_ISR</displayName>
@@ -10607,7 +10607,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>		         
+            </register>
             <register>
                <name>HSEM_MISR</name>
                <displayName>HSEM_MISR</displayName>
@@ -10714,7 +10714,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>		        
+            </register>
             <register>
                <name>HSEM_CR</name>
                <displayName>HSEM_CR</displayName>
@@ -10754,7 +10754,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>16</bitWidth>
                   </field>
                </fields>
-            </register>						               
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -11508,7 +11508,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>12</bitWidth>
                   </field>
                </fields>
-            </register>      
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -12861,7 +12861,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>Word length</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>DEAT</name>
               <description>DEAT</description>
@@ -12987,7 +12987,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>Word length</description>
               <bitOffset>28</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
             <field>
               <name>DEAT</name>
               <description>DEAT</description>
@@ -13091,8 +13091,8 @@ Copyright (c) 2024 STMicroelectronics.
               <description>USART enable</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>            
-		  </fields>	
+            </field>
+		  </fields>
 		</register>
         <register>
           <name>CR2</name>
@@ -13108,7 +13108,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>Address of the LPUART node</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>MSBFIRST</name>
               <description>Most significant bit first</description>
@@ -13150,7 +13150,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>7-bit Address Detection/4-bit Address               Detection</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
           </fields>
         </register>
         <register>
@@ -13812,7 +13812,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>Clear PKA End of Operation               flag</description>
                      <bitOffset>17</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>                		
+                  </field>
                </fields>
             </register>
          </registers>
@@ -13878,7 +13878,7 @@ Copyright (c) 2024 STMicroelectronics.
 				  <description>Low-power mode selection for               CPU1</description>
 				  <bitOffset>0</bitOffset>
 				  <bitWidth>3</bitWidth>
-				</field>          
+				</field>
 			  </fields>
 			</register>
             <register>
@@ -14326,7 +14326,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>PU0</description>
                      <bitOffset>0</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>                 
+                  </field>
                </fields>
             </register>
             <register>
@@ -14355,7 +14355,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>PD13</description>
                      <bitOffset>13</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>                 
+                  </field>
                   <field>
                      <name>PD12</name>
                      <description>Port PA[y] pull-down (y=0 to               12)</description>
@@ -14433,7 +14433,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>PD0</description>
                      <bitOffset>0</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>               
+                  </field>
                </fields>
             </register>
             <register>
@@ -14647,7 +14647,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>PD0</description>
                      <bitOffset>0</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>                  
+                  </field>
                </fields>
             </register>
             <register>
@@ -14825,7 +14825,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>                      
+            </register>
             <register>
                <name>EXTSCR</name>
                <displayName>EXTSCR</displayName>
@@ -14833,14 +14833,14 @@ Copyright (c) 2024 STMicroelectronics.
                <addressOffset>0x88</addressOffset>
                <size>0x20</size>
                <resetValue>0x00000000</resetValue>
-               <fields>               
+               <fields>
                   <field>
                      <name>C1DS</name>
                      <description>CPU1 deepsleep mode</description>
                      <bitOffset>14</bitOffset>
                      <bitWidth>1</bitWidth>
                      <access>read-only</access>
-                  </field>              
+                  </field>
                   <field>
                      <name>C1STOPF</name>
                      <description>System Stop0, 1 flag for CPU1. (All core               states retained)</description>
@@ -14870,7 +14870,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <access>write-only</access>
                   </field>
                </fields>
-            </register>         
+            </register>
             <register>
                <name>SUBGHZSPICR</name>
                <displayName>SUBGHZSPICR</displayName>
@@ -16520,7 +16520,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitOffset>0</bitOffset>
                      <bitWidth>1</bitWidth>
                      <access>read-write</access>
-                  </field>                  
+                  </field>
                </fields>
             </register>
             <register>
@@ -16546,7 +16546,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <access>read-write</access>
                   </field>
                </fields>
-            </register>    
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -16574,25 +16574,25 @@ Copyright (c) 2024 STMicroelectronics.
                <size>0x20</size>
                <access>read-write</access>
                <resetValue>0x00800000</resetValue>
-               <fields>  
+               <fields>
                   <field>
                      <name>RNGEN</name>
                      <description>True random number generator               enable</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>               
+                  </field>
                   <field>
                      <name>IE</name>
                      <description>Interrupt Enable</description>
                      <bitOffset>3</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>   
+                  </field>
                   <field>
                     <name>CED</name>
                     <description>Interrupt Enable</description>
                     <bitOffset>5</bitOffset>
                     <bitWidth>1</bitWidth>
-                  </field>				  
+                  </field>
                   <field>
                      <name>RNG_CONFIG3</name>
                      <description>RNG_CONFIG3</description>
@@ -16715,7 +16715,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>32</bitWidth>
                   </field>
                </fields>
-            </register>         
+            </register>
          </registers>
       </peripheral>
       <peripheral>
@@ -16895,7 +16895,7 @@ Copyright (c) 2024 STMicroelectronics.
 						 <bitOffset>8</bitOffset>
 						 <bitWidth>2</bitWidth>
 						 <access>read-write</access>
-					  </field> 
+					  </field>
 					  <field>
 						 <name>INIT</name>
 						 <description>Initialization mode</description>
@@ -16937,7 +16937,7 @@ Copyright (c) 2024 STMicroelectronics.
 						 <bitOffset>2</bitOffset>
 						 <bitWidth>1</bitWidth>
 						 <access>read-only</access>
-					  </field>                               
+					  </field>
 				   </fields>
 			</register>
 			<register>
@@ -18262,7 +18262,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>1</bitWidth>
                   </field>
                </fields>
-            </register>						      
+            </register>
          </registers>
       </peripheral>
       <peripheral derivedFrom="SPI1">
@@ -18276,8 +18276,8 @@ Copyright (c) 2024 STMicroelectronics.
       </peripheral>
       <peripheral derivedFrom="SPI1">
          <name>SPI3</name>
-         <baseAddress>0x58010000</baseAddress>        
-      </peripheral>	     	  
+         <baseAddress>0x58010000</baseAddress>
+      </peripheral>
       <peripheral>
          <name>SYSCFG</name>
          <description>System configuration controller</description>
@@ -24702,7 +24702,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                </fields>
-            </register>           
+            </register>
          </registers>
       </peripheral>
       <peripheral derivedFrom="USART1">

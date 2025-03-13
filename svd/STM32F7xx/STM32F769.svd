@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F769</name>
-  <version>1.9</version>
+  <version>2.0</version>
   <description>STM32F769</description>
   <cpu>
     <name>CM7</name>
@@ -10365,26 +10365,26 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               enable</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>RTCAPBEN</name>
               <description>RTC register interface clock enable</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>WWDGEN</name>
               <description>Window watchdog clock
               enable</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>CAN3EN</name>
               <description>CAN 3 clock enable</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
             <field>
               <name>SPI2EN</name>
               <description>SPI2 clock enable</description>
@@ -10396,13 +10396,13 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>SPI3 clock enable</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>SPDIFRXEN</name>
               <description>SPDIF-RX clock enable</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>USART2EN</name>
               <description>USART 2 clock enable</description>
@@ -10468,7 +10468,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>HDMI-CEN clock enable</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>PWREN</name>
               <description>Power interface clock
@@ -10493,7 +10493,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>UART8 clock enable</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
           </fields>
         </register>
         <register>
@@ -17359,7 +17359,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>JEOC2</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>JSTRT2</name>
               <description>JSTRT2</description>
@@ -17413,7 +17413,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>OVR3</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
           </fields>
         </register>
         <register>
@@ -17637,7 +17637,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>DBG_TIM14_STOP</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>DBG_LPTIM1_STOP</name>
               <description>DBG_LPTIM1_STOP</description>
@@ -17649,7 +17649,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>DBG_RTC_STOP</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		
+            </field>
             <field>
               <name>DBG_WWDG_STOP</name>
               <description>DBG_WWDG_STOP</description>
@@ -17667,7 +17667,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>DBG_CAN3_STOP</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
             <field>
               <name>DBG_J2C1_SMBUS_TIMEOUT</name>
               <description>DBG_J2C1_SMBUS_TIMEOUT</description>
@@ -17691,7 +17691,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>DBG_I2C4_SMBUS_TIMEOUT</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
             <field>
               <name>DBG_CAN1_STOP</name>
               <description>DBG_CAN1_STOP</description>
@@ -19358,7 +19358,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -19377,7 +19377,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -20502,7 +20502,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -20521,7 +20521,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -21472,7 +21472,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -21491,7 +21491,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22430,7 +22430,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22449,7 +22449,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23189,7 +23189,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23208,7 +23208,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23555,7 +23555,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -85049,6 +85049,6 @@ Minimum value is 16</description>
           </fields>
         </register>
       </registers>
-    </peripheral>   
+    </peripheral>
   </peripherals>
 </device>

@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G0B1</name>
-  <version>1.9</version>
+  <version>2.0</version>
   <description>STM32G0B1</description>
   <cpu>
     <name>CM0</name>
@@ -2262,7 +2262,7 @@ If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR reg
                 </enumeratedValues>
               </field>
             </fields>
-          </register>		  
+          </register>
 		  <register>
             <name>CHSELR_1</name>
             <displayName>CHSELR_1</displayName>
@@ -2395,7 +2395,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
                 </enumeratedValues>
               </field>
             </fields>
-          </register>		  
+          </register>
           <register>
             <name>ADC_AWD3TR</name>
             <displayName>ADC_AWD3TR</displayName>
@@ -5617,7 +5617,7 @@ These bits are available only on dual-channel DACs. Refer to implementation.</de
             <access>read-write</access>
           </field>
           </fields>
-        </register>				     
+        </register>
       </registers>
     </peripheral>
 	<peripheral>
@@ -6530,7 +6530,7 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
 				<bitOffset>24</bitOffset>
 				<bitWidth>5</bitWidth>
 				<access>read-write</access>
-			  </field>  
+			  </field>
 		  </fields>
         </register>
         <register>
@@ -6916,7 +6916,7 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
 				<description>Synchronization overrun event flag
 	The flag is set when a synchronization event occurs on a DMA request line multiplexer channel x, while the DMA request counter value is lower than NBREQ.
 	The flag is cleared by writing 1 to the corresponding CSOFx bit in DMAMUX_CFR register.</description>
-				<bitOffset>0</bitOffset>				
+				<bitOffset>0</bitOffset>
 				<bitWidth>1</bitWidth>
 				<access>read-only</access>
 			  </field>
@@ -6990,7 +6990,7 @@ This bit enables/disables the clock to the counter of TIM17 when the core is hal
             <description>Clear synchronization overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_CSR register.</description>
             <bitOffset>0</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -6999,7 +6999,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
             <description>Clear synchronization overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_CSR register.</description>
             <bitOffset>1</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7008,7 +7008,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
             <description>Clear synchronization overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_CSR register.</description>
             <bitOffset>2</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7017,7 +7017,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
             <description>Clear synchronization overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_CSR register.</description>
             <bitOffset>3</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7026,7 +7026,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
             <description>Clear synchronization overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_CSR register.</description>
             <bitOffset>4</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7035,7 +7035,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
             <description>Clear synchronization overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_CSR register.</description>
             <bitOffset>5</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7044,12 +7044,12 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
             <description>Clear synchronization overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_CSR register.</description>
             <bitOffset>6</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
 		  </fields>
-        </register>		
+        </register>
         <register>
           <name>DMAMUX_RG0CR</name>
           <displayName>DMAMUX_RG0CR</displayName>
@@ -7431,7 +7431,7 @@ Note: This field shall only be written when GE bit is disabled.</description>
             <bitOffset>19</bitOffset>
             <bitWidth>5</bitWidth>
             <access>read-write</access>
-          </field> 
+          </field>
           </fields>
         </register>
         <register>
@@ -7449,7 +7449,7 @@ Note: This field shall only be written when GE bit is disabled.</description>
 The flag is set when a new trigger event occurs on DMA request generator channel x, before the request counter underrun (the internal request counter programmed via the GNBREQ field of the DMAMUX_RGxCR register).
 The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGCFR register.</description>
             <bitOffset>0</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>read-only</access>
           </field>
@@ -7459,7 +7459,7 @@ The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGC
 The flag is set when a new trigger event occurs on DMA request generator channel x, before the request counter underrun (the internal request counter programmed via the GNBREQ field of the DMAMUX_RGxCR register).
 The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGCFR register.</description>
             <bitOffset>1</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>read-only</access>
           </field>
@@ -7469,7 +7469,7 @@ The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGC
 The flag is set when a new trigger event occurs on DMA request generator channel x, before the request counter underrun (the internal request counter programmed via the GNBREQ field of the DMAMUX_RGxCR register).
 The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGCFR register.</description>
             <bitOffset>2</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>read-only</access>
           </field>
@@ -7479,7 +7479,7 @@ The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGC
 The flag is set when a new trigger event occurs on DMA request generator channel x, before the request counter underrun (the internal request counter programmed via the GNBREQ field of the DMAMUX_RGxCR register).
 The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGCFR register.</description>
             <bitOffset>3</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>read-only</access>
           </field>
@@ -7499,7 +7499,7 @@ The flag is cleared by writing 1 to the corresponding COFx bit in the DMAMUX_RGC
             <description>Clear trigger overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RGSR register.</description>
             <bitOffset>0</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7508,7 +7508,7 @@ Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RG
             <description>Clear trigger overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RGSR register.</description>
             <bitOffset>1</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7517,7 +7517,7 @@ Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RG
             <description>Clear trigger overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RGSR register.</description>
             <bitOffset>2</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -7526,7 +7526,7 @@ Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RG
             <description>Clear trigger overrun event flag
 Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RGSR register.</description>
             <bitOffset>3</bitOffset>
-           
+
             <bitWidth>1</bitWidth>
             <access>write-only</access>
           </field>
@@ -11756,13 +11756,13 @@ It is not read-only when the channel is enabled (EN=1).</description>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>           
+          <fields>
             <field>
               <name>RT2</name>
               <description>Rising trigger event configuration bit of configurable line 34</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
 		<register>
@@ -11773,13 +11773,13 @@ It is not read-only when the channel is enabled (EN=1).</description>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>           
+          <fields>
             <field>
               <name>FT2</name>
               <description>Falling trigger event configuration bit of configurable line 34</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
 		<register>
@@ -11790,13 +11790,13 @@ It is not read-only when the channel is enabled (EN=1).</description>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>           
+          <fields>
             <field>
               <name>SWI2</name>
               <description>Software rising edge event trigger on line 34</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
 		<register>
@@ -11807,13 +11807,13 @@ It is not read-only when the channel is enabled (EN=1).</description>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>           
+          <fields>
             <field>
               <name>RPIF2</name>
               <description>Rising edge event pending for configurable line 34</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
 		<register>
@@ -11824,13 +11824,13 @@ It is not read-only when the channel is enabled (EN=1).</description>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>           
+          <fields>
             <field>
               <name>FPIF2</name>
               <description>Falling edge event pending for configurable line 34</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -12508,7 +12508,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
       </registers>
     </peripheral>
 	<peripheral>
@@ -16505,7 +16505,7 @@ These are protected write (P) bits, which means that write access by the bits is
               <bitWidth>9</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>SECR</name>
           <displayName>SECR</displayName>
@@ -20663,7 +20663,7 @@ When hardware PEC checking is enabled (PECBYTE=1), the PEC acknowledge value doe
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-          
+
           </field>
           <field>
             <name>NBYTES</name>
@@ -20738,7 +20738,7 @@ If the SMBus feature is not supported, this bit is reserved and forced by hardwa
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-          
+
           </field>
           </fields>
         </register>
@@ -22215,7 +22215,7 @@ COUNTRST must never be set to '1' by software before it is already cleared to '0
             <bitOffset>3</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-          
+
           </field>
           <field>
             <name>RSTARE</name>
@@ -22770,7 +22770,7 @@ This bit is set and cleared by software.</description>
                 </enumeratedValues>
               </field>
             </fields>
-          </register>		  
+          </register>
 		  <register>
             <name>LPUART_CR1_disabled</name>
             <displayName>LPUART_CR1_disabled</displayName>
@@ -23131,9 +23131,9 @@ This bit is set and cleared by software.</description>
                     <value>0x1</value>
                   </enumeratedValue>
                 </enumeratedValues>
-              </field>            
+              </field>
             </fields>
-          </register>		  
+          </register>
           <register>
             <name>LPUART_CR2</name>
             <displayName>LPUART_CR2</displayName>
@@ -24210,7 +24210,7 @@ This bit is set by hardware when the TXFIFO reaches the threshold programmed in 
           </register>
 		  <register>
             <name>LPUART_ISR_disabled</name>
-            <displayName>LPUART_ISR_disabled</displayName>           
+            <displayName>LPUART_ISR_disabled</displayName>
 			<description>LPUART interrupt and status register [alternate] </description>
 			<alternateRegister>LPUART_ISR_enabled</alternateRegister>
             <addressOffset>0x1c</addressOffset>
@@ -24555,7 +24555,7 @@ Note: If the LPUART does not support the wakeup from Stop feature, this bit is r
                 <access>read-only</access>
               </field>
             </fields>
-          </register>  
+          </register>
           <register>
             <name>LPUART_ICR</name>
             <displayName>LPUART_ICR</displayName>
@@ -24873,7 +24873,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <description>Power voltage detector rising threshold selection</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>PVMENDAC</name>
               <description>PVMENDAC</description>
@@ -24897,7 +24897,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <description>USV</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
         </register>
         <register>
@@ -25955,7 +25955,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PU15</name>
               <description>Port D pull-up bit y
@@ -25997,7 +25997,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  		    
+            </field>
             <field>
               <name>PU9</name>
               <description>Port D pull-up bit y
@@ -26079,7 +26079,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PD15</name>
               <description>Port D pull-down bit y
@@ -26121,7 +26121,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD9</name>
               <description>Port D pull-down bit y
@@ -26193,7 +26193,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>PUCRE</name>
           <displayName>PUCRE</displayName>
@@ -26203,7 +26203,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PU15</name>
               <description>Port E pull-up bit y
@@ -26245,7 +26245,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PU9</name>
               <description>Port E pull-up bit y
@@ -26317,7 +26317,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>PDCRE</name>
           <displayName>PDCRE</displayName>
@@ -26327,7 +26327,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PD15</name>
               <description>Port E pull-down bit y
@@ -26369,7 +26369,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD9</name>
               <description>Port E pull-down bit y
@@ -26441,7 +26441,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>PUCRF</name>
           <displayName>PUCRF</displayName>
@@ -26451,7 +26451,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		   
+          <fields>
             <field>
               <name>PU13</name>
               <description>Port F pull-up bit y
@@ -26479,7 +26479,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PU9</name>
               <description>Port F pull-up bit y
@@ -26528,7 +26528,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PU2</name>
               <description>Port F pull-up bit y
@@ -26561,7 +26561,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PD13</name>
               <description>Port F pull-down bit y
@@ -26589,7 +26589,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD9</name>
               <description>Port F pull-down bit y
@@ -26638,7 +26638,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               (y=0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD2</name>
               <description>Port F pull-down bit y
@@ -26741,7 +26741,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               enable</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>HSI48ON</name>
               <description>HSI48ON</description>
@@ -26755,7 +26755,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
 			  <access>read-only</access>
-            </field>           
+            </field>
 		    <field>
               <name>PLLON</name>
               <description>PLL enable</description>
@@ -26819,7 +26819,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
-            </field>			
+            </field>
 			<field>
               <name>MCO2PRE</name>
               <description>MCO2PRE</description>
@@ -26833,7 +26833,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
-            </field>			
+            </field>
             <field>
               <name>PPRE</name>
               <description>APB prescaler</description>
@@ -26953,7 +26953,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitWidth>9</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>CIER</name>
           <displayName>CIER</displayName>
@@ -27164,7 +27164,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>AHBRSTR</name>
           <displayName>AHBRSTR</displayName>
@@ -27199,7 +27199,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>      
+        </register>
         <register>
           <name>APBRSTR1</name>
           <displayName>APBRSTR1</displayName>
@@ -27239,7 +27239,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <description>TIM7 timer reset</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>LPUART2RST</name>
               <description>LPUART2RST</description>
@@ -27257,7 +27257,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <description>USART6RST</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>FDCANRST</name>
               <description>FDCANRST</description>
@@ -27576,7 +27576,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <description>TIM7 timer clock enable</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>LPUART2EN</name>
               <description>LPUART2 clock enable</description>
@@ -27594,7 +27594,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <description>USART6EN</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>RTCAPBEN</name>
               <description>RTC APB clock enable</description>
@@ -27943,7 +27943,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               mode</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>LPUART2SMEN</name>
               <description>LPUART2 clock enable</description>
@@ -27961,7 +27961,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <description>USART6 clock enable</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>RTCAPBSMEN</name>
               <description>RTC APB clock enable during Sleep
@@ -28253,9 +28253,8 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>I2S2SEL</name>
-              <description>I2S1 clock source
-              selection</description>
+              <name>I2C2I2S1SEL</name>
+              <description>I2C2/I2S1 clock source selection</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
@@ -31701,7 +31700,7 @@ It is not used in SPI mode.</description>
         <size>0x100</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>		
+      <registers>
 		<register>
           <name>CFGR1</name>
           <displayName>CFGR1</displayName>
@@ -31745,7 +31744,7 @@ It is not used in SPI mode.</description>
               I2C1</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>I2C_PB9_FMP</name>
               <description>I2C_PB9_FMP</description>
@@ -31763,7 +31762,7 @@ It is not used in SPI mode.</description>
               <description>I2C_PB7_FMP</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>I2C_PBx_FMP</name>
               <description>Fast Mode Plus (FM+) driving capability
@@ -32199,7 +32198,7 @@ It is not used in SPI mode.</description>
               <description>DMA1_CH7</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>DMA2_CH1</name>
               <description>DMA2_CH1</description>
@@ -32229,7 +32228,7 @@ It is not used in SPI mode.</description>
               <description>DMA2_CH5</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
         </register>
         <register>
@@ -32679,9 +32678,9 @@ It is not used in SPI mode.</description>
               <description>USART6</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
-        </register> 
+        </register>
         <register>
           <name>ITLINE30</name>
           <displayName>SYSCFG_ITLINE30</displayName>
@@ -32723,7 +32722,7 @@ It is not used in SPI mode.</description>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
       </registers>
     </peripheral>
 	<peripheral>
@@ -34117,7 +34116,7 @@ Note: The clock of the slave timer or ADC must be enabled prior to receive event
 When external signals are selected the active edge of the trigger signal (TRGI) is linked to the polarity selected on the external input (see Input Control register and Control Register description.
 Note: The gated mode must not be used if TI1F_ED is selected as the trigger input (TS=00100). Indeed, TI1F_ED outputs 1 pulse for each transition on TI1F, whereas the gated mode checks the level of the trigger signal.
 Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or the TRGO2 signals must be enabled prior to receive events from the master timer, and the clock frequency (prescaler) must not be changed on-the-fly while triggers are received from the master timer.</description>
-            <bitOffset>0</bitOffset>          
+            <bitOffset>0</bitOffset>
             <bitWidth>3</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -34190,7 +34189,7 @@ This bit-field selects the trigger input to be used to synchronize the counter.
 Others: Reserved
 See  for more details on ITRx meaning for each Timer.
 Note: These bits must be changed only when they are not used (e.g. when SMS=000) to avoid wrong edge detections at the transition.</description>
-            <bitOffset>4</bitOffset>      
+            <bitOffset>4</bitOffset>
             <bitWidth>3</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -34424,7 +34423,7 @@ This bit selects whether ETR or ETR is used for trigger operations</description>
 When external signals are selected the active edge of the trigger signal (TRGI) is linked to the polarity selected on the external input (see Input Control register and Control Register description.
 Note: The gated mode must not be used if TI1F_ED is selected as the trigger input (TS=00100). Indeed, TI1F_ED outputs 1 pulse for each transition on TI1F, whereas the gated mode checks the level of the trigger signal.
 Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or the TRGO2 signals must be enabled prior to receive events from the master timer, and the clock frequency (prescaler) must not be changed on-the-fly while triggers are received from the master timer.</description>
-            <bitOffset>16</bitOffset>          
+            <bitOffset>16</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -34437,7 +34436,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
                 <name>B_0x1</name>
                 <description>Encoder mode 1 - Counter counts up/down on TI1FP1 edge depending on TI2FP2 level.</description>
                 <value>0x1</value>
-              </enumeratedValue>                         
+              </enumeratedValue>
             </enumeratedValues>
           </field>
           <field>
@@ -34448,7 +34447,7 @@ Others: Reserved
 See  for more details on ITRx meaning for each Timer.
 Note: These bits must be changed only when they are not used (e.g. when SMS=000) to avoid wrong edge detections at the transition.</description>
             <bitOffset>20</bitOffset>
-       
+
             <bitWidth>2</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -34471,7 +34470,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
                 <name>B_0x3</name>
                 <description>Internal Trigger 3 (ITR3)</description>
                 <value>0x3</value>
-              </enumeratedValue>             
+              </enumeratedValue>
             </enumeratedValues>
           </field>
           </fields>
@@ -34803,7 +34802,7 @@ When CNT is reinitialized by a trigger event (refer to control register (TIM1_SM
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC1IF</name>
@@ -34826,7 +34825,7 @@ If channel CC1 is configured as input: this bit is set when counter value has be
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC2IF</name>
@@ -34835,7 +34834,7 @@ Refer to CC1IF description</description>
             <bitOffset>2</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC3IF</name>
@@ -34844,7 +34843,7 @@ Refer to CC1IF description</description>
             <bitOffset>3</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC4IF</name>
@@ -34853,7 +34852,7 @@ Refer to CC1IF description</description>
             <bitOffset>4</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>COMIF</name>
@@ -34873,7 +34872,7 @@ Refer to CC1IF description</description>
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>TIF</name>
@@ -34894,7 +34893,7 @@ This flag is set by hardware on the TRG trigger event (active edge detected on T
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>BIF</name>
@@ -34915,7 +34914,7 @@ This flag is set by hardware as soon as the break input goes active. It can be c
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>B2IF</name>
@@ -34936,7 +34935,7 @@ This flag is set by hardware as soon as the break 2 input goes active. It can be
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC1OF</name>
@@ -34957,7 +34956,7 @@ This flag is set by hardware only when the corresponding channel is configured i
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC2OF</name>
@@ -34966,7 +34965,7 @@ Refer to CC1OF description</description>
             <bitOffset>10</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC3OF</name>
@@ -34975,7 +34974,7 @@ Refer to CC1OF description</description>
             <bitOffset>11</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC4OF</name>
@@ -34984,7 +34983,7 @@ Refer to CC1OF description</description>
             <bitOffset>12</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>SBIF</name>
@@ -35006,7 +35005,7 @@ This flag must be reset to re-start PWM operation.</description>
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC5IF</name>
@@ -35015,7 +35014,7 @@ Refer to CC1IF description (Note: Channel 5 can only be configured as output)</d
             <bitOffset>16</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC6IF</name>
@@ -35024,7 +35023,7 @@ Refer to CC1IF description (Note: Channel 6 can only be configured as output)</d
             <bitOffset>17</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           </fields>
         </register>
@@ -35291,7 +35290,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
                     <name>B_0x1</name>
                     <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
                     <value>0x1</value>
-                  </enumeratedValue>                  
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -35385,7 +35384,7 @@ Note: These bits can not be modified as long as LOCK level 3 has been programmed
 Note: In PWM mode, the OCREF level changes only when the result of the comparison changes or when the output compare mode switches from 'frozen' mode to 'PWM' mode.
 Note: On channels having a complementary output, this bit field is preloaded. If the CCPC bit is set in the TIMx_CR2 register then the OC1M active bits take the new value from the preloaded bits only when a COM event is generated.
 Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
-                <bitOffset>16</bitOffset>          
+                <bitOffset>16</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
                 <enumeratedValues>
@@ -35398,15 +35397,15 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
                     <name>B_0x1</name>
                     <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
                     <value>0x1</value>
-                  </enumeratedValue>                 
+                  </enumeratedValue>
                 </enumeratedValues>
-              </field>              
+              </field>
               <field>
                 <name>OC2M2</name>
                 <description>Output Compare 2 mode
 Refer to OC1M[3:0] description.</description>
                 <bitOffset>24</bitOffset>
-          
+
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
               </field>
@@ -35685,7 +35684,7 @@ Refer to OC1PE description.</description>
                 <description>Output compare 3 mode
 Refer to OC1M[3:0] description.</description>
                 <bitOffset>4</bitOffset>
-        
+
                 <bitWidth>3</bitWidth>
                 <access>read-write</access>
               </field>
@@ -35749,7 +35748,7 @@ Refer to OC1PE description.</description>
                 <description>Output compare 4 mode
 Refer to OC3M[3:0] description.</description>
                 <bitOffset>12</bitOffset>
-          
+
                 <bitWidth>3</bitWidth>
                 <access>read-write</access>
               </field>
@@ -35769,13 +35768,13 @@ Refer to OC1M[3:0] description.</description>
 
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
-              </field>            
+              </field>
               <field>
                 <name>OC4M2</name>
                 <description>Output compare 4 mode
 Refer to OC3M[3:0] description.</description>
                 <bitOffset>24</bitOffset>
-          
+
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
               </field>
@@ -37450,7 +37449,7 @@ Others: Reserved</description>
         <name>TIM2</name>
         <description>TIM2 global interrupt</description>
         <value>15</value>
-      </interrupt>   
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -37780,7 +37779,7 @@ When external signals are selected the active edge of the trigger signal (TRGI) 
 reinitializes the counter, generates an update of the registers and starts the counter.
 Note: The gated mode must not be used if TI1F_ED is selected as the trigger input (TS=00100). Indeed, TI1F_ED outputs 1 pulse for each transition on TI1F, whereas the gated mode checks the level of the trigger signal.
 Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or the TRGO2 signals must be enabled prior to receive events from the master timer, and the clock frequency (prescaler) must not be changed on-the-fly while triggers are received from the master timer.</description>
-            <bitOffset>0</bitOffset>          
+            <bitOffset>0</bitOffset>
             <bitWidth>3</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -37853,7 +37852,7 @@ This bit-field selects the trigger input to be used to synchronize the counter.
 Others: Reserved
 See  for more details on ITRx meaning for each Timer.
 Note: These bits must be changed only when they are not used (e.g. when SMS=000) to avoid wrong edge detections at the transition.</description>
-            <bitOffset>4</bitOffset>       
+            <bitOffset>4</bitOffset>
             <bitWidth>3</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -37896,7 +37895,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
                 <name>B_0x7</name>
                 <description>External Trigger input (ETRF)</description>
                 <value>0x7</value>
-              </enumeratedValue>            
+              </enumeratedValue>
             </enumeratedValues>
           </field>
           <field>
@@ -38088,7 +38087,7 @@ When external signals are selected the active edge of the trigger signal (TRGI) 
 reinitializes the counter, generates an update of the registers and starts the counter.
 Note: The gated mode must not be used if TI1F_ED is selected as the trigger input (TS=00100). Indeed, TI1F_ED outputs 1 pulse for each transition on TI1F, whereas the gated mode checks the level of the trigger signal.
 Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or the TRGO2 signals must be enabled prior to receive events from the master timer, and the clock frequency (prescaler) must not be changed on-the-fly while triggers are received from the master timer.</description>
-            <bitOffset>16</bitOffset>         
+            <bitOffset>16</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -38101,7 +38100,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
                 <name>B_0x1</name>
                 <description>Encoder mode 1 - Counter counts up/down on TI1FP1 edge depending on TI2FP2 level.</description>
                 <value>0x1</value>
-              </enumeratedValue>                        
+              </enumeratedValue>
             </enumeratedValues>
           </field>
           <field>
@@ -38112,7 +38111,7 @@ Others: Reserved
 See  for more details on ITRx meaning for each Timer.
 Note: These bits must be changed only when they are not used (e.g. when SMS=000) to avoid wrong edge detections at the transition.</description>
             <bitOffset>20</bitOffset>
-        
+
             <bitWidth>2</bitWidth>
             <access>read-write</access>
             <enumeratedValues>
@@ -38135,7 +38134,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
                 <name>B_0x3</name>
                 <description>Internal Trigger 3 (ITR3)</description>
                 <value>0x3</value>
-              </enumeratedValue>            
+              </enumeratedValue>
             </enumeratedValues>
           </field>
           </fields>
@@ -38410,7 +38409,7 @@ When CNT is reinitialized by a trigger event (refer to the synchro control regis
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC1IF</name>
@@ -38433,7 +38432,7 @@ If channel CC1 is configured as input: this bit is set when counter value has be
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC2IF</name>
@@ -38442,7 +38441,7 @@ Refer to CC1IF description</description>
             <bitOffset>2</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC3IF</name>
@@ -38451,7 +38450,7 @@ Refer to CC1IF description</description>
             <bitOffset>3</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC4IF</name>
@@ -38460,7 +38459,7 @@ Refer to CC1IF description</description>
             <bitOffset>4</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>TIF</name>
@@ -38481,7 +38480,7 @@ This flag is set by hardware on the TRG trigger event (active edge detected on T
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC1OF</name>
@@ -38502,7 +38501,7 @@ This flag is set by hardware only when the corresponding channel is configured i
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC2OF</name>
@@ -38511,7 +38510,7 @@ refer to CC1OF description</description>
             <bitOffset>10</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC3OF</name>
@@ -38520,7 +38519,7 @@ refer to CC1OF description</description>
             <bitOffset>11</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           <field>
             <name>CC4OF</name>
@@ -38529,7 +38528,7 @@ refer to CC1OF description</description>
             <bitOffset>12</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-            
+
           </field>
           </fields>
         </register>
@@ -38739,7 +38738,7 @@ Note: CC2S bits are writable only when the channel is OFF (CC2E = 0 in TIMx_CCER
 These bits define the behavior of the output reference signal OC1REF from which OC1 and OC1N are derived. OC1REF is active high whereas OC1 and OC1N active level depends on CC1P and CC1NP bits.
 Note: In PWM mode, the OCREF level changes only when the result of the comparison changes or when the output compare mode switches from 'frozen' mode to 'PWM' mode.
 Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
-                <bitOffset>4</bitOffset>              
+                <bitOffset>4</bitOffset>
                 <bitWidth>3</bitWidth>
                 <access>read-write</access>
                 <enumeratedValues>
@@ -38782,7 +38781,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
                     <name>B_0x7</name>
                     <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. In downcounting, channel 1 is active as long as TIMx_CNT>TIMx_CCR1 else inactive.</description>
                     <value>0x7</value>
-                  </enumeratedValue>                  
+                  </enumeratedValue>
                 </enumeratedValues>
             </field>
             <field>
@@ -39247,7 +39246,7 @@ Refer to CC1NP description</description>
               <bitOffset>0</bitOffset>
               <bitWidth>16</bitWidth>
             </field>
-          </fields>		  
+          </fields>
         </register>
 		<register>
           <name>CNT_ALTERNATE5</name>
@@ -39275,8 +39274,8 @@ This bit is a read-only copy of the UIF bit of the TIMx_ISR register</descriptio
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
               </field>
-          </fields>		  
-        </register>				
+          </fields>
+        </register>
         <register>
           <name>PSC</name>
           <displayName>PSC</displayName>
@@ -39911,7 +39910,7 @@ When CNT is reinitialized by software using the UG bit in the TIMx_EGR register,
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           </fields>
         </register>
@@ -40041,7 +40040,7 @@ This bit is a read-only copy of the UIF bit of the TIMx_ISR register. If the UIF
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x0000</resetValue>
-          <fields> 
+          <fields>
 		  <field>
             <name>CEN</name>
             <description>Counter enable
@@ -40271,7 +40270,7 @@ When CNT is reinitialized by software using the UG bit in TIMx_EGR register, if 
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC1IF</name>
@@ -40294,7 +40293,7 @@ If channel CC1 is configured as input: this bit is set when counter value has be
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC1OF</name>
@@ -40315,7 +40314,7 @@ This flag is set by hardware only when the corresponding channel is configured i
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           </fields>
         </register>
@@ -40452,7 +40451,7 @@ These bits define the behavior of the output reference signal OC1REF from which 
 Others: Reserved
 Note: In PWM mode 1 or 2, the OCREF level changes when the result of the comparison changes or when the output compare mode switches from frozen to PWM mode.
 Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
-                <bitOffset>4</bitOffset>          
+                <bitOffset>4</bitOffset>
                 <bitWidth>3</bitWidth>
                 <access>read-write</access>
                 <enumeratedValues>
@@ -40505,7 +40504,7 @@ These bits define the behavior of the output reference signal OC1REF from which 
 Others: Reserved
 Note: In PWM mode 1 or 2, the OCREF level changes when the result of the comparison changes or when the output compare mode switches from frozen to PWM mode.
 Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
-                <bitOffset>16</bitOffset>          
+                <bitOffset>16</bitOffset>
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
                 <enumeratedValues>
@@ -40518,7 +40517,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
                     <name>B_0x1</name>
                     <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1). </description>
                     <value>0x1</value>
-                  </enumeratedValue>                
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
           </fields>
@@ -41360,7 +41359,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
                   <name>B_0x0</name>
                   <description>Slave mode disabled - if CEN = '1' then the prescaler is clocked directly by the internal clock.</description>
                   <value>0x0</value>
-                </enumeratedValue>                
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -41393,7 +41392,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
                   <name>B_0x3</name>
                   <description>Internal Trigger 3 (ITR3)</description>
                   <value>0x3</value>
-                </enumeratedValue>               
+                </enumeratedValue>
               </enumeratedValues>
             </field>
           </fields>
@@ -42026,7 +42025,7 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
                   <name>B_0x7</name>
                   <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active.</description>
                   <value>0x7</value>
-                </enumeratedValue>              
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -42102,7 +42101,7 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
                   <name>B_0x1</name>
                   <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
                   <value>0x1</value>
-                </enumeratedValue>               
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -43640,7 +43639,7 @@ When CNT is reinitialized by software using the UG bit in TIMx_EGR register, if 
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>CC1IF</name>
@@ -43663,7 +43662,7 @@ If channel CC1 is configured as input: this bit is set when counter value has be
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>COMIF</name>
@@ -43683,7 +43682,7 @@ If channel CC1 is configured as input: this bit is set when counter value has be
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           <field>
             <name>BIF</name>
@@ -43704,7 +43703,7 @@ This flag is set by hardware as soon as the break input goes active. It can be c
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-   
+
           </field>
           <field>
             <name>CC1OF</name>
@@ -43725,7 +43724,7 @@ This flag is set by hardware only when the corresponding channel is configured i
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-            
+
           </field>
           </fields>
         </register>
@@ -43906,7 +43905,7 @@ All other values: Reserved
 Note: These bits can not be modified as long as LOCK level 3 has been programmed (LOCK bits in TIMx_BDTR register) and CC1S='00' (the channel is configured in output).
 In PWM mode 1 or 2, the OCREF level changes only when the result of the comparison changes or when the output compare mode switches from 'frozen' mode to 'PWM' mode.
 The OC1M[3] bit is not contiguous, located in bit 16.</description>
-                <bitOffset>4</bitOffset>          
+                <bitOffset>4</bitOffset>
                 <bitWidth>3</bitWidth>
                 <access>read-write</access>
                 <enumeratedValues>
@@ -43961,7 +43960,7 @@ Note: These bits can not be modified as long as LOCK level 3 has been programmed
 In PWM mode 1 or 2, the OCREF level changes only when the result of the comparison changes or when the output compare mode switches from 'frozen' mode to 'PWM' mode.
 The OC1M[3] bit is not contiguous, located in bit 16.</description>
                 <bitOffset>16</bitOffset>
-              
+
                 <bitWidth>1</bitWidth>
                 <access>read-write</access>
                 <enumeratedValues>
@@ -43974,7 +43973,7 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
                     <name>B_0x1</name>
                     <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
                     <value>0x1</value>
-                  </enumeratedValue>                  
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
           </fields>
@@ -45934,7 +45933,7 @@ When enabled, the Type-C detector for CC2 is configured through ANAMODE and ANAS
           <register>
             <name>UCPD_SR</name>
             <displayName>UCPD_SR</displayName>
-            <description>UCPD status register </description>           
+            <description>UCPD status register </description>
             <addressOffset>0x14</addressOffset>
             <size>0x20</size>
             <resetValue>0x00000000</resetValue>
@@ -46725,7 +46724,7 @@ The bitfield may return a spurious value when a byte reception is ongoing (the R
           <register>
             <name>UCPD_RX_ORDEXTR2</name>
             <displayName>UCPD_RX_ORDEXTR2</displayName>
-            <description>UCPD Rx ordered set extension register 2 	</description>           
+            <description>UCPD Rx ordered set extension register 2 	</description>
             <addressOffset>0x38</addressOffset>
             <size>0x20</size>
             <resetValue>0x00000000</resetValue>
@@ -47665,7 +47664,7 @@ Note: FIFO mode can be used on standard UART communication, in SPI master/slave 
                 </enumeratedValues>
               </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>CR2</name>
           <displayName>CR2</displayName>
@@ -48832,7 +48831,7 @@ Note: If Smartcard mode is not supported, this bit is reserved and must be kept 
               <description>Block Length</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>        
+            </field>
           </fields>
         </register>
         <register>
@@ -49938,7 +49937,7 @@ Note: If the USART does not support the Smartcard mode, this bit is reserved and
                 </enumeratedValues>
               </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>ICR</name>
           <displayName>ICR</displayName>
@@ -51849,7 +51848,7 @@ Software sets this bit to drive USB reset state on the bus and initialize the de
                     <name>B_0x1</name>
                     <description>USB core is under reset</description>
                     <value>0x1</value>
-                  </enumeratedValue>                
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -51918,7 +51917,7 @@ This bit is cleared by hardware simultaneous with the WAKEUP flag set.</descript
                     <name>B_0x1</name>
                     <description>Enter L1/L2 suspend</description>
                     <value>0x1</value>
-                  </enumeratedValue>                
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -51968,7 +51967,7 @@ This bit is cleared by hardware at the end of resume.</description>
                     <name>B_0x1</name>
                     <description>Send 50us remote-wakeup signaling to host</description>
                     <value>0x1</value>
-                  </enumeratedValue>               
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -52454,7 +52453,7 @@ This bit contains the device answer to the LPM transaction. It mast be evaluated
                     <name>DEVICE_MODE0x1</name>
                     <description>the valid LPM Token will be ACK.</description>
                     <value>0x1</value>
-                  </enumeratedValue>                 
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -52632,7 +52631,7 @@ This bit is set by software to enable the embedded pull-down on DP and DM lines.
       <baseAddress>0x40010030</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x400</size>
+        <size>0x8</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
@@ -52748,7 +52747,7 @@ These bits are automatically initialized after reset with the trimming value sto
           </fields>
         </register>
       </registers>
-    </peripheral>  
+    </peripheral>
     <peripheral>
       <name>WWDG</name>
       <description>System window watchdog</description>
@@ -52802,7 +52801,7 @@ This bit is set by software and only cleared by hardware after a reset. When WDG
                 <value>0x1</value>
               </enumeratedValue>
             </enumeratedValues>
-          
+
           </field>
           </fields>
         </register>
@@ -52830,7 +52829,7 @@ When set, an interrupt occurs whenever the counter reaches the value 0x40. This 
             <bitOffset>9</bitOffset>
             <bitWidth>1</bitWidth>
             <access>read-write</access>
-          
+
           </field>
           <field>
             <name>WDGTB</name>
@@ -52903,6 +52902,6 @@ The timebase of the prescaler can be modified as follows:</description>
           </fields>
         </register>
       </registers>
-    </peripheral>	
+    </peripheral>
   </peripherals>
 </device>

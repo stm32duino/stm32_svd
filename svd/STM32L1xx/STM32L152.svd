@@ -22,7 +22,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32L152</name>
   <version>1.2</version>
   <description>STM32L152</description>
-  <cpu>                                                         
+  <cpu>
     <name>CM3</name>
     <revision>r1p1</revision>
     <endian>little</endian>
@@ -12671,7 +12671,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>16</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
       </registers>
     </peripheral>
     <peripheral>

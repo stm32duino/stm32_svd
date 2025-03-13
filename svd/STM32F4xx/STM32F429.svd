@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F429</name>
-  <version>1.8</version>
+  <version>1.9</version>
   <description>STM32F429</description>
   <cpu>
     <name>CM4</name>
@@ -30,7 +30,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
     <fpuPresent>true</fpuPresent>
     <nvicPrioBits>4</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
-  </cpu> 
+  </cpu>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <size>0x20</size>
@@ -5125,12 +5125,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-								 
-											   
-									   
-									
-					
-				   
+
+
+
+
+
+
               <name>ASYNCWAIT</name>
               <description>ASYNCWAIT</description>
               <bitOffset>15</bitOffset>
@@ -5287,12 +5287,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-								 
-											   
-									   
-									
-					
-				   
+
+
+
+
+
+
               <name>ASYNCWAIT</name>
               <description>ASYNCWAIT</description>
               <bitOffset>15</bitOffset>
@@ -5449,12 +5449,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-								 
-											   
-									   
-									
-					
-				   
+
+
+
+
+
+
               <name>ASYNCWAIT</name>
               <description>ASYNCWAIT</description>
               <bitOffset>15</bitOffset>
@@ -6254,7 +6254,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>       
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6296,7 +6296,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6339,7 +6339,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6382,7 +6382,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6520,7 +6520,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>SDRAM clock configuration</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>          
+            </field>
           </fields>
         </register>
         <register>
@@ -9733,7 +9733,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            </field>		  
+            </field>
             <field>
               <name>PLLSAION</name>
               <description>PLLSAI enable</description>
@@ -12006,7 +12006,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -21838,7 +21838,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -21857,7 +21857,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22837,7 +22837,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22856,7 +22856,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23778,7 +23778,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23797,7 +23797,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -24711,7 +24711,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -24730,7 +24730,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25495,7 +25495,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25514,7 +25514,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25861,7 +25861,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -26192,7 +26192,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -51859,7 +51859,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>OTG_HS_HCSPLT12</name>
           <displayName>OTG_HS_HCSPLT12</displayName>
@@ -53326,7 +53326,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>OTG_HS_HCINTMSK0</name>
           <displayName>OTG_HS_HCINTMSK0</displayName>
@@ -54638,7 +54638,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>OTG_HS_HCTSIZ0</name>
           <displayName>OTG_HS_HCTSIZ0</displayName>
@@ -54998,7 +54998,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>OTG_HS_HCTSIZ12</name>
           <displayName>OTG_HS_HCTSIZ12</displayName>
@@ -55118,7 +55118,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>OTG_HS_HCDMA0</name>
           <displayName>OTG_HS_HCDMA0</displayName>
@@ -55334,7 +55334,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>OTG_HS_HCDMA12</name>
           <displayName>OTG_HS_HCDMA12</displayName>

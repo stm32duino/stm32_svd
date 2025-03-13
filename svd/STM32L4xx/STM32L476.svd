@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    <name>STM32L476</name>
-   <version>1.7</version>
+   <version>1.8</version>
    <description>STM32L476</description>
     <cpu>
     <name>CM4</name>
@@ -6113,7 +6113,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
                      <description>nRST_SHDW</description>
                      <bitOffset>14</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>				  
+                  </field>
                   <field>
                      <name>IDWG_SW</name>
                      <description>Independent watchdog selection</description>
@@ -6167,7 +6167,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
                      <description>SRAM2 Erase when system reset</description>
                      <bitOffset>25</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>				  
+                  </field>
 				  <field>
                      <name>nSWBOOT0</name>
                      <description>Software BOOT0</description>
@@ -8539,8 +8539,8 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
                      <bitWidth>1</bitWidth>
                   </field>
                   <field>
-                    
-					
+
+
 					<name>TIM17EN</name>
                      <description>TIM17 timer clock enable</description>
                      <bitOffset>18</bitOffset>
@@ -12219,7 +12219,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>     
+        </register>
 		<register>
           <name>CH2CFGR1</name>
           <displayName>CH2CFGR1</displayName>
@@ -12393,7 +12393,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
 		<register>
           <name>CH3CFGR1</name>
           <displayName>CH3CFGR1</displayName>
@@ -12567,7 +12567,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
 		<register>
           <name>CH4CFGR1</name>
           <displayName>CH4CFGR1</displayName>
@@ -12741,7 +12741,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
 		<register>
           <name>CH5CFGR1</name>
           <displayName>CH5CFGR1</displayName>
@@ -12915,7 +12915,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>            
+        </register>
 		<register>
           <name>CH6CFGR1</name>
           <displayName>CH6CFGR1</displayName>
@@ -13089,7 +13089,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
         <register>
           <name>CH7CFGR1</name>
           <displayName>CH7CFGR1</displayName>
@@ -13263,7 +13263,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>     
+        </register>
         <register>
           <name>DFSDM_FLT0CR1</name>
           <displayName>DFSDM_FLT0CR1</displayName>
@@ -24824,7 +24824,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>IC2PCS</name>
+                     <name>IC2PSC</name>
                      <description>Input capture 2 prescaler</description>
                      <bitOffset>10</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -24842,7 +24842,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -26152,7 +26152,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>IC2PCS</name>
+                     <name>IC2PSC</name>
                      <description>Input capture 2 prescaler</description>
                      <bitOffset>10</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -26170,7 +26170,7 @@ This bit is written by software to clear the UDD flag in the LCD_SR register.</d
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>

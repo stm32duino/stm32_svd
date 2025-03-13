@@ -473,7 +473,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>S_NSUIDE</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>S_SDE</name>
               <description>S_SDE</description>
@@ -595,7 +595,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x8</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>		  
+          <fields>
 		    <field>
               <name>SUNID</name>
               <description>SUNID</description>
@@ -619,7 +619,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>NSUID</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>		  		  
+            </field>
             <field>
               <name>SNID</name>
               <description>SNID</description>
@@ -653,7 +653,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x20008</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>		  
+          <fields>
 		    <field>
               <name>SUNID</name>
               <description>SUNID</description>
@@ -677,7 +677,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>NSUID</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>		  		  
+            </field>
             <field>
               <name>SNID</name>
               <description>SNID</description>
@@ -703,7 +703,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>DCIDR0_S</name>
           <displayName>DCIDR0_S</displayName>
@@ -779,7 +779,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
         <register>
           <name>DCIDR2_S</name>
           <displayName>DCIDR2_S</displayName>
@@ -967,7 +967,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>DLAR_S</name>
           <displayName>DLAR_S</displayName>
@@ -999,7 +999,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>DLSR_S</name>
           <displayName>DLSR_S</displayName>
@@ -1795,7 +1795,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>FPHP</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>FP16</name>
               <description>FP16</description>
@@ -1807,7 +1807,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>MVE</description>
               <bitOffset>8</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>FPDNaN</name>
               <description>FPDNaN</description>
@@ -1841,7 +1841,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>FPHP</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>FP16</name>
               <description>FP16</description>
@@ -1853,7 +1853,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>MVE</description>
               <bitOffset>8</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>FPDNaN</name>
               <description>FPDNaN</description>
@@ -1925,7 +1925,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>IMPLEMENTATION_DEFINED</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -1995,7 +1995,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>SUS4</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  		    
+            </field>
 			 <field>
               <name>SU5</name>
               <description>SU5</description>
@@ -2007,7 +2007,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>SUS5</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SU6</name>
               <description>SU6</description>
@@ -2043,7 +2043,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>SUS10</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
 		     <field>
               <name>SU11</name>
               <description>SU11</description>
@@ -2055,7 +2055,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>SUS11</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -2529,7 +2529,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2557,7 +2557,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2585,7 +2585,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2613,7 +2613,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2621,7 +2621,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>MPU_RLAR_A0_NS</name>
           <displayName>MPU_RLAR_A0_NS</displayName>
@@ -2641,7 +2641,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2669,7 +2669,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2697,7 +2697,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -2725,7 +2725,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EN</name>
               <description>EN</description>
@@ -3049,7 +3049,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
 		<register>
           <name>NVIC_ISER8</name>
           <displayName>NVIC_ISER8</displayName>
@@ -3321,7 +3321,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
 		<register>
           <name>NVIC_ISER8_NS</name>
           <displayName>NVIC_ISER8_NS</displayName>
@@ -3457,7 +3457,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
         <register>
           <name>NVIC_ICER0</name>
           <displayName>NVIC_ICER0</displayName>
@@ -3593,7 +3593,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ICER8</name>
           <displayName>NVIC_ICER8</displayName>
@@ -3865,7 +3865,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ICER8_NS</name>
           <displayName>NVIC_ICER8_NS</displayName>
@@ -4001,7 +4001,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ISPR0</name>
           <displayName>NVIC_ISPR0</displayName>
@@ -4137,7 +4137,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ISPR8</name>
           <displayName>NVIC_ISPR8</displayName>
@@ -4409,7 +4409,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_ISPR8_NS</name>
           <displayName>NVIC_ISPR8_NS</displayName>
@@ -4545,7 +4545,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>NVIC_ICPR0</name>
           <displayName>NVIC_ICPR0</displayName>
@@ -5089,7 +5089,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_IABR0</name>
           <displayName>NVIC_IABR0</displayName>
@@ -5225,7 +5225,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_IABR8</name>
           <displayName>NVIC_IABR8</displayName>
@@ -5242,7 +5242,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR9</name>
           <displayName>NVIC_IABR9</displayName>
@@ -5259,7 +5259,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR10</name>
           <displayName>NVIC_IABR10</displayName>
@@ -5276,7 +5276,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR11</name>
           <displayName>NVIC_IABR11</displayName>
@@ -5293,7 +5293,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR12</name>
           <displayName>NVIC_IABR12</displayName>
@@ -5310,7 +5310,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR13</name>
           <displayName>NVIC_IABR13</displayName>
@@ -5327,7 +5327,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR14</name>
           <displayName>NVIC_IABR14</displayName>
@@ -5344,7 +5344,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR15</name>
           <displayName>NVIC_IABR15</displayName>
@@ -5361,7 +5361,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_IABR0_NS</name>
           <displayName>NVIC_IABR0_NS</displayName>
@@ -5497,7 +5497,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>NVIC_IABR8_NS</name>
           <displayName>NVIC_IABR8_NS</displayName>
@@ -5514,7 +5514,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR9_NS</name>
           <displayName>NVIC_IABR9_NS</displayName>
@@ -5531,7 +5531,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR10_NS</name>
           <displayName>NVIC_IABR10_NS</displayName>
@@ -5548,7 +5548,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR11_NS</name>
           <displayName>NVIC_IABR11_NS</displayName>
@@ -5565,7 +5565,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR12_NS</name>
           <displayName>NVIC_IABR12_NS</displayName>
@@ -5582,7 +5582,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR13_NS</name>
           <displayName>NVIC_IABR13_NS</displayName>
@@ -5599,7 +5599,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR14_NS</name>
           <displayName>NVIC_IABR14_NS</displayName>
@@ -5616,7 +5616,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IABR15_NS</name>
           <displayName>NVIC_IABR15_NS</displayName>
@@ -5633,7 +5633,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
 		<register>
           <name>NVIC_IPR0</name>
           <displayName>NVIC_IPR0</displayName>
@@ -6177,7 +6177,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
         <register>
           <name>NVIC_IPR16</name>
           <displayName>NVIC_IPR16</displayName>
@@ -9577,7 +9577,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>NVIC_IPR116</name>
           <displayName>NVIC_IPR116</displayName>
@@ -9713,7 +9713,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>NVIC_IPR120</name>
           <displayName>NVIC_IPR120</displayName>
@@ -10393,7 +10393,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
         <register>
           <name>NVIC_IPR16_NS</name>
           <displayName>NVIC_IPR16_NS</displayName>
@@ -13793,7 +13793,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>NVIC_IPR116_NS</name>
           <displayName>NVIC_IPR116_NS</displayName>
@@ -13929,7 +13929,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>NVIC_IPR120_NS</name>
           <displayName>NVIC_IPR120_NS</displayName>
@@ -14065,7 +14065,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>ITNS0</name>
           <displayName>ITNS0</displayName>
@@ -14074,7 +14074,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14091,7 +14091,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14108,7 +14108,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14125,7 +14125,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14142,7 +14142,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14159,7 +14159,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14176,7 +14176,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14193,7 +14193,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14210,7 +14210,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14227,7 +14227,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14244,7 +14244,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14261,7 +14261,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14278,7 +14278,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14295,7 +14295,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14312,7 +14312,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14329,7 +14329,7 @@ Copyright (c) 2022 STMicroelectronics.
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-		  <fields>           
+		  <fields>
             <field>
               <name>ITNS</name>
               <description>ITNS</description>
@@ -14541,7 +14541,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x3C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		  <fields>           
+		  <fields>
             <field>
               <name>IMPLEMENTATION_DEFINED</name>
               <description>IMPLEMENTATION_DEFINED</description>
@@ -14557,7 +14557,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x2003C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-		  <fields>           
+		  <fields>
             <field>
               <name>IMPLEMENTATION_DEFINED</name>
               <description>IMPLEMENTATION_DEFINED</description>
@@ -14603,7 +14603,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>PRIGROUP</description>
               <bitOffset>8</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>IESB</name>
               <description>IESB</description>
@@ -14673,7 +14673,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>PRIGROUP</description>
               <bitOffset>8</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>IESB</name>
               <description>IESB</description>
@@ -14849,7 +14849,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>		  		  
+          <fields>
 			<field>
               <name>TRD</name>
               <description>TRD</description>
@@ -14861,7 +14861,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>LOB</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>BP</name>
               <description>BP</description>
@@ -14919,7 +14919,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x20014</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>		  		  
+          <fields>
 			<field>
               <name>TRD</name>
               <description>TRD</description>
@@ -14931,7 +14931,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>LOB</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>BP</name>
               <description>BP</description>
@@ -15149,7 +15149,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x78</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields> 
+          <fields>
             <field>
               <name>Ctype1</name>
               <description>Ctype1</description>
@@ -15225,7 +15225,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x20078</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields> 
+          <fields>
             <field>
               <name>Ctype1</name>
               <description>Ctype1</description>
@@ -15293,7 +15293,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>CPACR_S</name>
           <displayName>CPACR_S</displayName>
@@ -15301,7 +15301,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x88</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>    
+          <fields>
             <field>
               <name>CP0</name>
               <description>CP0</description>
@@ -15349,7 +15349,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>			
+            </field>
 			 <field>
               <name>CP10</name>
               <description>CP10</description>
@@ -15371,7 +15371,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x20088</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-           <fields>    
+           <fields>
             <field>
               <name>CP0</name>
               <description>CP0</description>
@@ -15419,7 +15419,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>			
+            </field>
 			 <field>
               <name>CP10</name>
               <description>CP10</description>
@@ -15513,7 +15513,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>CSSELR_S</name>
           <displayName>CSSELR_S</displayName>
@@ -15785,7 +15785,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>ICSR_S</name>
           <displayName>ICSR_S</displayName>
@@ -16061,7 +16061,7 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>4</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>ID_ISAR0_S</name>
           <displayName>ID_ISAR0_S</displayName>
@@ -16535,7 +16535,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>PACBTI</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          
+            </field>
           </fields>
         </register>
 		<register>
@@ -16551,9 +16551,9 @@ Copyright (c) 2022 STMicroelectronics.
               <description>PACBTI</description>
               <bitOffset>20</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          
+            </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>ID_MMFR0_S</name>
           <displayName>ID_MMFR0_S</displayName>
@@ -16971,7 +16971,7 @@ Copyright (c) 2022 STMicroelectronics.
           <addressOffset>0x8C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>           
+          <fields>
             <field>
               <name>CP0</name>
               <description>CP0</description>
@@ -17019,7 +17019,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>CP7</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>CP10</name>
               <description>CP10</description>

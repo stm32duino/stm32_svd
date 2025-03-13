@@ -3137,7 +3137,7 @@ Copyright (c) 2021 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>NVIC_ICER0</name>
           <displayName>NVIC_ICER0</displayName>
@@ -3273,7 +3273,7 @@ Copyright (c) 2021 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
         <register>
           <name>NVIC_ISPR0</name>
           <displayName>NVIC_ISPR0</displayName>
@@ -3409,7 +3409,7 @@ Copyright (c) 2021 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
         <register>
           <name>NVIC_ICPR0</name>
           <displayName>NVIC_ICPR0</displayName>
@@ -3545,7 +3545,7 @@ Copyright (c) 2021 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
         <register>
           <name>NVIC_IABR0</name>
           <displayName>NVIC_IABR0</displayName>
@@ -3681,7 +3681,7 @@ Copyright (c) 2021 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>NVIC_IPR0</name>
           <displayName>NVIC_IPR0</displayName>

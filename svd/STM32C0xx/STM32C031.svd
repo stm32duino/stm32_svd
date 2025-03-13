@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32C031</name>
-  <version>1.2</version>
+  <version>1.3</version>
   <description>STM32C031</description>
   <cpu>
     <name>CM0</name>
@@ -8728,7 +8728,7 @@ Other: reserved</description>
     </peripheral>
     <peripheral>
       <name>FLASH</name>
-      <description>Spider_FLASH register block</description>
+      <description>FLASH register block</description>
       <groupName>FLASH</groupName>
       <baseAddress>0x40022000</baseAddress>
       <addressBlock>
@@ -8932,7 +8932,7 @@ KEY2: 0x4C5D 6E7F</description>
             <field>
               <name>EOP</name>
               <description>End of operation
-Set by hardware when one or more flash memory operation (programming / erase) has been completed successfully. 
+Set by hardware when one or more flash memory operation (programming / erase) has been completed successfully.
 This bit is set only if the end of operation interrupts are enabled (EOPIE=1).
 Cleared by writing 1.</description>
               <bitOffset>0</bitOffset>

@@ -20982,7 +20982,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-            </field>           
+            </field>
             <field>
               <name>COMP2OUTSEL</name>
               <description>Comparator 2 output
@@ -21045,7 +21045,7 @@ Comp inverting input</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            </field>          
+            </field>
             <field>
               <name>COMP4INMSEL</name>
               <description>Comparator 4 inverting input
@@ -21053,7 +21053,7 @@ Comp inverting input</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-            </field>                    
+            </field>
             <field>
               <name>COMP4OUTSEL</name>
               <description>Comparator 4 output
@@ -21069,7 +21069,7 @@ Comp inverting input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            </field>         
+            </field>
             <field>
               <name>COMP4_BLANKING</name>
               <description>Comparator 4 blanking
@@ -21116,7 +21116,7 @@ Comp inverting input</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            </field>           
+            </field>
             <field>
               <name>COMP6INMSEL</name>
               <description>Comparator 6 inverting input
@@ -21124,7 +21124,7 @@ Comp inverting input</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
-            </field>                      
+            </field>
             <field>
               <name>COMP6OUTSEL</name>
               <description>Comparator 6 output
@@ -21140,7 +21140,7 @@ Comp inverting input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
-            </field>          
+            </field>
             <field>
               <name>COMP6_BLANKING</name>
               <description>Comparator 6 blanking

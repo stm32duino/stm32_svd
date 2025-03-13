@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F415</name>
-  <version>1.3</version>
+  <version>1.4</version>
   <description>STM32F415</description>
   <cpu>
     <name>CM4</name>
@@ -51,7 +51,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>FPU</name>
         <description>FPU interrupt</description>
         <value>81</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>CR</name>
@@ -6272,7 +6272,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6315,7 +6315,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6358,7 +6358,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>BUSTURN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field> 
+            </field>
             <field>
               <name>DATAST</name>
               <description>DATAST</description>
@@ -6999,7 +6999,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>DMA2_Stream7</name>
         <description>DMA2 Stream7 global interrupt</description>
         <value>70</value>
-      </interrupt> 
+      </interrupt>
       <registers>
         <register>
           <name>LISR</name>
@@ -10620,7 +10620,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>TIM11 reset</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                       
+            </field>
           </fields>
         </register>
         <register>
@@ -17880,7 +17880,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
     </peripheral>
     <peripheral derivedFrom="ADC1">
       <name>ADC2</name>
-      <baseAddress>0x40012100</baseAddress>    
+      <baseAddress>0x40012100</baseAddress>
     </peripheral>
     <peripheral derivedFrom="ADC1">
       <name>ADC3</name>
@@ -19098,7 +19098,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>WWDG</name>
         <description>Window Watchdog interrupt</description>
         <value>0</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>CR</name>
@@ -19193,7 +19193,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>RTC Wakeup interrupt through the EXTI
         line</description>
         <value>3</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>RTC_Alarm</name>
         <description>RTC Alarms (A and B) through EXTI line
@@ -21086,24 +21086,24 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Break interrupt and TIM9 global
         interrupt</description>
         <value>24</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>TIM1_UP_TIM10</name>
         <description>TIM1 Update interrupt and TIM10 global
         interrupt</description>
         <value>25</value>
-      </interrupt>     
+      </interrupt>
       <interrupt>
         <name>TIM1_TRG_COM_TIM11</name>
         <description>TIM1 Trigger and Commutation interrupts and
         TIM11 global interrupt</description>
         <value>26</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>TIM1_CC</name>
         <description>TIM1 Capture Compare interrupt</description>
         <value>27</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -21666,7 +21666,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -21685,7 +21685,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22205,7 +22205,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM8_CC</name>
         <description>TIM8 Capture Compare interrupt</description>
         <value>46</value>
-      </interrupt>    
+      </interrupt>
     </peripheral>
     <peripheral>
       <name>TIM2</name>
@@ -22221,7 +22221,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM2</name>
         <description>TIM2 global interrupt</description>
         <value>28</value>
-      </interrupt>   
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -22677,7 +22677,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22696,7 +22696,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23162,7 +23162,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM3</name>
         <description>TIM3 global interrupt</description>
         <value>29</value>
-      </interrupt>    
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -23618,7 +23618,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23637,7 +23637,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -24079,7 +24079,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>TIM4</name>
         <description>TIM4 global interrupt</description>
         <value>30</value>
-      </interrupt>    
+      </interrupt>
     </peripheral>
     <peripheral>
       <name>TIM5</name>
@@ -24551,7 +24551,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -24570,7 +24570,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25037,7 +25037,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Break interrupt and TIM9 global
         interrupt</description>
         <value>24</value>
-      </interrupt>   
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -25341,7 +25341,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25360,7 +25360,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25540,7 +25540,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Update interrupt and TIM10 global
         interrupt</description>
         <value>25</value>
-      </interrupt>    
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -25719,7 +25719,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25871,7 +25871,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>TIM1 Trigger and Commutation interrupts and
         TIM11 global interrupt</description>
         <value>26</value>
-      </interrupt>    
+      </interrupt>
       <registers>
         <register>
           <name>CR1</name>
@@ -26050,7 +26050,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -26400,7 +26400,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>Ethernet Wakeup through EXTI line
         interrupt</description>
         <value>62</value>
-      </interrupt>     
+      </interrupt>
       <registers>
         <register>
           <name>MACCR</name>
@@ -33626,22 +33626,22 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>CAN1_TX</name>
         <description>CAN1 TX interrupts</description>
         <value>19</value>
-      </interrupt>    
+      </interrupt>
       <interrupt>
         <name>CAN1_RX0</name>
         <description>CAN1 RX0 interrupts</description>
         <value>20</value>
-      </interrupt>      
+      </interrupt>
       <interrupt>
         <name>CAN1_RX1</name>
         <description>CAN1 RX1 interrupts</description>
         <value>21</value>
-      </interrupt>      
+      </interrupt>
       <interrupt>
         <name>CAN1_SCE</name>
         <description>CAN1 SCE interrupt</description>
         <value>22</value>
-      </interrupt>      
+      </interrupt>
       <registers>
         <register>
           <name>MCR</name>
@@ -47060,7 +47060,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
     </peripheral>
     <peripheral derivedFrom="CAN1">
       <name>CAN2</name>
-      <baseAddress>0x40006800</baseAddress>  
+      <baseAddress>0x40006800</baseAddress>
       <interrupt>
         <name>CAN2_TX</name>
         <description>CAN2 TX interrupts</description>
@@ -47398,12 +47398,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>Tamper and TimeStamp interrupts through the
         EXTI line</description>
         <value>2</value>
-      </interrupt>     
+      </interrupt>
       <interrupt>
         <name>EXTI0</name>
         <description>EXTI Line0 interrupt</description>
         <value>6</value>
-      </interrupt>     
+      </interrupt>
       <interrupt>
         <name>EXTI1</name>
         <description>EXTI Line1 interrupt</description>
@@ -48437,7 +48437,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <description>USB On The Go HS global
         interrupt</description>
         <value>77</value>
-      </interrupt>      
+      </interrupt>
       <registers>
         <register>
           <name>OTG_HS_GOTGCTL</name>
@@ -58034,7 +58034,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>I2C2_ER</name>
         <description>I2C2 error interrupt</description>
         <value>34</value>
-      </interrupt>     
+      </interrupt>
     </peripheral>
     <peripheral derivedFrom="I2C3">
       <name>I2C1</name>
@@ -58043,12 +58043,12 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <name>I2C1_EV</name>
         <description>I2C1 event interrupt</description>
         <value>31</value>
-      </interrupt>  
+      </interrupt>
       <interrupt>
         <name>I2C1_ER</name>
         <description>I2C1 error interrupt</description>
         <value>32</value>
-      </interrupt>     
+      </interrupt>
     </peripheral>
   </peripherals>
 </device>

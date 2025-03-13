@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G070</name>
-  <version>2.0</version>
+  <version>2.1</version>
   <description>STM32G070</description>
   <cpu>
     <name>CM0</name>
@@ -2395,7 +2395,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
                 </enumeratedValues>
               </field>
             </fields>
-          </register>		  
+          </register>
           <register>
             <name>ADC_AWD3TR</name>
             <displayName>ADC_AWD3TR</displayName>
@@ -3949,7 +3949,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <description>MER2</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>STRT</name>
               <description>Start</description>
@@ -4095,7 +4095,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <access>read-write</access>
             </field>
           </fields>
-        </register>	
+        </register>
         <register>
           <name>OPTR</name>
           <displayName>OPTR</displayName>
@@ -4187,7 +4187,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>      
+        </register>
         <register>
           <name>WRP1AR</name>
           <displayName>WRP1AR</displayName>
@@ -4235,7 +4235,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitWidth>7</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
         <register>
           <name>WRP2AR</name>
           <displayName>WRP2AR</displayName>
@@ -4921,7 +4921,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>AHBRSTR</name>
           <displayName>AHBRSTR</displayName>
@@ -4990,7 +4990,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <description>TIM7 timer reset</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>USART5RST</name>
               <description>USART5RST</description>
@@ -5002,7 +5002,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <description>USART6RST</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>USBRST</name>
               <description>USBRST</description>
@@ -5175,13 +5175,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>GPIOEEN</name>
-              <description>I/O port E clock enable during Sleep
-              mode</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
             <field>
               <name>GPIOFEN</name>
               <description>I/O port F clock enable during Sleep
@@ -5205,12 +5198,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <name>DMA1EN</name>
               <description>DMA1 clock enable</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-			<field>
-              <name>DMA2EN</name>
-              <description>DMA2 clock enable</description>
-              <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -5244,12 +5231,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>TIM4EN</name>
-              <description>TIM4 timer clock enable</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
             <field>
               <name>TIM6EN</name>
               <description>TIM6 timer clock enable</description>
@@ -5261,19 +5242,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <description>TIM7 timer clock enable</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
-			<field>
-              <name>USART5EN</name>
-              <description>USART5EN</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>USART6EN</name>
-              <description>USART6EN</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>			
             <field>
               <name>RTCAPBEN</name>
               <description>RTC APB clock enable</description>
@@ -5286,22 +5255,10 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>USBEN</name>
-              <description>USBEN</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
             <field>
               <name>SPI2EN</name>
               <description>SPI2 clock enable</description>
               <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-			<field>
-              <name>SPI3EN</name>
-              <description>SPI3 clock enable</description>
-              <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -5332,12 +5289,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <name>I2C2EN</name>
               <description>I2C2 clock enable</description>
               <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-			<field>
-              <name>I2C3EN</name>
-              <description>I2C3 clock enable</description>
-              <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -5460,13 +5411,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>GPIOESMEN</name>
-              <description>I/O port E clock enable during Sleep
-              mode</description>
-              <bitOffset>4</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
             <field>
               <name>GPIOFSMEN</name>
               <description>I/O port F clock enable during Sleep
@@ -5491,13 +5435,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <description>DMA1 clock enable during Sleep
               mode</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-			<field>
-              <name>DMA2SMEN</name>
-              <description>DMA2 clock enable during Sleep
-              mode</description>
-              <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -5540,13 +5477,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>TIM4SMEN</name>
-              <description>TIM4 timer clock enable during Sleep
-              mode</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
             <field>
               <name>TIM6SMEN</name>
               <description>TIM6 timer clock enable during Sleep
@@ -5560,19 +5490,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               mode</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
-			<field>
-              <name>USART5SMEN</name>
-              <description>USART5 clock enable</description>
-              <bitOffset>8</bitOffset>
-              <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>USART6SMEN</name>
-              <description>USART6 clock enable</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>			
             <field>
               <name>RTCAPBSMEN</name>
               <description>RTC APB clock enable during Sleep
@@ -5587,25 +5505,11 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>USBSMEN</name>
-              <description>USB clock enable during Sleep
-              mode</description>
-              <bitOffset>13</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
             <field>
               <name>SPI2SMEN</name>
               <description>SPI2 clock enable during Sleep
               mode</description>
               <bitOffset>14</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-			<field>
-              <name>SPI3SMEN</name>
-              <description>SPI3 clock enable during Sleep
-              mode</description>
-              <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -5643,13 +5547,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field>
-              <name>I2C3SMEN</name>
-              <description>I2C3 clock enable during Sleep
-              mode</description>
-              <bitOffset>23</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>          
             <field>
               <name>DBGSMEN</name>
               <description>Debug support clock enable during Sleep
@@ -5780,12 +5677,11 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitWidth>2</bitWidth>
             </field>
             <field>
-              <name>I2S2SEL</name>
-              <description>I2S1 clock source
-              selection</description>
+              <name>I2C2I2S1SEL</name>
+              <description>I2C2/I2S1 clock source selection</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TIM1SEL</name>
               <description>TIM1 clock source
@@ -5805,35 +5701,6 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <description>ADCs clock source
               selection</description>
               <bitOffset>30</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-          </fields>
-        </register>
-		<register>
-          <name>CCIPR2</name>
-          <displayName>CCIPR2</displayName>
-          <description>Peripherals independent clock configuration register 2</description>
-          <addressOffset>0x58</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
-          <fields>
-            <field>
-              <name>I2S1SEL</name>
-              <description>2S1SEL</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>
-             <field>
-              <name>I2S2SEL</name>
-              <description>I2S2SEL</description>
-              <bitOffset>2</bitOffset>
-              <bitWidth>2</bitWidth>
-            </field>			
-            <field>
-              <name>USBSEL</name>
-              <description>USBSEL</description>
-              <bitOffset>12</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
           </fields>
@@ -6081,13 +5948,13 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>            
+          <fields>
 			<field>
               <name>USV</name>
               <description>USV</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
         </register>
         <register>
@@ -6134,7 +6001,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <description>Enable WKUP6 wakeup pin</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>APC</name>
               <description>Apply pull-up and pull-down
@@ -7113,7 +6980,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PU15</name>
               <description>Port D pull-up bit y
@@ -7155,7 +7022,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  		    
+            </field>
             <field>
               <name>PU9</name>
               <description>Port D pull-up bit y
@@ -7237,7 +7104,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PD15</name>
               <description>Port D pull-down bit y
@@ -7279,7 +7146,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD9</name>
               <description>Port D pull-down bit y
@@ -7351,7 +7218,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>PUCRE</name>
           <displayName>PUCRE</displayName>
@@ -7361,7 +7228,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PU15</name>
               <description>Port E pull-up bit y
@@ -7403,7 +7270,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PU9</name>
               <description>Port E pull-up bit y
@@ -7475,7 +7342,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>PDCRE</name>
           <displayName>PDCRE</displayName>
@@ -7485,7 +7352,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PD15</name>
               <description>Port E pull-down bit y
@@ -7527,7 +7394,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD9</name>
               <description>Port E pull-down bit y
@@ -7599,7 +7466,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>PUCRF</name>
           <displayName>PUCRF</displayName>
@@ -7609,7 +7476,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		   
+          <fields>
             <field>
               <name>PU13</name>
               <description>Port F pull-up bit y
@@ -7637,7 +7504,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PU9</name>
               <description>Port F pull-up bit y
@@ -7686,7 +7553,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PU2</name>
               <description>Port F pull-up bit y
@@ -7719,7 +7586,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
-          <fields>		  
+          <fields>
 		    <field>
               <name>PD13</name>
               <description>Port F pull-down bit y
@@ -7747,7 +7614,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD9</name>
               <description>Port F pull-down bit y
@@ -7796,7 +7663,7 @@ Note: The software is allowed to write this bit only when ADSTART=0 (which ensur
               (y=0..15)</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>PD2</name>
               <description>Port F pull-down bit y
@@ -14960,7 +14827,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
     <peripheral derivedFrom="GPIOB">
       <name>GPIOF</name>
       <baseAddress>0x50001400</baseAddress>
-    </peripheral> 
+    </peripheral>
     <peripheral>
       <name>CRC</name>
       <description>Cyclic redundancy check calculation
@@ -15236,7 +15103,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               of Configurable Event line</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -15344,7 +15211,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               <description>Falling trigger event configuration bit of configurable line</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -15452,7 +15319,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               <description>Software rising edge event trigger on line</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -15561,7 +15428,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               <description>Rising edge event pending for configurable line</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -15669,9 +15536,9 @@ It is not read-only when the channel is enabled (EN=1).</description>
               <description>Falling edge event pending for configurable line</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>EXTICR1</name>
           <displayName>EXTICR1</displayName>
@@ -15937,7 +15804,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
             <field>
               <name>IM19</name>
               <description>CPU wakeup with interrupt mask on event
@@ -15986,7 +15853,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               input</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>IM31</name>
               <description>CPU wakeup with interrupt mask on event
@@ -16118,7 +15985,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               input</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EM19</name>
               <description>CPU wakeup with event mask on event
@@ -16153,7 +16020,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               input</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EM31</name>
               <description>CPU wakeup with event mask on event
@@ -16162,7 +16029,7 @@ It is not read-only when the channel is enabled (EN=1).</description>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>    
+        </register>
       </registers>
     </peripheral>
 	<peripheral>
@@ -16664,7 +16531,7 @@ Note: The clock of the slave peripherals (timer, ADC, ...) receiving the TRGO or
                   <name>B_0x0</name>
                   <description>Slave mode disabled - if CEN = '1' then the prescaler is clocked directly by the internal clock.</description>
                   <value>0x0</value>
-                </enumeratedValue>               
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -16697,7 +16564,7 @@ Note: These bits must be changed only when they are not used (e.g. when SMS=000)
                   <name>B_0x3</name>
                   <description>Internal Trigger 3 (ITR3)</description>
                   <value>0x3</value>
-                </enumeratedValue>               
+                </enumeratedValue>
               </enumeratedValues>
             </field>
           </fields>
@@ -17079,7 +16946,6 @@ Refer to CC1OF description</description>
           <description>event generation register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
-          <access>write-only</access>
           <resetValue>0x0000</resetValue>
           <fields>
             <field>
@@ -17300,7 +17166,7 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
                   <name>B_0x1</name>
                   <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
                   <value>0x1</value>
-                </enumeratedValue>               
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -17376,7 +17242,7 @@ The OC1M[3] bit is not contiguous, located in bit 16.</description>
                   <name>B_0x1</name>
                   <description>Set channel 1 to active level on match. OC1REF signal is forced high when the counter TIMx_CNT matches the capture/compare register 1 (TIMx_CCR1).</description>
                   <value>0x1</value>
-                </enumeratedValue>               
+                </enumeratedValue>
               </enumeratedValues>
             </field>
             <field>
@@ -22017,7 +21883,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
           </fields>
         </register>
       </registers>
-    </peripheral>  
+    </peripheral>
     <peripheral>
       <name>COMP</name>
       <description>COMP1</description>
@@ -22213,7 +22079,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
         <size>0x100</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>		
+      <registers>
 		<register>
           <name>CFGR1</name>
           <displayName>CFGR1</displayName>
@@ -22257,7 +22123,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
               I2C1</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>I2C_PB9_FMP</name>
               <description>I2C_PB9_FMP</description>
@@ -22275,7 +22141,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
               <description>I2C_PB7_FMP</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>I2C_PBx_FMP</name>
               <description>Fast Mode Plus (FM+) driving capability
@@ -22693,7 +22559,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
               <description>DMA1_CH7</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
 			<field>
               <name>DMA2_CH1</name>
               <description>DMA2_CH1</description>
@@ -22723,7 +22589,7 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
               <description>DMA2_CH5</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
         </register>
         <register>
@@ -23083,9 +22949,9 @@ This 5-bit field defines the length of DMA transfers (the timer recognizes a bur
               <description>USART6</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
-        </register>    
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -31462,6 +31328,6 @@ Writing 1 in this bit clears the ITSF bit in the RTC_SR register.</description>
     <peripheral derivedFrom="TIM2">
       <name>TIM3</name>
       <baseAddress>0x40000400</baseAddress>
-    </peripheral>     
+    </peripheral>
   </peripherals>
 </device>

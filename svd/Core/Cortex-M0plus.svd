@@ -889,7 +889,7 @@ Copyright (c) 2022 STMicroelectronics.
               <description>memory attribute</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                     
+            </field>
             <field>
               <name>SRD</name>
               <description>SRD</description>

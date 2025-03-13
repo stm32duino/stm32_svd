@@ -22,7 +22,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32L162</name>
   <version>1.5</version>
   <description>STM32L162</description>
-  <cpu>                                                        
+  <cpu>
     <name>CM3</name>
     <revision>r1p1</revision>
     <endian>little</endian>
@@ -30,7 +30,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
     <fpuPresent>false</fpuPresent>
     <nvicPrioBits>4</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
-  </cpu>  
+  </cpu>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <size>0x20</size>
@@ -12634,7 +12634,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>16</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
       </registers>
     </peripheral>
     <peripheral>

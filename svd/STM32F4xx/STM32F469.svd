@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F469</name>
-  <version>1.9</version>
+  <version>2.0</version>
   <description>STM32F469</description>
   <cpu>
     <name>CM4</name>
@@ -21433,7 +21433,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -21452,7 +21452,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22432,7 +22432,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -22451,7 +22451,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23373,7 +23373,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -23392,7 +23392,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -24306,7 +24306,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -24325,7 +24325,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25079,7 +25079,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>IC2PCS</name>
+              <name>IC2PSC</name>
               <description>Input capture 2 prescaler</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25098,7 +25098,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>3</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25457,7 +25457,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -25776,7 +25776,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>4</bitWidth>
             </field>
             <field>
-              <name>ICPCS</name>
+              <name>IC1PSC</name>
               <description>Input capture 1 prescaler</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
@@ -51479,7 +51479,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>OTG_HS_HCSPLT12</name>
           <displayName>OTG_HS_HCSPLT12</displayName>
@@ -52946,7 +52946,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>OTG_HS_HCINTMSK0</name>
           <displayName>OTG_HS_HCINTMSK0</displayName>
@@ -54258,7 +54258,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>OTG_HS_HCTSIZ0</name>
           <displayName>OTG_HS_HCTSIZ0</displayName>
@@ -54618,7 +54618,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>OTG_HS_HCTSIZ12</name>
           <displayName>OTG_HS_HCTSIZ12</displayName>
@@ -54738,7 +54738,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>OTG_HS_HCDMA0</name>
           <displayName>OTG_HS_HCDMA0</displayName>
@@ -54954,7 +54954,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>OTG_HS_HCDMA12</name>
           <displayName>OTG_HS_HCDMA12</displayName>
@@ -63191,8 +63191,8 @@ This field configures the timeout counter that triggers a low-power reception ti
               <field>
                 <name>HSTX_TOCNT</name>
                 <description> High-speed transmission timeout counter
-This field configures the timeout counter that triggers a high-speed transmission timeout 
-contention detection (measured in TOCKDIV cycles). 
+This field configures the timeout counter that triggers a high-speed transmission timeout
+contention detection (measured in TOCKDIV cycles).
 </description>
                 <bitOffset>16</bitOffset>
                 <bitWidth>16</bitWidth>
@@ -65104,7 +65104,7 @@ If LTDC interface in command mode is chosen and currently works in the command m
                     <name>B_0x5</name>
                     <description>24-bit</description>
                     <value>0x5</value>
-                  </enumeratedValue>      
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -65653,7 +65653,7 @@ This bit must only be changed when DSI Host is stopped (DSI_CR.EN = 0).</descrip
               </field>
               <field>
                 <name>AR</name>
-                <description>Automatic refresh 
+                <description>Automatic refresh
 This bit selects the refresh mode in DBI mode.
 This bit must only be changed when DSI Host is stopped (DSI_CR.EN = 0).</description>
                 <bitOffset>6</bitOffset>

@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    <name>STM32F746</name>
-   <version>1.6</version>
+   <version>1.7</version>
    <description>STM32F746</description>
    <cpu>
     <name>CM7</name>
@@ -18581,7 +18581,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>IC2PCS</name>
+                     <name>IC2PSC</name>
                      <description>Input capture 2 prescaler</description>
                      <bitOffset>10</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -18599,7 +18599,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -19665,7 +19665,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>IC2PCS</name>
+                     <name>IC2PSC</name>
                      <description>Input capture 2 prescaler</description>
                      <bitOffset>10</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -19683,7 +19683,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -20593,7 +20593,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>IC2PCS</name>
+                     <name>IC2PSC</name>
                      <description>Input capture 2 prescaler</description>
                      <bitOffset>10</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -20611,7 +20611,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -21509,7 +21509,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>IC2PCS</name>
+                     <name>IC2PSC</name>
                      <description>Input capture 2 prescaler</description>
                      <bitOffset>10</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -21527,7 +21527,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -22228,7 +22228,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>3</bitWidth>
                   </field>
                   <field>
-                     <name>IC2PCS</name>
+                     <name>IC2PSC</name>
                      <description>Input capture 2 prescaler</description>
                      <bitOffset>10</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -22246,7 +22246,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>3</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -22576,7 +22576,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <bitWidth>4</bitWidth>
                   </field>
                   <field>
-                     <name>ICPCS</name>
+                     <name>IC1PSC</name>
                      <description>Input capture 1 prescaler</description>
                      <bitOffset>2</bitOffset>
                      <bitWidth>2</bitWidth>
@@ -23418,7 +23418,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>RFRCS</description>
                      <bitOffset>5</bitOffset>
                      <bitWidth>2</bitWidth>
-                  </field>				  
+                  </field>
 				  <field>
                      <name>RFFL</name>
                      <description>RFFL</description>
@@ -23430,7 +23430,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>MMTEA</description>
                      <bitOffset>16</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>				  
+                  </field>
 				  <field>
                      <name>MTFCS</name>
                      <description>MTFCS</description>
@@ -23448,7 +23448,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>TFRS</description>
                      <bitOffset>20</bitOffset>
                      <bitWidth>2</bitWidth>
-                  </field>				  
+                  </field>
 				  <field>
                      <name>TFWA</name>
                      <description>TFWA</description>
@@ -23466,7 +23466,7 @@ Copyright (c) 2024 STMicroelectronics.
                      <description>TFF</description>
                      <bitOffset>25</bitOffset>
                      <bitWidth>1</bitWidth>
-                  </field>				  
+                  </field>
                </fields>
             </register>
             <register>
@@ -65406,6 +65406,6 @@ Copyright (c) 2024 STMicroelectronics.
                </fields>
             </register>
          </registers>
-      </peripheral>     
+      </peripheral>
    </peripherals>
 </device>

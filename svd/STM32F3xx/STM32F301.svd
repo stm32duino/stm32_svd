@@ -9787,7 +9787,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>CNT</displayName>
           <description>counter</description>
           <addressOffset>0x24</addressOffset>
-          <size>0x20</size>         
+          <size>0x20</size>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -10190,7 +10190,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Break interrupt flag</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>COMIF</name>
               <description>COM interrupt flag</description>
@@ -10226,7 +10226,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Break generation</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
             <field>
               <name>COMG</name>
               <description>Capture/Compare control update
@@ -10377,7 +10377,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>CNT</displayName>
           <description>counter</description>
           <addressOffset>0x24</addressOffset>
-          <size>0x20</size>     
+          <size>0x20</size>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -10582,7 +10582,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register> 				
+        </register>
       </registers>
     </peripheral>
     <peripheral derivedFrom="TIM16">
@@ -11858,7 +11858,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           </fields>
         </register>
       </registers>
-    </peripheral>  
+    </peripheral>
     <peripheral derivedFrom="SPI2">
       <name>SPI3</name>
       <baseAddress>0x40003C00</baseAddress>
@@ -16971,7 +16971,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>CNT</displayName>
           <description>counter</description>
           <addressOffset>0x24</addressOffset>
-          <size>0x20</size>         
+          <size>0x20</size>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -18633,7 +18633,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Output Idle state 5</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  	  
+            </field>
             <field>
               <name>OIS4</name>
               <description>Output Idle state 4</description>
@@ -18906,7 +18906,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Compare 5 interrupt flag</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  	  
+            </field>
             <field>
               <name>CC4OF</name>
               <description>Capture/Compare 4 overcapture
@@ -18934,7 +18934,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               flag</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>B2IF</name>
               <description>Break 2 interrupt flag</description>
@@ -19086,7 +19086,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Output Compare 1 mode -bit3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>OC2CE</name>
               <description>Output Compare 2 clear
@@ -19229,7 +19229,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Output Compare 3 mode -bit3</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		  
+            </field>
             <field>
               <name>OC4CE</name>
               <description>Output compare 4 clear
@@ -19390,7 +19390,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Capture/Compare 4 complementary output polarity</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		
+            </field>
             <field>
               <name>CC4P</name>
               <description>Capture/Compare 3 output
@@ -19496,7 +19496,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>CNT</displayName>
           <description>counter</description>
           <addressOffset>0x24</addressOffset>
-          <size>0x20</size>         
+          <size>0x20</size>
           <resetValue>0x00000000</resetValue>
           <fields>
             <field>
@@ -19718,7 +19718,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>			
+        </register>
         <register>
           <name>DCR</name>
           <displayName>DCR</displayName>
@@ -19759,7 +19759,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>16</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>OR</name>
           <displayName>OR</displayName>
@@ -19776,7 +19776,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>2</bitWidth>
             </field>
           </fields>
-        </register>                
+        </register>
         <register>
           <name>CCMR3_Output</name>
           <displayName>CCMR3_Output</displayName>
@@ -19909,7 +19909,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>16</bitWidth>
             </field>
           </fields>
-        </register>				
+        </register>
       </registers>
     </peripheral>
   </peripherals>

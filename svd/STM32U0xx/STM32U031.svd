@@ -62,7 +62,7 @@ Copyright (c) 2024 STMicroelectronics.
             <fields>
               <field>
                 <name>ADRDY</name>
-                <description>ADC ready 
+                <description>ADC ready
 This bit is set by hardware after the ADC has been enabled (ADEN+1) and when the ADC reaches a state where it is ready to accept conversion requests.
 It is cleared by software writing 1 to it.</description>
                 <bitOffset>0</bitOffset>
@@ -381,7 +381,7 @@ Note: The software is allowed to write this bit only when ADSTART bit is cleared
               <field>
                 <name>AWD1IE</name>
                 <description>Analog watchdog 1 interrupt enable
-This bit is set and cleared by software to enable/disable the analog watchdog interrupt. 
+This bit is set and cleared by software to enable/disable the analog watchdog interrupt.
 Note: The Software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -402,7 +402,7 @@ Note: The Software is allowed to write this bit only when ADSTART bit is cleared
               <field>
                 <name>AWD2IE</name>
                 <description>Analog watchdog 2 interrupt enable
-This bit is set and cleared by software to enable/disable the analog watchdog interrupt. 
+This bit is set and cleared by software to enable/disable the analog watchdog interrupt.
 Note: The Software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -423,7 +423,7 @@ Note: The Software is allowed to write this bit only when ADSTART bit is cleared
               <field>
                 <name>AWD3IE</name>
                 <description>Analog watchdog 3 interrupt enable
-This bit is set and cleared by software to enable/disable the analog watchdog interrupt. 
+This bit is set and cleared by software to enable/disable the analog watchdog interrupt.
 Note: The Software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
                 <bitOffset>9</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -444,7 +444,7 @@ Note: The Software is allowed to write this bit only when ADSTART bit is cleared
               <field>
                 <name>EOCALIE</name>
                 <description>End of calibration interrupt enable
-This bit is set and cleared by software to enable/disable the end of calibration interrupt. 
+This bit is set and cleared by software to enable/disable the end of calibration interrupt.
 Note: The software is allowed to write this bit only when ADSTART bit is cleared (this ensures that no conversion is ongoing).</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -667,7 +667,7 @@ For more details, refer to Section113.6.5: Managing converted data using the DMA
               <field>
                 <name>SCANDIR</name>
                 <description>Scan sequence direction
-This bit is set and cleared by software to select the direction in which the channels is scanned in the sequence. It is effective only if CHSELMOD bit is cleared. 
+This bit is set and cleared by software to select the direction in which the channels is scanned in the sequence. It is effective only if CHSELMOD bit is cleared.
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -1820,7 +1820,7 @@ Refer to Section113.8: Analog window watchdogs on page1337.</description>
               <field>
                 <name>CHSEL0</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>0</bitOffset>
@@ -1842,7 +1842,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL1</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>1</bitOffset>
@@ -1864,7 +1864,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL2</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>2</bitOffset>
@@ -1886,7 +1886,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL3</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>3</bitOffset>
@@ -1908,7 +1908,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL4</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>4</bitOffset>
@@ -1930,7 +1930,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL5</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>5</bitOffset>
@@ -1952,7 +1952,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL6</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>6</bitOffset>
@@ -1974,7 +1974,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL7</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>7</bitOffset>
@@ -1996,7 +1996,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL8</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>8</bitOffset>
@@ -2018,7 +2018,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL9</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>9</bitOffset>
@@ -2040,7 +2040,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL10</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>10</bitOffset>
@@ -2062,7 +2062,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL11</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>11</bitOffset>
@@ -2084,7 +2084,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL12</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>12</bitOffset>
@@ -2106,7 +2106,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL13</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>13</bitOffset>
@@ -2128,7 +2128,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL14</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>14</bitOffset>
@@ -2150,7 +2150,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL15</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>15</bitOffset>
@@ -2172,7 +2172,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL16</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>16</bitOffset>
@@ -2194,7 +2194,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL17</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>17</bitOffset>
@@ -2216,7 +2216,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL18</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>18</bitOffset>
@@ -2238,7 +2238,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
               <field>
                 <name>CHSEL19</name>
                 <description>Channel-x selection
-These bits are written by software and define which channels are part of the sequence of channels to be converted. 
+These bits are written by software and define which channels are part of the sequence of channels to be converted.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).
 Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSELR register or changing CHSELRMOD or SCANDIR), the value written to this bit is ignored.</description>
                 <bitOffset>19</bitOffset>
@@ -2274,7 +2274,7 @@ Note: If CCRDY is not yet asserted after channel configuration (writing ADC_CHSE
                 <description>1st conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -2285,7 +2285,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
                 <description>2nd conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -2296,7 +2296,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
                 <description>3rd conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -2307,7 +2307,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
                 <description>4th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>12</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -2318,7 +2318,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
                 <description>5th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>16</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -2329,7 +2329,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
                 <description>6th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>20</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -2340,7 +2340,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
                 <description>7th conversion of the sequence
 These bits are programmed by software with the channel number (0...14) assigned to the 8th conversion of the sequence. 0b1111 indicates end of the sequence.
 When 0b1111 (end of sequence) is programmed to the lower sequence channels, these bits are ignored.
-Refer to SQ8[3:0] for a definition of channel selection. 
+Refer to SQ8[3:0] for a definition of channel selection.
 Note: The software is allowed to write this bit only when ADSTART1=10 (which ensures that no conversion is ongoing).</description>
                 <bitOffset>24</bitOffset>
                 <bitWidth>4</bitWidth>
@@ -2431,7 +2431,7 @@ Refer to Section113.8: Analog window watchdogs on page1337.</description>
             <fields>
               <field>
                 <name>DATA</name>
-                <description>Converted data 
+                <description>Converted data
 These bits are read-only. They contain the conversion result from the last converted channel. The data are left- or right-aligned as shown in Figure141: Data alignment and resolution (oversampling disabled: OVSE = 0) on page1332.
 Just after a calibration is complete, DATA[6:0] contains the calibration factor.</description>
                 <bitOffset>0</bitOffset>
@@ -3337,7 +3337,7 @@ Note: Software can write these bits only when ADEN=1 (ADC is enabled and no cali
               <field>
                 <name>PRESC</name>
                 <description>ADC prescaler
-Set and cleared by software to select the frequency of the clock to the ADC. 
+Set and cleared by software to select the frequency of the clock to the ADC.
 Other: Reserved
 Note: Software is allowed to write these bits only when the ADC is disabled (ADCAL1=10, ADSTART1=10, ADSTP1=10, ADDIS1=10 and ADEN1=10).</description>
                 <bitOffset>18</bitOffset>
@@ -3472,7 +3472,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
             </fields>
           </register>
         </registers>
-      </peripheral>    
+      </peripheral>
 	  <peripheral>
         <name>COMP1</name>
         <description>COMP address block description</description>
@@ -3495,7 +3495,7 @@ Note: The software is allowed to write this bit only when ADSTART1=10 (which ens
             <fields>
               <field>
                 <name>EN</name>
-                <description>Comparator 1 enable bit 
+                <description>Comparator 1 enable bit
 This bit is controlled by software (if not locked). It enables the comparator 1:</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -3733,7 +3733,7 @@ This bit is set by software and cleared by a system reset. It locks the comparat
             <fields>
               <field>
                 <name>EN</name>
-                <description>Comparator 2 enable bit 
+                <description>Comparator 2 enable bit
 This bit is controlled by software (if not locked). It enables the comparator 2:</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -4193,7 +4193,7 @@ This register is used to write the CRC initial value.</description>
             <fields>
               <field>
                 <name>POL</name>
-                <description>Programmable polynomial 
+                <description>Programmable polynomial
 This register is used to write the coefficients of the polynomial to be used for CRC calculation.
 If the polynomial size is less than 32 bits, the least significant bits have to be used to program the correct value.</description>
                 <bitOffset>0</bitOffset>
@@ -4489,7 +4489,7 @@ Note: This bit is cleared by hardware (one dac_pclk clock cycle later) once the 
             <fields>
               <field>
                 <name>DACC1DHR</name>
-                <description>DAC channel1 12-bit right-aligned data 
+                <description>DAC channel1 12-bit right-aligned data
 These bits are written by software. They specify 12-bit data for DAC channel1.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>12</bitWidth>
@@ -5747,7 +5747,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -5870,7 +5870,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -5993,7 +5993,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6116,7 +6116,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6239,7 +6239,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6362,7 +6362,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6485,7 +6485,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6608,7 +6608,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6731,7 +6731,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6854,7 +6854,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -6977,7 +6977,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -7100,7 +7100,7 @@ Defines the edge polarity of the selected synchronization input:</description>
               </field>
               <field>
                 <name>NBREQ</name>
-                <description>Number of DMA requests minus 1 to forward 
+                <description>Number of DMA requests minus 1 to forward
 Defines the number of DMA requests to forward to the DMA controller after a synchronization event, and/or the number of DMA requests before an output event is generated.
 This field must only be written when both SE and EGE bits are low.</description>
                 <bitOffset>19</bitOffset>
@@ -7843,7 +7843,7 @@ Writing 1 in each bit clears the corresponding overrun flag OFx in the DMAMUX_RG
           <name>DMA1_Channel4_5_6_7</name>
           <description>DMA1 channel 4, 5, 6, 7, DMAMUX, DMA2 channel 1, 2, 3, 4, 5 interrupts</description>
           <value>11</value>
-        </interrupt>	  	      
+        </interrupt>
         <registers>
           <register>
             <name>DMA_ISR</name>
@@ -8758,7 +8758,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
                 <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -9113,7 +9113,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
                 <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -9468,7 +9468,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
                 <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -9823,7 +9823,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
                 <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -10178,7 +10178,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
                 <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -10533,7 +10533,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
                 <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -10888,7 +10888,7 @@ Note: This bit is set and cleared by software. It must not be written when the c
                 <description>Memory increment mode
 Defines the increment mode for each DMA transfer to the identified memory.
 In memory-to-memory mode, this bit identifies the memory source if DIR = 1 and the memory destination if DIR = 0.
-In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0. 
+In peripheral-to-peripheral mode, this bit identifies the peripheral source if DIR = 1 and the peripheral destination if DIR = 0.
 Note: This bit is set and cleared by software. It must not be written when the channel is enabled (EN = 1). It is read-only when the channel is enabled (EN = 1).</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -11100,7 +11100,7 @@ Note: This bitfield is set and cleared by software. It must not be written when 
           <name>PVD_PVM</name>
           <description>PVD/PVM1/PVM2/PVM3 interrupt (combined with EXTI lines 16 and 19 and 20 and 21)</description>
           <value>1</value>
-        </interrupt>						
+        </interrupt>
         <interrupt>
           <name>EXTI0_1</name>
           <description>EXTI lines 0 and 1 interrupt</description>
@@ -15946,7 +15946,7 @@ KEY2: 0x4C5D 6E7F</description>
               <field>
                 <name>EOP</name>
                 <description>End of operation
-Set by hardware when one or more flash memory operation (programming / erase) has been completed successfully. 
+Set by hardware when one or more flash memory operation (programming / erase) has been completed successfully.
 This bit is set only if the end of operation interrupts are enabled (EOPIE=1).
 Cleared by writing 1.</description>
                 <bitOffset>0</bitOffset>
@@ -16028,7 +16028,7 @@ Cleared by writing 1.</description>
               </field>
               <field>
                 <name>RDERR</name>
-                <description>PCROP read error 
+                <description>PCROP read error
 Set by hardware when an address to be read belongs to a read protected area of the flash memory (PCROP protection). An interrupt is generated if RDERRIE is set in FLASH_CR.
 Cleared by writing 1.</description>
                 <bitOffset>14</bitOffset>
@@ -16412,7 +16412,7 @@ Other: Level 1, memories read protection active</description>
                     <value>0x3</value>
                   </enumeratedValue>
                 </enumeratedValues>
-              </field>           
+              </field>
               <field>
                 <name>NRST_STOP</name>
                 <description>Reset generated when entering Stop mode</description>
@@ -46048,7 +46048,7 @@ Note that only IWDG_PR, IWDG_RLR, IWDG_EWCR and IWDG_WINR registers have a write
             <fields>
               <field>
                 <name>PR</name>
-                <description>Prescaler divider 
+                <description>Prescaler divider
 These bits are write access protected, see Section126.4.6. They are written by software to select the prescaler divider feeding the counter clock. PVU bit of the IWDG status register (IWDG_SR) must be reset to be able to change the prescaler divider.
 Others: divider / 1024
 Note: Reading this register returns the prescaler value from the V&lt;sub&gt;DD&lt;/sub&gt; voltage domain. This value may not be up to date/valid if a write operation to this register is ongoing. For this reason the value read from this register is valid only when the PVU bit in the IWDG status register (IWDG_SR) is reset.</description>
@@ -46111,7 +46111,7 @@ Note: Reading this register returns the prescaler value from the V&lt;sub&gt;DD&
             <fields>
               <field>
                 <name>RL</name>
-                <description>Watchdog counter reload value 
+                <description>Watchdog counter reload value
 These bits are write access protected, see Section126.4.6. They are written by software to define the value to be loaded in the watchdog counter each time the value 0xAAAA is written in the IWDG key register (IWDG_KR). The watchdog counter counts down from this value. The timeout period is a function of this value and the prescaler.clock. It is not recommended to set RL[11:0] to a value lower than 2.
 The RVU bit in the IWDG status register (IWDG_SR) must be reset to be able to change the reload value.
 Note: Reading this register returns the reload value from the V&lt;sub&gt;DD&lt;/sub&gt; voltage domain. This value may not be up to date/valid if a write operation to this register is ongoing, hence the value read from this register is valid only when the RVU bit in the IWDG status register (IWDG_SR) is reset.</description>
@@ -46160,7 +46160,7 @@ This bit is generated only if generic window = 1.</description>
               </field>
               <field>
                 <name>EWU</name>
-                <description>Watchdog interrupt comparator value update 
+                <description>Watchdog interrupt comparator value update
 This bit is set by hardware to indicate that an update of the interrupt comparator value (EWIT[11:0]) or an update of the EWIE is ongoing. It is reset by hardware when the update operation is completed in the V&lt;sub&gt;DD&lt;/sub&gt; voltage domain (takes up to one period of presc_ck and two periods of the IWDG kernel clock iwdg_ker_ck).
 The EWIT[11:0] and EWIE fields can be updated only when EWU bit is reset.</description>
                 <bitOffset>3</bitOffset>
@@ -46208,7 +46208,7 @@ This bit is set to 1 by hardware in order to indicate that an early interrupt is
             <fields>
               <field>
                 <name>WIN</name>
-                <description>Watchdog counter window value 
+                <description>Watchdog counter window value
 These bits are write access protected, see Section126.4.6.They contain the high limit of the window value to be compared with the downcounter.
 To prevent a reset, the IWDCNT downcounter must be reloaded when its value is lower than WIN[11:0]1+11 and greater than 1.
 The WVU bit in the IWDG status register (IWDG_SR) must be reset to be able to change the reload value.
@@ -46230,7 +46230,7 @@ Note: Reading this register returns the reload value from the V&lt;sub&gt;DD&lt;
             <fields>
               <field>
                 <name>EWIT</name>
-                <description>Watchdog counter window value 
+                <description>Watchdog counter window value
 These bits are write access protected (see Section126.4.6). They are written by software to define at which position of the IWDCNT down-counter the early wake-up interrupt must be generated. The early interrupt is generated when the IWDCNT is lower or equal to EWIT[11:0]1-11.
 EWIT[11:0] must be bigger than 1.
 An interrupt is generated only if EWIE = 1.
@@ -46242,7 +46242,7 @@ Note: Reading this register returns the Early wake-up comparator value and the I
               </field>
               <field>
                 <name>EWIC</name>
-                <description>Watchdog early interrupt acknowledge 
+                <description>Watchdog early interrupt acknowledge
 The software must write a 1 into this bit in order to acknowledge the early wake-up interrupt and to clear the EWIF flag. Writing 0 has not effect, reading this flag returns a 0.</description>
                 <bitOffset>14</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -46287,7 +46287,7 @@ The EWU bit in the IWDG status register (IWDG_SR) must be reset to be able to ch
           <name>I2C1</name>
           <description>I2C1 global interrupt (combined with EXTI line 23)</description>
           <value>23</value>
-        </interrupt>		
+        </interrupt>
         <registers>
           <register>
             <name>I2C_CR1</name>
@@ -46565,7 +46565,7 @@ This bit is used to enable hardware byte control in slave mode.</description>
               </field>
               <field>
                 <name>NOSTRETCH</name>
-                <description>Clock stretching disable 
+                <description>Clock stretching disable
 This bit is used to disable clock stretching in slave mode. It must be kept cleared in master mode.
 Note: This bit can be programmed only when the I2C is disabled (PE = 0).</description>
                 <bitOffset>17</bitOffset>
@@ -46895,7 +46895,7 @@ Note: This bit has no effect in slave mode or when the RELOAD bit is set.</descr
               <field>
                 <name>OA1</name>
                 <description>Interface own slave address
-7-bit addressing mode: OA1[7:1] contains the 7-bit own slave address. Bits OA1[9], OA1[8] and OA1[0] are don't care. 
+7-bit addressing mode: OA1[7:1] contains the 7-bit own slave address. Bits OA1[9], OA1[8] and OA1[0] are don't care.
 10-bit addressing mode: OA1[9:0] contains the 10-bit own slave address.
 Note: These bits can be written only when OA1EN = 0.</description>
                 <bitOffset>0</bitOffset>
@@ -47198,8 +47198,8 @@ Note: These bits can be written only when TEXTEN = 0.</description>
             <fields>
               <field>
                 <name>TXE</name>
-                <description>Transmit data register empty (transmitters) 
-This bit is set by hardware when the I2C_TXDR register is empty. It is cleared when the next data to be sent is written in the I2C_TXDR register. 
+                <description>Transmit data register empty (transmitters)
+This bit is set by hardware when the I2C_TXDR register is empty. It is cleared when the next data to be sent is written in the I2C_TXDR register.
 This bit can be written to 1 by software in order to flush the transmit data register I2C_TXDR.
 Note: This bit is set by hardware when PE = 0.</description>
                 <bitOffset>0</bitOffset>
@@ -47208,7 +47208,7 @@ Note: This bit is set by hardware when PE = 0.</description>
               </field>
               <field>
                 <name>TXIS</name>
-                <description>Transmit interrupt status (transmitters) 
+                <description>Transmit interrupt status (transmitters)
 This bit is set by hardware when the I2C_TXDR register is empty and the data to be transmitted must be written in the I2C_TXDR register. It is cleared when the next data to be sent is written in the I2C_TXDR register.
 This bit can be written to 1 by software only when NOSTRETCH = 1, to generate a TXIS event (interrupt if TXIE = 1 or DMA request if TXDMAEN = 1).
 Note: This bit is cleared by hardware when PE = 0.</description>
@@ -47236,7 +47236,7 @@ Note: This bit is cleared by hardware when PE = 0.</description>
               </field>
               <field>
                 <name>NACKF</name>
-                <description>Not Acknowledge received flag 
+                <description>Not Acknowledge received flag
 This flag is set by hardware when a NACK is received after a byte transmission. It is cleared by software by setting the NACKCF bit.
 Note: This bit is cleared by hardware when PE = 0.</description>
                 <bitOffset>4</bitOffset>
@@ -47276,7 +47276,7 @@ Note: This flag is only for master mode, or for slave mode when the SBC bit is s
               </field>
               <field>
                 <name>BERR</name>
-                <description>Bus error 
+                <description>Bus error
 This flag is set by hardware when a misplaced Start or STOP condition is detected whereas the peripheral is involved in the transfer. The flag is not set during the address phase in slave mode. It is cleared by software by setting BERRCF bit.
 Note: This bit is cleared by hardware when PE = 0.</description>
                 <bitOffset>8</bitOffset>
@@ -47285,7 +47285,7 @@ Note: This bit is cleared by hardware when PE = 0.</description>
               </field>
               <field>
                 <name>ARLO</name>
-                <description>Arbitration lost 
+                <description>Arbitration lost
 This flag is set by hardware in case of arbitration loss. It is cleared by software by setting the ARLOCF bit.
 Note: This bit is cleared by hardware when PE = 0.</description>
                 <bitOffset>9</bitOffset>
@@ -47331,7 +47331,7 @@ This flag is updated when an address match event occurs (ADDR = 1).</description
               </field>
               <field>
                 <name>ADDCODE</name>
-                <description>Address match code (slave mode) 
+                <description>Address match code (slave mode)
 These bits are updated with the received address when an address match event occurs (ADDR = 1).
 In the case of a 10-bit address, ADDCODE provides the 10-bit header followed by the two MSBs of the address.</description>
                 <bitOffset>17</bitOffset>
@@ -47351,7 +47351,7 @@ In the case of a 10-bit address, ADDCODE provides the 10-bit header followed by 
             <fields>
               <field>
                 <name>ADDRCF</name>
-                <description>Address matched flag clear 
+                <description>Address matched flag clear
 Writing 1 to this bit clears the ADDR flag in the I2C_ISR register. Writing 1 to this bit also clears the START bit in the I2C_CR2 register.</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -47367,7 +47367,7 @@ Writing 1 to this bit clears the NACKF flag in I2C_ISR register.</description>
               </field>
               <field>
                 <name>STOPCF</name>
-                <description>STOP detection flag clear 
+                <description>STOP detection flag clear
 Writing 1 to this bit clears the STOPF flag in the I2C_ISR register.</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -48879,7 +48879,7 @@ Note: If LPTIM does not implement at least 1 channel this bit is reserved. Refer
               </field>
               <field>
                 <name>UEDE</name>
-                <description>Update event DMA request enable 
+                <description>Update event DMA request enable
 Note: If LPTIM does not implement at least 1 channel this bit is reserved. Refer to Section125.3.</description>
                 <bitOffset>23</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -51575,7 +51575,7 @@ Note: If LPTIM does not implement at least 1 channel this bit is reserved. Refer
               </field>
               <field>
                 <name>UEDE</name>
-                <description>Update event DMA request enable 
+                <description>Update event DMA request enable
 Note: If LPTIM does not implement at least 1 channel this bit is reserved. Refer to Section125.3.</description>
                 <bitOffset>23</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -52889,7 +52889,7 @@ CCR4 becomes read-only, it contains the counter value transferred by the last in
                 <name>UE</name>
                 <description>LPUART enable
 When this bit is cleared, the LPUART prescalers and outputs are stopped immediately, and current operations are discarded. The configuration of the LPUART is kept, but all the status flags, in the LPUART_ISR are reset. This bit is set and cleared by software.
-Note: To enter low-power mode without generating errors on the line, the TE bit must be reset before and the software must wait for the TC bit in the LPUART_ISR to be set before resetting the UE bit. 
+Note: To enter low-power mode without generating errors on the line, the TE bit must be reset before and the software must wait for the TC bit in the LPUART_ISR to be set before resetting the UE bit.
 Note: The DMA requests are also reset when UE = 0 so the DMA channel must be disabled before resetting the UE bit.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -52909,7 +52909,7 @@ Note: The DMA requests are also reset when UE = 0 so the DMA channel must be dis
               </field>
               <field>
                 <name>UESM</name>
-                <description>LPUART enable in low-power mode 
+                <description>LPUART enable in low-power mode
 When this bit is cleared, the LPUART cannot wake up the MCU from low-power mode.
 When this bit is set, the LPUART can wake up the MCU from low-power mode.
 This bit is set and cleared by software.
@@ -53117,7 +53117,7 @@ This bitfield can only be written when the LPUART is disabled (UE=0).</descripti
               <field>
                 <name>WAKE</name>
                 <description>Receiver wake-up method
-This bit determines the LPUART wake-up method from Mute mode. It is set or cleared by software.	
+This bit determines the LPUART wake-up method from Mute mode. It is set or cleared by software.
 This bitfield can only be written when the LPUART is disabled (UE=0).</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -53292,7 +53292,7 @@ This bit is set and cleared by software.</description>
                 <name>UE</name>
                 <description>LPUART enable
 When this bit is cleared, the LPUART prescalers and outputs are stopped immediately, and current operations are discarded. The configuration of the LPUART is kept, but all the status flags, in the LPUART_ISR are reset. This bit is set and cleared by software.
-Note: To enter low-power mode without generating errors on the line, the TE bit must be reset before and the software must wait for the TC bit in the LPUART_ISR to be set before resetting the UE bit. 
+Note: To enter low-power mode without generating errors on the line, the TE bit must be reset before and the software must wait for the TC bit in the LPUART_ISR to be set before resetting the UE bit.
 Note: The DMA requests are also reset when UE = 0 so the DMA channel must be disabled before resetting the UE bit.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -53312,7 +53312,7 @@ Note: The DMA requests are also reset when UE = 0 so the DMA channel must be dis
               </field>
               <field>
                 <name>UESM</name>
-                <description>LPUART enable in low-power mode 
+                <description>LPUART enable in low-power mode
 When this bit is cleared, the LPUART cannot wake up the MCU from low-power mode.
 When this bit is set, the LPUART can wake up the MCU from low-power mode.
 This bit is set and cleared by software.
@@ -53520,7 +53520,7 @@ This bitfield can only be written when the LPUART is disabled (UE=0).</descripti
               <field>
                 <name>WAKE</name>
                 <description>Receiver wake-up method
-This bit determines the LPUART wake-up method from Mute mode. It is set or cleared by software.	
+This bit determines the LPUART wake-up method from Mute mode. It is set or cleared by software.
 This bitfield can only be written when the LPUART is disabled (UE=0).</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -53653,7 +53653,7 @@ This bit is set and cleared by software.</description>
               <field>
                 <name>ADDM7</name>
                 <description>7-bit Address Detection/4-bit Address Detection
-This bit is for selection between 4-bit address detection or 7-bit address detection. 
+This bit is for selection between 4-bit address detection or 7-bit address detection.
 This bit can only be written when the LPUART is disabled (UE=0)
 Note: In 7-bit and 9-bit data modes, the address detection is done on 6-bit and 8-bit address (ADD[5:0] and ADD[7:0]) respectively.</description>
                 <bitOffset>4</bitOffset>
@@ -53723,7 +53723,7 @@ This bitfield can only be written when the LPUART is disabled (UE=0).</descripti
                 <name>RXINV</name>
                 <description>RX pin active level inversion
 This bit is set and cleared by software.
-This enables the use of an external inverter on the RX line. 
+This enables the use of an external inverter on the RX line.
 This bitfield can only be written when the LPUART is disabled (UE=0).</description>
                 <bitOffset>16</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -53745,7 +53745,7 @@ This bitfield can only be written when the LPUART is disabled (UE=0).</descripti
                 <name>TXINV</name>
                 <description>TX pin active level inversion
 This bit is set and cleared by software.
-This enables the use of an external inverter on the TX line. 
+This enables the use of an external inverter on the TX line.
 This bitfield can only be written when the LPUART is disabled (UE=0).</description>
                 <bitOffset>17</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -53807,7 +53807,7 @@ This bitfield can only be written when the LPUART is disabled (UE=0).</descripti
               </field>
               <field>
                 <name>ADD</name>
-                <description>Address of the LPUART node 
+                <description>Address of the LPUART node
 These bits give the address of the LPUART node in Mute mode or a character code to be recognized in low-power or Run mode:
 In Mute mode: they are used in multiprocessor communication to wake up from Mute mode with 4-bit/7-bit address mark detection. The MSB of the character sent by the transmitter should be equal to 1. In 4-bit address mark detection, only ADD[3:0] bits are used.
 In low-power mode: they are used for wake up from low-power mode on character match.
@@ -53852,7 +53852,7 @@ Error Interrupt Enable Bit is required to enable interrupt generation in case of
               <field>
                 <name>HDSEL</name>
                 <description>Half-duplex selection
-Selection of Single-wire Half-duplex mode 
+Selection of Single-wire Half-duplex mode
 This bit can only be written when the LPUART is disabled (UE=0).</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -53972,7 +53972,7 @@ This bit can only be written when the LPUART is disabled (UE=0)</description>
               <field>
                 <name>OVRDIS</name>
                 <description>Overrun Disable
-This bit is used to disable the receive overrun detection. 
+This bit is used to disable the receive overrun detection.
 the ORE flag is not set and the new received data overwrites the previous content of the LPUART_RDR register.
 This bit can only be written when the LPUART is disabled (UE=0).
 Note: This control bit enables checking the communication flow w/o reading the data.</description>
@@ -54015,8 +54015,8 @@ Note: The reception errors are: parity error, framing error or noise error.</des
               </field>
               <field>
                 <name>DEM</name>
-                <description>Driver enable mode 
-This bit enables the user to activate the external transceiver control, through the DE signal. 
+                <description>Driver enable mode
+This bit enables the user to activate the external transceiver control, through the DE signal.
 This bit can only be written when the LPUART is disabled (UE=0).</description>
                 <bitOffset>14</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54057,7 +54057,7 @@ This bit can only be written when the LPUART is disabled (UE=0).</description>
               <field>
                 <name>WUS0</name>
                 <description>Wake-up from low-power mode interrupt flag selection
-This bitfield specifies the event which activates the WUF (Wake-up from low-power mode flag). 
+This bitfield specifies the event which activates the WUF (Wake-up from low-power mode flag).
 This bitfield can only be written when the LPUART is disabled (UE=0).
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section132.3: LPUART implementation on page1914.</description>
                 <bitOffset>20</bitOffset>
@@ -54073,13 +54073,13 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
                     <name>B_0x1</name>
                     <description>Reserved.</description>
                     <value>0x1</value>
-                  </enumeratedValue>                  
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
                 <name>WUS1</name>
                 <description>Wake-up from low-power mode interrupt flag selection
-This bitfield specifies the event which activates the WUF (Wake-up from low-power mode flag). 
+This bitfield specifies the event which activates the WUF (Wake-up from low-power mode flag).
 This bitfield can only be written when the LPUART is disabled (UE=0).
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section132.3: LPUART implementation on page1914.</description>
                 <bitOffset>21</bitOffset>
@@ -54095,7 +54095,7 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
                     <name>B_0x1</name>
                     <description>Reserved.</description>
                     <value>0x1</value>
-                  </enumeratedValue>                 
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -54289,7 +54289,7 @@ Writing 1 to this bit puts the LPUART in Mute mode and resets the RWU flag.</des
               <field>
                 <name>RXFRQ</name>
                 <description>Receive data flush request
-Writing 1 to this bit clears the RXNE flag. 
+Writing 1 to this bit clears the RXNE flag.
 This enables discarding the received data without reading it, and avoid an overrun condition.</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54298,7 +54298,7 @@ This enables discarding the received data without reading it, and avoid an overr
               <field>
                 <name>TXFRQ</name>
                 <description>Transmit data flush request
-This bit is used when FIFO mode is enabled. TXFRQ bit is set to flush the whole FIFO. This sets the flag TXFE (TXFIFO empty, bit 23 in the LPUART_ISR register). 
+This bit is used when FIFO mode is enabled. TXFRQ bit is set to flush the whole FIFO. This sets the flag TXFE (TXFIFO empty, bit 23 in the LPUART_ISR register).
 Note: In FIFO mode, the TXFNF flag is reset during the flush request until TxFIFO is empty in order to ensure that no data are written in the data register.</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54318,7 +54318,7 @@ Note: In FIFO mode, the TXFNF flag is reset during the flush request until TxFIF
               <field>
                 <name>PE</name>
                 <description>Parity error
-This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the LPUART_ICR register. 
+This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the LPUART_ICR register.
 An interrupt is generated if PEIE = 1 in the LPUART_CR1 register.
 Note: This error is associated with the character in the LPUART_RDR.</description>
                 <bitOffset>0</bitOffset>
@@ -54364,7 +54364,7 @@ Note: This error is associated with the character in the LPUART_RDR.</descriptio
                 <name>NE</name>
                 <description>Start bit noise detection flag
 This bit is set by hardware when noise is detected on the start bit of a received frame. It is cleared by software, writing 1 to the NFCF bit in the LPUART_ICR register.
-Note: This bit does not generate an interrupt as it appears at the same time as the RXFNE bit which itself generates an interrupt. An interrupt is generated when the NE flag is set during multi buffer communication if the EIE bit is set. 
+Note: This bit does not generate an interrupt as it appears at the same time as the RXFNE bit which itself generates an interrupt. An interrupt is generated when the NE flag is set during multi buffer communication if the EIE bit is set.
 Note: This error is associated with the character in the LPUART_RDR.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54404,7 +54404,7 @@ Note: This bit is permanently forced to 0 (no overrun detection) when the bit OV
               <field>
                 <name>IDLE</name>
                 <description>Idle line detected
-This bit is set by hardware when an Idle line is detected. An interrupt is generated if IDLEIE=1 in the LPUART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the LPUART_ICR register. 
+This bit is set by hardware when an Idle line is detected. An interrupt is generated if IDLEIE=1 in the LPUART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the LPUART_ICR register.
 Note: The IDLE bit is not set again until the RXFNE bit has been set (i.e. a new idle line occurs).
 Note: If Mute mode is enabled (MME=1), IDLE is set if the LPUART is not mute (RWU=0), whatever the Mute mode selected by the WAKE bit. If RWU=1, IDLE is not set.</description>
                 <bitOffset>4</bitOffset>
@@ -54426,8 +54426,8 @@ Note: If Mute mode is enabled (MME=1), IDLE is set if the LPUART is not mute (RW
               <field>
                 <name>RXFNE</name>
                 <description>RXFIFO not empty
-RXFNE bit is set by hardware when the RXFIFO is not empty, and so data can be read from the LPUART_RDR register. Every read of the LPUART_RDR frees a location in the RXFIFO. It is cleared when the RXFIFO is empty. 
-The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the LPUART_RQR register. 
+RXFNE bit is set by hardware when the RXFIFO is not empty, and so data can be read from the LPUART_RDR register. Every read of the LPUART_RDR frees a location in the RXFIFO. It is cleared when the RXFIFO is empty.
+The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the LPUART_RQR register.
 An interrupt is generated if RXFNEIE=1 in the LPUART_CR1 register.</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54451,7 +54451,7 @@ An interrupt is generated if RXFNEIE=1 in the LPUART_CR1 register.</description>
 This bit indicates that the last data written in the LPUART_TDR has been transmitted out of the shift register. The TC flag behaves as follows:
 When TDN = 0, the TC flag is set when the transmission of a frame containing data is complete and when TXFE is set.
 When TDN is equal to the number of data in the TXFIFO, the TC flag is set when TXFIFO is empty and TDN is reached.
-When TDN is greater than the number of data in the TXFIFO, TC remains cleared until the TXFIFO is filled again to reach the programmed number of data to be transferred. 
+When TDN is greater than the number of data in the TXFIFO, TC remains cleared until the TXFIFO is filled again to reach the programmed number of data to be transferred.
 When TDN is less than the number of data in the TXFIFO, TC is set when TDN is reached even if the TXFIFO is not empty.
 An interrupt is generated if TCIE=1 in the LPUART_CR1 register.
 TC bit is cleared by software by writing 1 to the TCCF in the LPUART_ICR register or by writing to the LPUART_TDR register.</description>
@@ -54462,9 +54462,9 @@ TC bit is cleared by software by writing 1 to the TCCF in the LPUART_ICR registe
               <field>
                 <name>TXFNF</name>
                 <description>TXFIFO not full
-TXFNF is set by hardware when TXFIFO is not full, and so data can be written in the LPUART_TDR. Every write in the LPUART_TDR places the data in the TXFIFO. This flag remains set until the TXFIFO is full. When the TXFIFO is full, this flag is cleared indicating that data can not be written into the LPUART_TDR. 
+TXFNF is set by hardware when TXFIFO is not full, and so data can be written in the LPUART_TDR. Every write in the LPUART_TDR places the data in the TXFIFO. This flag remains set until the TXFIFO is full. When the TXFIFO is full, this flag is cleared indicating that data can not be written into the LPUART_TDR.
 The TXFNF is kept reset during the flush request until TXFIFO is empty. After sending the flush request (by setting TXFRQ bit), the flag TXFNF must be checked prior to writing in TXFIFO (TXFNF and TXFE are set at the same time).
-An interrupt is generated if the TXFNFIE bit =1 in the LPUART_CR1 register. 
+An interrupt is generated if the TXFNFIE bit =1 in the LPUART_CR1 register.
 Note: This bit is used during single buffer transmission.</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54485,7 +54485,7 @@ Note: This bit is used during single buffer transmission.</description>
               <field>
                 <name>CTSIF</name>
                 <description>CTS interrupt flag
-This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the LPUART_ICR register. 
+This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the LPUART_ICR register.
 An interrupt is generated if CTSIE=1 in the LPUART_CR3 register.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>9</bitOffset>
@@ -54507,7 +54507,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
               <field>
                 <name>CTS</name>
                 <description>CTS flag
-This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin. 
+This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54548,7 +54548,7 @@ This bit is set and reset by hardware. It is active when a communication is ongo
               <field>
                 <name>CMF</name>
                 <description>Character match flag
-This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the LPUART_ICR register. 
+This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the LPUART_ICR register.
 An interrupt is generated if CMIE=1in the LPUART_CR1 register.</description>
                 <bitOffset>17</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54590,7 +54590,7 @@ This bit indicates that a send break character was requested. It is set by softw
                 <name>RWU</name>
                 <description>Receiver wake-up from Mute mode
 This bit indicates if the LPUART is in Mute mode. It is cleared/set by hardware when a wake-up/mute sequence is recognized. The Mute mode control sequence (address or IDLE) is selected by the WAKE bit in the LPUART_CR1 register.
-When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the LPUART_RQR register. 
+When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the LPUART_RQR register.
 Note: If the LPUART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>19</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54610,9 +54610,9 @@ Note: If the LPUART does not support the wake-up from Stop feature, this bit is 
               </field>
               <field>
                 <name>WUF</name>
-                <description>Wake-up from low-power mode flag 
+                <description>Wake-up from low-power mode flag
 This bit is set by hardware, when a wake-up event is detected. The event is defined by the WUS bitfield. It is cleared by software, writing a 1 to the WUCF in the LPUART_ICR register.
-An interrupt is generated if WUFIE=1 in the LPUART_CR3 register. 
+An interrupt is generated if WUFIE=1 in the LPUART_CR3 register.
 Note: When UESM is cleared, WUF flag is also cleared.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section132.3: LPUART implementation on page1914.</description>
                 <bitOffset>20</bitOffset>
@@ -54621,8 +54621,8 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               </field>
               <field>
                 <name>TEACK</name>
-                <description>Transmit enable acknowledge flag 
-This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the LPUART. 
+                <description>Transmit enable acknowledge flag
+This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the LPUART.
 It can be used when an idle frame request is generated by writing TE=0, followed by TE=1 in the LPUART_CR1 register, in order to respect the TE=0 minimum period.</description>
                 <bitOffset>21</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54630,8 +54630,8 @@ It can be used when an idle frame request is generated by writing TE=0, followed
               </field>
               <field>
                 <name>REACK</name>
-                <description>Receive enable acknowledge flag 
-This bit is set/reset by hardware, when the Receive Enable value is taken into account by the LPUART. 
+                <description>Receive enable acknowledge flag
+This bit is set/reset by hardware, when the Receive Enable value is taken into account by the LPUART.
 It can be used to verify that the LPUART is ready for reception before entering low-power mode.
 Note: If the LPUART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>22</bitOffset>
@@ -54662,7 +54662,7 @@ An interrupt is generated if the TXFEIE bit =1 (bit 30) in the LPUART_CR1 regist
               <field>
                 <name>RXFF</name>
                 <description>RXFIFO Full
-This bit is set by hardware when the number of received data corresponds to RXFIFO1size1+11 (RXFIFO full + 1 data in the LPUART_RDR register. 
+This bit is set by hardware when the number of received data corresponds to RXFIFO1size1+11 (RXFIFO full + 1 data in the LPUART_RDR register.
 An interrupt is generated if the RXFFIE bit =1 in the LPUART_CR1 register.</description>
                 <bitOffset>24</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54735,7 +54735,7 @@ This bit is set by hardware when the TXFIFO reaches the threshold programmed in 
               <field>
                 <name>PE</name>
                 <description>Parity error
-This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the LPUART_ICR register. 
+This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the LPUART_ICR register.
 An interrupt is generated if PEIE = 1 in the LPUART_CR1 register.
 Note: In FIFO mode, this error is associated with the character in the LPUART_RDR.</description>
                 <bitOffset>0</bitOffset>
@@ -54821,7 +54821,7 @@ Note: This bit is permanently forced to 0 (no overrun detection) when the bit OV
               <field>
                 <name>IDLE</name>
                 <description>Idle line detected
-This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE=1 in the LPUART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the LPUART_ICR register. 
+This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE=1 in the LPUART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the LPUART_ICR register.
 Note: The IDLE bit is not set again until the RXNE bit has been set (i.e. a new idle line occurs).
 Note: If Mute mode is enabled (MME=1), IDLE is set if the LPUART is not mute (RWU=0), whatever the Mute mode selected by the WAKE bit. If RWU=1, IDLE is not set.</description>
                 <bitOffset>4</bitOffset>
@@ -54845,7 +54845,7 @@ Note: If Mute mode is enabled (MME=1), IDLE is set if the LPUART is not mute (RW
                 <description>Read data register not empty
 RXNE bit is set by hardware when the content of the LPUART_RDR shift register has been transferred to the LPUART_RDR register. It is cleared by a read to the LPUART_RDR register. The
 RXNE flag can also be cleared by writing 1 to the RXFRQ in the LPUART_RQR register.
-The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the LPUART_RQR register. 
+The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the LPUART_RQR register.
 An interrupt is generated if RXNEIE=1 in the LPUART_CR1 register.</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54876,8 +54876,8 @@ TC bit is cleared by software by writing 1 to the TCCF in the USART_ICR register
               <field>
                 <name>TXE</name>
                 <description>Transmit data register empty
-TXE is set by hardware when the content of the LPUART_TDR register has been transferred into the shift register. It is cleared by a write to the LPUART_TDR register. 
-An interrupt is generated if the TXEIE bit =1 in the LPUART_CR1 register. 
+TXE is set by hardware when the content of the LPUART_TDR register has been transferred into the shift register. It is cleared by a write to the LPUART_TDR register.
+An interrupt is generated if the TXEIE bit =1 in the LPUART_CR1 register.
 Note: This bit is used during single buffer transmission.</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54898,7 +54898,7 @@ Note: This bit is used during single buffer transmission.</description>
               <field>
                 <name>CTSIF</name>
                 <description>CTS interrupt flag
-This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the LPUART_ICR register. 
+This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the LPUART_ICR register.
 An interrupt is generated if CTSIE=1 in the LPUART_CR3 register.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>9</bitOffset>
@@ -54920,7 +54920,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
               <field>
                 <name>CTS</name>
                 <description>CTS flag
-This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin. 
+This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -54961,7 +54961,7 @@ This bit is set and reset by hardware. It is active when a communication is ongo
               <field>
                 <name>CMF</name>
                 <description>Character match flag
-This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the LPUART_ICR register. 
+This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the LPUART_ICR register.
 An interrupt is generated if CMIE=1in the LPUART_CR1 register.</description>
                 <bitOffset>17</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -55003,7 +55003,7 @@ This bit indicates that a send break character was requested. It is set by softw
                 <name>RWU</name>
                 <description>Receiver wake-up from Mute mode
 This bit indicates if the LPUART is in Mute mode. It is cleared/set by hardware when a wake-up/mute sequence is recognized. The Mute mode control sequence (address or IDLE) is selected by the WAKE bit in the LPUART_CR1 register.
-When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the LPUART_RQR register. 
+When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the LPUART_RQR register.
 Note: If the LPUART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>19</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -55023,9 +55023,9 @@ Note: If the LPUART does not support the wake-up from Stop feature, this bit is 
               </field>
               <field>
                 <name>WUF</name>
-                <description>Wake-up from low-power mode flag 
+                <description>Wake-up from low-power mode flag
 This bit is set by hardware, when a wake-up event is detected. The event is defined by the WUS bitfield. It is cleared by software, writing a 1 to the WUCF in the LPUART_ICR register.
-An interrupt is generated if WUFIE=1 in the LPUART_CR3 register. 
+An interrupt is generated if WUFIE=1 in the LPUART_CR3 register.
 Note: When UESM is cleared, WUF flag is also cleared.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section132.3: LPUART implementation on page1914.</description>
                 <bitOffset>20</bitOffset>
@@ -55034,8 +55034,8 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               </field>
               <field>
                 <name>TEACK</name>
-                <description>Transmit enable acknowledge flag 
-This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the LPUART. 
+                <description>Transmit enable acknowledge flag
+This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the LPUART.
 It can be used when an idle frame request is generated by writing TE=0, followed by TE=1 in the LPUART_CR1 register, in order to respect the TE=0 minimum period.</description>
                 <bitOffset>21</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -55043,8 +55043,8 @@ It can be used when an idle frame request is generated by writing TE=0, followed
               </field>
               <field>
                 <name>REACK</name>
-                <description>Receive enable acknowledge flag 
-This bit is set/reset by hardware, when the Receive Enable value is taken into account by the LPUART. 
+                <description>Receive enable acknowledge flag
+This bit is set/reset by hardware, when the Receive Enable value is taken into account by the LPUART.
 It can be used to verify that the LPUART is ready for reception before entering low-power mode.
 Note: If the LPUART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>22</bitOffset>
@@ -55128,7 +55128,7 @@ Writing 1 to this bit clears the CMF flag in the LPUART_ISR register.</descripti
               </field>
               <field>
                 <name>WUCF</name>
-                <description>Wake-up from low-power mode clear flag 
+                <description>Wake-up from low-power mode clear flag
 Writing 1 to this bit clears the WUF flag in the USART_ISR register.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section132.3: LPUART implementation on page1914.</description>
                 <bitOffset>20</bitOffset>
@@ -55267,7 +55267,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
       </peripheral>
 	  <peripheral derivedFrom="LPUART1">
         <name>LPUART2</name>
-        <baseAddress>0x40008400</baseAddress>		
+        <baseAddress>0x40008400</baseAddress>
       </peripheral>
 	  <peripheral>
         <name>OPAMP</name>
@@ -57812,7 +57812,7 @@ When set, this bit activates the pull-down on PH[y] when APC bit is set in PWR_C
 This bit is set and cleared by software.
 Cleared by hardware to stop the MSI oscillator when entering Stop, Standby or Shutdown mode.
 Set by hardware to force the MSI oscillator ON when exiting Standby or Shutdown mode.
-Set by hardware to force the MSI oscillator ON when STOPWUCK=0 when exiting from Stop modes, or in case of a failure of the HSE oscillator 
+Set by hardware to force the MSI oscillator ON when STOPWUCK=0 when exiting from Stop modes, or in case of a failure of the HSE oscillator
 Set by hardware when used directly or indirectly as system clock.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -58011,7 +58011,7 @@ Set and cleared by software to force HSI16 ON even in Stop modes. The HSI16 can 
               <field>
                 <name>HSIRDY</name>
                 <description>HSI16 clock ready flag
-Set by hardware to indicate that HSI16 oscillator is stable. This bit is set only when HSI16 is enabled by software by setting HSION. 
+Set by hardware to indicate that HSI16 oscillator is stable. This bit is set only when HSI16 is enabled by software by setting HSION.
 Note: Once the HSION bit is cleared, HSIRDY goes low after 6 HSI16 clock cycles.</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -58073,7 +58073,7 @@ Cleared by hardware to stop the HSE oscillator when entering Stop, Standby, or S
               <field>
                 <name>HSERDY</name>
                 <description>HSE clock ready flag
-Set by hardware to indicate that the HSE oscillator is stable. 
+Set by hardware to indicate that the HSE oscillator is stable.
 Note: Once the HSEON bit is cleared, HSERDY goes low after 6 HSE clock cycles.</description>
                 <bitOffset>17</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -59313,7 +59313,7 @@ Cleared by software by setting the LSECSSC bit.</description>
               <field>
                 <name>HSI48RDYF</name>
                 <description>HSI48 ready interrupt flag
-Set by hardware when the HSI48 clock becomes stable and HSI48RDYIE is set in a response to setting the HSI48ON (refer to RCC clock recovery RC register (RCC_CRRCR)). 
+Set by hardware when the HSI48 clock becomes stable and HSI48RDYIE is set in a response to setting the HSI48ON (refer to RCC clock recovery RC register (RCC_CRRCR)).
 Cleared by software setting the HSI48RDYC bit.</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -59576,7 +59576,7 @@ Set and cleared by software.</description>
               <field>
                 <name>FLASHRST</name>
                 <description>Flash memory interface reset
-Set and cleared by software. 
+Set and cleared by software.
 This bit can only be set when the flash memory is in power down mode.</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -60403,7 +60403,7 @@ DMAMUX is enabled as long as at least one DMA peripheral is enabled.</descriptio
               <field>
                 <name>FLASHEN</name>
                 <description>Flash memory interface clock enable
-Set and cleared by software. 
+Set and cleared by software.
 This bit can only be cleared when the flash memory is in power down mode.</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -62564,7 +62564,7 @@ This bit can be written only when the external 321kHz oscillator is disabled (LS
               </field>
               <field>
                 <name>LSEDRV</name>
-                <description>LSE oscillator drive capability 
+                <description>LSE oscillator drive capability
 Set by software to select the LSE oscillator drive capability as follows:
 Applicable when the LSE oscillator is in Xtal mode, as opposed to bypass mode.</description>
                 <bitOffset>3</bitOffset>
@@ -62691,7 +62691,7 @@ Once the RTC clock source is selected, it cannot be changed anymore unless the R
               <field>
                 <name>LSESYSRDY</name>
                 <description>LSE clock ready for system usage
-This flag is set by hardware to indicate that the LSE clock is ready for being used by the system (see LSESYSEN bit). This flag is set when LSE clock is ready (LSEON1=11 and LSERDY1=11) and two LSE clock cycles after that LSESYSEN is set. 
+This flag is set by hardware to indicate that the LSE clock is ready for being used by the system (see LSESYSEN bit). This flag is set when LSE clock is ready (LSEON1=11 and LSERDY1=11) and two LSE clock cycles after that LSESYSEN is set.
 Cleared by hardware to indicate that the LSE clock is not ready to be used by the system.</description>
                 <bitOffset>11</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -62823,7 +62823,7 @@ Set and cleared by software to enable/disable the LSI oscillator:</description>
               <field>
                 <name>LSIRDY</name>
                 <description>LSI oscillator ready
-Set and cleared by hardware to indicate when the LSI oscillator is ready (stable): 
+Set and cleared by hardware to indicate when the LSI oscillator is ready (stable):
 After the LSION bit is cleared, LSIRDY goes low after 3 LSI oscillator clock cycles. This bit can be set even if LSION = 0 if the LSI is requested by the Clock Security System on LSE, by the Independent Watchdog or by the RTC.</description>
                 <bitOffset>1</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -63156,7 +63156,7 @@ These bits are initialized at startup with the factory-programmed HSI48 calibrat
               </field>
               <field>
                 <name>CED</name>
-                <description>Clock error detection 
+                <description>Clock error detection
 The clock error detection cannot be enabled nor disabled on-the-fly when the RNG is enabled, that is to enable or disable CED, the RNG must be disabled.
 Writing this bit is taken into account only if the CONDRST bit is set to 1 in the same access, while CONFIGLOCK remains at 0. Writing to this bit is ignored if CONFIGLOCK1=11.</description>
                 <bitOffset>5</bitOffset>
@@ -63237,7 +63237,7 @@ Reserved to the RNG configuration (bitfield 2). Bit 13 can be set when RNG power
               <field>
                 <name>CLKDIV</name>
                 <description>Clock divider factor
-This value used to configure an internal programmable divider (from 1 to 16) acting on the incoming RNG clock. These bits can be written only when the core is disabled (RNGEN1=10). 
+This value used to configure an internal programmable divider (from 1 to 16) acting on the incoming RNG clock. These bits can be written only when the core is disabled (RNGEN1=10).
 ...
 Writing these bits is taken into account only if the CONDRST bit is set to 1 in the same access, while CONFIGLOCK remains at 0. Writing to this bit is ignored if CONFIGLOCK1=11.</description>
                 <bitOffset>16</bitOffset>
@@ -65550,7 +65550,7 @@ SS[14:0] is the mirror of SS[14:0] in the RTC_ALRMBSSRR, and so can also be read
           <name>SPI1</name>
           <description>SPI1 global interrupt</description>
           <value>25</value>
-        </interrupt>		
+        </interrupt>
         <registers>
           <register>
             <name>SPI_CR1</name>
@@ -65563,7 +65563,7 @@ SS[14:0] is the mirror of SS[14:0] in the RTC_ALRMBSSRR, and so can also be read
             <fields>
               <field>
                 <name>CPHA</name>
-                <description>Clock phase 
+                <description>Clock phase
 Note: This bit should not be changed when communication is ongoing.
 Note: This bit is not used in SPI TI mode except the case when CRC is applied at TI mode.</description>
                 <bitOffset>0</bitOffset>
@@ -65584,7 +65584,7 @@ Note: This bit is not used in SPI TI mode except the case when CRC is applied at
               </field>
               <field>
                 <name>CPOL</name>
-                <description>Clock polarity 
+                <description>Clock polarity
 Note: This bit should not be changed when communication is ongoing.
 Note: This bit is not used in SPI TI mode except the case when CRC is applied at TI mode.</description>
                 <bitOffset>1</bitOffset>
@@ -65605,7 +65605,7 @@ Note: This bit is not used in SPI TI mode except the case when CRC is applied at
               </field>
               <field>
                 <name>MSTR</name>
-                <description>Master selection 
+                <description>Master selection
 Note: This bit should not be changed when communication is ongoing.</description>
                 <bitOffset>2</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -65746,7 +65746,7 @@ Note: This bit is not used in SPI TI mode.</description>
               </field>
               <field>
                 <name>RXONLY</name>
-                <description>Receive only mode enabled. 
+                <description>Receive only mode enabled.
 This bit enables simplex communication using a single unidirectional line to receive data exclusively. Keep BIDIMODE bit clear when receive only mode is active.This bit is also useful in a multislave system in which this particular slave is not accessed, the output from the accessed slave is not corrupted.</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -65848,7 +65848,7 @@ Note: In master mode, the MOSI pin is used and in slave mode, the MISO pin is us
               </field>
               <field>
                 <name>BIDIMODE</name>
-                <description>Bidirectional data mode enable. 
+                <description>Bidirectional data mode enable.
 This bit enables half-duplex communication using common single bidirectional data line. Keep RXONLY bit clear when bidirectional mode is active.</description>
                 <bitOffset>15</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -65940,7 +65940,7 @@ Note: This bit is not used in SPI TI mode.</description>
               <field>
                 <name>NSSP</name>
                 <description>NSS pulse management
-This bit is used in master mode only. it allows the SPI to generate an NSS pulse between two consecutive data when doing continuous transfers. In the case of a single data transfer, it forces the NSS pin high level after the transfer. 
+This bit is used in master mode only. it allows the SPI to generate an NSS pulse between two consecutive data when doing continuous transfers. In the case of a single data transfer, it forces the NSS pin high level after the transfer.
 It has no meaning if CPHA = 1, or FRF = 1.
 Note: 1. This bit must be written only when the SPI is disabled (SPE=0).
 Note: 2. This bit is not used in SPI TI mode.</description>
@@ -66455,7 +66455,7 @@ The CRC polynomial (0x0007) is the reset value of this register. Another polynom
               <field>
                 <name>RXCRC</name>
                 <description>Rx CRC register
-When CRC calculation is enabled, the RXCRC[15:0] bits contain the computed CRC value of the subsequently received bytes. This register is reset when the CRCEN bit in SPI_CR1 register is written to 1. The CRC is calculated serially using the polynomial programmed in the SPI_CRCPR register. 
+When CRC calculation is enabled, the RXCRC[15:0] bits contain the computed CRC value of the subsequently received bytes. This register is reset when the CRCEN bit in SPI_CR1 register is written to 1. The CRC is calculated serially using the polynomial programmed in the SPI_CRCPR register.
 Only the 8 LSB bits are considered when the CRC frame format is set to be 8-bit length (CRCL bit in the SPI_CR1 is cleared). CRC calculation is done based on any CRC8 standard.
 The entire 16-bits of this register are considered when a 16-bit CRC frame format is selected (CRCL bit in the SPI_CR1 register is set). CRC calculation is done based on any CRC16 standard.
 Note: A read to this register when the BSY Flag is set could return an incorrect value.</description>
@@ -66488,7 +66488,7 @@ Note: A read to this register when the BSY flag is set could return an incorrect
             </fields>
           </register>
         </registers>
-      </peripheral>	  
+      </peripheral>
 	  <peripheral derivedFrom="SPI1">
         <name>SPI2</name>
         <baseAddress>0x40003800</baseAddress>
@@ -66811,7 +66811,7 @@ Note: This control bit is kept for legacy reasons. It is recommended to use the 
             <fields>
               <field>
                 <name>CCL</name>
-                <description>Cortex&lt;Superscript&gt;1&lt;Default 1 Font&gt;-M0+ LOCKUP bit enable bit 
+                <description>Cortex&lt;Superscript&gt;1&lt;Default 1 Font&gt;-M0+ LOCKUP bit enable bit
 This bit is set by software and cleared by a system reset. It can be use to enable and lock the connection of Cortex&lt;Superscript&gt;1&lt;Default 1 Font&gt;-M0+ LOCKUP (Hardfault) output to TIM1/15/16 Break input.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -69648,7 +69648,7 @@ Note: This bit acts only on channels that have a complementary output.</descript
               <field>
                 <name>MMS</name>
                 <description>Master mode selection
-These bits allow selected information to be sent in master mode to slave timers for synchronization (TRGO). The combination is as follows: 
+These bits allow selected information to be sent in master mode to slave timers for synchronization (TRGO). The combination is as follows:
 Note: The clock of the slave timer or ADC must be enabled prior to receive events from the master timer, and must not be changed on-the-fly while triggers are received from the master timer.</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>3</bitWidth>
@@ -69989,7 +69989,7 @@ This bit is used to select the OCREF clear source.</description>
               <field>
                 <name>TS</name>
                 <description>TS[0]: Trigger selection
-This bit-field selects the trigger input to be used to synchronize the counter. 
+This bit-field selects the trigger input to be used to synchronize the counter.
 Others: Reserved
 See Table1118: TIM1 internal trigger connection on page1561 for more details on ITRx meaning for each Timer.
 Note: These bits must be changed only when they are not used (e.g. when SMS=000) to avoid wrong edge detections at the transition.</description>
@@ -70181,7 +70181,7 @@ External trigger signal ETRP frequency must be at most 1/4 of f&lt;sub&gt;CK_INT
               <field>
                 <name>ECE</name>
                 <description>External clock enable
-This bit enables External clock mode 2. 
+This bit enables External clock mode 2.
 Note: Setting the ECE bit has the same effect as selecting external clock mode 1 with TRGI connected to ETRF (SMS=111 and TS=00111).
 It is possible to simultaneously use external clock mode 2 with the following slave modes: reset mode, gated mode and trigger mode. Nevertheless, TRGI must not be connected to ETRF in this case (TS bits must not be 00111).
 Note: If external clock mode 1 and external clock mode 2 are enabled at the same time, the external clock input is ETRF.</description>
@@ -70545,7 +70545,7 @@ This bit selects whether ETR or ETR is used for trigger operations</description>
               <field>
                 <name>UIF</name>
                 <description>Update interrupt flag
-This bit is set by hardware on an update event. It is cleared by software. 
+This bit is set by hardware on an update event. It is cleared by software.
 At overflow or underflow regarding the repetition counter value (update if repetition counter = 0) and if the UDIS=0 in the TIMx_CR1 register.
 When CNT is reinitialized by software using the UG bit in TIMx_EGR register, if URS=0 and UDIS=0 in the TIMx_CR1 register.
 When CNT is reinitialized by a trigger event (refer to Section122.4.3: TIM1 slave mode control register (TIM1_SMCR)), if URS=0 and UDIS=0 in the TIMx_CR1 register.</description>
@@ -70806,7 +70806,7 @@ This bit can be set by software, it is automatically cleared by hardware.</descr
               <field>
                 <name>CC1G</name>
                 <description>Capture/Compare 1 generation
-This bit is set by software in order to generate an event, it is automatically cleared by hardware. 
+This bit is set by software in order to generate an event, it is automatically cleared by hardware.
 If channel CC1 is configured as output:
 CC1IF flag is set, Corresponding interrupt or DMA request is sent if enabled.
 If channel CC1 is configured as input:
@@ -70946,7 +70946,7 @@ This bit is set by software in order to generate an event, it is automatically c
               <field>
                 <name>CC1S</name>
                 <description>Capture/Compare 1 Selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER).</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -71097,7 +71097,7 @@ This bit-field defines the frequency used to sample TI1 input and the length of 
               <field>
                 <name>CC2S</name>
                 <description>Capture/Compare 2 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC2S bits are writable only when the channel is OFF (CC2E = 0 in TIMx_CCER).</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -71156,7 +71156,7 @@ Refer to IC1F[3:0] description.</description>
               <field>
                 <name>CC1S</name>
                 <description>Capture/Compare 1 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC1S bits are writable only when the channel is OFF (CC1E = 0 in TIMx_CCER).</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -71275,7 +71275,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
                     <name>B_0x7</name>
                     <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNT&lt;TIMx_CCR1 else active. In downcounting, channel 1 is active as long as TIMx_CNT&gt;TIMx_CCR1 else inactive.</description>
                     <value>0x7</value>
-                  </enumeratedValue>                
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -71300,7 +71300,7 @@ Note: The OC1M[3] bit is not contiguous, located in bit 16.</description>
               <field>
                 <name>CC2S</name>
                 <description>Capture/Compare 2 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC2S bits are writable only when the channel is OFF (CC2E = 0 in TIMx_CCER).</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -71388,7 +71388,7 @@ Refer to OC1CE description.</description>
               <field>
                 <name>CC3S</name>
                 <description>Capture/compare 3 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC3S bits are writable only when the channel is OFF (CC3E = 0 in TIMx_CCER).</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -71435,7 +71435,7 @@ Refer to IC1F[3:0] description.</description>
               <field>
                 <name>CC4S</name>
                 <description>Capture/Compare 4 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC4S bits are writable only when the channel is OFF (CC4E = 0 in TIMx_CCER).</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -71494,7 +71494,7 @@ Refer to IC1F[3:0] description.</description>
              <field>
                 <name>CC3S</name>
                 <description>Capture/Compare 3 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC3S bits are writable only when the channel is OFF (CC3E = 0 in TIMx_CCER).</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -71557,7 +71557,7 @@ Refer to OC1CE description.</description>
               <field>
                 <name>CC4S</name>
                 <description>Capture/Compare 4 selection
-This bit-field defines the direction of the channel (input/output) as well as the used input. 
+This bit-field defines the direction of the channel (input/output) as well as the used input.
 Note: CC4S bits are writable only when the channel is OFF (CC4E = 0 in TIMx_CCER).</description>
                 <bitOffset>8</bitOffset>
                 <bitWidth>2</bitWidth>
@@ -72190,7 +72190,7 @@ Note: This bit can not be modified as long as LOCK level 1 has been programmed (
               <field>
                 <name>MOE</name>
                 <description>Main output enable
-This bit is cleared asynchronously by hardware as soon as one of the break inputs is active (BRK or BRK2). It is set by software or automatically depending on the AOE bit. It is acting only on the channels which are configured in output. 
+This bit is cleared asynchronously by hardware as soon as one of the break inputs is active (BRK or BRK2). It is set by software or automatically depending on the AOE bit. It is acting only on the channels which are configured in output.
 In response to a break event or if MOE is written to 0: OC and OCN outputs are disabled or forced to idle state depending on the OSSI bit.
 See OC/OCN enable description for more details (Section122.4.11: TIM1 capture/compare enable register (TIM1_CCER)).</description>
                 <bitOffset>15</bitOffset>
@@ -72584,7 +72584,7 @@ If the DMA Data Size is configured in bytes, the data is also transferred to 7 r
               <field>
                 <name>DMAB</name>
                 <description>DMA register for burst accesses
-A read or write operation to the DMAR register accesses the register located at the address (TIMx_CR1 address) + (DBA + DMA index) x 4 
+A read or write operation to the DMAR register accesses the register located at the address (TIMx_CR1 address) + (DBA + DMA index) x 4
 where TIMx_CR1 address is the address of the control register 1, DBA is the DMA base address configured in TIMx_DCR register, DMA index is automatically controlled by the DMA transfer, and ranges from 0 to DBL (DBL configured in TIMx_DCR).</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>32</bitWidth>
@@ -73672,7 +73672,7 @@ Others: Reserved</description>
 					  <name>B_0x7</name>
 					  <description>External Trigger input (ETRF)</description>
 					  <value>0x7</value>
-					</enumeratedValue>					
+					</enumeratedValue>
 				  </enumeratedValues>
 				</field>
 				<field>
@@ -74679,7 +74679,7 @@ Others: Reserved</description>
 					  <name>B_0x7</name>
 					  <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNTless thanTIMx_CCR1 else active.</description>
 					  <value>0x7</value>
-					</enumeratedValue>				
+					</enumeratedValue>
 				  </enumeratedValues>
 				</field>
 				<field>
@@ -75995,7 +75995,7 @@ Others: Reserved</description>
 					  <name>B_0x7</name>
 					  <description>External Trigger input (ETRF)</description>
 					  <value>0x7</value>
-					</enumeratedValue>					
+					</enumeratedValue>
 				  </enumeratedValues>
 				</field>
 				<field>
@@ -77002,7 +77002,7 @@ Others: Reserved</description>
 					  <name>B_0x7</name>
 					  <description>PWM mode 2 - In upcounting, channel 1 is inactive as long as TIMx_CNTless thanTIMx_CCR1 else active.</description>
 					  <value>0x7</value>
-					</enumeratedValue>					
+					</enumeratedValue>
 				  </enumeratedValues>
 				</field>
 				<field>
@@ -77884,7 +77884,7 @@ Others: Reserved</description>
               <field>
                 <name>CEN</name>
                 <description>Counter enable
-Note: Gated mode can work only if the CEN bit has been previously set by software. However trigger mode can set the CEN bit automatically by hardware. 
+Note: Gated mode can work only if the CEN bit has been previously set by software. However trigger mode can set the CEN bit automatically by hardware.
 CEN is cleared automatically in one-pulse mode, when an update event occurs.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -78228,7 +78228,7 @@ The counter is blocked while the auto-reload value is null.</description>
             </fields>
           </register>
         </registers>
-      </peripheral>	  
+      </peripheral>
       <peripheral>
         <name>TIM7</name>
         <description>TIM7 address block description</description>
@@ -78257,7 +78257,7 @@ The counter is blocked while the auto-reload value is null.</description>
               <field>
                 <name>CEN</name>
                 <description>Counter enable
-Note: Gated mode can work only if the CEN bit has been previously set by software. However trigger mode can set the CEN bit automatically by hardware. 
+Note: Gated mode can work only if the CEN bit has been previously set by software. However trigger mode can set the CEN bit automatically by hardware.
 CEN is cleared automatically in one-pulse mode, when an update event occurs.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -79891,7 +79891,7 @@ The counter is blocked while the auto-reload value is null.</description>
 					  <name>B_0x7</name>
 					  <description>PWM mode 2 - Channel 1 is inactive as long as TIMx_CNTless thanTIMx_CCR1 else active.</description>
 					  <value>0x7</value>
-					</enumeratedValue>					
+					</enumeratedValue>
 				  </enumeratedValues>
 				</field>
 				<field>
@@ -85854,7 +85854,7 @@ These bits represent the number of charge transfer cycles generated on the analo
                 <name>UE</name>
                 <description>USART enable
 When this bit is cleared, the USART prescalers and outputs are stopped immediately, and all current operations are discarded. The USART configuration is kept, but all the USART_ISR status flags are reset. This bit is set and cleared by software.
-Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit. 
+Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit.
 Note: The DMA requests are also reset when UE = 0 so the DMA channel must be disabled before resetting the UE bit.
 Note: In Smartcard mode, (SCEN = 1), the CK is always available when CLKEN = 1, regardless of the UE bit value.</description>
                 <bitOffset>0</bitOffset>
@@ -85875,7 +85875,7 @@ Note: In Smartcard mode, (SCEN = 1), the CK is always available when CLKEN = 1, 
               </field>
               <field>
                 <name>UESM</name>
-                <description>USART enable in low-power mode 
+                <description>USART enable in low-power mode
 When this bit is cleared, the USART cannot wake up the MCU from low-power mode.
 When this bit is set, the USART can wake up the MCU from low-power mode.
 This bit is set and cleared by software.
@@ -86185,7 +86185,7 @@ Note: If the Driver Enable feature is not supported, this bit is reserved and mu
               <field>
                 <name>DEAT</name>
                 <description>Driver Enable assertion time
-This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate). 
+This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate).
 This bitfield can only be written when the USART is disabled (UE=0).
 Note: If the Driver Enable feature is not supported, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>21</bitOffset>
@@ -86312,7 +86312,7 @@ This bit is set and cleared by software.</description>
                 <name>UE</name>
                 <description>USART enable
 When this bit is cleared, the USART prescalers and outputs are stopped immediately, and all current operations are discarded. The USART configuration is kept, but all the USART_ISR status flags are reset. This bit is set and cleared by software.
-Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit. 
+Note: To enter low-power mode without generating errors on the line, the TE bit must be previously reset and the software must wait for the TC bit in the USART_ISR to be set before resetting the UE bit.
 Note: The DMA requests are also reset when UE = 0 so the DMA channel must be disabled before resetting the UE bit.
 Note: In Smartcard mode, (SCEN = 1), the CK is always available when CLKEN = 1, regardless of the UE bit value.</description>
                 <bitOffset>0</bitOffset>
@@ -86333,7 +86333,7 @@ Note: In Smartcard mode, (SCEN = 1), the CK is always available when CLKEN = 1, 
               </field>
               <field>
                 <name>UESM</name>
-                <description>USART enable in low-power mode 
+                <description>USART enable in low-power mode
 When this bit is cleared, the USART cannot wake up the MCU from low-power mode.
 When this bit is set, the USART can wake up the MCU from low-power mode.
 This bit is set and cleared by software.
@@ -86643,7 +86643,7 @@ Note: If the Driver Enable feature is not supported, this bit is reserved and mu
               <field>
                 <name>DEAT</name>
                 <description>Driver Enable assertion time
-This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate). 
+This 5-bit value defines the time between the activation of the DE (Driver Enable) signal and the beginning of the start bit. It is expressed in sample time units (1/8 or 1/16 bit time, depending on the oversampling rate).
 This bitfield can only be written when the USART is disabled (UE=0).
 Note: If the Driver Enable feature is not supported, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>21</bitOffset>
@@ -86782,7 +86782,7 @@ Note: When SPI slave mode is not supported, this bit is reserved and must be kep
               <field>
                 <name>ADDM7</name>
                 <description>7-bit Address Detection/4-bit Address Detection
-This bit is for selection between 4-bit address detection or 7-bit address detection. 
+This bit is for selection between 4-bit address detection or 7-bit address detection.
 This bit can only be written when the USART is disabled (UE=0)
 Note: In 7-bit and 9-bit data modes, the address detection is done on 6-bit and 8-bit address (ADD[5:0] and ADD[7:0]) respectively.</description>
                 <bitOffset>4</bitOffset>
@@ -86847,7 +86847,7 @@ Note: If LIN mode is not supported, this bit is reserved and must be kept at res
               <field>
                 <name>LBCL</name>
                 <description>Last bit clock pulse
-This bit is used to select whether the clock pulse associated with the last data bit transmitted (MSB) has to be output on the CK pin in Synchronous mode. 
+This bit is used to select whether the clock pulse associated with the last data bit transmitted (MSB) has to be output on the CK pin in Synchronous mode.
 The last bit is the 7th or 8th or 9th data bit transmitted depending on the 7 or 8 or 9 bit format selected by the M bit in the USART_CR1 register.
 This bit can only be written when the USART is disabled (UE=0).
 Note: If Synchronous mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
@@ -86892,7 +86892,7 @@ Note: If Synchronous mode is not supported, this bit is reserved and must be kep
               <field>
                 <name>CPOL</name>
                 <description>Clock polarity
-This bit enables the user to select the polarity of the clock output on the CK pin in Synchronous mode. It works in conjunction with the CPHA bit to produce the desired clock/data relationship 
+This bit enables the user to select the polarity of the clock output on the CK pin in Synchronous mode. It works in conjunction with the CPHA bit to produce the desired clock/data relationship
 This bit can only be written when the USART is disabled (UE=0).
 Note: If Synchronous mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>10</bitOffset>
@@ -87018,7 +87018,7 @@ This bitfield can only be written when the USART is disabled (UE=0).</descriptio
                 <name>RXINV</name>
                 <description>RX pin active level inversion
 This bit is set and cleared by software.
-This enables the use of an external inverter on the RX line. 
+This enables the use of an external inverter on the RX line.
 This bitfield can only be written when the USART is disabled (UE=0).</description>
                 <bitOffset>16</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -87040,7 +87040,7 @@ This bitfield can only be written when the USART is disabled (UE=0).</descriptio
                 <name>TXINV</name>
                 <description>TX pin active level inversion
 This bit is set and cleared by software.
-This enables the use of an external inverter on the TX line. 
+This enables the use of an external inverter on the TX line.
 This bitfield can only be written when the USART is disabled (UE=0).</description>
                 <bitOffset>17</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -87178,7 +87178,7 @@ Note: If the USART does not support the Receiver timeout feature, this bit is re
               </field>
               <field>
                 <name>ADD</name>
-                <description>Address of the USART node 
+                <description>Address of the USART node
 These bits give the address of the USART node in Mute mode or a character code to be recognized in low-power or Run mode:
 In Mute mode: they are used in multiprocessor communication to wake up from Mute mode with 4-bit/7-bit address mark detection. The MSB of the character sent by the transmitter should be equal to 1. In 4-bit address mark detection, only ADD[3:0] bits are used.
 In low-power mode: they are used for wake up from low-power mode on character match.
@@ -87267,7 +87267,7 @@ Note: If IrDA mode is not supported, this bit is reserved and must be kept at re
               <field>
                 <name>HDSEL</name>
                 <description>Half-duplex selection
-Selection of Single-wire Half-duplex mode 
+Selection of Single-wire Half-duplex mode
 This bit can only be written when the USART is disabled (UE=0).</description>
                 <bitOffset>3</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -87454,7 +87454,7 @@ This bit can only be written when the USART is disabled (UE=0).</description>
               <field>
                 <name>OVRDIS</name>
                 <description>Overrun Disable
-This bit is used to disable the receive overrun detection. 
+This bit is used to disable the receive overrun detection.
 the ORE flag is not set and the new received data overwrites the previous content of the USART_RDR register. When FIFO mode is enabled, the RXFIFO is bypassed and data are written directly in USART_RDR register. Even when FIFO management is enabled, the RXNE flag is to be used.
 This bit can only be written when the USART is disabled (UE=0).
 Note: This control bit enables checking the communication flow w/o reading the data</description>
@@ -87497,8 +87497,8 @@ Note: The reception errors are: parity error, framing error or noise error.</des
               </field>
               <field>
                 <name>DEM</name>
-                <description>Driver enable mode 
-This bit enables the user to activate the external transceiver control, through the DE signal. 
+                <description>Driver enable mode
+This bit enables the user to activate the external transceiver control, through the DE signal.
 This bit can only be written when the USART is disabled (UE=0).
 Note: If the Driver Enable feature is not supported, this bit is reserved and must be kept at reset value. Section131.4: USART implementation on page1826.</description>
                 <bitOffset>14</bitOffset>
@@ -87545,7 +87545,7 @@ This bitfield specifies the number of retries for transmission and reception in 
 In Transmission mode, it specifies the number of automatic retransmission retries, before generating a transmission error (FE bit set).
 In Reception mode, it specifies the number or erroneous reception trials, before generating a reception error (RXNE/RXFNE and PE bits set).
 This bitfield must be programmed only when the USART is disabled (UE=0).
-When the USART is enabled (UE=1), this bitfield may only be written to 0x0, in order to stop retransmission. 
+When the USART is enabled (UE=1), this bitfield may only be written to 0x0, in order to stop retransmission.
 0x1 to 0x7: number of automatic retransmission attempts (before signaling error)
 Note: If Smartcard mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>17</bitOffset>
@@ -87562,7 +87562,7 @@ Note: If Smartcard mode is not supported, this bit is reserved and must be kept 
               <field>
                 <name>WUS0</name>
                 <description>Wake-up from low-power mode interrupt flag selection
-This bitfield specifies the event which activates the WUF (wake-up from low-power mode flag). 
+This bitfield specifies the event which activates the WUF (wake-up from low-power mode flag).
 This bitfield can only be written when the USART is disabled (UE=0).
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>20</bitOffset>
@@ -87578,13 +87578,13 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
                     <name>B_0x1</name>
                     <description>Reserved.</description>
                     <value>0x1</value>
-                  </enumeratedValue>                 
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
                 <name>WUS1</name>
                 <description>Wake-up from low-power mode interrupt flag selection
-This bitfield specifies the event which activates the WUF (wake-up from low-power mode flag). 
+This bitfield specifies the event which activates the WUF (wake-up from low-power mode flag).
 This bitfield can only be written when the USART is disabled (UE=0).
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>21</bitOffset>
@@ -87600,7 +87600,7 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
                     <name>B_0x1</name>
                     <description>Reserved.</description>
                     <value>0x1</value>
-                  </enumeratedValue>                  
+                  </enumeratedValue>
                 </enumeratedValues>
               </field>
               <field>
@@ -87808,11 +87808,11 @@ BRR[3] must be kept cleared.</description>
 PSC[7:0] = IrDA Normal and Low-power baud rate
 This bitfield is used for programming the prescaler for dividing the USART source clock to achieve the low-power frequency:
 The source clock is divided by the value given in the register (8 significant bits):
-... 
+...
 PSC[4:0]: Prescaler value
 This bitfield is used for programming the prescaler for dividing the USART source clock to provide the Smartcard clock.
 The value given in the register (5 significant bits) is multiplied by 2 to give the division factor of the source clock frequency:
-... 
+...
 This bitfield can only be written when the USART is disabled (UE=0).
 Note: Bits [7:5] must be kept cleared if Smartcard mode is used.
 Note: This bitfield is reserved and forced by hardware to 0 when the Smartcard and IrDA modes are not supported. Refer to Section131.4: USART implementation on page1826.</description>
@@ -87845,7 +87845,7 @@ Note: This bitfield is reserved and forced by hardware to 0 when the Smartcard a
               <field>
                 <name>GT</name>
                 <description>Guard time value
-This bitfield is used to program the Guard time value in terms of number of baud clock periods. 
+This bitfield is used to program the Guard time value in terms of number of baud clock periods.
 This is used in Smartcard mode. The Transmission Complete flag is set after this guard time value.
 This bitfield can only be written when the USART is disabled (UE=0).
 Note: If Smartcard mode is not supported, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
@@ -87877,14 +87877,14 @@ Note: This value must only be programmed once per received character.</descripti
               </field>
               <field>
                 <name>BLEN</name>
-                <description>Block Length 
+                <description>Block Length
 This bitfield gives the Block length in Smartcard T=1 Reception. Its value equals the number of information characters + the length of the Epilogue Field (1-LEC/2-CRC) - 1.
-Examples: 
+Examples:
 BLEN = 0 -&gt; 0 information characters + LEC
 BLEN = 1 -&gt; 0 information characters + CRC
 BLEN = 255 -&gt; 254 information characters + CRC (total 256 characters))
 In Smartcard mode, the Block length counter is reset when TXE=0 (TXFE = 0 in case FIFO mode is enabled).
-This bitfield can be used also in other modes. In this case, the Block length counter is reset when RE=0 (receiver disabled) and/or when the EOBCF bit is written to 1. 
+This bitfield can be used also in other modes. In this case, the Block length counter is reset when RE=0 (receiver disabled) and/or when the EOBCF bit is written to 1.
 Note: This value can be programmed after the start of the block reception (using the data from the LEN character in the Prologue Field). It must be programmed only once per received block.</description>
                 <bitOffset>24</bitOffset>
                 <bitWidth>8</bitWidth>
@@ -87904,7 +87904,7 @@ Note: This value can be programmed after the start of the block reception (using
               <field>
                 <name>ABRRQ</name>
                 <description>Auto baud rate request
-Writing 1 to this bit resets the ABRF and ABRE flags in the USART_ISR and requests an automatic baud rate measurement on the next received data frame. 
+Writing 1 to this bit resets the ABRF and ABRE flags in the USART_ISR and requests an automatic baud rate measurement on the next received data frame.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>0</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -87940,7 +87940,7 @@ This enables to discard the received data without reading them, and avoid an ove
                 <name>TXFRQ</name>
                 <description>Transmit data flush request
 When FIFO mode is disabled, writing 1 to this bit sets the TXE flag. This enables to discard the transmit data. This bit must be used only in Smartcard mode, when data have not been sent due to errors (NACK) and the FE flag is active in the USART_ISR register. If the USART does not support Smartcard mode, this bit is reserved and must be kept at reset value.
-When FIFO is enabled, TXFRQ bit is set to flush the whole FIFO. This sets the TXFE flag (Transmit FIFO empty, bit 23 in the USART_ISR register). Flushing the Transmit FIFO is supported in both UART and Smartcard modes. 
+When FIFO is enabled, TXFRQ bit is set to flush the whole FIFO. This sets the TXFE flag (Transmit FIFO empty, bit 23 in the USART_ISR register). Flushing the Transmit FIFO is supported in both UART and Smartcard modes.
 Note: In FIFO mode, the TXFNF flag is reset during the flush request until TxFIFO is empty in order to ensure that no data are written in the data register.</description>
                 <bitOffset>4</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -87960,7 +87960,7 @@ Note: In FIFO mode, the TXFNF flag is reset during the flush request until TxFIF
               <field>
                 <name>PE</name>
                 <description>Parity error
-This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register. 
+This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register.
 An interrupt is generated if PEIE = 1 in the USART_CR1 register.
 Note: This error is associated with the character in the USART_RDR.</description>
                 <bitOffset>0</bitOffset>
@@ -88052,7 +88052,7 @@ Note: This bit is permanently forced to 0 (no overrun detection) when the bit OV
               <field>
                 <name>IDLE</name>
                 <description>Idle line detected
-This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE=1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register. 
+This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE=1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register.
 Note: The IDLE bit is not set again until the RXFNE bit has been set (i.e. a new idle line occurs).
 Note: If Mute mode is enabled (MME=1), IDLE is set if the USART is not mute (RWU=0), whatever the Mute mode selected by the WAKE bit. If RWU=1, IDLE is not set.</description>
                 <bitOffset>4</bitOffset>
@@ -88074,8 +88074,8 @@ Note: If Mute mode is enabled (MME=1), IDLE is set if the USART is not mute (RWU
               <field>
                 <name>RXFNE</name>
                 <description>RXFIFO not empty
-RXFNE bit is set by hardware when the RXFIFO is not empty, meaning that data can be read from the USART_RDR register. Every read operation from the USART_RDR frees a location in the RXFIFO. 
-RXFNE is cleared when the RXFIFO is empty. The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the USART_RQR register. 
+RXFNE bit is set by hardware when the RXFIFO is not empty, meaning that data can be read from the USART_RDR register. Every read operation from the USART_RDR frees a location in the RXFIFO.
+RXFNE is cleared when the RXFIFO is empty. The RXFNE flag can also be cleared by writing 1 to the RXFRQ in the USART_RQR register.
 An interrupt is generated if RXFNEIE=1 in the USART_CR1 register.</description>
                 <bitOffset>5</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88099,7 +88099,7 @@ An interrupt is generated if RXFNEIE=1 in the USART_CR1 register.</description>
 This bit indicates that the last data written in the USART_TDR has been transmitted out of the shift register. The TC flag behaves as follows:
 When TDN = 0, the TC flag is set when the transmission of a frame containing data is complete and when TXE/TXFE is set.
 When TDN is equal to the number of data in the TXFIFO, the TC flag is set when TXFIFO is empty and TDN is reached.
-When TDN is greater than the number of data in the TXFIFO, TC remains cleared until the TXFIFO is filled again to reach the programmed number of data to be transferred. 
+When TDN is greater than the number of data in the TXFIFO, TC remains cleared until the TXFIFO is filled again to reach the programmed number of data to be transferred.
 When TDN is less than the number of data in the TXFIFO, TC is set when TDN is reached even if the TXFIFO is not empty.
 An interrupt is generated if TCIE=1 in the USART_CR1 register.
 TC bit is cleared by software by writing 1 to the TCCF in the USART_ICR register or by writing to the USART_TDR register.</description>
@@ -88110,8 +88110,8 @@ TC bit is cleared by software by writing 1 to the TCCF in the USART_ICR register
               <field>
                 <name>TXFNF</name>
                 <description>TXFIFO not full
-TXFNF is set by hardware when TXFIFO is not full meaning that data can be written in the USART_TDR. Every write operation to the USART_TDR places the data in the TXFIFO. This flag remains set until the TXFIFO is full. When the TXFIFO is full, this flag is cleared indicating that data can not be written into the USART_TDR. 
-An interrupt is generated if the TXFNFIE bit =1 in the USART_CR1 register. 
+TXFNF is set by hardware when TXFIFO is not full meaning that data can be written in the USART_TDR. Every write operation to the USART_TDR places the data in the TXFIFO. This flag remains set until the TXFIFO is full. When the TXFIFO is full, this flag is cleared indicating that data can not be written into the USART_TDR.
+An interrupt is generated if the TXFNFIE bit =1 in the USART_CR1 register.
 Note: The TXFNF is kept reset during the flush request until TXFIFO is empty. After sending the flush request (by setting TXFRQ bit), the flag TXFNF must be checked prior to writing in TXFIFO (TXFNF and TXFE is set at the same time).
 Note: This bit is used during single buffer transmission.</description>
                 <bitOffset>7</bitOffset>
@@ -88133,7 +88133,7 @@ Note: This bit is used during single buffer transmission.</description>
               <field>
                 <name>LBDF</name>
                 <description>LIN break detection flag
-This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR. 
+This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR.
 An interrupt is generated if LBDIE = 1 in the USART_CR2 register.
 Note: If the USART does not support LIN mode, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>8</bitOffset>
@@ -88155,7 +88155,7 @@ Note: If the USART does not support LIN mode, this bit is reserved and kept at r
               <field>
                 <name>CTSIF</name>
                 <description>CTS interrupt flag
-This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register. 
+This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register.
 An interrupt is generated if CTSIE=1 in the USART_CR3 register.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>9</bitOffset>
@@ -88177,7 +88177,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
               <field>
                 <name>CTS</name>
                 <description>CTS flag
-This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin. 
+This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88198,7 +88198,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
               <field>
                 <name>RTOF</name>
                 <description>Receiver timeout
-This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register. 
+This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register.
 An interrupt is generated if RTOIE=1 in the USART_CR2 register.
 In Smartcard mode, the timeout corresponds to the CWT or BWT timings.
 Note: If a time equal to the value programmed in RTOR register separates 2 characters, RTOF is not set. If this time exceeds this value + 2 sample times (2/16 or 2/8, depending on the oversampling method), RTOF flag is set.
@@ -88268,7 +88268,7 @@ Note: If the USART does not support the SPI slave mode, this bit is reserved and
                 <name>ABRE</name>
                 <description>Auto baud rate error
 This bit is set by hardware if the baud rate measurement failed (baud rate out of range or character comparison failed)
-It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register. 
+It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>14</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88278,7 +88278,7 @@ Note: If the USART does not support the auto baud rate feature, this bit is rese
                 <name>ABRF</name>
                 <description>Auto baud rate flag
 This bit is set by hardware when the automatic baud rate has been set (RXFNE is also set, generating an interrupt if RXFNEIE = 1) or when the auto baud rate operation was completed without success (ABRE=1) (ABRE, RXFNE and FE are also set in this case)
-It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register. 
+It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>15</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88307,7 +88307,7 @@ This bit is set and reset by hardware. It is active when a communication is ongo
               <field>
                 <name>CMF</name>
                 <description>Character match flag
-This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register. 
+This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register.
 An interrupt is generated if CMIE=1in the USART_CR1 register.</description>
                 <bitOffset>17</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88349,7 +88349,7 @@ This bit indicates that a send break character was requested. It is set by softw
                 <name>RWU</name>
                 <description>Receiver wake-up from Mute mode
 This bit indicates if the USART is in Mute mode. It is cleared/set by hardware when a wake-up/mute sequence is recognized. The Mute mode control sequence (address or IDLE) is selected by the WAKE bit in the USART_CR1 register.
-When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register. 
+When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>19</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88369,9 +88369,9 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               </field>
               <field>
                 <name>WUF</name>
-                <description>Wake-up from low-power mode flag 
+                <description>Wake-up from low-power mode flag
 This bit is set by hardware, when a wake-up event is detected. The event is defined by the WUS bitfield. It is cleared by software, writing a 1 to the WUCF in the USART_ICR register.
-An interrupt is generated if WUFIE=1 in the USART_CR3 register. 
+An interrupt is generated if WUFIE=1 in the USART_CR3 register.
 Note: When UESM is cleared, WUF flag is also cleared.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>20</bitOffset>
@@ -88380,8 +88380,8 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               </field>
               <field>
                 <name>TEACK</name>
-                <description>Transmit enable acknowledge flag 
-This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART. 
+                <description>Transmit enable acknowledge flag
+This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART.
 It can be used when an idle frame request is generated by writing TE=0, followed by TE=1 in the USART_CR1 register, in order to respect the TE=0 minimum period.</description>
                 <bitOffset>21</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88389,8 +88389,8 @@ It can be used when an idle frame request is generated by writing TE=0, followed
               </field>
               <field>
                 <name>REACK</name>
-                <description>Receive enable acknowledge flag 
-This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART. 
+                <description>Receive enable acknowledge flag
+This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART.
 It can be used to verify that the USART is ready for reception before entering low-power mode.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>22</bitOffset>
@@ -88421,7 +88421,7 @@ An interrupt is generated if the TXFEIE bit =1 (bit 30) in the USART_CR1 registe
               <field>
                 <name>RXFF</name>
                 <description>RXFIFO Full
-This bit is set by hardware when the number of received data corresponds to RXFIFO1size1+11 (RXFIFO full + 1 data in the USART_RDR register. 
+This bit is set by hardware when the number of received data corresponds to RXFIFO1size1+11 (RXFIFO full + 1 data in the USART_RDR register.
 An interrupt is generated if the RXFFIE bit =1 in the USART_CR1 register.</description>
                 <bitOffset>24</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88442,8 +88442,8 @@ An interrupt is generated if the RXFFIE bit =1 in the USART_CR1 register.</descr
               <field>
                 <name>TCBGT</name>
                 <description>Transmission complete before guard time flag
-This bit is set when the last data written in the USART_TDR has been transmitted correctly out of the shift register. 
-It is set by hardware in Smartcard mode, if the transmission of a frame containing data is complete and if the smartcard did not send back any NACK. An interrupt is generated if TCBGTIE=1 in the USART_CR3 register. 
+This bit is set when the last data written in the USART_TDR has been transmitted correctly out of the shift register.
+It is set by hardware in Smartcard mode, if the transmission of a frame containing data is complete and if the smartcard did not send back any NACK. An interrupt is generated if TCBGTIE=1 in the USART_CR3 register.
 This bit is cleared by software, by writing 1 to the TCBGTCF in the USART_ICR register or by a write to the USART_TDR register.
 Note: If the USART does not support the Smartcard mode, this bit is reserved and kept at reset value. If the USART supports the Smartcard mode and the Smartcard mode is enabled, the TCBGT reset value is 1. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>25</bitOffset>
@@ -88465,7 +88465,7 @@ Note: If the USART does not support the Smartcard mode, this bit is reserved and
               <field>
                 <name>RXFT</name>
                 <description>RXFIFO threshold flag
-This bit is set by hardware when the threshold programmed in RXFTCFG in USART_CR3 register is reached. This means that there are (RXFTCFG - 1) data in the Receive FIFO and one data in the USART_RDR register. An interrupt is generated if the RXFTIE bit =1 (bit 27) in the USART_CR3 register. 
+This bit is set by hardware when the threshold programmed in RXFTCFG in USART_CR3 register is reached. This means that there are (RXFTCFG - 1) data in the Receive FIFO and one data in the USART_RDR register. An interrupt is generated if the RXFTIE bit =1 (bit 27) in the USART_CR3 register.
 Note: When the RXFTCFG threshold is configured to 101, RXFT flag is set if 16 data are available i.e. 15 data in the RXFIFO and 1 data in the USART_RDR. Consequently, the 17th received data does not cause an overrun error. The overrun error occurs after receiving the 18th data.</description>
                 <bitOffset>26</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88518,7 +88518,7 @@ This bit is set by hardware when the TXFIFO reaches the threshold programmed in 
               <field>
                 <name>PE</name>
                 <description>Parity error
-This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register. 
+This bit is set by hardware when a parity error occurs in Reception mode. It is cleared by software, writing 1 to the PECF in the USART_ICR register.
 An interrupt is generated if PEIE = 1 in the USART_CR1 register.
 Note: This error is associated with the character in the USART_RDR.</description>
                 <bitOffset>0</bitOffset>
@@ -88605,7 +88605,7 @@ Note: This bit is permanently forced to 0 (no overrun detection) when the bit OV
               <field>
                 <name>IDLE</name>
                 <description>Idle line detected
-This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE=1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register. 
+This bit is set by hardware when an Idle Line is detected. An interrupt is generated if IDLEIE=1 in the USART_CR1 register. It is cleared by software, writing 1 to the IDLECF in the USART_ICR register.
 Note: The IDLE bit is not set again until the RXNE bit has been set (i.e. a new idle line occurs).
 Note: If Mute mode is enabled (MME=1), IDLE is set if the USART is not mute (RWU=0), whatever the Mute mode selected by the WAKE bit. If RWU=1, IDLE is not set.</description>
                 <bitOffset>4</bitOffset>
@@ -88679,7 +88679,7 @@ An interrupt is generated if the TXEIE bit =1 in the USART_CR1 register.</descri
               <field>
                 <name>LBDF</name>
                 <description>LIN break detection flag
-This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR. 
+This bit is set by hardware when the LIN break is detected. It is cleared by software, by writing 1 to the LBDCF in the USART_ICR.
 An interrupt is generated if LBDIE = 1 in the USART_CR2 register.
 Note: If the USART does not support LIN mode, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>8</bitOffset>
@@ -88701,7 +88701,7 @@ Note: If the USART does not support LIN mode, this bit is reserved and kept at r
               <field>
                 <name>CTSIF</name>
                 <description>CTS interrupt flag
-This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register. 
+This bit is set by hardware when the CTS input toggles, if the CTSE bit is set. It is cleared by software, by writing 1 to the CTSCF bit in the USART_ICR register.
 An interrupt is generated if CTSIE=1 in the USART_CR3 register.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>9</bitOffset>
@@ -88723,7 +88723,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
               <field>
                 <name>CTS</name>
                 <description>CTS flag
-This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin. 
+This bit is set/reset by hardware. It is an inverted copy of the status of the CTS input pin.
 Note: If the hardware flow control feature is not supported, this bit is reserved and kept at reset value.</description>
                 <bitOffset>10</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88744,7 +88744,7 @@ Note: If the hardware flow control feature is not supported, this bit is reserve
               <field>
                 <name>RTOF</name>
                 <description>Receiver timeout
-This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register. 
+This bit is set by hardware when the timeout value, programmed in the RTOR register has lapsed, without any communication. It is cleared by software, writing 1 to the RTOCF bit in the USART_ICR register.
 An interrupt is generated if RTOIE=1 in the USART_CR2 register.
 In Smartcard mode, the timeout corresponds to the CWT or BWT timings.
 Note: If a time equal to the value programmed in RTOR register separates 2 characters, RTOF is not set. If this time exceeds this value + 2 sample times (2/16 or 2/8, depending on the oversampling method), RTOF flag is set.
@@ -88814,7 +88814,7 @@ Note: If the USART does not support the SPI slave mode, this bit is reserved and
                 <name>ABRE</name>
                 <description>Auto baud rate error
 This bit is set by hardware if the baud rate measurement failed (baud rate out of range or character comparison failed)
-It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register. 
+It is cleared by software, by writing 1 to the ABRRQ bit in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>14</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88824,7 +88824,7 @@ Note: If the USART does not support the auto baud rate feature, this bit is rese
                 <name>ABRF</name>
                 <description>Auto baud rate flag
 This bit is set by hardware when the automatic baud rate has been set (RXNE is also set, generating an interrupt if RXNEIE = 1) or when the auto baud rate operation was completed without success (ABRE=1) (ABRE, RXNE and FE are also set in this case)
-It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register. 
+It is cleared by software, in order to request a new auto baud rate detection, by writing 1 to the ABRRQ in the USART_RQR register.
 Note: If the USART does not support the auto baud rate feature, this bit is reserved and kept at reset value.</description>
                 <bitOffset>15</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88853,7 +88853,7 @@ This bit is set and reset by hardware. It is active when a communication is ongo
               <field>
                 <name>CMF</name>
                 <description>Character match flag
-This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register. 
+This bit is set by hardware, when a the character defined by ADD[7:0] is received. It is cleared by software, writing 1 to the CMCF in the USART_ICR register.
 An interrupt is generated if CMIE=1in the USART_CR1 register.</description>
                 <bitOffset>17</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88895,7 +88895,7 @@ This bit indicates that a send break character was requested. It is set by softw
                 <name>RWU</name>
                 <description>Receiver wake-up from Mute mode
 This bit indicates if the USART is in Mute mode. It is cleared/set by hardware when a wake-up/mute sequence is recognized. The Mute mode control sequence (address or IDLE) is selected by the WAKE bit in the USART_CR1 register.
-When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register. 
+When wake-up on IDLE mode is selected, this bit can only be set by software, writing 1 to the MMRQ bit in the USART_RQR register.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>19</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88915,9 +88915,9 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               </field>
               <field>
                 <name>WUF</name>
-                <description>Wake-up from low-power mode flag 
+                <description>Wake-up from low-power mode flag
 This bit is set by hardware, when a wake-up event is detected. The event is defined by the WUS bitfield. It is cleared by software, writing a 1 to the WUCF in the USART_ICR register.
-An interrupt is generated if WUFIE=1 in the USART_CR3 register. 
+An interrupt is generated if WUFIE=1 in the USART_CR3 register.
 Note: When UESM is cleared, WUF flag is also cleared.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>20</bitOffset>
@@ -88926,8 +88926,8 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               </field>
               <field>
                 <name>TEACK</name>
-                <description>Transmit enable acknowledge flag 
-This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART. 
+                <description>Transmit enable acknowledge flag
+This bit is set/reset by hardware, when the Transmit Enable value is taken into account by the USART.
 It can be used when an idle frame request is generated by writing TE=0, followed by TE=1 in the USART_CR1 register, in order to respect the TE=0 minimum period.</description>
                 <bitOffset>21</bitOffset>
                 <bitWidth>1</bitWidth>
@@ -88935,8 +88935,8 @@ It can be used when an idle frame request is generated by writing TE=0, followed
               </field>
               <field>
                 <name>REACK</name>
-                <description>Receive enable acknowledge flag 
-This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART. 
+                <description>Receive enable acknowledge flag
+This bit is set/reset by hardware, when the Receive Enable value is taken into account by the USART.
 It can be used to verify that the USART is ready for reception before entering low-power mode.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>22</bitOffset>
@@ -88946,8 +88946,8 @@ Note: If the USART does not support the wake-up from Stop feature, this bit is r
               <field>
                 <name>TCBGT</name>
                 <description>Transmission complete before guard time flag
-This bit is set when the last data written in the USART_TDR has been transmitted correctly out of the shift register. 
-It is set by hardware in Smartcard mode, if the transmission of a frame containing data is complete and if the smartcard did not send back any NACK. An interrupt is generated if TCBGTIE=1 in the USART_CR3 register. 
+This bit is set when the last data written in the USART_TDR has been transmitted correctly out of the shift register.
+It is set by hardware in Smartcard mode, if the transmission of a frame containing data is complete and if the smartcard did not send back any NACK. An interrupt is generated if TCBGTIE=1 in the USART_CR3 register.
 This bit is cleared by software, by writing 1 to the TCBGTCF in the USART_ICR register or by a write to the USART_TDR register.
 Note: If the USART does not support the Smartcard mode, this bit is reserved and kept at reset value. If the USART supports the Smartcard mode and the Smartcard mode is enabled, the TCBGT reset value is 1. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>25</bitOffset>
@@ -89096,7 +89096,7 @@ Writing 1 to this bit clears the CMF flag in the USART_ISR register.</descriptio
               </field>
               <field>
                 <name>WUCF</name>
-                <description>Wake-up from low-power mode clear flag 
+                <description>Wake-up from low-power mode clear flag
 Writing 1 to this bit clears the WUF flag in the USART_ISR register.
 Note: If the USART does not support the wake-up from Stop feature, this bit is reserved and must be kept at reset value. Refer to Section131.4: USART implementation on page1826.</description>
                 <bitOffset>20</bitOffset>
@@ -89253,7 +89253,7 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
       </peripheral>
 	  <peripheral derivedFrom="USART1">
         <name>USART4</name>
-        <baseAddress>0x40004C00</baseAddress>		
+        <baseAddress>0x40004C00</baseAddress>
 		<interrupt>
           <name>USART4</name>
           <description>USART4 global interrupt (combined with EXTI lines 20 and 34)</description>
@@ -89418,7 +89418,7 @@ These bits contain the value of the watchdog counter, decremented every
               </field>
               <field>
                 <name>WDGA</name>
-                <description>Activation bit 
+                <description>Activation bit
 This bit is set by software and only cleared by hardware after a reset. When WDGA=1, the watchdog can generate a reset.</description>
                 <bitOffset>7</bitOffset>
                 <bitWidth>1</bitWidth>

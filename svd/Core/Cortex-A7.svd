@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
   <vendor>ARM Ltd.</vendor>
   <vendorID>ARM</vendorID>
   <name>Cortex_A7_CPU1</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <description>Cortex-A7_CPU1 core descriptions, generated from ARM develloper studio</description>
   <cpu>
     <name>CA7</name>
@@ -33,8 +33,8 @@ Copyright (c) 2024 STMicroelectronics.
   </cpu>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
-  <peripherals>    
-    <peripheral>  
+  <peripherals>
+    <peripheral>
       <name>DBG</name>
       <description>Debug unit</description>
       <baseAddress>0x500D0000</baseAddress>
@@ -43,7 +43,7 @@ Copyright (c) 2024 STMicroelectronics.
         <size>0x1000</size>
         <usage>registers</usage>
       </addressBlock>
-      <registers>	  
+      <registers>
         <register>
           <name>DBGDIDR</name>
           <displayName>DBGDIDR</displayName>
@@ -100,7 +100,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			
+
             <field>
               <name>Variant</name>
               <description>Variant</description>
@@ -128,7 +128,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>RXfull</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>TXfull</name>
               <description>TXfull</description>
@@ -152,7 +152,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PipeAdv</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>InstrCompl_l</name>
               <description>InstrCompl_l</description>
@@ -170,7 +170,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>ADAdiscard</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>NS</name>
               <description>NS</description>
@@ -254,7 +254,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>MOE</description>
               <bitOffset>2</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>RESTARTED</name>
               <description>RESTARTED</description>
@@ -320,7 +320,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>NSI</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>NSD</name>
               <description>NSD</description>
@@ -344,26 +344,26 @@ Copyright (c) 2024 STMicroelectronics.
               <description>NSU</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
-			<field> 
+            </field>
+			<field>
               <name>NSHF</name>
               <description>NSHF</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field> 
+			<field>
               <name>NSHI</name>
               <description>NSHI</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
-			<field> 
+			<field>
               <name>NSHE</name>
               <description>NSHE</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
-            <field> 
+            </field>
+            <field>
               <name>NSHD</name>
               <description>NSHD</description>
               <bitOffset>20</bitOffset>
@@ -374,7 +374,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>NSHP</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>NSHC</name>
               <description>NSHC</description>
@@ -446,7 +446,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>SS</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SU</name>
               <description>SU</description>
@@ -474,13 +474,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>UNK_SBZP</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>   
+            </field>
             <field>
               <name>OSUCE</name>
               <description>OSUCE</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
           </fields>
         </register>
         <register>
@@ -498,7 +498,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGITR</name>
           <displayName>DBGITR</displayName>
@@ -514,7 +514,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>32</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGPCSR</name>
           <displayName>DBGPCSR</displayName>
@@ -537,7 +537,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>DBGDSCR_external</name>
           <displayName>DBGDSCR_external</displayName>
@@ -551,7 +551,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>RXfull</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>TXfull</name>
               <description>TXfull</description>
@@ -575,7 +575,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PipeAdv</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>InstrCompl_l</name>
               <description>InstrCompl_l</description>
@@ -593,7 +593,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>ADAdiscard</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>NS</name>
               <description>NS</description>
@@ -677,7 +677,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>MOE</description>
               <bitOffset>2</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>RESTARTED</name>
               <description>RESTARTED</description>
@@ -753,7 +753,7 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
         <register>
           <name>DBGEACR</name>
           <displayName>DBGEACR</displayName>
@@ -761,7 +761,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x94</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>						
+          <fields>
 			<field>
               <name>Core_debug_reset_status</name>
               <description>Core_debug_reset_status</description>
@@ -791,23 +791,23 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>			
-		<register>   
+        </register>
+		<register>
           <name>DBGCIDSR</name>
           <displayName>DBGCIDSR</displayName>
           <description>Context ID Sampling Register</description>
           <addressOffset>0xA4</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>		  			
+          <fields>
 			<field>
               <name>CONTEXTIDR</name>
               <description>CONTEXTIDR</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
-            </field>			
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGVIDSR</name>
           <displayName>DBGVIDSR</displayName>
@@ -815,7 +815,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xA8</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>		  
+          <fields>
 		    <field>
               <name>NS</name>
               <description>NS</description>
@@ -839,7 +839,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>VMID</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>		
+            </field>
           </fields>
         </register>
 		<register>
@@ -849,15 +849,15 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>		  			
+          <fields>
 			<field>
               <name>ContextID</name>
               <description>ContextID</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
-            </field>			
+            </field>
           </fields>
-        </register>	
+        </register>
 		<register>
           <name>DBGBVR_alternate</name>
           <displayName>DBGBVR_alternate</displayName>
@@ -866,23 +866,23 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>		  			
+          <fields>
 			<field>
               <name>Instruction_address</name>
               <description>Instruction_address</description>
               <bitOffset>2</bitOffset>
               <bitWidth>30</bitWidth>
-            </field>			
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
-          <name>DBGBCR</name>  
+          <name>DBGBCR</name>
           <displayName>DBGBCR</displayName>
           <description>Breakpoint Control Registers</description>
           <addressOffset>0x140</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-         <fields>		  
+         <fields>
 		    <field>
               <name>Mask</name>
               <description>Mask</description>
@@ -900,7 +900,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>LBN</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SSC</name>
               <description>SSC</description>
@@ -924,33 +924,33 @@ Copyright (c) 2024 STMicroelectronics.
               <description>E</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
-          <name>DBGWVR</name>  
+          <name>DBGWVR</name>
           <displayName>DBGWVR</displayName>
           <description>Watchpoint Value Registers</description>
           <addressOffset>0x180</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-         <fields>		 
+         <fields>
             <field>
               <name>Data_address</name>
               <description>Data_address</description>
               <bitOffset>2</bitOffset>
               <bitWidth>30</bitWidth>
-            </field>		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
-          <name>DBGWCR</name>  
+          <name>DBGWCR</name>
           <displayName>DBGWCR</displayName>
           <description>Watchpoint Control Register</description>
           <addressOffset>0x1C0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-         <fields>		  
+         <fields>
 		    <field>
               <name>MASK</name>
               <description>MASK</description>
@@ -968,7 +968,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>SSC</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SP</name>
               <description>SP</description>
@@ -992,17 +992,17 @@ Copyright (c) 2024 STMicroelectronics.
               <description>E</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
-          <name>DBGBXVR</name>  
+          <name>DBGBXVR</name>
           <displayName>DBGBXVR</displayName>
           <description>Breakpoint Extended Value register</description>
           <addressOffset>0x250</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-         <fields>	
+         <fields>
             <field>
               <name>UNK_SBZP</name>
               <description>UNK_SBZP</description>
@@ -1014,9 +1014,9 @@ Copyright (c) 2024 STMicroelectronics.
               <description>VMID</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>		
+            </field>
           </fields>
-        </register>			
+        </register>
 		<register>
           <name>DBGOSLAR</name>
           <displayName>DBGOSLAR</displayName>
@@ -1024,15 +1024,15 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x300</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-         <fields>	
+         <fields>
              <field>
               <name>OS_Lock_Access</name>
               <description>OS_Lock_Access</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
-            </field>		 		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGOSLSR</name>
           <displayName>DBGOSLSR</displayName>
@@ -1040,7 +1040,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x304</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-         <fields>			 			
+         <fields>
             <field>
               <name>OSLM_3</name>
               <description>OSLM</description>
@@ -1064,9 +1064,9 @@ Copyright (c) 2024 STMicroelectronics.
               <description>OSLM</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGPRCR</name>
           <displayName>DBGPRCR</displayName>
@@ -1074,7 +1074,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x310</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-         <fields>			 
+         <fields>
 		    <field>
               <name>COREPURQ</name>
               <description>COREPURQ</description>
@@ -1098,9 +1098,9 @@ Copyright (c) 2024 STMicroelectronics.
               <description>CORENPDRQ</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>    		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGPRSR</name>
           <displayName>DBGPRSR</displayName>
@@ -1108,7 +1108,7 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0x314</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-          <fields>	
+          <fields>
             <field>
               <name>DLK</name>
               <description>DLK</description>
@@ -1120,7 +1120,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>OSLK</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 		    <field>
               <name>HALTED</name>
               <description>HALTED</description>
@@ -1150,9 +1150,9 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PU</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>    		
+            </field>
           </fields>
-        </register>							
+        </register>
 		<register>
           <name>DBGITMISCOUT</name>
           <displayName>DBGITMISCOUT</displayName>
@@ -1172,13 +1172,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>PMUIRQ</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>DBGACK</name>
               <description>DBGACK</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1200,13 +1200,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>nIRQ</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>EDBGRQ</name>
               <description>EDBGRQ</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1216,13 +1216,13 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xF00</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-         <fields>		 
+         <fields>
 		    <field>
               <name>IME</name>
               <description>IME</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1232,13 +1232,13 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xFA0</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-         <fields>		 
+         <fields>
 		    <field>
               <name>CLAIM</name>
               <description>CLAIM</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1248,15 +1248,15 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xFA4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <fields>		 
+          <fields>
 		    <field>
               <name>CLAIM</name>
               <description>CLAIM</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>          		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGLAR</name>
           <displayName>DBGLAR</displayName>
@@ -1264,15 +1264,15 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xFB0</addressOffset>
           <size>0x20</size>
           <access>write-only</access>
-         <fields>		 
+         <fields>
 		    <field>
               <name>Lock_Access_control</name>
               <description>Lock_Access_control</description>
               <bitOffset>0</bitOffset>
               <bitWidth>32</bitWidth>
-            </field>          		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGLSR</name>
           <displayName>DBGLSR</displayName>
@@ -1292,15 +1292,15 @@ Copyright (c) 2024 STMicroelectronics.
               <description>SLK</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>SLI</name>
               <description>SLI</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          		
+            </field>
           </fields>
-        </register>		
+        </register>
 		<register>
           <name>DBGAUTHSTATUS</name>
           <displayName>DBGAUTHSTATUS</displayName>
@@ -1350,15 +1350,15 @@ Copyright (c) 2024 STMicroelectronics.
               <description>NSI</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>NSE</name>
               <description>NSE</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          		
+            </field>
           </fields>
-        </register>							
+        </register>
 		<register>
           <name>DBGDEVID1</name>
           <displayName>DBGDEVID1</displayName>
@@ -1366,13 +1366,13 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xFC4</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-         <fields>		 
+         <fields>
 		    <field>
               <name>PCSROffset</name>
               <description>PCSROffset</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1418,19 +1418,19 @@ Copyright (c) 2024 STMicroelectronics.
               <description>BPAddrMask</description>
               <bitOffset>8</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>WPAddrMask</name>
               <description>WPAddrMask</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>PCsample</name>
               <description>PCsample</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1446,13 +1446,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>T</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>C</name>
               <description>C</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1468,13 +1468,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>KB_count</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>JEP106</name>
               <description>JEP106</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1484,13 +1484,13 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xFE0</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-         <fields>		 
+         <fields>
 		    <field>
               <name>Part_number</name>
               <description>Part_number</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1506,13 +1506,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>JEP106</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>Part_number</name>
               <description>Part_number</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1534,13 +1534,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>Uses_JEP106</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>JEP106</name>
               <description>JEP106</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1556,13 +1556,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>RevAnd</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>Customer_modified</name>
               <description>Customer_modified</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1572,13 +1572,13 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xFF0</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-         <fields>		 
+         <fields>
 		    <field>
               <name>Preamble</name>
               <description>Preamble</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1594,13 +1594,13 @@ Copyright (c) 2024 STMicroelectronics.
               <description>Component_class</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>		 
+            </field>
 		    <field>
               <name>Preamble</name>
               <description>Preamble</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1610,13 +1610,13 @@ Copyright (c) 2024 STMicroelectronics.
           <addressOffset>0xFF8</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
-         <fields>		 
+         <fields>
 		    <field>
               <name>Preamble_byte_2</name>
               <description>Preamble_byte_2</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>          		
+            </field>
           </fields>
         </register>
 		<register>
@@ -1632,7 +1632,7 @@ Copyright (c) 2024 STMicroelectronics.
               <description>Preamble_byte_3</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
-            </field>           		
+            </field>
           </fields>
         </register>
       </registers>

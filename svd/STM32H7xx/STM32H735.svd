@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!--
-Copyright (c) 2024 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xsi:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32H735</name>
-  <version>1.7</version>
+  <version>1.8</version>
   <description>STM32H735</description>
   <cpu>
     <name>CM7</name>
@@ -28,9 +28,9 @@ Copyright (c) 2024 STMicroelectronics.
     <fpuPresent>true</fpuPresent>
     <nvicPrioBits>4</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
-  </cpu>  
-  <addressUnitBits>8</addressUnitBits> 
-  <width>32</width> 
+  </cpu>
+  <addressUnitBits>8</addressUnitBits>
+  <width>32</width>
   <size>0x20</size>
   <resetValue>0x0</resetValue>
   <resetMask>0xFFFFFFFF</resetMask>
@@ -4125,8 +4125,8 @@ Note: The software is allowed to write these bits only when ADEN=1, ADSTART=0 an
     </peripheral>
 	<peripheral derivedFrom="ADC1">
       <name>ADC2</name>
-      <baseAddress>0x40022100</baseAddress>    
-    </peripheral>	
+      <baseAddress>0x40022100</baseAddress>
+    </peripheral>
 	<peripheral>
       <name>ADC12_Common</name>
       <description>Analog-to-Digital Converter</description>
@@ -4411,9 +4411,9 @@ Note: The software is allowed to write these bits only when ADEN=1, ADSTART=0 an
             </field>
           </fields>
         </register>
-      </registers>    
-    </peripheral>	
-	<peripheral> 
+      </registers>
+    </peripheral>
+	<peripheral>
         <name>ADC3</name>
         <description>Analog-to-Digital Converter</description>
 		<groupName>ADC</groupName>
@@ -7992,10 +7992,10 @@ Note: The software is allowed to write these bits only when ADEN = 1, ADSTART = 
                 <access>read-write</access>
               </field>
             </fields>
-          </register>		  		           
+          </register>
         </registers>
     </peripheral>
-    <peripheral> 
+    <peripheral>
         <name>ADC3_Common</name>
         <description>Analog-to-Digital Converter</description>
 		<groupName>ADC</groupName>
@@ -21003,7 +21003,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
         </register>
       </registers>
     </peripheral>
-    <peripheral> 
+    <peripheral>
       <name>DELAY_Block_SDMMC1</name>
       <description>DELAY_Block_SDMMC1</description>
       <groupName>DLYB</groupName>
@@ -21486,7 +21486,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>     
+        </register>
 		<register>
           <name>CH2CFGR1</name>
           <displayName>CH2CFGR1</displayName>
@@ -21660,7 +21660,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
 		<register>
           <name>CH3CFGR1</name>
           <displayName>CH3CFGR1</displayName>
@@ -21834,7 +21834,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
 		<register>
           <name>CH4CFGR1</name>
           <displayName>CH4CFGR1</displayName>
@@ -22008,7 +22008,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
 		<register>
           <name>CH5CFGR1</name>
           <displayName>CH5CFGR1</displayName>
@@ -22182,7 +22182,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>            
+        </register>
 		<register>
           <name>CH6CFGR1</name>
           <displayName>CH6CFGR1</displayName>
@@ -22356,7 +22356,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
         <register>
           <name>CH7CFGR1</name>
           <displayName>CH7CFGR1</displayName>
@@ -22530,7 +22530,7 @@ A read from this register resets the RRDY flag in the CORDIC_CSR register.</desc
               <bitWidth>6</bitWidth>
             </field>
           </fields>
-        </register>     
+        </register>
         <register>
           <name>DFSDM_FLT0CR1</name>
           <displayName>DFSDM_FLT0CR1</displayName>
@@ -31040,7 +31040,7 @@ Note: This field must be written only when GE bit is disabled.</description>
                 <access>read-write</access>
               </field>
             </fields>
-          </register>		  		  
+          </register>
           <register>
             <name>DMAMUX_RG4CR</name>
             <displayName>DMAMUX_RG4CR</displayName>
@@ -31420,7 +31420,7 @@ Note: This field must be written only when GE bit is disabled.</description>
                 <access>read-write</access>
               </field>
             </fields>
-          </register>		  		  
+          </register>
           <register>
             <name>DMAMUX_RGSR</name>
             <displayName>DMAMUX_RGSR</displayName>
@@ -32859,7 +32859,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
     <peripheral derivedFrom="DELAY_Block_SDMMC1">
       <name>Delay_Block_OCTOSPI1</name>
       <baseAddress>0x52006000</baseAddress>
-    </peripheral>	
+    </peripheral>
     <peripheral derivedFrom="DELAY_Block_SDMMC1">
       <name>Delay_Block_OCTOSPI2</name>
       <baseAddress>0x5200B000</baseAddress>
@@ -32914,7 +32914,7 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
         <name>EXTI15_10</name>
         <description>EXTI Line[15:10] interrupts</description>
         <value>40</value>
-      </interrupt>  
+      </interrupt>
       <interrupt>
         <name>WKUP</name>
         <description>WKUP1 to WKUP6 pins</description>
@@ -46236,7 +46236,7 @@ When a read access to this register occurs, the read data are the contents of th
           </fields>
         </register>
       </registers>
-    </peripheral>   
+    </peripheral>
     <peripheral>
       <name>Flash</name>
       <description>Flash</description>
@@ -46790,7 +46790,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               bit</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>             
+            </field>
             <field>
               <name>IO_HSLV</name>
               <description>I/O high-speed at low-voltage status bit
@@ -46878,7 +46878,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               bit</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                  
+            </field>
             <field>
               <name>IO_HSLV</name>
               <description>I/O high-speed at low-voltage
@@ -46887,7 +46887,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>    
+        </register>
         <register>
           <name>OPTCCR</name>
           <displayName>OPTCCR</displayName>
@@ -47308,7 +47308,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>        
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -48887,7 +48887,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
     <peripheral derivedFrom="GPIOA">
       <name>GPIOH</name>
       <baseAddress>0x58021C00</baseAddress>
-    </peripheral>   
+    </peripheral>
     <peripheral derivedFrom="GPIOA">
       <name>GPIOJ</name>
       <baseAddress>0x58022400</baseAddress>
@@ -69561,7 +69561,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
           </fields>
         </register>
       </registers>
-    </peripheral>	
+    </peripheral>
     <peripheral>
       <name>OCTOSPI1</name>
       <description>OctoSPI</description>
@@ -69571,12 +69571,12 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
         <offset>0x0</offset>
         <size>0x1000</size>
         <usage>registers</usage>
-      </addressBlock> 
+      </addressBlock>
       <interrupt>
         <name>OCTOSPI1</name>
         <description>OCTOSPI1 global interrupt</description>
         <value>92</value>
-      </interrupt>	  
+      </interrupt>
       <registers>
         <register>
           <name>CR</name>
@@ -69642,7 +69642,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               enable</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>                      
+            </field>
             <field>
               <name>FTIE</name>
               <description>FIFO threshold interrupt
@@ -69708,7 +69708,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               <name>DLYBYP</name>
               <description>Delay block bypass</description>
               <bitOffset>3</bitOffset>
-              <bitWidth>1</bitWidth>               
+              <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>CSHT</name>
@@ -69834,7 +69834,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               <description>Clear timeout flag</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>BUSY</name>
               <description>Busy</description>
@@ -70341,7 +70341,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               <name>ISIZE</name>
               <description>Instruction size</description>
               <bitOffset>4</bitOffset>
-              <bitWidth>2</bitWidth>                
+              <bitWidth>2</bitWidth>
             </field>
             <field>
               <name>ADMODE</name>
@@ -70418,7 +70418,7 @@ Setting this bit to 1 resets to 0 CRCRDERR1 flag in FLASH_SR1 register.</descrip
               <bitWidth>5</bitWidth>
             </field>
           </fields>
-        </register>		
+        </register>
 		<register>
             <name>WIR</name>
             <displayName>WIR</displayName>
@@ -70437,7 +70437,7 @@ Instruction to be sent to the external SPI device</description>
                 <access>read-write</access>
               </field>
             </fields>
-        </register>				
+        </register>
         <register>
           <name>WABR</name>
           <displayName>WABR</displayName>
@@ -70490,11 +70490,11 @@ Instruction to be sent to the external SPI device</description>
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register>						               
+        </register>
       </registers>
     </peripheral>
 	<peripheral derivedFrom="OCTOSPI1">
-      <name>OCTOSPI2</name>    
+      <name>OCTOSPI2</name>
       <baseAddress>0x5200A000</baseAddress>
       <interrupt>
         <name>OCTOSPI2</name>
@@ -75515,7 +75515,7 @@ Indicates the current mode (host or device).</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-only</access>
-            </field>          
+            </field>
           </fields>
         </register>
         <register>
@@ -76591,7 +76591,7 @@ Note: Accessible in both host and device modes.</description>
               <description>USB VBUS detection enable</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>            
+            </field>
           </fields>
         </register>
         <register>
@@ -82584,7 +82584,7 @@ Minimum value is 16</description>
           </fields>
         </register>
       </registers>
-    </peripheral>        
+    </peripheral>
     <peripheral>
       <name>OctoSPII_O_Manager</name>
       <description>OctoSPI IO Manager</description>
@@ -86070,7 +86070,7 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
       <description>ECC controller is associated to each RAM
       area</description>
       <groupName>RAMECC</groupName>
-      <baseAddress>0x48023000</baseAddress> 
+      <baseAddress>0x48023000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
         <size>0x1000</size>
@@ -86552,7 +86552,7 @@ Writing this bit to 1 clears the OVR_RIS bit in PSSI_RIS.</description>
           </fields>
         </register>
       </registers>
-    </peripheral> 
+    </peripheral>
     <peripheral>
       <name>RAMECC3</name>
       <description>ECC controller is associated to each RAM
@@ -88237,7 +88237,7 @@ Note: The reset value of the field is 0x20.</description>
                 <description>OCTOSPI2 and OCTOSPI2 delay block reset
 Set and reset by software</description>
                 <bitOffset>19</bitOffset>
-                <bitWidth>1</bitWidth>              
+                <bitWidth>1</bitWidth>
             </field>
 			<field>
                 <name>IOMNGRRST</name>
@@ -88260,7 +88260,7 @@ Take care that resetting the OTFD means loosing the decryption key loaded during
 Set and reset by software
 Take care that resetting the OTFD means loosing the decryption key loaded during secure boot.</description>
                 <bitOffset>23</bitOffset>
-                <bitWidth>1</bitWidth>                
+                <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>CPURST</name>
@@ -88353,7 +88353,7 @@ Take care that resetting the OTFD means loosing the decryption key loaded during
               reset</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>FMACRST</name>
               <description>FMAC reset</description>
@@ -88425,7 +88425,7 @@ Take care that resetting the OTFD means loosing the decryption key loaded during
               <description>GPIO block reset</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>     
+            </field>
             <field>
               <name>GPIOJRST</name>
               <description>GPIO block reset</description>
@@ -88617,7 +88617,7 @@ Take care that resetting the OTFD means loosing the decryption key loaded during
               <description>I2C5 block reset</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>CECRST</name>
               <description>HDMI-CEC block reset</description>
@@ -88684,7 +88684,7 @@ Take care that resetting the OTFD means loosing the decryption key loaded during
               <description>FDCAN block reset</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>TIM23RST</name>
               <description>TIM23 block reset</description>
@@ -88696,7 +88696,7 @@ Take care that resetting the OTFD means loosing the decryption key loaded during
               <description>TIM24 block resett</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
           </fields>
         </register>
         <register>
@@ -88738,7 +88738,7 @@ Take care that resetting the OTFD means loosing the decryption key loaded during
                 <description>UART9 block reset
 Set and reset by software.</description>
                 <bitOffset>6</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
             </field>
             <field>
                 <name>USART10RST</name>
@@ -89013,7 +89013,7 @@ Set and reset by software.
 Refer to  for additional information.</description>
                 <bitOffset>26</bitOffset>
                 <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>BKPSRAMAMEN</name>
               <description>Backup RAM Autonomous mode
@@ -89154,7 +89154,7 @@ Refer to  for additional information.</description>
               Enable</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
                 <name>OCTOSPI2EN</name>
                 <description>OCTOSPI2 clock enable
@@ -89246,7 +89246,7 @@ Set and reset by software.</description>
               <description>USB_PHY1 Clocks Enable</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>  
+            </field>
           </fields>
         </register>
 		<register>
@@ -89292,7 +89292,7 @@ Set and reset by software.</description>
               enable</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>FMACEN</name>
               <description>FMAC clock enable</description>
@@ -89304,7 +89304,7 @@ Set and reset by software.</description>
               <description>CORDIC clock enable</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SRAM1EN</name>
               <description>SRAM1 block enable</description>
@@ -89316,7 +89316,7 @@ Set and reset by software.</description>
               <description>SRAM2 block enable</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
 		<register>
@@ -89383,7 +89383,7 @@ Set and reset by software.</description>
               enable</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>            
+            </field>
             <field>
               <name>GPIOJEN</name>
               <description>0GPIO peripheral clock
@@ -89606,14 +89606,14 @@ Set and reset by software.</description>
               Enable</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>I2C5EN</name>
               <description>I2C5 Peripheral Clocks
               Enable</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
             <field>
               <name>CECEN</name>
               <description>HDMI-CEC peripheral clock
@@ -89687,7 +89687,7 @@ Set and reset by software.</description>
               Enable</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>TIM23EN</name>
               <description>TIM23 Peripheral Clocks
@@ -89755,7 +89755,7 @@ The peripheral clocks of the UART9 are the kernel clock selected by USART16910SE
 Set and reset by software.
 The peripheral clocks of the USART10 are the kernel clock selected by USART16910SEL and provided to UCKL input, and the rcc_pclk2 bus interface clock.</description>
                 <bitOffset>7</bitOffset>
-                <bitWidth>1</bitWidth>                
+                <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>SPI1EN</name>
@@ -89776,7 +89776,7 @@ The peripheral clocks of the USART10 are the kernel clock selected by USART16910
                 <description>TIM15 peripheral clock enable
 Set and reset by software.</description>
                 <bitOffset>16</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>TIM16EN</name>
@@ -89812,8 +89812,8 @@ Set and reset by software.</description>
 Set and reset by software.
 DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL and provided to Aclk and clk inputs respectively,</description>
                 <bitOffset>30</bitOffset>
-                <bitWidth>1</bitWidth>               
-            </field>           
+                <bitWidth>1</bitWidth>
+            </field>
           </fields>
         </register>
 		<register>
@@ -89972,28 +89972,28 @@ Set and reset by software.</description>
                 <description>OCTOSPI2 and OCTOSPI2 delay clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>19</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
               </field>
               <field>
                 <name>IOMNGRLPEN</name>
                 <description>OCTOSPIM block clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>21</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
               </field>
               <field>
                 <name>OTFD1LPEN</name>
                 <description>OTFD1 block clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>22</bitOffset>
-                <bitWidth>1</bitWidth>                
+                <bitWidth>1</bitWidth>
               </field>
               <field>
                 <name>OTFD2LPEN</name>
                 <description>OTFD2 block clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>23</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
               </field>
             <field>
               <name>DTCM1LPEN</name>
@@ -90089,7 +90089,7 @@ Set and reset by software.</description>
               mode</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
 		<register>
@@ -90134,7 +90134,7 @@ Set and reset by software.</description>
               During CSleep Mode</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>FMACLPEN</name>
               <description>FMAC peripheral clock enable during
@@ -90148,7 +90148,7 @@ Set and reset by software.</description>
               CSleep mode</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SRAM1LPEN</name>
               <description>SRAM1 Clock Enable During CSleep
@@ -90455,7 +90455,7 @@ Set and reset by software.</description>
               CSleep Mode</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>I2C5LPEN</name>
               <description>I2C5 Peripheral Clocks Enable During
@@ -90537,7 +90537,7 @@ Set and reset by software.</description>
               CSleep Mode</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>TIM23LPEN</name>
               <description>TIM23 Peripheral Clocks Enable During
@@ -90597,7 +90597,7 @@ Set and reset by software.</description>
 Set and reset by software.
 The peripheral clocks of the UART9 are the kernel clock selected by USART16910SEL and provided to usart_ker_ck input, and the rcc_pclk2 bus interface clock.</description>
                 <bitOffset>6</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
             </field>
 			<field>
                 <name>USART10LPEN</name>
@@ -90605,7 +90605,7 @@ The peripheral clocks of the UART9 are the kernel clock selected by USART16910SE
 Set and reset by software.
 The peripheral clocks of the USART10 are the kernel clock selected by USART16910SEL and provided to usart_ker_ck input, and the rcc_pclk2 bus interface clock.</description>
                 <bitOffset>7</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>SPI1LPEN</name>
@@ -90891,7 +90891,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
               Enable</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
                 <name>OCTOSPI2EN</name>
                 <description>OCTOSPI2 clock enable
@@ -90921,7 +90921,7 @@ Set and reset by software.</description>
                 <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>               
+        </register>
         <register>
           <name>C1_AHB1ENR</name>
           <displayName>C1_AHB1ENR</displayName>
@@ -90983,9 +90983,9 @@ Set and reset by software.</description>
               <description>USB_PHY1 Clocks Enable</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
-        </register>		
+        </register>
         <register>
           <name>C1_AHB2ENR</name>
           <displayName>C1_AHB2ENR</displayName>
@@ -91029,7 +91029,7 @@ Set and reset by software.</description>
               enable</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>FMACEN</name>
               <description>FMAC clock enable</description>
@@ -91041,7 +91041,7 @@ Set and reset by software.</description>
               <description>CORDIC clock enable</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SRAM1EN</name>
               <description>SRAM1 block enable</description>
@@ -91053,7 +91053,7 @@ Set and reset by software.</description>
               <description>SRAM2 block enable</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            </field> 
+            </field>
           </fields>
         </register>
 		<register>
@@ -91343,14 +91343,14 @@ Set and reset by software.</description>
               Enable</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>I2C5EN</name>
               <description>I2C5 Peripheral Clocks
               Enable</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>						
+            </field>
             <field>
               <name>CECEN</name>
               <description>HDMI-CEC peripheral clock
@@ -91424,7 +91424,7 @@ Set and reset by software.</description>
               Enable</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>TIM23EN</name>
               <description>TIM23 Peripheral Clocks
@@ -91492,7 +91492,7 @@ The peripheral clocks of the UART9 are the kernel clock selected by USART16910SE
 Set and reset by software.
 The peripheral clocks of the USART10 are the kernel clock selected by USART16910SEL and provided to UCKL input, and the rcc_pclk2 bus interface clock.</description>
                 <bitOffset>7</bitOffset>
-                <bitWidth>1</bitWidth>                
+                <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>SPI1EN</name>
@@ -91513,7 +91513,7 @@ The peripheral clocks of the USART10 are the kernel clock selected by USART16910
                 <description>TIM15 peripheral clock enable
 Set and reset by software.</description>
                 <bitOffset>16</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>TIM16EN</name>
@@ -91549,8 +91549,8 @@ Set and reset by software.</description>
 Set and reset by software.
 DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL and provided to Aclk and clk inputs respectively,</description>
                 <bitOffset>30</bitOffset>
-                <bitWidth>1</bitWidth>               
-            </field> 
+                <bitWidth>1</bitWidth>
+            </field>
           </fields>
         </register>
         <register>
@@ -91709,28 +91709,28 @@ Set and reset by software.</description>
                 <description>OCTOSPI2 and OCTOSPI2 delay clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>19</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
               </field>
               <field>
                 <name>IOMNGRLPEN</name>
                 <description>OCTOSPIM block clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>21</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
               </field>
               <field>
                 <name>OTFD1LPEN</name>
                 <description>OTFD1 block clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>22</bitOffset>
-                <bitWidth>1</bitWidth>                
+                <bitWidth>1</bitWidth>
               </field>
               <field>
                 <name>OTFD2LPEN</name>
                 <description>OTFD2 block clock enable during CSleep mode
 Set and reset by software.</description>
                 <bitOffset>23</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
               </field>
             <field>
               <name>DTCM1LPEN</name>
@@ -91826,7 +91826,7 @@ Set and reset by software.</description>
               mode</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
           </fields>
         </register>
         <register>
@@ -91871,7 +91871,7 @@ Set and reset by software.</description>
               During CSleep Mode</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>FMACLPEN</name>
               <description>FMAC peripheral clock enable during
@@ -91885,7 +91885,7 @@ Set and reset by software.</description>
               CSleep mode</description>
               <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
             <field>
               <name>SRAM1LPEN</name>
               <description>SRAM1 Clock Enable During CSleep
@@ -91899,7 +91899,7 @@ Set and reset by software.</description>
               Mode</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>            
+            </field>
           </fields>
         </register>
         <register>
@@ -92042,7 +92042,7 @@ Set and reset by software.</description>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>       
+        </register>
         <register>
           <name>C1_APB1LLPENR</name>
           <displayName>C1_APB1LLPENR</displayName>
@@ -92192,7 +92192,7 @@ Set and reset by software.</description>
               CSleep Mode</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>I2C5LPEN</name>
               <description>I2C5 Peripheral Clocks Enable During
@@ -92274,7 +92274,7 @@ Set and reset by software.</description>
               CSleep Mode</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>			
+            </field>
 			<field>
               <name>TIM23LPEN</name>
               <description>TIM23 Peripheral Clocks Enable During
@@ -92334,7 +92334,7 @@ Set and reset by software.</description>
 Set and reset by software.
 The peripheral clocks of the UART9 are the kernel clock selected by USART16910SEL and provided to usart_ker_ck input, and the rcc_pclk2 bus interface clock.</description>
                 <bitOffset>6</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
             </field>
 			<field>
                 <name>USART10LPEN</name>
@@ -92342,7 +92342,7 @@ The peripheral clocks of the UART9 are the kernel clock selected by USART16910SE
 Set and reset by software.
 The peripheral clocks of the USART10 are the kernel clock selected by USART16910SEL and provided to usart_ker_ck input, and the rcc_pclk2 bus interface clock.</description>
                 <bitOffset>7</bitOffset>
-                <bitWidth>1</bitWidth>               
+                <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>SPI1LPEN</name>
@@ -92503,7 +92503,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>       
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -96359,9 +96359,9 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
         <name>SAI4</name>
         <description>SAI4 global interrupt</description>
         <value>146</value>
-      </interrupt>   
-    </peripheral>   
-    <peripheral> 
+      </interrupt>
+    </peripheral>
+    <peripheral>
       <name>SDMMC1</name>
       <description>SDMMC1</description>
       <groupName>SDMMC</groupName>
@@ -97772,7 +97772,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
     </peripheral>
 	<peripheral derivedFrom="SDMMC1">
       <name>SDMMC2</name>
-      <baseAddress>0x48022400</baseAddress>      
+      <baseAddress>0x48022400</baseAddress>
       <interrupt>
         <name>SDMMC2</name>
         <description>SDMMC2 global interrupt</description>
@@ -98171,7 +98171,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
               <bitWidth>13</bitWidth>
             </field>
           </fields>
-        </register>      
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -106208,7 +106208,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
         <description>UART8 global interrupt</description>
         <value>83</value>
       </interrupt>
-    </peripheral>	
+    </peripheral>
 	<peripheral derivedFrom="USART1">
       <name>UART9</name>
       <baseAddress>0x40011800</baseAddress>
@@ -106217,7 +106217,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
         <description>UART9 interrupt</description>
         <value>155</value>
       </interrupt>
-    </peripheral>	
+    </peripheral>
 	<peripheral derivedFrom="USART1">
       <name>USART10</name>
       <baseAddress>0x40011C00</baseAddress>
@@ -106226,7 +106226,7 @@ DFSDM1 peripheral clocks are the kernel clocks selected by SAI1SEL and DFSDM1SEL
         <description>USART10 interrupt</description>
         <value>156</value>
       </interrupt>
-    </peripheral>	
+    </peripheral>
     <peripheral>
       <name>VREFBUF</name>
       <description>VREFBUF</description>
