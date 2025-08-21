@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-Copyright (c) 2022 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -20,8 +20,8 @@ Copyright (c) 2022 STMicroelectronics.
   <vendor>ARM Ltd.</vendor>
   <vendorID>ARM</vendorID>
   <name>Cortex_M0PLUS</name>
-  <version>1.2</version>
-  <description>Cortex-M0+ core descriptions, generated from ARM develloper studio</description>
+  <version>1.3</version>
+  <description>Cortex-M0+ core descriptions, generated from ARM developer studio</description>
   <cpu>
     <name>CM0PLUS</name>
     <revision>r0p0</revision>
@@ -193,12 +193,6 @@ Copyright (c) 2022 STMicroelectronics.
               <bitWidth>16</bitWidth>
             </field>
             <field>
-              <name>VECTKEYSTAT</name>
-              <description>UNKNOWN</description>
-              <bitOffset>16</bitOffset>
-              <bitWidth>16</bitWidth>
-            </field>
-            <field>
               <name>ENDIANNESS</name>
               <description>ENDIANNESS</description>
               <bitOffset>15</bitOffset>
@@ -252,7 +246,7 @@ Copyright (c) 2022 STMicroelectronics.
           <name>CCR</name>
           <displayName>CCR</displayName>
           <description>CCR</description>
-          <addressOffset>0x0</addressOffset>
+          <addressOffset>0x10</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <fields>
@@ -347,22 +341,6 @@ Copyright (c) 2022 STMicroelectronics.
               <description>TBLOFF</description>
               <bitOffset>7</bitOffset>
               <bitWidth>25</bitWidth>
-            </field>
-            <field>
-              <name>TBLBASE</name>
-              <description>TBLBASE</description>
-              <bitOffset>29</bitOffset>
-              <bitWidth>1</bitWidth>
-              <enumeratedValues>
-                <enumeratedValue>
-                  <name>CODE</name>
-                  <value>0</value>
-                </enumeratedValue>
-                <enumeratedValue>
-                  <name>SRAM</name>
-                  <value>1</value>
-                </enumeratedValue>
-              </enumeratedValues>
             </field>
           </fields>
         </register>
@@ -855,10 +833,6 @@ Copyright (c) 2022 STMicroelectronics.
                   <value>0x3</value>
                 </enumeratedValue>
                 <enumeratedValue>
-                  <name>Reserved</name>
-                  <value>0x4</value>
-                </enumeratedValue>
-                <enumeratedValue>
                   <name>Privileged_RO</name>
                   <value>0x5</value>
                 </enumeratedValue>
@@ -902,10 +876,6 @@ Copyright (c) 2022 STMicroelectronics.
               <bitOffset>1</bitOffset>
               <bitWidth>5</bitWidth>
               <enumeratedValues>
-                <enumeratedValue>
-                  <name>Reserved</name>
-                  <value>0x0</value>
-                </enumeratedValue>
                 <enumeratedValue>
                   <name>Reserved_</name>
                   <value>0x1</value>

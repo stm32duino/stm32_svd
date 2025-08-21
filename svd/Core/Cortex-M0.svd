@@ -21,7 +21,7 @@ Copyright (c) 2020 STMicroelectronics.
   <vendorID>ARM</vendorID>
   <name>Cortex_M0</name>
   <version>1.1</version>
-  <description>Cortex-M0 core descriptions, generated from ARM develloper studio</description>
+  <description>Cortex-M0 core descriptions, generated from ARM developer studio</description>
   <cpu>
     <name>CM0</name>
     <revision>r0p0</revision>

@@ -21,7 +21,7 @@ Copyright (c) 2022 STMicroelectronics.
   <vendorID>ARM</vendorID>
   <name>Cortex_M33</name>
   <version>1.4</version>
-  <description>Cortex-M33 core descriptions, generated from ARM develloper studio</description>
+  <description>Cortex-M33 core descriptions, generated from ARM developer studio</description>
   <cpu>
     <name>CM33</name>
     <revision>r0p0</revision>

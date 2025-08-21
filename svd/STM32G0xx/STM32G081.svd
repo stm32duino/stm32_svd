@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--
-Copyright (c) 2024 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G081</name>
-  <version>2.0</version>
+  <version>2.1</version>
   <description>STM32G081</description>
   <cpu>
     <name>CM0</name>
@@ -499,9 +499,15 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>BSY</name>
-              <description>Busy</description>
+              <name>BSY1</name>
+              <description>Bank 1 busy</description>
               <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>BSY2</name>
+              <description>Bank 2 busy</description>
+              <bitOffset>17</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>

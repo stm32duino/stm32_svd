@@ -21,7 +21,7 @@ Copyright (c) 2024 STMicroelectronics.
   <vendorID>ARM</vendorID>
   <name>Cortex_A7_CPU1</name>
   <version>1.2</version>
-  <description>Cortex-A7_CPU1 core descriptions, generated from ARM develloper studio</description>
+  <description>Cortex-A7_CPU1 core descriptions, generated from ARM developer studio</description>
   <cpu>
     <name>CA7</name>
     <revision>r0p0</revision>

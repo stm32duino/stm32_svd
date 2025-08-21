@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright (c) 2024 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -18,7 +18,7 @@ Copyright (c) 2024 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
    <name>STM32G474</name>
-   <version>2.7</version>
+   <version>2.8</version>
    <description>STM32G474</description>
     <cpu>
     <name>CM4</name>
@@ -1589,29 +1589,150 @@ Copyright (c) 2024 STMicroelectronics.
                   </field>
                </fields>
             </register>
-            <register>
-               <name>SEC1R</name>
-               <displayName>SEC1R</displayName>
-               <description>securable area bank1 register</description>
-               <addressOffset>0x70</addressOffset>
-               <size>0x20</size>
-               <access>read-write</access>
-               <resetValue>0xFF00FF00</resetValue>
-               <fields>
-                  <field>
-                     <name>BOOT_LOCK</name>
-                     <description>BOOT_LOCK</description>
-                     <bitOffset>16</bitOffset>
-                     <bitWidth>1</bitWidth>
-                  </field>
-                  <field>
-                     <name>SEC_SIZE1</name>
-                     <description>SEC_SIZE1</description>
-                     <bitOffset>0</bitOffset>
-                     <bitWidth>7</bitWidth>
-                  </field>
-               </fields>
-            </register>
+        <register>
+          <name>PCROP2SR</name>
+          <displayName>PCROP2SR</displayName>
+          <description>Flash PCROP2 Start address register</description>
+          <addressOffset>0x44</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0xFFFF0000</resetValue>
+          <resetMask>0xFFFF0000</resetMask>
+          <fields>
+            <field>
+              <name>PCROP2_STRT</name>
+              <description>PCROP area start offset
+
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>15</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>PCROP2ER</name>
+          <displayName>PCROP2ER</displayName>
+          <description>Flash PCROP2 End address register</description>
+          <addressOffset>0x48</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFFFF0000</resetMask>
+          <fields>
+            <field>
+              <name>PCROP2_END</name>
+              <description>PCROP area end offset
+
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>15</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>WRP2AR</name>
+          <displayName>WRP2AR</displayName>
+          <description>Flash Bank 2 WRP area A address register</description>
+          <addressOffset>0x4C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFF00FF00</resetMask>
+          <fields>
+            <field>
+              <name>WRP2A_STRT</name>
+              <description>WRP first area A start offset
+
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>7</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>WRP2A_END</name>
+              <description>WRP first area A end offset
+
+</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>7</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>WRP2BR</name>
+          <displayName>WRP2BR</displayName>
+          <description>Flash Bank 2 WRP area B address register</description>
+          <addressOffset>0x50</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <resetMask>0xFF00FF00</resetMask>
+          <fields>
+            <field>
+              <name>WRP2B_STRT</name>
+              <description>WRP second area B start offset
+
+</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>7</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>WRP2B_END</name>
+              <description>WRP second area B end offset
+
+</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>7</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SEC1R</name>
+          <displayName>SEC1R</displayName>
+          <description>securable area bank1 register</description>
+          <addressOffset>0x70</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0xFF00FF00</resetValue>
+          <fields>
+            <field>
+              <name>BOOT_LOCK</name>
+              <description>BOOT_LOCK</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SEC_SIZE1</name>
+              <description>SEC_SIZE1</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>7</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>SEC2R</name>
+          <displayName>SEC2R</displayName>
+          <description>Flash Securable area bank2 register</description>
+          <addressOffset>0x74</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0xFFFFFF00</resetValue>
+          <resetMask>0xFFFFFF00</resetMask>
+          <fields>
+            <field>
+              <name>SEC_SIZE2</name>
+              <description>sets the number of pages used in the bank 2 Securable memory area.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
          </registers>
       </peripheral>
       <peripheral>
