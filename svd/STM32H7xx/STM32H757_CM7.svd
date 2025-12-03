@@ -20,7 +20,7 @@ Copyright (c) 2025 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32H757_CM7</name>
-  <version>2.3</version>
+  <version>2.4</version>
   <description>STM32H757_CM7</description>
   <cpu>
     <name>CM7</name>
@@ -50969,8 +50969,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUIMR1</name>
-          <displayName>CPUIMR1</displayName>
+          <name>C1IMR1</name>
+          <displayName>C1IMR1</displayName>
           <description>EXTI interrupt mask register</description>
           <addressOffset>0x80</addressOffset>
           <size>0x20</size>
@@ -51204,8 +51204,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUEMR1</name>
-          <displayName>CPUEMR1</displayName>
+          <name>C1EMR1</name>
+          <displayName>C1EMR1</displayName>
           <description>EXTI event mask register</description>
           <addressOffset>0x84</addressOffset>
           <size>0x20</size>
@@ -51439,8 +51439,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUPR1</name>
-          <displayName>CPUPR1</displayName>
+          <name>C1PR1</name>
+          <displayName>C1PR1</displayName>
           <description>EXTI pending register</description>
           <addressOffset>0x88</addressOffset>
           <size>0x20</size>
@@ -51604,13 +51604,13 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUIMR2</name>
-          <displayName>CPUIMR2</displayName>
+          <name>C1IMR2</name>
+          <displayName>C1IMR2</displayName>
           <description>EXTI interrupt mask register</description>
           <addressOffset>0x90</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
-          <resetValue>0x00000000</resetValue>
+          <resetValue>0xFFF5FFFF</resetValue>
           <fields>
             <field>
               <name>MR0</name>
@@ -51832,8 +51832,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUEMR2</name>
-          <displayName>CPUEMR2</displayName>
+          <name>C1EMR2</name>
+          <displayName>C1EMR2</displayName>
           <description>EXTI event mask register</description>
           <addressOffset>0x94</addressOffset>
           <size>0x20</size>
@@ -52060,8 +52060,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUPR2</name>
-          <displayName>CPUPR2</displayName>
+          <name>C1PR2</name>
+          <displayName>C1PR2</displayName>
           <description>EXTI pending register</description>
           <addressOffset>0x98</addressOffset>
           <size>0x20</size>
@@ -52085,8 +52085,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUIMR3</name>
-          <displayName>CPUIMR3</displayName>
+          <name>C1IMR3</name>
+          <displayName>C1IMR3</displayName>
           <description>EXTI interrupt mask register</description>
           <addressOffset>0xA0</addressOffset>
           <size>0x20</size>
@@ -52257,8 +52257,8 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUEMR3</name>
-          <displayName>CPUEMR3</displayName>
+          <name>C1EMR3</name>
+          <displayName>C1EMR3</displayName>
           <description>EXTI event mask register</description>
           <addressOffset>0xA4</addressOffset>
           <size>0x20</size>
@@ -52429,10 +52429,1509 @@ Writing 1 in each bit clears the corresponding overrun flag SOFx in the DMAMUX_C
           </fields>
         </register>
         <register>
-          <name>CPUPR3</name>
-          <displayName>CPUPR3</displayName>
+          <name>C1PR3</name>
+          <displayName>C1PR3</displayName>
           <description>EXTI pending register</description>
           <addressOffset>0xA8</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>PR82</name>
+              <description>Configurable event inputs x+64 Pending
+              bit</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR84</name>
+              <description>Configurable event inputs x+64 Pending
+              bit</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR85</name>
+              <description>Configurable event inputs x+64 Pending
+              bit</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR86</name>
+              <description>Configurable event inputs x+64 Pending
+              bit</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2IMR1</name>
+          <displayName>C2IMR1</displayName>
+          <description>EXTI interrupt mask register</description>
+          <addressOffset>0xC0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0xFFC00000</resetValue>
+          <fields>
+            <field>
+              <name>MR0</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR1</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR2</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR3</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR4</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR5</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR6</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR7</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR8</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR9</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR10</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR11</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR12</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR13</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR14</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR15</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR16</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR17</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR18</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR19</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR20</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR21</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR22</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR23</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR24</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR25</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR26</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR27</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR28</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR29</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR30</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR31</name>
+              <description>Rising trigger event configuration bit
+              of Configurable Event input</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2EMR1</name>
+          <displayName>C2EMR1</displayName>
+          <description>EXTI event mask register</description>
+          <addressOffset>0xC4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>MR0</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR1</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR2</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR3</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR4</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR5</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR6</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR7</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR8</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR9</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR10</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR11</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR12</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR13</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR14</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR15</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR16</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR17</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR18</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR19</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR20</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR21</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR22</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR23</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR24</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR25</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR26</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR27</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR28</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR29</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR30</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR31</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2PR1</name>
+          <displayName>C2PR1</displayName>
+          <description>EXTI pending register</description>
+          <addressOffset>0xC8</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>PR0</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR1</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR2</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR3</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR4</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR5</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR6</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR7</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR8</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR9</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR10</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR11</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR12</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR13</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR14</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR15</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR16</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR17</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR18</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR19</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR20</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR21</name>
+              <description>CPU Event mask on Event input
+              x</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2IMR2</name>
+          <displayName>C2IMR2</displayName>
+          <description>EXTI interrupt mask register</description>
+          <addressOffset>0xD0</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0xFFF5FFFF</resetValue>
+          <fields>
+            <field>
+              <name>MR0</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR1</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR2</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR3</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR4</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR5</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR6</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR7</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR8</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR9</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR10</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR11</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR12</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR14</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR15</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR16</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR17</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR18</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR19</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR20</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR21</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR22</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR23</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR24</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR25</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR26</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR27</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR28</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR29</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR30</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR31</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2EMR2</name>
+          <displayName>C2EMR2</displayName>
+          <description>EXTI event mask register</description>
+          <addressOffset>0xD4</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>MR32</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR33</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR34</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR35</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR36</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR37</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR38</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR39</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR40</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR41</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR42</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR43</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR44</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR46</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR47</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR48</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR49</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR50</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR51</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR52</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR53</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR54</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR55</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR56</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR57</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>25</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR58</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>26</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR59</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>27</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR60</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>28</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR61</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>29</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR62</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>30</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR63</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+32</description>
+              <bitOffset>31</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2PR2</name>
+          <displayName>C2PR2</displayName>
+          <description>EXTI pending register</description>
+          <addressOffset>0xD8</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>PR49</name>
+              <description>Configurable event inputs x+32 Pending
+              bit</description>
+              <bitOffset>17</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>PR51</name>
+              <description>Configurable event inputs x+32 Pending
+              bit</description>
+              <bitOffset>19</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2IMR3</name>
+          <displayName>C2IMR3</displayName>
+          <description>EXTI interrupt mask register</description>
+          <addressOffset>0xE0</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>MR64</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR65</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR66</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR67</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR68</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR69</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR70</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR71</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR72</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR73</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR74</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR75</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR76</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR77</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR78</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR79</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR80</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR82</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR84</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR85</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR86</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR87</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR88</name>
+              <description>CPU Interrupt Mask on Direct Event input
+              x+64</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2EMR3</name>
+          <displayName>C2EMR3</displayName>
+          <description>EXTI event mask register</description>
+          <addressOffset>0xE4</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>MR64</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR65</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR66</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR67</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR68</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR69</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR70</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>6</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR71</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>7</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR72</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR73</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>9</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR74</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>10</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR75</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>11</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR76</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>12</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR77</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR78</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR79</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>15</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR80</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR82</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>18</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR84</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>20</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR85</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>21</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR86</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>22</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR87</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>23</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>MR88</name>
+              <description>CPU Event mask on Event input
+              x+64</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>C2PR3</name>
+          <displayName>C2PR3</displayName>
+          <description>EXTI pending register</description>
+          <addressOffset>0xE8</addressOffset>
           <size>0x20</size>
           <access>read-only</access>
           <resetValue>0x00000000</resetValue>

@@ -25248,9 +25248,5 @@ Writing 1 in this bit clears the ITSF bit in the RTC_SR register.</description>
         </register>
       </registers>
     </peripheral>
-
-
-
-
   </peripherals>
 </device>

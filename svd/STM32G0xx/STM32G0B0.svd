@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--
-Copyright (c) 2024 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32G0B0</name>
-  <version>1.8</version>
+  <version>1.9</version>
   <description>STM32G0B0</description>
   <cpu>
     <name>CM0</name>
@@ -21366,7 +21366,7 @@ It is not used in SPI mode.</description>
       <baseAddress>0x40010000</baseAddress>
       <addressBlock>
         <offset>0x0</offset>
-        <size>0x100</size>
+        <size>0xF8</size>
         <usage>registers</usage>
       </addressBlock>
       <registers>
@@ -31419,7 +31419,6 @@ Refer to CC1OF description</description>
           <description>event generation register</description>
           <addressOffset>0x14</addressOffset>
           <size>0x20</size>
-          <access>write-only</access>
           <resetValue>0x0000</resetValue>
           <fields>
 		  <field>
@@ -38007,6 +38006,11 @@ Note: When PRESCALER is programmed with a value different of the allowed ones, p
           <size>0x400</size>
           <usage>registers</usage>
         </addressBlock>
+		<interrupt>
+          <name>UCPD1_UCPD2_USB</name>
+          <description>UCPD and USB global interrupt</description>
+          <value>8</value>
+        </interrupt>
         <registers>
           <register>
             <name>USB_CHEP0R</name>

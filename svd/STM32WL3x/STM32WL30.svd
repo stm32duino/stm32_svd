@@ -18,7 +18,7 @@ Copyright (c) 2025 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32WL30</name>
-  <version>0.1</version>
+  <version>1.1</version>
   <description>STM32WL30</description>
   <cpu>
     <name>CM0+</name>
@@ -10412,8 +10412,7 @@ interrupt</description>
           <fields>
             <field>
               <name>ENA_RFREG_TIMER</name>
-              <description>Timeout for the RF regulator startup (duration in ENA_RF_REG state)
-</description>
+              <description>Timeout for the RF regulator startup (duration in ENA_RF_REG state)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10431,8 +10430,7 @@ interrupt</description>
           <fields>
             <field>
               <name>SYNTH_SETUP_TIMER</name>
-              <description>Timeout management for the RF regulator to stabilize after RF PLL power on
-</description>
+              <description>Timeout management for the RF regulator to stabilize after RF PLL power on</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10450,8 +10448,7 @@ interrupt</description>
           <fields>
             <field>
               <name>VCO_CALIB_LOCK_TIMER</name>
-              <description>Timeout for the RF PLL calibration + RF PLL lock (duration in CALIB_VCO+LOCKRXTX state)
-</description>
+              <description>Timeout for the RF PLL calibration + RF PLL lock (duration in CALIB_VCO+LOCKRXTX state)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10469,8 +10466,7 @@ interrupt</description>
           <fields>
             <field>
               <name>VCO_LOCK_TIMER</name>
-              <description>Timeout for the RF PLL lock event when no calibration is requested (duration in LOCKRXTX state)
-</description>
+              <description>Timeout for the RF PLL lock event when no calibration is requested (duration in LOCKRXTX state)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10488,8 +10484,7 @@ interrupt</description>
           <fields>
             <field>
               <name>EN_RX_TIMER</name>
-              <description>Timeout for the analog RX chain setup (duration in EN_RX state)
-</description>
+              <description>Timeout for the analog RX chain setup (duration in EN_RX state)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10507,8 +10502,7 @@ interrupt</description>
           <fields>
             <field>
               <name>EN_PA_TIMER</name>
-              <description>Timeout for the analog PA (DAC) setup (duration in EN_PA state)
-</description>
+              <description>Timeout for the analog PA (DAC) setup (duration in EN_PA state)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10526,8 +10520,7 @@ interrupt</description>
           <fields>
             <field>
               <name>PA_DWN_ANA_TIMER</name>
-              <description>Timeout for the analog PA (DAC) ramp down (duration in PA_DWN_ANA state)
-</description>
+              <description>Timeout for the analog PA (DAC) ramp down (duration in PA_DWN_ANA state)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10545,8 +10538,7 @@ interrupt</description>
           <fields>
             <field>
               <name>EN_LNA_TIMER</name>
-              <description>Timeout for the analog RX chain signals settlement once PGA precharge is shut down (duration in EN_LNA state)
-</description>
+              <description>Timeout for the analog RX chain signals settlement once PGA precharge is shut down (duration in EN_LNA state)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10589,8 +10581,7 @@ interrupt</description>
           <fields>
             <field>
               <name>AFC_FAST_PERIOD</name>
-              <description>Length of the AFC fast period (in number of samples unit)
-</description>
+              <description>Length of the AFC fast period (in number of samples unit)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10615,8 +10606,7 @@ interrupt</description>
             </field>
             <field>
               <name>AFC_MODE</name>
-              <description>Select AFC mode:
-</description>
+              <description>Select AFC mode: </description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -10648,8 +10638,7 @@ interrupt</description>
           <fields>
             <field>
               <name>AFC_INIT_MODE</name>
-              <description>Control the initialization phase of the AFC and clock recovery algorithms:
-</description>
+              <description>Control the initialization phase of the AFC and clock recovery algorithms:</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -10670,8 +10659,7 @@ interrupt</description>
             </field>
             <field>
               <name>AFC_REINIT_OPTION</name>
-              <description>Select the AFC reinitialization option:
-</description>
+              <description>Select the AFC reinitialization option:</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
@@ -10689,24 +10677,21 @@ interrupt</description>
           <fields>
             <field>
               <name>CLKREC_I_GAIN_FAST</name>
-              <description>Integral fast gain for the clock recovery loop (PLL mode only)
-</description>
+              <description>Integral fast gain for the clock recovery loop (PLL mode only)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>CLKREC_P_GAIN_FAST</name>
-              <description>Clock recovery fast loop gain (log2)
-</description>
+              <description>Clock recovery fast loop gain (log2)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>PSTFLT_LEN</name>
-              <description>Control the length of the demodulator post-filter
-</description>
+              <description>Control the length of the demodulator post-filter</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -10724,24 +10709,21 @@ interrupt</description>
           <fields>
             <field>
               <name>CLKREC_I_GAIN_SLOW</name>
-              <description>Integral slow gain for the clock recovery loop (PLL mode only)
-</description>
+              <description>Integral slow gain for the clock recovery loop (PLL mode only)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>CLKREC_P_GAIN_SLOW</name>
-              <description>Clock recovery slow loop gain (log2)
-</description>
+              <description>Clock recovery slow loop gain (log2)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>CLKREC_ALGO_SEL</name>
-              <description>Symbol timing recovery algorithm selection
-</description>
+              <description>Symbol timing recovery algorithm selection</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -10809,8 +10791,7 @@ interrupt</description>
           <fields>
             <field>
               <name>QPD_ATTACK</name>
-              <description>Attack coefficient for QPD:
-</description>
+              <description>Attack coefficient for QPD:</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10828,8 +10809,7 @@ interrupt</description>
           <fields>
             <field>
               <name>QPD_DECAY</name>
-              <description>Decay coefficient for QPD:
-</description>
+              <description>Decay coefficient for QPD:</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -10865,24 +10845,21 @@ interrupt</description>
           <fields>
             <field>
               <name>FORCE_AGC_GAINS</name>
-              <description>Select the mode for AGC analog part:
-</description>
+              <description>Select the mode for AGC analog part:</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>RFD_RX_ATTEN_AGCGAIN</name>
-              <description>Attenuation at LNA level by step of 6dB with thermometric code:
-</description>
+              <description>Attenuation at LNA level by step of 6dB with thermometric code:</description>
               <bitOffset>1</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>RFD_RX_PGA_AGCGAIN</name>
-              <description>Attenuation at PGA level by step of 6dB with binary code:
-</description>
+              <description>Attenuation at PGA level by step of 6dB with binary code:</description>
               <bitOffset>5</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
@@ -10914,8 +10891,7 @@ interrupt</description>
             </field>
             <field>
               <name>AGC_EN</name>
-              <description>Enable the AGC
-</description>
+              <description>Enable the AGC</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -10933,14 +10909,14 @@ interrupt</description>
           <fields>
             <field>
               <name>AGC_MIN_THR</name>
-              <description>Minimum signal threshold.</description>
+              <description>Minimum signal threshold. </description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>AGC_MAX_THR</name>
-              <description>Maximum signal threshold.</description>
+              <description>Maximum signal threshold. </description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
@@ -10958,7 +10934,7 @@ interrupt</description>
           <fields>
             <field>
               <name>AGC_MEAS_TIME</name>
-              <description>Measure time.</description>
+              <description>Measure time. </description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-write</access>
@@ -11037,6 +11013,256 @@ interrupt</description>
           </fields>
         </register>
         <register>
+          <name>AGC_ATTEN0</name>
+          <displayName>AGC_ATTEN0</displayName>
+          <description>AGC_ATTEN0 register</description>
+          <addressOffset>0x68</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000000</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_0</name>
+              <description>AGC attenuation control setting for step 0 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_0</name>
+              <description>AGC attenuation control setting for step 0 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN1</name>
+          <displayName>AGC_ATTEN1</displayName>
+          <description>AGC_ATTEN1 register</description>
+          <addressOffset>0x6C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000010</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_1</name>
+              <description>AGC attenuation control setting for step 1 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_1</name>
+              <description>AGC attenuation control setting for step 1 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN2</name>
+          <displayName>AGC_ATTEN2</displayName>
+          <description>AGC_ATTEN2 register</description>
+          <addressOffset>0x70</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000020</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_2</name>
+              <description>AGC attenuation control setting for step 2 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_2</name>
+              <description>AGC attenuation control setting for step 2 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN3</name>
+          <displayName>AGC_ATTEN3</displayName>
+          <description>AGC_ATTEN3 register</description>
+          <addressOffset>0x74</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000030</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_3</name>
+              <description>AGC attenuation control setting for step 3 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_3</name>
+              <description>AGC attenuation control setting for step 3 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN4</name>
+          <displayName>AGC_ATTEN4</displayName>
+          <description>AGC_ATTEN4 register</description>
+          <addressOffset>0x78</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000040</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_4</name>
+              <description>AGC attenuation control setting for step 4 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_4</name>
+              <description>AGC attenuation control setting for step 4 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN5</name>
+          <displayName>AGC_ATTEN5</displayName>
+          <description>AGC_ATTEN5 register</description>
+          <addressOffset>0x7C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000041</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_5</name>
+              <description>AGC attenuation control setting for step 5 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_5</name>
+              <description>AGC attenuation control setting for step 5 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN6</name>
+          <displayName>AGC_ATTEN6</displayName>
+          <description>AGC_ATTEN6 register</description>
+          <addressOffset>0x80</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000043</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_6</name>
+              <description>AGC attenuation control setting for step 6 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_6</name>
+              <description>AGC attenuation control setting for step 6 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN7</name>
+          <displayName>AGC_ATTEN7</displayName>
+          <description>AGC_ATTEN7 register</description>
+          <addressOffset>0x84</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x00000047</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_7</name>
+              <description>AGC attenuation control setting for step 7 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_7</name>
+              <description>AGC attenuation control setting for step 7 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN8</name>
+          <displayName>AGC_ATTEN8</displayName>
+          <description>AGC_ATTEN8 register</description>
+          <addressOffset>0x88</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x0000004F</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_8</name>
+              <description>AGC attenuation control setting for step 8 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_8</name>
+              <description>AGC attenuation control setting for step 8 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>AGC_ATTEN9</name>
+          <displayName>AGC_ATTEN9</displayName>
+          <description>AGC_ATTEN9 register</description>
+          <addressOffset>0x8C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <resetValue>0x0000005F</resetValue>
+          <fields>
+            <field>
+              <name>ATTEN_AGCGAIN_9</name>
+              <description>AGC attenuation control setting for step 9 for LNA+BOM point.</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>4</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>PGA_AGCGAIN_9</name>
+              <description>AGC attenuation control setting for step 9 on PGA point.</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>AGC_PGA_HWTRIM_OUT</name>
           <displayName>AGC_PGA_HWTRIM_OUT</displayName>
           <description>AGC_PGA_HWTRIM_OUT register</description>
@@ -11065,8 +11291,7 @@ interrupt</description>
           <fields>
             <field>
               <name>CFG_FILT</name>
-              <description>FIR configuration:
-</description>
+              <description>FIR configuration:</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-write</access>
@@ -11091,8 +11316,7 @@ interrupt</description>
           <fields>
             <field>
               <name>PA_HW_DEGEN_TRIM</name>
-              <description>MSB part meaning:
-</description>
+              <description>MSB part meaning:</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-only</access>
@@ -11112,7 +11336,14 @@ interrupt</description>
               <name>OOK_PEAK_DECAY</name>
               <description>Peak decay control for OOK: 3 slow decay; 0 fast decay</description>
               <bitOffset>0</bitOffset>
-              <bitWidth>4</bitWidth>
+              <bitWidth>3</bitWidth>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>FREEZE_ON_SYNC_OOK_PEAK_DECAY</name>
+              <description>Freeze on sync OK peak decay</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
@@ -11142,8 +11373,7 @@ interrupt</description>
             </field>
             <field>
               <name>RFD_PLL_LD_WIN_ACC</name>
-              <description>Select the PLL lock detector window selection:
-</description>
+              <description>Select the PLL lock detector window selection:</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -11236,16 +11466,14 @@ interrupt</description>
           <fields>
             <field>
               <name>FQCY_BAND_ID</name>
-              <description>FQCY_BAND_ID[3:0]: Indicates the version of the RFSUBG IP embedded in the device
-</description>
+              <description>FQCY_BAND_ID[3:0]: Indicates the version of the RFSUBG IP embedded in the device</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-only</access>
             </field>
             <field>
               <name>RFSUBG_ID</name>
-              <description>Indicate the version of the analog RFSUBG IP embedded in the device
-</description>
+              <description>Indicate the version of the analog RFSUBG IP embedded in the device</description>
               <bitOffset>4</bitOffset>
               <bitWidth>4</bitWidth>
               <access>read-only</access>
@@ -11263,8 +11491,7 @@ interrupt</description>
           <fields>
             <field>
               <name>SYNTH_PDWN_TIMER</name>
-              <description>Timeout management for the RF regulator to stabilize after PLL shut down
-</description>
+              <description>Timeout management for the RF regulator to stabilize after PLL shut down</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -11282,8 +11509,7 @@ interrupt</description>
           <fields>
             <field>
               <name>END_RX_TIMER</name>
-              <description>Timeout management for the RF regulator to stabilize after analog RX chain shut down
-</description>
+              <description>Timeout management for the RF regulator to stabilize after analog RX chain shut down</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -11301,8 +11527,7 @@ interrupt</description>
           <fields>
             <field>
               <name>END_TX_TIMER</name>
-              <description>Timeout management for the RF regulator to stabilize after clock stops on the analog PA block
-</description>
+              <description>Timeout management for the RF regulator to stabilize after clock stops on the analog PA block</description>
               <bitOffset>0</bitOffset>
               <bitWidth>8</bitWidth>
               <access>read-write</access>
@@ -11320,8 +11545,7 @@ interrupt</description>
           <fields>
             <field>
               <name>FORCE_GPIO_OUTPUT</name>
-              <description>Option for the direct GPIO signal output
-</description>
+              <description>Option for the direct GPIO signal output</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -11339,16 +11563,14 @@ interrupt</description>
           <fields>
             <field>
               <name>LNA_ISOL_ENA</name>
-              <description>Option for LNA during the EN_RX state of the Radio FSM:
-</description>
+              <description>Option for LNA during the EN_RX state of the Radio FSM:</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
             </field>
             <field>
               <name>PGA_PRECH_ENA</name>
-              <description>Option for PGA precharge during the EN_RX state of the Radio FSM:
-</description>
+              <description>Option for PGA precharge during the EN_RX state of the Radio FSM:</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
               <access>read-write</access>
@@ -11366,8 +11588,7 @@ interrupt</description>
           <fields>
             <field>
               <name>RX_BLANKING_LENGTH</name>
-              <description>Number of data samples at RX start for which the signal at the output of the channel filter is kept forced to zero:
-</description>
+              <description>Number of data samples at RX start for which the signal at the output of the channel filter is kept forced to zero:</description>
               <bitOffset>0</bitOffset>
               <bitWidth>3</bitWidth>
               <access>read-write</access>
