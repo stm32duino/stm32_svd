@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--
-Copyright (c) 2023 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -20,7 +20,7 @@ Copyright (c) 2023 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F3x8</name>
-  <version>1.6</version>
+  <version>1.7</version>
   <description>STM32F3x8</description>
   <cpu>
     <name>CM4</name>
@@ -6404,13 +6404,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>ADCEN</name>
-              <description>ADC 1 interface clock
-              enable</description>
-              <bitOffset>9</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TIM1EN</name>
               <description>TIM1 Timer clock enable</description>
               <bitOffset>11</bitOffset>
@@ -6423,9 +6416,21 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
+              <name>TIM8EN</name>
+              <description>TIM8 timer clock enable</description>
+              <bitOffset>13</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
               <name>USART1EN</name>
               <description>USART1 clock enable</description>
               <bitOffset>14</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>SPI4EN</name>
+              <description>SPI4 clock enable</description>
+              <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -6447,37 +6452,9 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>TIM19EN</name>
-              <description>TIM19 timer clock enable</description>
-              <bitOffset>19</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>DBGMCUEN</name>
-              <description>MCU debug module clock
-              enable</description>
-              <bitOffset>22</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SDAD1EN</name>
-              <description>SDADC1 (Sigma Delta ADC 1) clock
-              enable</description>
-              <bitOffset>24</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SDAD2EN</name>
-              <description>SDADC2 (Sigma Delta ADC 2) clock
-              enable</description>
-              <bitOffset>25</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>SDAD3EN</name>
-              <description>SDADC3 (Sigma Delta ADC 3) clock
-              enable</description>
-              <bitOffset>26</bitOffset>
+              <name>TIM20EN</name>
+              <description>TIM20 timer clock enable</description>
+              <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
           </fields>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-Copyright (c) 2024 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
   <vendor>ARM Ltd.</vendor>
   <vendorID>ARM</vendorID>
   <name>Cortex_M55</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <description>Cortex-M55 core descriptions, generated from ARM developer studio</description>
   <cpu>
     <name>CM55</name>
@@ -2387,6 +2387,38 @@ Copyright (c) 2024 STMicroelectronics.
       </addressBlock>
       <registers>
         <register>
+          <name>MPU_TYPE</name>
+          <displayName>MPU_TYPE</displayName>
+          <description>MPU Type Register </description>
+          <addressOffset>0x00</addressOffset>
+          <size>0x20</size>
+          <access>read-only</access>
+          <fields>
+            <field>
+              <name>SEPARATE</name>
+              <description>SEPARATE</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+              <enumeratedValues>
+                <enumeratedValue>
+                  <name>Uniform</name>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>Separate</name>
+                  <value>1</value>
+                </enumeratedValue>
+              </enumeratedValues>
+            </field>
+            <field>
+              <name>DREGION</name>
+              <description>DREGION</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>MPU_TYPE_NS</name>
           <displayName>MPU_TYPE_NS</displayName>
           <description>MPU Type Register NS</description>
@@ -2419,6 +2451,34 @@ Copyright (c) 2024 STMicroelectronics.
           </fields>
         </register>
         <register>
+          <name>MPU_CTRL</name>
+          <displayName>MPU_CTRL</displayName>
+          <description>MPU Control Register</description>
+          <addressOffset>0x04</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>PRIVDEFENA</name>
+              <description>PRIVDEFENA</description>
+              <bitOffset>2</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>HFNMIENA</name>
+              <description>HFNMIENA</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>ENABLE</name>
+              <description>Enable</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>MPU_CTRL_NS</name>
           <displayName>MPU_CTRL_NS</displayName>
           <description>MPU Control Register NS</description>
@@ -2447,6 +2507,22 @@ Copyright (c) 2024 STMicroelectronics.
           </fields>
         </register>
         <register>
+          <name>MPU_RNR</name>
+          <displayName>MPU_RNR</displayName>
+          <description>MPU Region Number Register</description>
+          <addressOffset>0x08</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>REGION</name>
+              <description>REGION</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>MPU_RNR_NS</name>
           <displayName>MPU_RNR_NS</displayName>
           <description>MPU Region Number Register NS</description>
@@ -2463,10 +2539,78 @@ Copyright (c) 2024 STMicroelectronics.
           </fields>
         </register>
         <register>
+          <name>MPU_RBAR</name>
+          <displayName>MPU_RBAR</displayName>
+          <description>MPU Region Base Address Register</description>
+          <addressOffset>0x0C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>BASE</name>
+              <description>BASE</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>SH</name>
+              <description>SH</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>AP_2_1</name>
+              <description>AP_2_1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>XN</name>
+              <description>XN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>MPU_RBAR_NS</name>
           <displayName>MPU_RBAR_NS</displayName>
           <description>MPU Region Base Address Register NS</description>
           <addressOffset>0x2000C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>BASE</name>
+              <description>BASE</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>SH</name>
+              <description>SH</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>AP_2_1</name>
+              <description>AP_2_1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>XN</name>
+              <description>XN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>MPU_RBAR_A1</name>
+          <displayName>MPU_RBAR_A1</displayName>
+          <description>MPU Region Base Address Register</description>
+          <addressOffset>0x14</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <fields>
@@ -2531,10 +2675,78 @@ Copyright (c) 2024 STMicroelectronics.
           </fields>
         </register>
         <register>
+          <name>MPU_RBAR_A2</name>
+          <displayName>MPU_RBAR_A2</displayName>
+          <description>MPU Region Base Address Register</description>
+          <addressOffset>0x1C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>BASE</name>
+              <description>BASE</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>SH</name>
+              <description>SH</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>AP_2_1</name>
+              <description>AP_2_1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>XN</name>
+              <description>XN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
           <name>MPU_RBAR_A2_NS</name>
           <displayName>MPU_RBAR_A2_NS</displayName>
           <description>MPU Region Base Address Register NS</description>
           <addressOffset>0x2001C</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>BASE</name>
+              <description>BASE</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>SH</name>
+              <description>SH</description>
+              <bitOffset>3</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>AP_2_1</name>
+              <description>AP_2_1</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>2</bitWidth>
+            </field>
+            <field>
+              <name>XN</name>
+              <description>XN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>MPU_RBAR_A3</name>
+          <displayName>MPU_RBAR_A3</displayName>
+          <description>MPU Region Base Address Register</description>
+          <addressOffset>0x24</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <fields>
@@ -2599,6 +2811,40 @@ Copyright (c) 2024 STMicroelectronics.
           </fields>
         </register>
 		<register>
+          <name>MPU_RLAR</name>
+          <displayName>MPU_RLAR</displayName>
+          <description>MPU Region Limit Address Register</description>
+          <addressOffset>0x10</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>LIMIT</name>
+              <description>LIMIT</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AttrIndx</name>
+              <description>AttrIndx</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>EN</name>
+              <description>EN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+		<register>
           <name>MPU_RLAR_NS</name>
           <displayName>MPU_RLAR_NS</displayName>
           <description>MPU Region Limit Address Register NS</description>
@@ -2611,6 +2857,46 @@ Copyright (c) 2024 STMicroelectronics.
               <description>LIMIT</description>
               <bitOffset>5</bitOffset>
               <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AttrIndx</name>
+              <description>AttrIndx</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>EN</name>
+              <description>EN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+		<register>
+          <name>MPU_RLAR_A1</name>
+          <displayName>MPU_RLAR_A1</displayName>
+          <description>MPU Region Limit Address Register</description>
+          <addressOffset>0x18</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>LIMIT</name>
+              <description>LIMIT</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>AttrIndx</name>
@@ -2641,6 +2927,46 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>27</bitWidth>
             </field>
             <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AttrIndx</name>
+              <description>AttrIndx</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>EN</name>
+              <description>EN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+		<register>
+          <name>MPU_RLAR_A2</name>
+          <displayName>MPU_RLAR_A2</displayName>
+          <description>MPU Region Limit Address Register</description>
+          <addressOffset>0x20</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>LIMIT</name>
+              <description>LIMIT</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
               <name>AttrIndx</name>
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
@@ -2667,6 +2993,46 @@ Copyright (c) 2024 STMicroelectronics.
               <description>LIMIT</description>
               <bitOffset>5</bitOffset>
               <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
+              <name>AttrIndx</name>
+              <description>AttrIndx</description>
+              <bitOffset>1</bitOffset>
+              <bitWidth>3</bitWidth>
+            </field>
+            <field>
+              <name>EN</name>
+              <description>EN</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+		<register>
+          <name>MPU_RLAR_A3</name>
+          <displayName>MPU_RLAR_A3</displayName>
+          <description>MPU Region Limit Address Register</description>
+          <addressOffset>0x28</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>LIMIT</name>
+              <description>LIMIT</description>
+              <bitOffset>5</bitOffset>
+              <bitWidth>27</bitWidth>
+            </field>
+            <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>AttrIndx</name>
@@ -2697,6 +3063,12 @@ Copyright (c) 2024 STMicroelectronics.
               <bitWidth>27</bitWidth>
             </field>
             <field>
+              <name>PXN</name>
+              <description>PXN</description>
+              <bitOffset>4</bitOffset>
+              <bitWidth>1</bitWidth>
+            </field>
+            <field>
               <name>AttrIndx</name>
               <description>AttrIndx</description>
               <bitOffset>1</bitOffset>
@@ -2707,6 +3079,40 @@ Copyright (c) 2024 STMicroelectronics.
               <description>EN</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>MPU_MAIR0</name>
+          <displayName>MPU_MAIR0</displayName>
+          <description>MPU Memory Attribute Indirection Register 0</description>
+          <addressOffset>0x30</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>Attr0</name>
+              <description>Attr0</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>Attr1</name>
+              <description>Attr1</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>Attr2</name>
+              <description>Attr2</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>Attr3</name>
+              <description>Attr3</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
             </field>
           </fields>
         </register>
@@ -2739,6 +3145,40 @@ Copyright (c) 2024 STMicroelectronics.
             <field>
               <name>Attr3</name>
               <description>Attr3</description>
+              <bitOffset>24</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>MPU_MAIR1</name>
+          <displayName>MPU_MAIR1</displayName>
+          <description>MPU Memory Attribute Indirection Register 1</description>
+          <addressOffset>0x34</addressOffset>
+          <size>0x20</size>
+          <access>read-write</access>
+          <fields>
+            <field>
+              <name>Attr4</name>
+              <description>Attr4</description>
+              <bitOffset>0</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>Attr5</name>
+              <description>Attr5</description>
+              <bitOffset>8</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>Attr6</name>
+              <description>Attr6</description>
+              <bitOffset>16</bitOffset>
+              <bitWidth>8</bitWidth>
+            </field>
+            <field>
+              <name>Attr7</name>
+              <description>Attr7</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
             </field>
