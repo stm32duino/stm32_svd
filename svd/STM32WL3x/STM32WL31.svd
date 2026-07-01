@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--
-Copyright (c) 2025 STMicroelectronics.
+Copyright (c) 2026 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -18,7 +18,7 @@ Copyright (c) 2025 STMicroelectronics.
 -->
 <device xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.1" xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32WL31</name>
-  <version>1.1</version>
+  <version>1.2</version>
   <description>STM32WL31</description>
   <cpu>
     <name>CM0+</name>
@@ -15172,15 +15172,6 @@ if associated ENGTRIM is enabled the SMPS output voltage can be controlled by th
               <bitWidth>3</bitWidth>
               <access>read-only</access>
             </field>
-            <field>
-              <name>BOF_TRIM</name>
-              <description>BOF_TRIM[2:0]: Bypass On the Fly Output Voltage Trimming
-By default, this value is taken from the engi bytes; and saved on V12o domain when OBL done.
-if associated ENGTRIM is enabled the SMPS output voltage can be controlled by the dedicated ENGTRIM register. Default= '100'.</description>
-              <bitOffset>11</bitOffset>
-              <bitWidth>3</bitWidth>
-              <access>read-only</access>
-            </field>
           </fields>
         </register>
         <register>
@@ -15326,34 +15317,6 @@ By default, this value is not applied, but taken from the engi bytes; if ENGTRIM
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
               <access>read-only</access>
-            </field>
-          </fields>
-        </register>
-        <register>
-          <name>ENGTRIM2</name>
-          <displayName>ENGTRIM2</displayName>
-          <description>ENGTRIM2 register</description>
-          <addressOffset>0xa0</addressOffset>
-          <size>0x20</size>
-          <access>read-write</access>
-          <resetValue>0x0</resetValue>
-          <fields>
-            <field>
-              <name>BOFTRIMEN</name>
-              <description>BOFTRIMEN: trimming BOF enabled
-- 1: trimming bit applied from ENGTRIM2 register
-- 0: trimming bit applied from OBL (can be read on TRIMR register)</description>
-              <bitOffset>0</bitOffset>
-              <bitWidth>1</bitWidth>
-              <access>read-write</access>
-            </field>
-            <field>
-              <name>BOF_TRIM</name>
-              <description>SMPS_TRIM: SMPS Output Voltage Trimming
-By default, this value is not applied, but taken from the engi bytes; if ENGTRIM.BOFTRIMEN=1, the SMPS output voltage can be controlled by this register.</description>
-              <bitOffset>1</bitOffset>
-              <bitWidth>3</bitWidth>
-              <access>read-write</access>
             </field>
           </fields>
         </register>

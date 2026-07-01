@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--
-Copyright (c) 2024 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F777</name>
-  <version>1.9</version>
+  <version>2.0</version>
   <description>STM32F777</description>
   <cpu>
     <name>CM7</name>
@@ -68118,13 +68118,6 @@ Minimum value is 16</description>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -68191,13 +68184,6 @@ Minimum value is 16</description>
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -68270,13 +68256,6 @@ Minimum value is 16</description>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -68343,13 +68322,6 @@ Minimum value is 16</description>
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -68422,13 +68394,6 @@ Minimum value is 16</description>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -68495,13 +68460,6 @@ Minimum value is 16</description>
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -68574,13 +68532,6 @@ Minimum value is 16</description>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -68647,13 +68598,6 @@ Minimum value is 16</description>
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -69107,13 +69051,6 @@ Minimum value is 16</description>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error</description>
               <bitOffset>7</bitOffset>
@@ -69351,13 +69288,6 @@ Minimum value is 16</description>
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -69601,13 +69531,6 @@ Minimum value is 16</description>
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -69845,13 +69768,6 @@ Minimum value is 16</description>
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
