@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--
-Copyright (c) 2024 STMicroelectronics.
+Copyright (c) 2025 STMicroelectronics.
 
  SPDX-License-Identifier: Apache-2.0
 
@@ -20,7 +20,7 @@ Copyright (c) 2024 STMicroelectronics.
 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <name>STM32F732</name>
-  <version>1.6</version>
+  <version>1.7</version>
   <description>STM32F732</description>
   <cpu>
     <name>CM7</name>
@@ -43266,13 +43266,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -43339,13 +43332,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -43418,13 +43404,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -43491,13 +43470,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -43570,13 +43542,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -43643,13 +43608,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -43722,13 +43680,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -43795,13 +43746,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>ACK response received/transmitted
               interrupt mask</description>
               <bitOffset>5</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
@@ -44075,7 +44019,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCCHAR8</displayName>
           <description>OTG_FS host channel-8 characteristics
           register</description>
-          <addressOffset>0x200</addressOffset>
+          <addressOffset>0x1F4</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44147,7 +44091,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINT8</displayName>
           <description>OTG_FS host channel-8 interrupt
           register</description>
-          <addressOffset>0x208</addressOffset>
+          <addressOffset>0x1F8</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44216,7 +44160,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINTMSK8</displayName>
           <description>OTG_FS host channel-8 mask
           register</description>
-          <addressOffset>0x20C</addressOffset>
+          <addressOffset>0x1FC</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44255,13 +44199,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error</description>
               <bitOffset>7</bitOffset>
@@ -44292,7 +44229,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCTSIZ8</displayName>
           <description>OTG_FS host channel-8 transfer size
           register</description>
-          <addressOffset>0x210</addressOffset>
+          <addressOffset>0x200</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44322,7 +44259,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCCHAR9</displayName>
           <description>OTG_FS host channel-9 characteristics
           register</description>
-          <addressOffset>0x220</addressOffset>
+          <addressOffset>0x204</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44394,7 +44331,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINT9</displayName>
           <description>OTG_FS host channel-9 interrupt
           register</description>
-          <addressOffset>0x228</addressOffset>
+          <addressOffset>0x208</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44463,7 +44400,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINTMSK9</displayName>
           <description>OTG_FS host channel-9 mask
           register</description>
-          <addressOffset>0x22C</addressOffset>
+          <addressOffset>0x20C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44502,13 +44439,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -44539,7 +44469,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCTSIZ9</displayName>
           <description>OTG_FS host channel-9 transfer size
           register</description>
-          <addressOffset>0x230</addressOffset>
+          <addressOffset>0x210</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44569,7 +44499,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCCHAR10</displayName>
           <description>OTG_FS host channel-10 characteristics
           register</description>
-          <addressOffset>0x240</addressOffset>
+          <addressOffset>0x214</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44641,7 +44571,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINT10</displayName>
           <description>OTG_FS host channel-10 interrupt
           register</description>
-          <addressOffset>0x248</addressOffset>
+          <addressOffset>0x218</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44710,7 +44640,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINTMSK10</displayName>
           <description>OTG_FS host channel-10 mask
           register</description>
-          <addressOffset>0x24C</addressOffset>
+          <addressOffset>0x21C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44749,13 +44679,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -44786,7 +44709,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCTSIZ10</displayName>
           <description>OTG_FS host channel-10 transfer size
           register</description>
-          <addressOffset>0x250</addressOffset>
+          <addressOffset>0x220</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44816,7 +44739,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCCHAR11</displayName>
           <description>OTG_FS host channel-11 characteristics
           register</description>
-          <addressOffset>0x260</addressOffset>
+          <addressOffset>0x224</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44888,7 +44811,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINT11</displayName>
           <description>OTG_FS host channel-11 interrupt
           register</description>
-          <addressOffset>0x268</addressOffset>
+          <addressOffset>0x228</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44957,7 +44880,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCINTMSK11</displayName>
           <description>OTG_FS host channel-11 mask
           register</description>
-          <addressOffset>0x26C</addressOffset>
+          <addressOffset>0x22C</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
@@ -44996,13 +44919,6 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
             <field>
-              <name>NYET</name>
-              <description>response received interrupt
-              mask</description>
-              <bitOffset>6</bitOffset>
-              <bitWidth>1</bitWidth>
-            </field>
-            <field>
               <name>TXERRM</name>
               <description>Transaction error mask</description>
               <bitOffset>7</bitOffset>
@@ -45033,7 +44949,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <displayName>OTG_FS_HCTSIZ11</displayName>
           <description>OTG_FS host channel-11 transfer size
           register</description>
-          <addressOffset>0x270</addressOffset>
+          <addressOffset>0x230</addressOffset>
           <size>0x20</size>
           <access>read-write</access>
           <resetValue>0x00000000</resetValue>
